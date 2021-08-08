@@ -28,14 +28,17 @@
   },
   "projects": {
     "alpsbte-api": {
-      "tags": []
+      "tags": ["scope:api", "type:api"]
     },
     "alpsbte-web": {
-      "tags": []
+      "tags": ["scope:app", "type:app"]
     },
     "alpsbte-web-e2e": {
       "tags": [],
       "implicitDependencies": ["alpsbte-web"]
+    },
+    "ui": {
+      "tags": ["scope:shared", "type;ui"]
     }
   }
 }
