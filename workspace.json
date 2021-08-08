@@ -1,6 +1,56 @@
 {
   "version": 2,
   "projects": {
+    "alpsbte-api": {
+      "root": "apps/alpsbte-api",
+      "sourceRoot": "apps/alpsbte-api/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/node:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/alpsbte-api",
+            "main": "apps/alpsbte-api/src/main.ts",
+            "tsConfig": "apps/alpsbte-api/tsconfig.app.json",
+            "assets": ["apps/alpsbte-api/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/alpsbte-api/src/environments/environment.ts",
+                  "with": "apps/alpsbte-api/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "alpsbte-api:build"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/alpsbte-api/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/alpsbte-api"],
+          "options": {
+            "jestConfig": "apps/alpsbte-api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "alpsbte-web": {
       "root": "apps/alpsbte-web",
       "sourceRoot": "apps/alpsbte-web/src",
@@ -52,7 +102,8 @@
           "executor": "@nrwl/web:dev-server",
           "options": {
             "buildTarget": "alpsbte-web:build",
-            "hmr": true
+            "hmr": true,
+            "proxyConfig": "apps/alpsbte-web/proxy.conf.json"
           },
           "configurations": {
             "production": {
