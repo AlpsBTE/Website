@@ -18,6 +18,8 @@ export function Button(props: ButtonProps) {
       style={{ backgroundColor: props.color }}
     >
       {props.label}
+
+      {props.disabled}
     </button>
   );
 }
