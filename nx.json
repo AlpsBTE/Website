@@ -36,9 +36,6 @@
     "alpsbte-web-e2e": {
       "tags": [],
       "implicitDependencies": ["alpsbte-web"]
-    },
-    "ui": {
-      "tags": ["scope:shared", "type;ui"]
     }
   }
 }
