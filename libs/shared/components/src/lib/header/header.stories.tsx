@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import { Header, HeaderProps } from './header';
+import { Header, HeaderProps } from './Header';
 
 export default {
   title: 'Button2',
@@ -13,6 +13,7 @@ export default {
 const Template: Story<HeaderProps> = (args) => <Header {...args} />;
 
 export const Primary = Template.bind({});
+
 Primary.args = {
   label: 'Primary',
   size: 'md',

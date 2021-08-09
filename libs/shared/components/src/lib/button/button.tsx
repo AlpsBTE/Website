@@ -1,27 +1,33 @@
-import './button.scss';
+import React, { CSSProperties } from 'react';
+import './Button.scss';
 
-/* eslint-disable-next-line */
 export interface ButtonProps {
   label: string;
   onClick: () => void;
   disabled?: boolean;
   size: 'lg' | 'md' | 'sm';
-  color: string;
+  style: CSSProperties;
 }
 
-export function Button(props: ButtonProps) {
+export const Button: React.FC<ButtonProps> = ({
+  label,
+  onClick,
+  disabled,
+  size,
+  style,
+}: ButtonProps) => {
   return (
     <button
-      disabled={props.disabled}
-      className={'button button__' + props.size}
-      onClick={props.onClick}
-      style={{ backgroundColor: props.color }}
+      disabled={disabled}
+      className={'button button__' + size}
+      onClick={() => onClick()}
+      style={{ ...style }}
     >
-      {props.label}
+      {label}
 
-      {props.disabled}
+      {disabled}
     </button>
   );
-}
+};
 
 export default Button;

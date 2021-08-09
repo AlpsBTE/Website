@@ -1,3 +1,6 @@
-export * from './lib/header/header';
-export * from './lib/button/button';
-export * from './lib/shared-components';
+// ------------------------------
+// components | add exports below
+// ------------------------------
+
+export * from './lib/Button/Button';
+export * from './lib/Header/Header';

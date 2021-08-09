@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import Button, { ButtonProps } from './button';
+import Button, { ButtonProps } from './Button';
 
 const args: ButtonProps = {
   label: 'string',
@@ -8,6 +8,7 @@ const args: ButtonProps = {
     return;
   },
   size: 'md',
+  style: {},
   disabled: false,
 };
 
