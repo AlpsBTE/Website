@@ -13,7 +13,6 @@ export const Button: React.FC<ButtonProps> = ({ label, onClick, disabled, size, 
     return (
         <button disabled={disabled} className={'button button__' + size} onClick={() => onClick()} style={{ ...style }}>
             {label}
-            {disabled}
         </button>
     );
 };
