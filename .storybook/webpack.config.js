@@ -6,13 +6,13 @@ var path = require('path');
  * @param {'DEVELOPMENT' | 'PRODUCTION'} options.mode - change the build configuration. 'PRODUCTION' is used when building the static version of storybook.
  */
 module.exports = async ({ config, mode }) => {
-  // Make whatever fine-grained changes you need
-  config.module.rules.push({
-    test: /\.scss$/,
-    use: ['style-loader', 'css-loader', 'sass-loader'],
-    include: path.resolve(__dirname, '../'),
-  });
+    // Make whatever fine-grained changes you need
+    config.module.rules.push({
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+        include: path.resolve(__dirname, '../'),
+    });
 
-  // Return the altered config
-  return config;
+    // Return the altered config
+    return config;
 };

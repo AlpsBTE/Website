@@ -4,11 +4,11 @@ import './Header.module.scss';
 export interface HeaderProps {}
 
 export const Header = () => {
-  return (
-    <div>
-      <h1>Welcome to Header!</h1>
-    </div>
-  );
+    return (
+        <div>
+            <h1>Welcome to Header!</h1>
+        </div>
+    );
 };
 
 export default Header;

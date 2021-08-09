@@ -1,287 +1,284 @@
 {
-  "version": 2,
-  "projects": {
-    "alpsbte-api": {
-      "root": "apps/alpsbte-api",
-      "sourceRoot": "apps/alpsbte-api/src",
-      "projectType": "application",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/node:build",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "outputPath": "dist/apps/alpsbte-api",
-            "main": "apps/alpsbte-api/src/main.ts",
-            "tsConfig": "apps/alpsbte-api/tsconfig.app.json",
-            "assets": ["apps/alpsbte-api/src/assets"]
-          },
-          "configurations": {
-            "production": {
-              "optimization": true,
-              "extractLicenses": true,
-              "inspect": false,
-              "fileReplacements": [
-                {
-                  "replace": "apps/alpsbte-api/src/environments/environment.ts",
-                  "with": "apps/alpsbte-api/src/environments/environment.prod.ts"
+    "version": 2,
+    "projects": {
+        "alpsbte-api": {
+            "root": "apps/alpsbte-api",
+            "sourceRoot": "apps/alpsbte-api/src",
+            "projectType": "application",
+            "targets": {
+                "build": {
+                    "executor": "@nrwl/node:build",
+                    "outputs": ["{options.outputPath}"],
+                    "options": {
+                        "outputPath": "dist/apps/alpsbte-api",
+                        "main": "apps/alpsbte-api/src/main.ts",
+                        "tsConfig": "apps/alpsbte-api/tsconfig.app.json",
+                        "assets": ["apps/alpsbte-api/src/assets"]
+                    },
+                    "configurations": {
+                        "production": {
+                            "optimization": true,
+                            "extractLicenses": true,
+                            "inspect": false,
+                            "fileReplacements": [
+                                {
+                                    "replace": "apps/alpsbte-api/src/environments/environment.ts",
+                                    "with": "apps/alpsbte-api/src/environments/environment.prod.ts"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "serve": {
+                    "executor": "@nrwl/node:execute",
+                    "options": {
+                        "buildTarget": "alpsbte-api:build"
+                    }
+                },
+                "lint": {
+                    "executor": "@nrwl/linter:eslint",
+                    "options": {
+                        "lintFilePatterns": ["apps/alpsbte-api/**/*.ts"]
+                    }
+                },
+                "test": {
+                    "executor": "@nrwl/jest:jest",
+                    "outputs": ["coverage/apps/alpsbte-api"],
+                    "options": {
+                        "jestConfig": "apps/alpsbte-api/jest.config.js",
+                        "passWithNoTests": true
+                    }
                 }
-              ]
             }
-          }
         },
-        "serve": {
-          "executor": "@nrwl/node:execute",
-          "options": {
-            "buildTarget": "alpsbte-api:build"
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/alpsbte-api/**/*.ts"]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/alpsbte-api"],
-          "options": {
-            "jestConfig": "apps/alpsbte-api/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "alpsbte-web": {
-      "root": "apps/alpsbte-web",
-      "sourceRoot": "apps/alpsbte-web/src",
-      "projectType": "application",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/web:build",
-          "outputs": ["{options.outputPath}"],
-          "options": {
-            "outputPath": "dist/apps/alpsbte-web",
-            "index": "apps/alpsbte-web/src/index.html",
-            "main": "apps/alpsbte-web/src/main.tsx",
-            "polyfills": "apps/alpsbte-web/src/polyfills.ts",
-            "tsConfig": "apps/alpsbte-web/tsconfig.app.json",
-            "assets": [
-              "apps/alpsbte-web/src/favicon.ico",
-              "apps/alpsbte-web/src/assets"
-            ],
-            "styles": ["apps/alpsbte-web/src/styles.scss"],
-            "scripts": [],
-            "webpackConfig": "@nrwl/react/plugins/webpack"
-          },
-          "configurations": {
-            "production": {
-              "fileReplacements": [
-                {
-                  "replace": "apps/alpsbte-web/src/environments/environment.ts",
-                  "with": "apps/alpsbte-web/src/environments/environment.prod.ts"
+        "alpsbte-web": {
+            "root": "apps/alpsbte-web",
+            "sourceRoot": "apps/alpsbte-web/src",
+            "projectType": "application",
+            "targets": {
+                "build": {
+                    "executor": "@nrwl/web:build",
+                    "outputs": ["{options.outputPath}"],
+                    "options": {
+                        "outputPath": "dist/apps/alpsbte-web",
+                        "index": "apps/alpsbte-web/src/index.html",
+                        "main": "apps/alpsbte-web/src/main.tsx",
+                        "polyfills": "apps/alpsbte-web/src/polyfills.ts",
+                        "tsConfig": "apps/alpsbte-web/tsconfig.app.json",
+                        "assets": ["apps/alpsbte-web/src/favicon.ico", "apps/alpsbte-web/src/assets"],
+                        "styles": ["apps/alpsbte-web/src/styles.scss"],
+                        "scripts": [],
+                        "webpackConfig": "@nrwl/react/plugins/webpack"
+                    },
+                    "configurations": {
+                        "production": {
+                            "fileReplacements": [
+                                {
+                                    "replace": "apps/alpsbte-web/src/environments/environment.ts",
+                                    "with": "apps/alpsbte-web/src/environments/environment.prod.ts"
+                                }
+                            ],
+                            "optimization": true,
+                            "outputHashing": "all",
+                            "sourceMap": false,
+                            "extractCss": true,
+                            "namedChunks": false,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "budgets": [
+                                {
+                                    "type": "initial",
+                                    "maximumWarning": "500kb",
+                                    "maximumError": "1mb"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "serve": {
+                    "executor": "@nrwl/web:dev-server",
+                    "options": {
+                        "buildTarget": "alpsbte-web:build",
+                        "hmr": true,
+                        "proxyConfig": "apps/alpsbte-web/proxy.conf.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "buildTarget": "alpsbte-web:build:production",
+                            "hmr": false
+                        }
+                    }
+                },
+                "lint": {
+                    "executor": "@nrwl/linter:eslint",
+                    "options": {
+                        "lintFilePatterns": ["apps/alpsbte-web/**/*.{ts,tsx,js,jsx}"]
+                    }
+                },
+                "test": {
+                    "executor": "@nrwl/jest:jest",
+                    "outputs": ["coverage/apps/alpsbte-web"],
+                    "options": {
+                        "jestConfig": "apps/alpsbte-web/jest.config.js",
+                        "passWithNoTests": true
+                    }
                 }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+            }
+        },
+        "alpsbte-web-e2e": {
+            "root": "apps/alpsbte-web-e2e",
+            "sourceRoot": "apps/alpsbte-web-e2e/src",
+            "projectType": "application",
+            "targets": {
+                "e2e": {
+                    "executor": "@nrwl/cypress:cypress",
+                    "options": {
+                        "cypressConfig": "apps/alpsbte-web-e2e/cypress.json",
+                        "tsConfig": "apps/alpsbte-web-e2e/tsconfig.e2e.json",
+                        "devServerTarget": "alpsbte-web:serve"
+                    },
+                    "configurations": {
+                        "production": {
+                            "devServerTarget": "alpsbte-web:serve:production"
+                        }
+                    }
+                },
+                "lint": {
+                    "executor": "@nrwl/linter:eslint",
+                    "options": {
+                        "lintFilePatterns": ["apps/alpsbte-web-e2e/**/*.{js,ts}"]
+                    }
                 }
-              ]
             }
-          }
         },
-        "serve": {
-          "executor": "@nrwl/web:dev-server",
-          "options": {
-            "buildTarget": "alpsbte-web:build",
-            "hmr": true,
-            "proxyConfig": "apps/alpsbte-web/proxy.conf.json"
-          },
-          "configurations": {
-            "production": {
-              "buildTarget": "alpsbte-web:build:production",
-              "hmr": false
+        "shared-components": {
+            "root": "libs/shared/components",
+            "sourceRoot": "libs/shared/components/src",
+            "projectType": "library",
+            "targets": {
+                "lint": {
+                    "executor": "@nrwl/linter:eslint",
+                    "options": {
+                        "lintFilePatterns": ["libs/shared/components/**/*.{ts,tsx,js,jsx}"]
+                    }
+                },
+                "test": {
+                    "executor": "@nrwl/jest:jest",
+                    "outputs": ["coverage/libs/shared/components"],
+                    "options": {
+                        "jestConfig": "libs/shared/components/jest.config.js",
+                        "passWithNoTests": true
+                    }
+                },
+                "storybook": {
+                    "executor": "@nrwl/storybook:storybook",
+                    "options": {
+                        "uiFramework": "@storybook/react",
+                        "port": 4400,
+                        "config": {
+                            "configFolder": "libs/shared/components/.storybook"
+                        }
+                    },
+                    "configurations": {
+                        "ci": {
+                            "quiet": true
+                        }
+                    }
+                },
+                "build-storybook": {
+                    "executor": "@nrwl/storybook:build",
+                    "outputs": ["{options.outputPath}"],
+                    "options": {
+                        "uiFramework": "@storybook/react",
+                        "outputPath": "dist/storybook/shared-components",
+                        "config": {
+                            "configFolder": "libs/shared/components/.storybook"
+                        }
+                    },
+                    "configurations": {
+                        "ci": {
+                            "quiet": true
+                        }
+                    }
+                }
             }
-          }
         },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/alpsbte-web/**/*.{ts,tsx,js,jsx}"]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/alpsbte-web"],
-          "options": {
-            "jestConfig": "apps/alpsbte-web/jest.config.js",
-            "passWithNoTests": true
-          }
+        "shared-components-e2e": {
+            "root": "apps/shared-components-e2e",
+            "sourceRoot": "apps/shared-components-e2e/src",
+            "projectType": "application",
+            "targets": {
+                "e2e": {
+                    "executor": "@nrwl/cypress:cypress",
+                    "options": {
+                        "cypressConfig": "apps/shared-components-e2e/cypress.json",
+                        "tsConfig": "apps/shared-components-e2e/tsconfig.e2e.json",
+                        "devServerTarget": "shared-components:storybook"
+                    },
+                    "configurations": {
+                        "ci": {
+                            "devServerTarget": "shared-components:storybook:ci"
+                        }
+                    }
+                },
+                "lint": {
+                    "executor": "@nrwl/linter:eslint",
+                    "options": {
+                        "lintFilePatterns": ["apps/shared-components-e2e/**/*.{js,ts}"]
+                    }
+                }
+            }
         }
-      }
     },
-    "alpsbte-web-e2e": {
-      "root": "apps/alpsbte-web-e2e",
-      "sourceRoot": "apps/alpsbte-web-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/alpsbte-web-e2e/cypress.json",
-            "tsConfig": "apps/alpsbte-web-e2e/tsconfig.e2e.json",
-            "devServerTarget": "alpsbte-web:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "alpsbte-web:serve:production"
+    "cli": {
+        "defaultCollection": "@nrwl/react"
+    },
+    "generators": {
+        "@nrwl/react": {
+            "application": {
+                "style": "scss",
+                "linter": "eslint",
+                "babel": true
+            },
+            "component": {
+                "style": "scss"
+            },
+            "library": {
+                "style": "scss",
+                "linter": "eslint"
             }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/alpsbte-web-e2e/**/*.{js,ts}"]
-          }
         }
-      }
     },
-    "shared-components": {
-      "root": "libs/shared/components",
-      "sourceRoot": "libs/shared/components/src",
-      "projectType": "library",
-      "targets": {
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/shared/components/**/*.{ts,tsx,js,jsx}"]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/shared/components"],
-          "options": {
-            "jestConfig": "libs/shared/components/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "storybook": {
-          "executor": "@nrwl/storybook:storybook",
-          "options": {
+    "storybook": {
+        "executor": "@nrwl/storybook:storybook",
+        "options": {
             "uiFramework": "@storybook/react",
             "port": 4400,
             "config": {
-              "configFolder": "libs/shared/components/.storybook"
+                "configFolder": "libs/ui/.storybook"
             }
-          },
-          "configurations": {
-            "ci": {
-              "quiet": true
-            }
-          }
         },
-        "build-storybook": {
-          "executor": "@nrwl/storybook:build",
-          "outputs": ["{options.outputPath}"],
-          "options": {
+        "configurations": {
+            "ci": {
+                "quiet": true
+            }
+        }
+    },
+    "build-storybook": {
+        "executor": "@nrwl/storybook:build",
+        "outputs": ["{options.outputPath}"],
+        "options": {
             "uiFramework": "@storybook/react",
-            "outputPath": "dist/storybook/shared-components",
+            "outputPath": "dist/storybook/ui",
             "config": {
-              "configFolder": "libs/shared/components/.storybook"
+                "configFolder": "libs/ui/.storybook"
             }
-          },
-          "configurations": {
-            "ci": {
-              "quiet": true
-            }
-          }
-        }
-      }
-    },
-    "shared-components-e2e": {
-      "root": "apps/shared-components-e2e",
-      "sourceRoot": "apps/shared-components-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/shared-components-e2e/cypress.json",
-            "tsConfig": "apps/shared-components-e2e/tsconfig.e2e.json",
-            "devServerTarget": "shared-components:storybook"
-          },
-          "configurations": {
-            "ci": {
-              "devServerTarget": "shared-components:storybook:ci"
-            }
-          }
         },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/shared-components-e2e/**/*.{js,ts}"]
-          }
+        "configurations": {
+            "ci": {
+                "quiet": true
+            }
         }
-      }
-    }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/react"
-  },
-  "generators": {
-    "@nrwl/react": {
-      "application": {
-        "style": "scss",
-        "linter": "eslint",
-        "babel": true
-      },
-      "component": {
-        "style": "scss"
-      },
-      "library": {
-        "style": "scss",
-        "linter": "eslint"
-      }
-    }
-  },
-  "storybook": {
-    "executor": "@nrwl/storybook:storybook",
-    "options": {
-      "uiFramework": "@storybook/react",
-      "port": 4400,
-      "config": {
-        "configFolder": "libs/ui/.storybook"
-      }
     },
-    "configurations": {
-      "ci": {
-        "quiet": true
-      }
-    }
-  },
-  "build-storybook": {
-    "executor": "@nrwl/storybook:build",
-    "outputs": ["{options.outputPath}"],
-    "options": {
-      "uiFramework": "@storybook/react",
-      "outputPath": "dist/storybook/ui",
-      "config": {
-        "configFolder": "libs/ui/.storybook"
-      }
-    },
-    "configurations": {
-      "ci": {
-        "quiet": true
-      }
-    }
-  },
-  "defaultProject": "alpsbte-web"
+    "defaultProject": "alpsbte-web"
 }

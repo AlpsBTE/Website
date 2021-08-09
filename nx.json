@@ -1,54 +1,48 @@
 {
-  "npmScope": "alpsbte",
-  "affected": {
-    "defaultBase": "master"
-  },
-  "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
+    "npmScope": "alpsbte",
+    "affected": {
+        "defaultBase": "master"
     },
-    ".eslintrc.json": "*"
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e",
-          "build-storybook"
+    "implicitDependencies": {
+        "package.json": {
+            "dependencies": "*",
+            "devDependencies": "*"
+        },
+        ".eslintrc.json": "*"
+    },
+    "tasksRunnerOptions": {
+        "default": {
+            "runner": "@nrwl/workspace/tasks-runners/default",
+            "options": {
+                "cacheableOperations": ["build", "lint", "test", "e2e", "build-storybook"]
+            }
+        }
+    },
+    "targetDependencies": {
+        "build": [
+            {
+                "target": "build",
+                "projects": "dependencies"
+            }
         ]
-      }
+    },
+    "projects": {
+        "alpsbte-api": {
+            "tags": ["scope:api", "type:api"]
+        },
+        "alpsbte-web": {
+            "tags": ["scope:app", "type:app"]
+        },
+        "alpsbte-web-e2e": {
+            "tags": [],
+            "implicitDependencies": ["alpsbte-web"]
+        },
+        "shared-components": {
+            "tags": []
+        },
+        "shared-components-e2e": {
+            "tags": [],
+            "implicitDependencies": ["shared-components"]
+        }
     }
-  },
-  "targetDependencies": {
-    "build": [
-      {
-        "target": "build",
-        "projects": "dependencies"
-      }
-    ]
-  },
-  "projects": {
-    "alpsbte-api": {
-      "tags": ["scope:api", "type:api"]
-    },
-    "alpsbte-web": {
-      "tags": ["scope:app", "type:app"]
-    },
-    "alpsbte-web-e2e": {
-      "tags": [],
-      "implicitDependencies": ["alpsbte-web"]
-    },
-    "shared-components": {
-      "tags": []
-    },
-    "shared-components-e2e": {
-      "tags": [],
-      "implicitDependencies": ["shared-components"]
-    }
-  }
 }

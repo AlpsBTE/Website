@@ -1,13 +1,13 @@
 .button {
-  border-radius: 0;
-  background-color: transparent;
-  &__lg {
-    padding: 15px;
-  }
-  &__md {
-    padding: 7px;
-  }
-  &__sm {
-    padding: 3px;
-  }
+    border-radius: 0;
+    background-color: transparent;
+    &__lg {
+        padding: 15px;
+    }
+    &__md {
+        padding: 7px;
+    }
+    &__sm {
+        padding: 3px;
+    }
 }
