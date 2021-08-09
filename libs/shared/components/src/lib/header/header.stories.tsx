@@ -1,17 +1,16 @@
 import { Story, Meta } from '@storybook/react';
-import { Button, ButtonProps } from './button';
+import { Header, HeaderProps } from './header';
 
 export default {
-  title: 'Button',
-  component: Button,
+  title: 'Button2',
+  component: Header,
   //👇 Creates specific argTypes
   argTypes: {
     label: { control: 'text' },
-    color: { control: 'color' },
   },
 } as Meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<HeaderProps> = (args) => <Header {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
