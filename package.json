@@ -5,6 +5,8 @@
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
+    "frontend": "nx serve alpsbte-web",
+    "backend": "nx serve alpsbte-api",
     "build": "nx build",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
