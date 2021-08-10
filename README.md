@@ -1,6 +1,6 @@
 
 
-# Alpsbte - Website
+# Alpsbte
 
 This project was generated using [Nx](https://nx.dev).
 
