@@ -26,6 +26,13 @@
                 ]
               },
               {
+                "sourceTag": "scope:about-us",
+                "onlyDependOnLibsWithTags": [
+                  "scope:about-us",
+                  "scope:shared"
+                ]
+              },
+              {
                 "sourceTag": "scope:api",
                 "onlyDependOnLibsWithTags": [
                   "scope:api"
@@ -34,6 +41,13 @@
               {
                 "sourceTag": "scope:shared",
                 "onlyDependOnLibsWithTags": [
+                  "scope:shared"
+                ]
+              },
+              {
+                "sourceTag": "scope:home",
+                "onlyDependOnLibsWithTags": [
+                  "scope:home",
                   "scope:shared"
                 ]
               }

@@ -15,6 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@alpsbte/about-us": ["libs/about-us/src/index.ts"],
+      "@alpsbte/home": ["libs/home/src/index.ts"],
       "@alpsbte/shared/components": ["libs/shared/components/src/index.ts"]
     }
   },
