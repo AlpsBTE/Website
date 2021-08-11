@@ -28,6 +28,7 @@
   "private": true,
   "dependencies": {
     "@storybook/preset-scss": "^1.0.3",
+    "@types/react-router-dom": "^5.1.8",
     "core-js": "^3.6.5",
     "express": "4.17.1",
     "react": "17.0.2",
