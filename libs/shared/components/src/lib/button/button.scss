@@ -1,14 +1,24 @@
 .button {
+  border: solid;
+  border-color: black;
   border-radius: 0;
   background-color: transparent;
+  color: black;
+  
 
   &__lg {
-    padding: 15px;
+    padding: 8px 50px 8px 50px;
   }
   &__md {
-    padding: 7px;
+    padding: 5px 40px 5px 40px;
   }
   &__sm {
-    padding: 3px;
+    padding: 3px 30px 3px 30px;
   }
+  &.invert {
+    filter: invert(1);
+  }
+
+
+
 }
