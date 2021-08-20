@@ -6,6 +6,7 @@
   justify-content: space-between;
   height: 100px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
 
   transition: background-color 0.35s ease-in-out;
   &__image-container {
