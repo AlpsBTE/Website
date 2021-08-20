@@ -1,6 +1,7 @@
 import './application.module.scss';
 
-/* eslint-disable-next-line */
+import { Contact } from '@alpsbte/contact';
+
 export interface ApplicationProps {}
 
 export function Application(props: ApplicationProps) {

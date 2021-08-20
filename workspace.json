@@ -238,6 +238,27 @@
         }
       }
     },
+    "error": {
+      "root": "libs/error",
+      "sourceRoot": "libs/error/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/error/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/error"],
+          "options": {
+            "jestConfig": "libs/error/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "faq": {
       "root": "libs/faq",
       "sourceRoot": "libs/faq/src",

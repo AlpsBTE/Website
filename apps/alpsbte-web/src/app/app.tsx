@@ -1,4 +1,3 @@
-/* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -9,6 +8,7 @@ import { Contact } from '@alpsbte/contact';
 import { Gallery } from '@alpsbte/gallery';
 import { Downloads } from '@alpsbte/downloads';
 import { Application } from '@alpsbte/application';
+import { Error } from '@alpsbte/error';
 
 export function App() {
   return (
@@ -25,7 +25,7 @@ export function App() {
             <Faq />
           </Route>
           <Route path="/contact" exact>
-            <Gallery />
+            <Contact />
           </Route>
           <Route path="/gallery" exact>
             <Gallery />
@@ -35,6 +35,9 @@ export function App() {
           </Route>
           <Route path="/application" exact>
             <Application />
+          </Route>
+          <Route path="/">
+            <Error />
           </Route>
         </Switch>
       </Router>

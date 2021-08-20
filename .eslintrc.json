@@ -18,13 +18,7 @@
                   "*"
                 ]
               },
-              {
-                "sourceTag": "scope:app",
-                "onlyDependOnLibsWithTags": [
-                  "scope:app",
-                  "scope:shared"
-                ]
-              },
+             
               {
                 "sourceTag": "scope:about-us",
                 "onlyDependOnLibsWithTags": [
@@ -83,6 +77,13 @@
                 "sourceTag": "scope:application",
                 "onlyDependOnLibsWithTags": [
                   "scope:application",
+                  "scope:shared"
+                ]
+              },
+              {
+                "sourceTag": "scope:error",
+                "onlyDependOnLibsWithTags": [
+                  "scope:error",
                   "scope:shared"
                 ]
               }
