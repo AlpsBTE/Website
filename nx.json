@@ -55,6 +55,9 @@
     "downloads": {
       "tags": ["scope:downloads", "type:feature"]
     },
+    "error": {
+      "tags": ["scope:error", "type:feature"]
+    },
     "faq": {
       "tags": ["scope:faq", "type:feature"]
     },
