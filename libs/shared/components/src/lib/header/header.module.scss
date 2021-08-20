@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
+
+  transition: background-color 0.35s ease-in-out;
+  &__image-container {
+    width: 20%;
+    display: flex;
+    margin-left: 7%;
+    img {
+      width: 10%;
+    }
+  }
+
+  &__navitem-container {
+    font-family: Bahnschrift;
+    font-size: 1.2em;
+    margin-right: 7%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    &__item {
+      text-decoration: none;
+      color: black;
+      list-style-type: none;
+    }
+  }
+}
+
+.transparent {
+  background-color: transparent;
+}

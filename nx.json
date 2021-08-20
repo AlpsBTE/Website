@@ -33,6 +33,9 @@
     ]
   },
   "projects": {
+    "about-us": {
+      "tags": ["scope:about-us", "type:feature"]
+    },
     "alpsbte-api": {
       "tags": ["scope:api", "type:api"]
     },
@@ -43,8 +46,11 @@
       "tags": [],
       "implicitDependencies": ["alpsbte-web"]
     },
+    "home": {
+      "tags": ["scope:home", "type:feature"]
+    },
     "shared-components": {
-      "tags": []
+      "tags": ["scope:shared", "type:ui"]
     },
     "shared-components-e2e": {
       "tags": [],

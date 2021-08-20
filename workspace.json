@@ -1,6 +1,27 @@
 {
   "version": 2,
   "projects": {
+    "about-us": {
+      "root": "libs/about-us",
+      "sourceRoot": "libs/about-us/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/about-us/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/about-us"],
+          "options": {
+            "jestConfig": "libs/about-us/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "alpsbte-api": {
       "root": "apps/alpsbte-api",
       "sourceRoot": "apps/alpsbte-api/src",
@@ -71,7 +92,8 @@
             ],
             "styles": ["apps/alpsbte-web/src/styles.scss"],
             "scripts": [],
-            "webpackConfig": "@nrwl/react/plugins/webpack"
+            "webpackConfig": "@nrwl/react/plugins/webpack",
+            "extractCSS": false
           },
           "configurations": {
             "production": {
@@ -150,6 +172,27 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/alpsbte-web-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "home": {
+      "root": "libs/home",
+      "sourceRoot": "libs/home/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/home/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/home"],
+          "options": {
+            "jestConfig": "libs/home/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }

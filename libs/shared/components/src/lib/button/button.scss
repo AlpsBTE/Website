@@ -1,13 +1,21 @@
 .button {
+  border: solid;
   border-radius: 0;
   background-color: transparent;
+  transition: color 0.35s ease-in-out;
+  transition: border-color 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
   &__lg {
-    padding: 15px;
+    font-size: 1.1rem;
+    padding: 8px 50px 8px 50px;
   }
   &__md {
-    padding: 7px;
+    padding: 5px 40px 5px 40px;
+    border-width: 3px;
   }
   &__sm {
-    padding: 3px;
+    font-size: 0.8em;
+    padding: 3px 30px 3px 30px;
+    border-width: 2px;
   }
 }

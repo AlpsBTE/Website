@@ -21,4 +21,5 @@ Primary.args = {
   onClick: () => {
     return;
   },
+  color: '#000',
 };
