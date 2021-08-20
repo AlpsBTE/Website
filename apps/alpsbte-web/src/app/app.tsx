@@ -1,3 +1,4 @@
+/* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -20,8 +21,20 @@ export function App() {
           <Route path="/aboutUs" exact>
             <AboutUs />
           </Route>
-          <Route path="/aboutUs" exact>
+          <Route path="/faq" exact>
             <Faq />
+          </Route>
+          <Route path="/contact" exact>
+            <Gallery />
+          </Route>
+          <Route path="/gallery" exact>
+            <Gallery />
+          </Route>
+          <Route path="/downloads" exact>
+            <Downloads />
+          </Route>
+          <Route path="/application" exact>
+            <Application />
           </Route>
         </Switch>
       </Router>
