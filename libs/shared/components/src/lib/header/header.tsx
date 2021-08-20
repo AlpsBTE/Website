@@ -33,12 +33,13 @@ export function Header(props: HeaderProps) {
       }
     }
   });
-  const classname = `header ${
-    transparent && !props.forceColor ? 'transparent' : ''
-  }`;
 
   return (
-    <nav className={classname}>
+    <nav
+      className={`header ${
+        transparent && !props.forceColor ? 'transparent' : ''
+      }`}
+    >
       <div className="header__image-container ">
         <img src={props.headerIcon} alt={props.headerText} />
         <title>{props.headerText}</title>
