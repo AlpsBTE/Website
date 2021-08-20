@@ -18,13 +18,7 @@
                   "*"
                 ]
               },
-              {
-                "sourceTag": "scope:app",
-                "onlyDependOnLibsWithTags": [
-                  "scope:app",
-                  "scope:shared"
-                ]
-              },
+             
               {
                 "sourceTag": "scope:about-us",
                 "onlyDependOnLibsWithTags": [
@@ -48,6 +42,48 @@
                 "sourceTag": "scope:home",
                 "onlyDependOnLibsWithTags": [
                   "scope:home",
+                  "scope:shared"
+                ]
+              },
+              {
+                "sourceTag": "scope:gallery",
+                "onlyDependOnLibsWithTags": [
+                  "scope:gallery",
+                  "scope:shared"
+                ]
+              },
+              {
+                "sourceTag": "scope:faq",
+                "onlyDependOnLibsWithTags": [
+                  "scope:faq",
+                  "scope:shared"
+                ]
+              },
+              {
+                "sourceTag": "scope:downloads",
+                "onlyDependOnLibsWithTags": [
+                  "scope:download",
+                  "scope:shared"
+                ]
+              },
+              {
+                "sourceTag": "scope:contact",
+                "onlyDependOnLibsWithTags": [
+                  "scope:contact",
+                  "scope:shared"
+                ]
+              },
+              {
+                "sourceTag": "scope:application",
+                "onlyDependOnLibsWithTags": [
+                  "scope:application",
+                  "scope:shared"
+                ]
+              },
+              {
+                "sourceTag": "scope:error",
+                "onlyDependOnLibsWithTags": [
+                  "scope:error",
                   "scope:shared"
                 ]
               }

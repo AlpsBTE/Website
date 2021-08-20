@@ -46,6 +46,24 @@
       "tags": [],
       "implicitDependencies": ["alpsbte-web"]
     },
+    "application": {
+      "tags": ["scope:application", "type:feature"]
+    },
+    "contact": {
+      "tags": ["scope:contact", "type:feature"]
+    },
+    "downloads": {
+      "tags": ["scope:downloads", "type:feature"]
+    },
+    "error": {
+      "tags": ["scope:error", "type:feature"]
+    },
+    "faq": {
+      "tags": ["scope:faq", "type:feature"]
+    },
+    "gallery": {
+      "tags": ["scope:gallery", "type:feature"]
+    },
     "home": {
       "tags": ["scope:home", "type:feature"]
     },
