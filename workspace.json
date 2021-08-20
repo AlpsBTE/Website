@@ -92,7 +92,8 @@
             ],
             "styles": ["apps/alpsbte-web/src/styles.scss"],
             "scripts": [],
-            "webpackConfig": "@nrwl/react/plugins/webpack"
+            "webpackConfig": "@nrwl/react/plugins/webpack",
+            "extractCSS": false
           },
           "configurations": {
             "production": {
