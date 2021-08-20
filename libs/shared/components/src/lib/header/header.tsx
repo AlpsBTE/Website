@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './header.module.scss';
 
@@ -12,22 +13,44 @@ export interface HeaderProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   headerIcon: any;
   navItems: navItems[];
+  forceColor: boolean;
 }
 
 export function Header(props: HeaderProps) {
+  const [transparent, setTransparent] = useState<boolean>(false);
+
+  window.addEventListener('scroll', () => {
+    if (props.forceColor) return;
+
+    if (window.scrollY >= 100) {
+      if (!transparent) {
+        setTransparent(true);
+      }
+    }
+    if (window.scrollY <= 100) {
+      if (transparent) {
+        setTransparent(false);
+      }
+    }
+  });
+  const classname = `header ${
+    transparent && !props.forceColor ? 'transparent' : ''
+  }`;
+
   return (
-    <nav className="header__">
-      <div className="header__image-container">
+    <nav className={classname}>
+      <div className="header__image-container ">
         <img src={props.headerIcon} alt={props.headerText} />
+        <title>{props.headerText}</title>
       </div>
       <ul className="header__navitem-container">
         {props.navItems.map((_, key) => {
           return (
-            <Link to={props.navItems[key].to}>
-              <li className="header__navitem_container__item">
-                {props.navItems[key].to}
-              </li>
-            </Link>
+            <li key={key} className="header__navitem-container__item">
+              <Link to={props.navItems[key].to}>
+                {props.navItems[key].text}
+              </Link>
+            </li>
           );
         })}
       </ul>
