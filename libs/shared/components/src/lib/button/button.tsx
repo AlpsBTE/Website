@@ -1,6 +1,5 @@
 import './button.scss';
 
-/* eslint-disable-next-line */
 export interface ButtonProps {
   label: string;
   onClick: () => void;
@@ -12,14 +11,18 @@ export interface ButtonProps {
 export function Button(props: ButtonProps) {
   return (
     <button
-      style={{ color: props.color, backgroundColor: props.color }}
+      style={{
+        color: props.disabled ? 'gray' : props.color,
+        borderColor: props.disabled ? 'gray' : props.color,
+        opacity: props.disabled ? '0.5' : '1',
+      }}
       disabled={props.disabled}
-      className={'button button__' + props.size}
+      className={`button button__${props.size} button__${
+        props.disabled ? 'disabled' : ''
+      }`}
       onClick={props.onClick}
     >
       {props.label}
-
-      {props.disabled}
     </button>
   );
 }
