@@ -4,21 +4,21 @@
   border-radius: 0;
   background-color: transparent;
   color: black;
-  
 
   &__lg {
+    font-size: 1.1rem;
     padding: 8px 50px 8px 50px;
   }
   &__md {
     padding: 5px 40px 5px 40px;
+    border-width: 3px;
   }
   &__sm {
+    font-size: 0.8em;
     padding: 3px 30px 3px 30px;
+    border-width: 2px;
   }
   &.invert {
     filter: invert(1);
   }
-
-
-
 }

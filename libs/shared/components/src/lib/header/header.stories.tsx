@@ -2,22 +2,24 @@ import { Story, Meta } from '@storybook/react';
 import { Header, HeaderProps } from './header';
 
 export default {
-  title: 'Button2',
+  title: 'Header',
   component: Header,
-  //👇 Creates specific argTypes
-  argTypes: {
-    label: { control: 'text' },
-  },
+
+  argTypes: {},
 } as Meta;
 
 const Template: Story<HeaderProps> = (args) => <Header {...args} />;
 
 export const Primary = Template.bind({});
+
 Primary.args = {
-  label: 'Primary',
-  size: 'md',
-  disabled: false,
-  onClick: () => {
-    return;
-  },
+  headerText: 'AlpsBTE',
+  navItems: [
+    { text: 'Text 1', to: '/' },
+    { text: 'Text 1', to: '/' },
+    { text: 'Text 1', to: '/' },
+    { text: 'Text 1', to: '/' },
+    { text: 'Text 1', to: '/' },
+    { text: 'Text 1', to: '/' },
+  ],
 };
