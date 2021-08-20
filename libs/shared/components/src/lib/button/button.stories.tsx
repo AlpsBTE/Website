@@ -7,11 +7,11 @@ export default {
   //👇 Creates specific argTypes
   argTypes: {
     label: { control: 'text' },
+    color: { control: 'color' },
   },
 } as Meta;
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
-
 
 export const Primary = Template.bind({});
 Primary.args = {
@@ -21,4 +21,5 @@ Primary.args = {
   onClick: () => {
     return;
   },
+  color: '#ffffff',
 };

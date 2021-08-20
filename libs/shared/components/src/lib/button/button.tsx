@@ -6,16 +6,15 @@ export interface ButtonProps {
   onClick: () => void;
   disabled?: boolean;
   size: 'lg' | 'md' | 'sm';
-  invert: 'invert' | 'normal';
+  color: string;
 }
 
 export function Button(props: ButtonProps) {
-
   return (
-
     <button
+      style={{ color: props.color, backgroundColor: props.color }}
       disabled={props.disabled}
-      className={'button button__' + props.size + ' button__' + props.invert}
+      className={'button button__' + props.size}
       onClick={props.onClick}
     >
       {props.label}
