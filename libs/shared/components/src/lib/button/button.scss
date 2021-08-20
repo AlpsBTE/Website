@@ -1,9 +1,8 @@
 .button {
   border: solid;
-  border-color: black;
+
   border-radius: 0;
   background-color: transparent;
-  color: black;
 
   &__lg {
     font-size: 1.1rem;
@@ -17,8 +16,5 @@
     font-size: 0.8em;
     padding: 3px 30px 3px 30px;
     border-width: 2px;
-  }
-  &.invert {
-    filter: invert(1);
   }
 }
