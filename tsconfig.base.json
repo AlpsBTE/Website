@@ -16,6 +16,11 @@
     "baseUrl": ".",
     "paths": {
       "@alpsbte/about-us": ["libs/about-us/src/index.ts"],
+      "@alpsbte/application": ["libs/application/src/index.ts"],
+      "@alpsbte/contact": ["libs/contact/src/index.ts"],
+      "@alpsbte/downloads": ["libs/downloads/src/index.ts"],
+      "@alpsbte/faq": ["libs/faq/src/index.ts"],
+      "@alpsbte/gallery": ["libs/gallery/src/index.ts"],
       "@alpsbte/home": ["libs/home/src/index.ts"],
       "@alpsbte/shared/components": ["libs/shared/components/src/index.ts"]
     }
