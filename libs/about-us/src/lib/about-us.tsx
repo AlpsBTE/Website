@@ -11,14 +11,8 @@ export function AboutUs(props: AboutUsProps) {
       <h1>Welcome to AboutUs!</h1>
 
       <ul>
-        <li>
-          <Link to="/">about-us root</Link>
-        </li>
+        <li></li>
       </ul>
-      <Route
-        path="/"
-        render={() => <div>This is the about-us root route.</div>}
-      />
     </div>
   );
 }
