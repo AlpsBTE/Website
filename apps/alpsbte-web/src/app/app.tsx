@@ -12,36 +12,34 @@ import { Error } from '@alpsbte/error';
 
 export function App() {
   return (
-    <Suspense fallback={<span>loading</span>}>
-      <Router>
-        <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/aboutUs" exact>
-            <AboutUs />
-          </Route>
-          <Route path="/faq" exact>
-            <Faq />
-          </Route>
-          <Route path="/contact" exact>
-            <Contact />
-          </Route>
-          <Route path="/gallery" exact>
-            <Gallery />
-          </Route>
-          <Route path="/downloads" exact>
-            <Downloads />
-          </Route>
-          <Route path="/application" exact>
-            <Application />
-          </Route>
-          <Route path="/">
-            <Error />
-          </Route>
-        </Switch>
-      </Router>
-    </Suspense>
+    <Router>
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/aboutUs" exact>
+          <AboutUs />
+        </Route>
+        <Route path="/faq" exact>
+          <Faq />
+        </Route>
+        <Route path="/contact" exact>
+          <Contact />
+        </Route>
+        <Route path="/gallery" exact>
+          <Gallery />
+        </Route>
+        <Route path="/downloads" exact>
+          <Downloads />
+        </Route>
+        <Route path="/application" exact>
+          <Application />
+        </Route>
+        <Route path="/">
+          <Error />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

@@ -7,6 +7,8 @@
   height: 100px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: fixed;
+  top: 0;
+  left: 0;
 
   transition: background-color 0.35s ease-in-out;
   &__image-container {
@@ -27,14 +29,15 @@
     align-items: center;
     justify-content: space-evenly;
     width: 50%;
+    text-decoration: none;
+    color: black !important;
+    list-style-type: none;
     &__item {
-      text-decoration: none;
-      color: black;
-      list-style-type: none;
     }
   }
 }
 
 .transparent {
   background-color: transparent;
+  box-shadow: none;
 }
