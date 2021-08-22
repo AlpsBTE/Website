@@ -345,7 +345,6 @@
           "executor": "@nrwl/storybook:storybook",
           "options": {
             "uiFramework": "@storybook/react",
-
             "port": 4400,
             "config": {
               "configFolder": "libs/shared/components/.storybook"
