@@ -1,5 +1,5 @@
 import './home.module.scss';
-import { Header, HeaderProps } from '@alpsbte/shared/components';
+import { Button, Header, HeaderProps } from '@alpsbte/shared/components';
 /* eslint-disable-next-line */
 export interface HomeProps {}
 
@@ -19,11 +19,32 @@ const headerProps: HeaderProps = {
 };
 
 export function Home(props: HomeProps) {
+  const test = new Array(100);
   return (
-    <div>
+    <>
       <Header {...headerProps}></Header>
+
       <h1>Welcome to Home!</h1>
-    </div>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+      <h1>Welcome to Home!</h1>
+    </>
   );
 }
 

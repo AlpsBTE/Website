@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './header.module.scss';
+import './header.scss';
 
 /* eslint-disable-next-line */
 
@@ -17,19 +17,18 @@ export interface HeaderProps {
 }
 
 export function Header(props: HeaderProps) {
-  const [transparent, setTransparent] = useState<boolean>(false);
+  const [transparent, setTransparent] = useState<boolean>(true);
 
   window.addEventListener('scroll', () => {
     if (props.forceColor) return;
 
     if (window.scrollY >= 100) {
-      if (!transparent) {
-        setTransparent(true);
-      }
-    }
-    if (window.scrollY <= 100) {
       if (transparent) {
         setTransparent(false);
+      }
+    } else {
+      if (!transparent) {
+        setTransparent(true);
       }
     }
   });
