@@ -17,7 +17,7 @@ const headerProps: HeaderProps = {
     { text: 'Contact', to: '/contact' },
   ],
 };
-
+//test
 export function Home(props: HomeProps) {
   const test = new Array(100);
   return (
