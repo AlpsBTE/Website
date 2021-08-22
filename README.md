@@ -8,7 +8,7 @@ This is a rework of the AlpsBTE website. The main audience is a professional tar
 
 ### Design: (by Cinnazeyy)
 * Mobile: [open Mobile (click)](https://xd.adobe.com/view/d6bc704e-f1c8-4187-a736-2bff2d5aef7c-83ef/)
-* Desktop: [open Desktop (click)](https://xd.adobe.com/view/5f7e41f2-29e6-4b62-b641-2fe7d7afbebe-0a2d/)
+* Desktop: [open Desktop (click)](https://xd.adobe.com/view/0ba20a0e-d13a-4c14-ad3f-28d8845cca87-5ef1/)
 
 
 ### Problems/Bugs:
