@@ -1,7 +1,6 @@
 import './application.module.scss';
 
-import { Contact } from '@alpsbte/contact';
-
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ApplicationProps {}
 
 export function Application(props: ApplicationProps) {
