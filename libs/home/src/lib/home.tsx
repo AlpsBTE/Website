@@ -1,4 +1,4 @@
-import './home.module.scss';
+import './home.scss';
 import { Button, Header, HeaderProps } from '@alpsbte/shared/components';
 /* eslint-disable-next-line */
 export interface HomeProps {}
@@ -21,29 +21,19 @@ const headerProps: HeaderProps = {
 export function Home(props: HomeProps) {
   const test = new Array(100);
   return (
-    <>
+   <>
       <Header {...headerProps}></Header>
-      <Button label="Text" />
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
-      <h1>Welcome to Home!</h1>
+    <div className="heading">
+      <div className="block">
+        <div className="head_line_box">
+            <h1 className="head_line">Recreating Our Countries in Minecraft</h1>
+            <div className="buttons">
+          <Button label="Join us" size="lg" color="#fff" />
+          <Button label="IP: mc.alps-bte.com" size="lg" color="#fff" />
+            </div>
+          </div>
+      </div>
+    </div>
     </>
   );
 }
