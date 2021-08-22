@@ -20,7 +20,6 @@ const headerProps: HeaderProps = {
   ],
 };
 export function Home(props: HomeProps) {
-  const test = new Array(100);
   return (
     <>
       <Header {...headerProps}></Header>
@@ -37,11 +36,39 @@ export function Home(props: HomeProps) {
       </div>
       <HomeContentSection
         title="Title"
-        alignment="right"
+        alignment="center"
         image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
       >
         Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian doedn
-        djse desjd neoand doe
+        djse desjd neoand doe Lorem Impsum dolor sit amet ding dong das theos
+        doean ejal ndian doedn djse desjd neoand doe Lorem Impsum dolor sit amet
+        ding dong das theos doean ejal ndian doedn djse desjd neoand doe Lorem
+        Impsum dolor sit amet ding dong das theos doean ejal ndian doedn djse
+        desjd neoand doe
+      </HomeContentSection>
+      <HomeContentSection
+        title="Title"
+        alignment="center"
+        image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+      >
+        Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian doedn
+        djse desjd neoand doe Lorem Impsum dolor sit amet ding dong das theos
+        doean ejal ndian doedn djse desjd neoand doe Lorem Impsum dolor sit amet
+        ding dong das theos doean ejal ndian doedn djse desjd neoand doe Lorem
+        Impsum dolor sit amet ding dong das theos doean ejal ndian doedn djse
+        desjd neoand doe
+      </HomeContentSection>
+      <HomeContentSection
+        title="Title"
+        alignment="center"
+        image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+      >
+        Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian doedn
+        djse desjd neoand doe Lorem Impsum dolor sit amet ding dong das theos
+        doean ejal ndian doedn djse desjd neoand doe Lorem Impsum dolor sit amet
+        ding dong das theos doean ejal ndian doedn djse desjd neoand doe Lorem
+        Impsum dolor sit amet ding dong das theos doean ejal ndian doedn djse
+        desjd neoand doe
       </HomeContentSection>
     </>
   );

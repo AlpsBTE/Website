@@ -9,9 +9,10 @@
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+
     &__image {
       height: 200px;
+      margin: 0 40px;
     }
   }
   &__text-container {
