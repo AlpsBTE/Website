@@ -5,6 +5,7 @@
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
+    "dev": "concurrently \"npm run nx serve alpsbte-api\" \"npm run nx serve alpsbte-web\"",
     "build": "nx build",
     "test": "npx nx run-many --all --target=test --parallel",
     "lint": "nx workspace-lint && nx lint",
@@ -70,6 +71,7 @@
     "@typescript-eslint/parser": "~4.28.3",
     "babel-jest": "27.0.6",
     "babel-loader": "8.1.0",
+    "concurrently": "^6.2.1",
     "cypress": "^7.3.0",
     "dotenv": "~10.0.0",
     "eslint": "7.22.0",
