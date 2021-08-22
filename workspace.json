@@ -92,8 +92,7 @@
             ],
             "styles": ["apps/alpsbte-web/src/styles.scss"],
             "scripts": [],
-            "webpackConfig": "@nrwl/react/plugins/webpack",
-            "extractCSS": false
+            "webpackConfig": "@nrwl/react/plugins/webpack"
           },
           "configurations": {
             "production": {
@@ -346,6 +345,7 @@
           "executor": "@nrwl/storybook:storybook",
           "options": {
             "uiFramework": "@storybook/react",
+
             "port": 4400,
             "config": {
               "configFolder": "libs/shared/components/.storybook"
