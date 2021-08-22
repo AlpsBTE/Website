@@ -2,10 +2,10 @@ import './button.scss';
 
 export interface ButtonProps {
   label: string;
-  onClick: () => void;
+  onClick?: () => void;
   disabled?: boolean;
-  size: 'lg' | 'md' | 'sm';
-  color: string;
+  size?: 'lg' | 'md' | 'sm';
+  color?: string;
 }
 
 export function Button(props: ButtonProps) {
@@ -26,5 +26,12 @@ export function Button(props: ButtonProps) {
     </button>
   );
 }
+
+Button.defaultProps = {
+  size: 'md',
+  disabled: false,
+  onclick: () => null,
+  color: '#000',
+};
 
 export default Button;

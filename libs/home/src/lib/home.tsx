@@ -23,7 +23,7 @@ export function Home(props: HomeProps) {
   return (
     <>
       <Header {...headerProps}></Header>
-
+      <Button label="Text" />
       <h1>Welcome to Home!</h1>
       <h1>Welcome to Home!</h1>
       <h1>Welcome to Home!</h1>
