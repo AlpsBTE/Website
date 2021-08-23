@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "ms-vscode.powershell",
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
