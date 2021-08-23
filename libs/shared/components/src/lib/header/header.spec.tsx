@@ -7,7 +7,7 @@ describe('Header', () => {
     headerText: 'Test Title',
     forceColor: false,
     navItems: [],
-    headerIcon: '',
+    mobileBreakpoint: 600,
   };
 
   it('should render successfully', () => {
