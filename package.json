@@ -5,7 +5,9 @@
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
-    "dev": "concurrently \"npm run nx serve alpsbte-api\" \"npm run nx serve alpsbte-web\"",
+    "start:frontend": "nx serve alpsbte-web",
+    "start:backend": "nx serve alpsbte-api",
+    "dev": "concurrently \"nx serve alpsbte-api\" \"nx serve alpsbte-web\"",
     "build": "nx build",
     "test": "npx nx run-many --all --target=test --parallel",
     "lint": "nx workspace-lint && nx lint",
