@@ -38,7 +38,6 @@ export function Header(props: HeaderProps) {
 
   if (burgerRef.current)
     burgerRef.current.onclick = () => {
-      console.log({ showMenu });
       if (!showMenu) {
         setTransparent(false);
       } else if (window.scrollY <= 100) setTransparent(true);
