@@ -14,3 +14,21 @@ This is a rework of the AlpsBTE website. The main audience is a professional tar
 ### Problems/Bugs:
 If you have any bugs, suggestions for improvement or other comments about the website, we would be very happy if you would create an *issue*. This helps us to keep an overview.  
 [Create an issue! (click)](https://github.com/AlpsBTE/alpsbte-website/issues/new)
+
+### For Contributers:
+
+1. Clone the Repo
+```bash
+$ git clone https://github.com/AlpsBTE/alpsbte-website.git
+```
+
+2. Setup Development Workspace
+```bash
+$ ./scripts/setup.ps1
+```
+
+3. Start Local Development Server
+```bash
+$ ./scripts/start.ps1
+```
+
