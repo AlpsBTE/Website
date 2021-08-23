@@ -13,6 +13,7 @@
     "lint": "nx run-many --all --target=lint --parallel",
     "lint:affected": "nx affected:lint",
     "lint:affected:fix": "nx affected:lint --fix",
+    "depgraph": "nx dep-graph",
     "e2e": "nx e2e",
     "affected:apps": "nx affected:apps",
     "affected:libs": "nx affected:libs",

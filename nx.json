@@ -36,7 +36,6 @@
     "alpsbte-web": {
       "tags": ["scope:app", "type:app"]
     },
-
     "application": {
       "tags": ["scope:application", "type:feature"]
     },
@@ -57,6 +56,9 @@
     },
     "home": {
       "tags": ["scope:home", "type:feature"]
+    },
+    "router": {
+      "tags": ["sccope:router", "type:feature"]
     },
     "shared-components": {
       "tags": ["scope:shared", "type:ui"]

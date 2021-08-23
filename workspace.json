@@ -149,7 +149,6 @@
         }
       }
     },
-
     "application": {
       "root": "libs/application",
       "sourceRoot": "libs/application/src",
@@ -292,6 +291,27 @@
           "outputs": ["coverage/libs/home"],
           "options": {
             "jestConfig": "libs/home/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "router": {
+      "root": "libs/router",
+      "sourceRoot": "libs/router/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/router/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/router"],
+          "options": {
+            "jestConfig": "libs/router/jest.config.js",
             "passWithNoTests": true
           }
         }
