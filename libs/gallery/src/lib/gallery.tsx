@@ -1,6 +1,7 @@
+
+/* eslint-disable*/
 import './gallery.module.scss';
 
-/* eslint-disable-next-line */
 export interface GalleryProps {}
 
 export function Gallery(props: GalleryProps) {

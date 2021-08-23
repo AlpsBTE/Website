@@ -1,8 +1,8 @@
+/* eslint-disable */
 import './home.scss';
 import { Button, Header, HeaderProps } from '@alpsbte/shared/components';
 import HomeContentSection from '../components/home-content-section/home-content-section';
 
-/* eslint-disable-next-line */
 export interface HomeProps {}
 
 export function Home(props: HomeProps) {

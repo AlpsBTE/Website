@@ -1,6 +1,6 @@
+/* eslint-disable */
 import './home-heading.scss';
 
-/* eslint-disable-next-line */
 export interface HomeHeadingProps {}
 
 export function HomeHeading(props: HomeHeadingProps) {

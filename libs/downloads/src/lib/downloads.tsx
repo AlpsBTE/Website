@@ -1,6 +1,6 @@
+/* eslint-disable */
 import './downloads.module.scss';
 
-/* eslint-disable-next-line */
 export interface DownloadsProps {}
 
 export function Downloads(props: DownloadsProps) {

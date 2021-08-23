@@ -1,6 +1,6 @@
+/* eslint-disable */
 import './faq.module.scss';
 
-/* eslint-disable-next-line */
 export interface FaqProps {}
 
 export function Faq(props: FaqProps) {

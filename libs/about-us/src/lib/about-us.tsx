@@ -1,8 +1,8 @@
+/* eslint-disable*/
 import { Route, Link } from 'react-router-dom';
 
 import './about-us.module.scss';
 
-/* eslint-disable-next-line */
 export interface AboutUsProps {}
 
 export function AboutUs(props: AboutUsProps) {

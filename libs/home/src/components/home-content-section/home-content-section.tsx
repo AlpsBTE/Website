@@ -1,6 +1,6 @@
+/* eslint-disable */
 import './home-content-section.scss';
 
-/* eslint-disable-next-line */
 export interface HomeContentSectionProps {
   title: string;
   children: string;

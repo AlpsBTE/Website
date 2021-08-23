@@ -1,6 +1,6 @@
+/* eslint-disable */
 import './error.module.scss';
 
-/* eslint-disable-next-line */
 export interface ErrorProps {}
 
 export function Error(props: ErrorProps) {
