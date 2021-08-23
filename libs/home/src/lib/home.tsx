@@ -23,15 +23,14 @@ export function Home(props: HomeProps) {
   return (
    <>
       <Header {...headerProps}></Header>
-    <div className="heading">
-      <div className="block">
-        <div className="head_line_box">
-            <h1 className="head_line">Recreating Our Countries in Minecraft</h1>
+    <div className="home__heading">
+      <div className="home__block">
+            <h1 className="home__head_line">Recreating Our Countries in Minecraft</h1>
             <div className="buttons">
           <Button label="Join us" size="lg" color="#fff" />
           <Button label="IP: mc.alps-bte.com" size="lg" color="#fff" />
             </div>
-          </div>
+          
       </div>
     </div>
     </>

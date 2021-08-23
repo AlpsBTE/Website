@@ -1,26 +1,26 @@
-.heading {
-     background-image: url("https://media.discordapp.net/attachments/706065271902699531/879069978115067965/Lutzern_1.png?width=1062&height=597"); //replace with acctual API-IMAGE
-     width: 100vw;
-     height: 100vh;
-     background-repeat: no-repeat;
-     background-size: cover;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+.home {
+  &__heading {
+    background-image: url("https://media.discordapp.net/attachments/706065271902699531/879069978115067965/Lutzern_1.png?width=1062&height=597"); //replace with acctual API-IMAGE
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__head_line {
+    color: white;
+    font-family: sans-serif;
+    font-size: 5vh;
+    margin-left: 2vw;
+    margin-right: 5vw;
+    text-align: center;
+  }
+
+  &__.block {
+    display: block;
+  }
+
 }
-.head_line {
-     color: white;
-     font-family: sans-serif;
-     font-size: 5vh;
-     margin-left: 2vw;
-     margin-right: 5vw;
-     text-align: center;
-
-       
-}
-.block {
-     display: block;
-}
-
-
-
