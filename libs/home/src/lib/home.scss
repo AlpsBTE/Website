@@ -1,13 +1,16 @@
 .home {
   &__heading {
-    background-image: url("https://media.discordapp.net/attachments/706065271902699531/879069978115067965/Lutzern_1.png?width=1062&height=597"); //replace with acctual API-IMAGE
+    background-color: black;
+    background: rgba(0, 0, 0, .30) url("https://media.discordapp.net/attachments/706065271902699531/879069978115067965/Lutzern_1.png?width=1062&height=597"); //replace with acctual API-IMAGE
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: darken;
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
   &__head-line {
