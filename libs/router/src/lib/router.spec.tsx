@@ -1,6 +1,5 @@
 import { render } from '@testing-library/react';
-
-import Router from './router';
+import { Router } from './router';
 
 describe('Router', () => {
   it('should render successfully', () => {
