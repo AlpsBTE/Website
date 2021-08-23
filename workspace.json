@@ -149,32 +149,7 @@
         }
       }
     },
-    "alpsbte-web-e2e": {
-      "root": "apps/alpsbte-web-e2e",
-      "sourceRoot": "apps/alpsbte-web-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/alpsbte-web-e2e/cypress.json",
-            "tsConfig": "apps/alpsbte-web-e2e/tsconfig.e2e.json",
-            "devServerTarget": "alpsbte-web:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "alpsbte-web:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/alpsbte-web-e2e/**/*.{js,ts}"]
-          }
-        }
-      }
-    },
+
     "application": {
       "root": "libs/application",
       "sourceRoot": "libs/application/src",
@@ -370,32 +345,6 @@
             "ci": {
               "quiet": true
             }
-          }
-        }
-      }
-    },
-    "shared-components-e2e": {
-      "root": "apps/shared-components-e2e",
-      "sourceRoot": "apps/shared-components-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/shared-components-e2e/cypress.json",
-            "tsConfig": "apps/shared-components-e2e/tsconfig.e2e.json",
-            "devServerTarget": "shared-components:storybook"
-          },
-          "configurations": {
-            "ci": {
-              "devServerTarget": "shared-components:storybook:ci"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/shared-components-e2e/**/*.{js,ts}"]
           }
         }
       }

@@ -1,6 +1,4 @@
-import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import { Home } from '@alpsbte/home';
 import { AboutUs } from '@alpsbte/about-us';
 import { Faq } from '@alpsbte/faq';

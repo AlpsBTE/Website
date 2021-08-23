@@ -42,10 +42,7 @@
     "alpsbte-web": {
       "tags": ["scope:app", "type:app"]
     },
-    "alpsbte-web-e2e": {
-      "tags": [],
-      "implicitDependencies": ["alpsbte-web"]
-    },
+
     "application": {
       "tags": ["scope:application", "type:feature"]
     },
@@ -69,10 +66,6 @@
     },
     "shared-components": {
       "tags": ["scope:shared", "type:ui"]
-    },
-    "shared-components-e2e": {
-      "tags": [],
-      "implicitDependencies": ["shared-components"]
     }
   }
 }
