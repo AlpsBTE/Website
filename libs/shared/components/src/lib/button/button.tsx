@@ -16,8 +16,8 @@ export function Button(props: ButtonProps) {
         color: props.disabled ? 'gray' : props.color,
         borderColor: props.disabled ? 'gray' : props.color,
         opacity: props.disabled ? '0.5' : '1',
-        marginLeft: props.center ? 'auto' : 'none',
-        marginRight: props.center ? 'auto' : 'none',
+        marginLeft: props.center ? 'auto' : 'unset',
+        marginRight: props.center ? 'auto' : 'unset',
 
 }}
       disabled={props.disabled}
