@@ -13,8 +13,6 @@ import { Header, HeaderProps } from '@alpsbte/shared/components';
 
 export function App() {
   const headerProps: HeaderProps = {
-    headerIcon:
-      'https://yt3.ggpht.com/ytc/AKedOLQ5MRqFQDZEnX4QQZZbtYh_dqp680D-an9ZIfTM=s900-c-k-c0x00ffffff-no-rj',
     forceColor: false,
     headerText: 'Alps BTE',
     navItems: [
@@ -25,6 +23,7 @@ export function App() {
       { text: 'Application', to: '/application' },
       { text: 'Contact', to: '/contact' },
     ],
+    mobileBreakpoint: 800,
   };
   return (
     <Router>
