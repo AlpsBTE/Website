@@ -26,7 +26,7 @@ export function Home(props: HomeProps) {
     <div className="home__heading">
       <div className="home__block">
             <h1 className="home__head-line">Recreating Our Countries in Minecraft</h1>
-            <div className="buttons">
+            <div className="home__buttons">
           <Button label="Join us" size="lg" color="#fff" />
           <Button label="IP: mc.alps-bte.com" size="lg" color="#fff" />
             </div>
