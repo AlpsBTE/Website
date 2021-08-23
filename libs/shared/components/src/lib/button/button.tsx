@@ -6,6 +6,7 @@ export interface ButtonProps {
   disabled?: boolean;
   size?: 'lg' | 'md' | 'sm';
   color?: string;
+  center?: boolean;
 }
 
 export function Button(props: ButtonProps) {
@@ -15,7 +16,10 @@ export function Button(props: ButtonProps) {
         color: props.disabled ? 'gray' : props.color,
         borderColor: props.disabled ? 'gray' : props.color,
         opacity: props.disabled ? '0.5' : '1',
-      }}
+        marginLeft: props.center ? 'auto' : 'none',
+        marginRight: props.center ? 'auto' : 'none',
+
+}}
       disabled={props.disabled}
       className={`button button__${props.size} button__${
         props.disabled ? 'disabled' : ''
@@ -32,6 +36,7 @@ Button.defaultProps = {
   disabled: false,
   onclick: () => null,
   color: '#000',
+  center: false,
 };
 
 export default Button;
