@@ -7,6 +7,7 @@ export interface ButtonProps {
   size?: 'lg' | 'md' | 'sm';
   color?: string;
   center?: boolean;
+  marginTop?: string;
 }
 
 export function Button(props: ButtonProps) {
@@ -18,6 +19,7 @@ export function Button(props: ButtonProps) {
         opacity: props.disabled ? '0.5' : '1',
         marginLeft: props.center ? 'auto' : 'unset',
         marginRight: props.center ? 'auto' : 'unset',
+        marginTop: props.marginTop ? props.marginTop : 'unset',
 
 }}
       disabled={props.disabled}
