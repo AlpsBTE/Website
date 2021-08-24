@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './header.scss';
 import AnimateHeight from 'react-animate-height';
 import logo from '../shared/assets/logo.png';
+
 interface navItems {
   text: string;
   to: string;
