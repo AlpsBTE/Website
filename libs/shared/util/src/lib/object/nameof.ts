@@ -1,13 +1,14 @@
 /* eslint-disable */
-export function nameof<T>(
+export function nameof<T extends object>(
   obj: T,
-  expression: (x: { [P in keyof T]: () => string }) => () => string
-): string {
-  const res: { [P in keyof T]: () => string } = {} as {
-    [P in keyof T]: () => string;
-  };
-
-  Object.keys(obj).map((k) => (res[k] = () => k));
-
-  return expression(res)();
+  selector: (x: { [K in keyof T]: keyof T }) => keyof T
+): keyof T {
+  const keyRecord = Object.keys(obj).reduce((res, key) => {
+    const typedKey = key as keyof T;
+    res[typedKey] = typedKey;
+    return res;
+  }, {} as Record<keyof T, keyof T>);
+  return selector(keyRecord);
 }
+
+type Test = Record<string, number>;
