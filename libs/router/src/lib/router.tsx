@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter, Redirect, Route } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
 import { nameof } from '@alpsbte/shared/util';
+import { Loader } from '@alpsbte/loader';
 
 const pages = {
   home: lazy(() => import('@alpsbte/home')),
@@ -31,7 +32,7 @@ const headerProps: HeaderProps = {
 export const Router = () => {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Header {...headerProps}></Header>
         <Route path={`/${nameof<typeof pages>(pages, (x) => x.home)}`} exact>
           <pages.home />

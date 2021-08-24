@@ -296,6 +296,27 @@
         }
       }
     },
+    "loader": {
+      "root": "libs/loader",
+      "sourceRoot": "libs/loader/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/loader/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/loader"],
+          "options": {
+            "jestConfig": "libs/loader/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "router": {
       "root": "libs/router",
       "sourceRoot": "libs/router/src",
