@@ -57,6 +57,9 @@
     "home": {
       "tags": ["scope:home", "type:feature"]
     },
+    "loader": {
+      "tags": ["scope:loader", "type:feature"]
+    },
     "router": {
       "tags": ["sccope:router", "type:feature"]
     },
