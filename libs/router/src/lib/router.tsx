@@ -3,15 +3,15 @@ import { BrowserRouter, Redirect, Route } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
 
 const pages = {
-  Home: lazy(() => import('@alpsbte/home')),
-  AboutUs: lazy(() => import('@alpsbte/about-us')),
-  Gallery: lazy(() => import('@alpsbte/gallery')),
-  Downloads: lazy(() => import('@alpsbte/downloads')),
-  Faq: lazy(() => import('@alpsbte/faq')),
-  Application: lazy(() => import('@alpsbte/application')),
-  Contact: lazy(() => import('@alpsbte/contact')),
-  Error: lazy(() => import('@alpsbte/error')),
-} as const;
+  home: lazy(() => import('@alpsbte/home')),
+  aboutUs: lazy(() => import('@alpsbte/about-us')),
+  gallery: lazy(() => import('@alpsbte/gallery')),
+  downloads: lazy(() => import('@alpsbte/downloads')),
+  faq: lazy(() => import('@alpsbte/faq')),
+  application: lazy(() => import('@alpsbte/application')),
+  contact: lazy(() => import('@alpsbte/contact')),
+  error: lazy(() => import('@alpsbte/error')),
+};
 
 const headerProps: HeaderProps = {
   mobileBreakpoint: 500,
@@ -33,26 +33,26 @@ export const Router = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <Header {...headerProps}></Header>
         <Route path="/home" exact>
-          <pages.Home />
+          <pages.home />
           <div>test</div>
         </Route>
         <Route path="/about-us" exact>
-          <pages.AboutUs />
+          <pages.aboutUs />
         </Route>
         <Route path="/gallery" exact>
-          <pages.Gallery />
+          <pages.gallery />
         </Route>
         <Route path="/downloads" exact>
-          <pages.Downloads />
+          <pages.downloads />
         </Route>
         <Route path="/faq" exact>
-          <pages.Faq />
+          <pages.faq />
         </Route>
         <Route path="/application" exact>
-          <pages.Application />
+          <pages.application />
         </Route>
         <Route path="/contact" exact>
-          <pages.Contact />
+          <pages.contact />
         </Route>
         <Route path="/" component={() => <Redirect to="/home" />}></Route>
       </Suspense>

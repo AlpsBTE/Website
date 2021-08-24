@@ -24,7 +24,8 @@
       "@alpsbte/gallery": ["libs/gallery/src/index.ts"],
       "@alpsbte/home": ["libs/home/src/index.ts"],
       "@alpsbte/router": ["libs/router/src/index.ts"],
-      "@alpsbte/shared/components": ["libs/shared/components/src/index.ts"]
+      "@alpsbte/shared/components": ["libs/shared/components/src/index.ts"],
+      "@alpsbte/shared/util": ["libs/shared/util/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
