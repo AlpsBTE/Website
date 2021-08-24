@@ -6,11 +6,11 @@ const pages = {
   Home: lazy(() => import('@alpsbte/home')),
   AboutUs: lazy(() => import('@alpsbte/about-us')),
   Gallery: lazy(() => import('@alpsbte/gallery')),
+  Downloads: lazy(() => import('@alpsbte/downloads')),
+  Faq: lazy(() => import('@alpsbte/faq')),
   Application: lazy(() => import('@alpsbte/application')),
   Contact: lazy(() => import('@alpsbte/contact')),
-  Downloads: lazy(() => import('@alpsbte/downloads')),
   Error: lazy(() => import('@alpsbte/error')),
-  Faq: lazy(() => import('@alpsbte/faq')),
 } as const;
 
 const headerProps: HeaderProps = {
@@ -32,7 +32,7 @@ export const Router = () => {
     <BrowserRouter>
       <Suspense fallback={<div>Loading...</div>}>
         <Header {...headerProps}></Header>
-        <Route path="/" exact>
+        <Route path="/home" exact>
           <pages.Home />
           <div>test</div>
         </Route>
@@ -54,7 +54,7 @@ export const Router = () => {
         <Route path="/contact" exact>
           <pages.Contact />
         </Route>
-        <Route path="/" component={() => <Redirect to="/" />}></Route>
+        <Route path="/" component={() => <Redirect to="/home" />}></Route>
       </Suspense>
     </BrowserRouter>
   );
