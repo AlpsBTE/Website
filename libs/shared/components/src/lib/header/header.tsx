@@ -23,13 +23,17 @@ export function Header(props: HeaderProps) {
   window.addEventListener('scroll', () => {
     if (props.forceColor) return;
 
-    if (window.scrollY >= 100) {
-      if (transparent) {
-        setTransparent(false);
-      }
+    if (showMenu) {
+      setTransparent(false);
     } else {
-      if (!transparent) {
-        setTransparent(true);
+      if (window.scrollY >= 100) {
+        if (transparent) {
+          setTransparent(false);
+        }
+      } else {
+        if (!transparent) {
+          setTransparent(true);
+        }
       }
     }
   });
