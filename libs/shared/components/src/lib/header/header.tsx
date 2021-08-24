@@ -29,7 +29,10 @@ export function Header(props: HeaderProps) {
       }
     } else {
       if (!transparent) {
-        setTransparent(true);
+        if (!document.getElementById('nav-icon1')?.classList.contains("open")) {
+           setTransparent(true);
+        }
+       
       }
     }
   });
