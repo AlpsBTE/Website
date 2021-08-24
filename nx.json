@@ -61,10 +61,10 @@
       "tags": ["sccope:router", "type:feature"]
     },
     "shared-components": {
-      "tags": ["scope:shared", "type:ui"]
+      "tags": ["scope:shared-components", "type:ui"]
     },
     "shared-util": {
-      "tags": []
+      "tags": ["scope:shared-util", "type:feature"]
     }
   }
 }
