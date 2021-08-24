@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Redirect, Route } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
+import { nameof } from '@alpsbte/shared/util';
 
 const pages = {
   home: lazy(() => import('@alpsbte/home')),
@@ -32,26 +33,32 @@ export const Router = () => {
     <BrowserRouter>
       <Suspense fallback={<div>Loading...</div>}>
         <Header {...headerProps}></Header>
-        <Route path="/home" exact>
+        <Route path={`/${nameof<typeof pages>(pages, (x) => x.home)}`} exact>
           <pages.home />
           <div>test</div>
         </Route>
-        <Route path="/about-us" exact>
+        <Route path={`/${nameof<typeof pages>(pages, (x) => x.aboutUs)}`} exact>
           <pages.aboutUs />
         </Route>
-        <Route path="/gallery" exact>
+        <Route path={`/${nameof<typeof pages>(pages, (x) => x.gallery)}`} exact>
           <pages.gallery />
         </Route>
-        <Route path="/downloads" exact>
+        <Route
+          path={`/${nameof<typeof pages>(pages, (x) => x.downloads)}`}
+          exact
+        >
           <pages.downloads />
         </Route>
-        <Route path="/faq" exact>
+        <Route path={`/${nameof<typeof pages>(pages, (x) => x.faq)}`} exact>
           <pages.faq />
         </Route>
-        <Route path="/application" exact>
+        <Route
+          path={`/${nameof<typeof pages>(pages, (x) => x.application)}`}
+          exact
+        >
           <pages.application />
         </Route>
-        <Route path="/contact" exact>
+        <Route path={`/${nameof<typeof pages>(pages, (x) => x.contact)}`} exact>
           <pages.contact />
         </Route>
         <Route path="/" component={() => <Redirect to="/home" />}></Route>
