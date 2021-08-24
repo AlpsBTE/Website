@@ -1,7 +1,7 @@
 import { nameof } from './nameof';
 
 describe('nameof', () => {
-  it("should return a object' property key as string", () => {
+  it("should return a object's property key as string", () => {
     const testObj = {
       someProperty: 'someValue',
     };
