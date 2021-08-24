@@ -1,23 +1,15 @@
+import { lazy } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
-import { Home } from '@alpsbte/home';
-import { AboutUs } from '@alpsbte/about-us';
-import { Application } from '@alpsbte/application';
-import { Contact } from '@alpsbte/contact';
-import { Downloads } from '@alpsbte/downloads';
-import { Error } from '@alpsbte/error';
-import { Faq } from '@alpsbte/faq';
-import { Gallery } from '@alpsbte/gallery';
 
 const pages = {
-  Home,
-  AboutUs,
-  Application,
-  Contact,
-  Downloads,
-  Error,
-  Faq,
-  Gallery,
+  Home: lazy(() => import('@alpsbte/home')),
+  AboutUs: lazy(() => import('@alpsbte/gallery')),
+  Application: lazy(() => import('@alpsbte/application')),
+  Contact: lazy(() => import('@alpsbte/contact')),
+  Downloads: lazy(() => import('@alpsbte/downloads')),
+  Error: lazy(() => import('@alpsbte/error')),
+  Faq: lazy(() => import('@alpsbte/faq')),
 } as const;
 
 const headerProps: HeaderProps = {
