@@ -36,7 +36,6 @@ export const Router = () => {
         <Header {...headerProps}></Header>
         <Route path={`/${nameof<typeof pages>(pages, (x) => x.home)}`} exact>
           <pages.home />
-          <div>test</div>
         </Route>
         <Route path={`/${nameof<typeof pages>(pages, (x) => x.aboutUs)}`} exact>
           <pages.aboutUs />
