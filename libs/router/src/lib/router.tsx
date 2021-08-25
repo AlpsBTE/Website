@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
 import { Loader } from '@alpsbte/loader';
 
@@ -42,9 +42,13 @@ export const Router = () => {
   return (
     <BrowserRouter>
       <Suspense fallback={<Loader />}>
+        <Header {...headerProps}></Header>
         <Switch>
-          <Header {...headerProps}></Header>
-          <Route path={ROUTES.home} exact component={() => <pages.home />} />
+          <Route
+            path={`/${ROUTES.home}`}
+            exact
+            component={() => <pages.home />}
+          ></Route>
           <Route
             path={`/${ROUTES.aboutUs}`}
             exact
@@ -75,7 +79,12 @@ export const Router = () => {
             exact
             component={() => <pages.contact />}
           />
-          <Route path="*" component={() => <pages.error />} />
+          {/* Use below in case you want to show 404 */}
+          {/* <Route path="*" component={() => <pages.error />} /> */}
+          <Route
+            path="*"
+            component={() => <Redirect to={`/${ROUTES.home}`} />}
+          />
         </Switch>
       </Suspense>
     </BrowserRouter>
