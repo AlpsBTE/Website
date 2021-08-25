@@ -44,23 +44,27 @@
       align-items: center;
 
       img {
+        cursor: pointer;
         width: 30px;
       }
-      h1 {
-      }
     }
+
     &__burger_container {
       margin: 0 30px 0 0;
     }
   }
+
   &__image-container {
     width: 20%;
     display: flex;
     margin-left: 7%;
+
     img {
+      cursor: pointer;
       width: 30px;
     }
   }
+
   &__burger_container {
     margin: 0 30px 0 0;
   }
@@ -76,8 +80,6 @@
     text-decoration: none;
     color: black !important;
     list-style-type: none;
-    &__item {
-    }
   }
 }
 
@@ -85,6 +87,7 @@
   background-color: transparent;
   box-shadow: none;
 }
+
 #nav-icon1 {
   width: 30px;
   height: 20px;
