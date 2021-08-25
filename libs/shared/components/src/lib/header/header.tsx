@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 /* eslint-disable-next-line */
 import { ROUTES } from '@alpsbte/router';
@@ -23,7 +23,12 @@ export function Header(props: HeaderProps) {
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
   const burgerRef = useRef<HTMLDivElement>(null);
-  window.addEventListener('scroll', () => {
+
+  const resizeEvent = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  const scrollEvent = () => {
     if (props.forceColor) return;
 
     if (showMenu) {
@@ -39,9 +44,22 @@ export function Header(props: HeaderProps) {
         }
       }
     }
-  });
+  };
 
-  window.addEventListener('resize', () => setWindowWidth(window.innerWidth));
+  const componentDidMount = () => {
+    window.addEventListener('resize', resizeEvent);
+    window.addEventListener('scroll', scrollEvent);
+  };
+
+  const componentWillUnmount = () => {
+    window.removeEventListener('resize', resizeEvent);
+    window.removeEventListener('scroll', scrollEvent);
+  };
+
+  useEffect(() => {
+    componentDidMount();
+    return componentWillUnmount;
+  });
 
   if (burgerRef.current)
     burgerRef.current.onclick = () => {
