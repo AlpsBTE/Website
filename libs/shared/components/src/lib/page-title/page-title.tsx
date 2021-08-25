@@ -12,9 +12,9 @@ export function PageTitle(props: PageTitleProps) {
   return (
     <div className="page-title">
       {props.showImage === true &&
-        <div className="page-title__image">
-      <img src={props.image} alt="Page Titlepicture" />
-    </div>
+      
+      <img className="page-title__image" src={props.image} alt="Page Titlepicture" />
+   
 }
       <h1 className="page-title__title">{props.title}</h1>
       <h2 className="page-title__subtitle">{props.subtitle}</h2>
@@ -25,7 +25,8 @@ export function PageTitle(props: PageTitleProps) {
 
 PageTitle.defaultProps = {
   showImage: true,
-  image: "IMAGE LINK"
+  image: "https://via.placeholder.com/1000",
+
 }
 
 export default PageTitle;
