@@ -1,7 +1,6 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Redirect, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
-import { nameof } from '@alpsbte/shared/util';
 import { Loader } from '@alpsbte/loader';
 
 const pages = {
@@ -15,17 +14,27 @@ const pages = {
   error: lazy(() => import('@alpsbte/error')),
 };
 
+export const ROUTES: { [K in keyof typeof pages]: K } = Object.keys(
+  pages
+).reduce((acc, curr) => ({ ...acc, [curr]: curr }), {}) as {
+  [K in keyof typeof pages]: K;
+};
+console.log(ROUTES);
+
 const headerProps: HeaderProps = {
   mobileBreakpoint: 500,
   forceColor: false,
   headerText: 'Alps BTE',
   navItems: [
-    { text: 'About Us', to: '/aboutUs' },
-    { text: 'Gallery', to: '/gallery' },
-    { text: 'Downloads', to: '/downloads' },
-    { text: 'FAQ', to: '/faq' },
-    { text: 'Application', to: '/application' },
-    { text: 'Contact', to: '/contact' },
+    { text: 'About Us', to: ROUTES.aboutUs },
+    { text: 'Gallery', to: ROUTES.gallery },
+    { text: 'Downloads', to: ROUTES.downloads },
+    { text: 'FAQ', to: ROUTES.faq },
+    {
+      text: 'Application',
+      to: ROUTES.application,
+    },
+    { text: 'Contact', to: ROUTES.contact },
   ],
 };
 
@@ -34,34 +43,40 @@ export const Router = () => {
     <BrowserRouter>
       <Suspense fallback={<Loader />}>
         <Header {...headerProps}></Header>
-        <Route path={`/${nameof<typeof pages>(pages, (x) => x.home)}`} exact>
-          <pages.home />
-        </Route>
-        <Route path={`/${nameof<typeof pages>(pages, (x) => x.aboutUs)}`} exact>
-          <pages.aboutUs />
-        </Route>
-        <Route path={`/${nameof<typeof pages>(pages, (x) => x.gallery)}`} exact>
-          <pages.gallery />
-        </Route>
-        <Route
-          path={`/${nameof<typeof pages>(pages, (x) => x.downloads)}`}
-          exact
-        >
-          <pages.downloads />
-        </Route>
-        <Route path={`/${nameof<typeof pages>(pages, (x) => x.faq)}`} exact>
-          <pages.faq />
-        </Route>
-        <Route
-          path={`/${nameof<typeof pages>(pages, (x) => x.application)}`}
-          exact
-        >
-          <pages.application />
-        </Route>
-        <Route path={`/${nameof<typeof pages>(pages, (x) => x.contact)}`} exact>
-          <pages.contact />
-        </Route>
-        <Route path="/" component={() => <Redirect to="/home" />}></Route>
+        <Switch>
+          <Route path={ROUTES.home} exact component={() => <pages.home />} />
+          <Route
+            path={`/${ROUTES.aboutUs}`}
+            exact
+            component={() => <pages.aboutUs />}
+          />
+          <Route
+            path={`/${ROUTES.gallery}`}
+            exact
+            component={() => <pages.gallery />}
+          />
+          <Route
+            path={`/${ROUTES.downloads}`}
+            exact
+            component={() => <pages.downloads />}
+          />
+          <Route
+            path={`/${ROUTES.faq}`}
+            exact
+            component={() => <pages.faq />}
+          />
+          <Route
+            path={`/${ROUTES.application}`}
+            exact
+            component={() => <pages.application />}
+          />
+          <Route
+            path={`/${ROUTES.contact}`}
+            exact
+            component={() => <pages.contact />}
+          />
+          <Route path="*" exact component={() => <pages.error />} />
+        </Switch>
       </Suspense>
     </BrowserRouter>
   );
