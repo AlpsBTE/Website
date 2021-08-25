@@ -75,7 +75,7 @@ export const Router = () => {
             exact
             component={() => <pages.contact />}
           />
-          <Route path="*" exact component={() => <pages.error />} />
+          <Route path="*" component={() => <pages.error />} />
         </Switch>
       </Suspense>
     </BrowserRouter>
