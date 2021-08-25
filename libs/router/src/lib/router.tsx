@@ -14,12 +14,12 @@ const pages = {
   error: lazy(() => import('@alpsbte/error')),
 };
 
-export const ROUTES: { [K in keyof typeof pages]: K } = Object.keys(
-  pages
-).reduce((acc, curr) => ({ ...acc, [curr]: curr }), {}) as {
-  [K in keyof typeof pages]: K;
-};
-console.log(ROUTES);
+export type ROUTES = { [K in keyof typeof pages]: K };
+
+export const ROUTES: ROUTES = Object.keys(pages).reduce(
+  (acc, curr) => ({ ...acc, [curr]: curr }),
+  {}
+) as ROUTES;
 
 const headerProps: HeaderProps = {
   mobileBreakpoint: 500,
