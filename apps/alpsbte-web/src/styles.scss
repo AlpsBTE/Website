@@ -1,6 +1,9 @@
+@use '../../../libs/shared/theme/index.scss' as global;
+
 body {
   margin: 0;
   padding: 0;
+  background-color: global.$variable;
 }
 
 a:-webkit-any-link {
