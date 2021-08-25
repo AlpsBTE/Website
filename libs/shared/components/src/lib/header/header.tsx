@@ -1,5 +1,7 @@
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+/* eslint-disable-next-line */
+import { ROUTES } from '@alpsbte/router';
 import './header.scss';
 import AnimateHeight from 'react-animate-height';
 import logo from '../shared/assets/logo.png';
@@ -58,7 +60,9 @@ export function Header(props: HeaderProps) {
         }`}
       >
         <div className="header__image-container ">
-          <img src={logo} alt={props.headerText} />
+          <Link to={`/${ROUTES.home}`}>
+            <img src={logo} alt={props.headerText} />
+          </Link>
           <title>{props.headerText}</title>
         </div>
         <ul className="header__navitem-container">
