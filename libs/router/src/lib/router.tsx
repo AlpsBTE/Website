@@ -42,8 +42,8 @@ export const Router = () => {
   return (
     <BrowserRouter>
       <Suspense fallback={<Loader />}>
-        <Header {...headerProps}></Header>
         <Switch>
+          <Header {...headerProps}></Header>
           <Route path={ROUTES.home} exact component={() => <pages.home />} />
           <Route
             path={`/${ROUTES.aboutUs}`}
