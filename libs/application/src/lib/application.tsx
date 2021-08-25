@@ -1,12 +1,13 @@
 /* eslint-disable*/
 import './application.module.scss';
+import { PageTitle } from '@alpsbte/shared/components';
 
 export interface ApplicationProps {}
 
 export function Application(props: ApplicationProps) {
   return (
     <div>
-      <h1>Welcome to Application!</h1>
+      <PageTitle title="Application" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,"/>
     </div>
   );
 }
