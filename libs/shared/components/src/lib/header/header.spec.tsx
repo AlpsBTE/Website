@@ -1,17 +1,10 @@
 import { render } from '@testing-library/react';
-
-import Header, { HeaderProps } from './header';
+/*eslint-disable-next-line */
+import { Router } from '@alpsbte/router';
 
 describe('Header', () => {
-  const HeaderProps: HeaderProps = {
-    headerText: 'Test Title',
-    forceColor: false,
-    navItems: [],
-    mobileBreakpoint: 600,
-  };
-
   it('should render successfully', () => {
-    const { baseElement } = render(<Header {...HeaderProps} />);
+    const { baseElement } = render(<Router></Router>);
     expect(baseElement).toBeTruthy();
   });
 });
