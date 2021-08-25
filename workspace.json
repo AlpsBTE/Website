@@ -390,6 +390,27 @@
         }
       }
     },
+    "shared-theme": {
+      "root": "libs/shared/theme",
+      "sourceRoot": "libs/shared/theme/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared/theme/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/theme"],
+          "options": {
+            "jestConfig": "libs/shared/theme/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "shared-util": {
       "root": "libs/shared/util",
       "sourceRoot": "libs/shared/util/src",
