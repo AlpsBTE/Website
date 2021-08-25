@@ -1,6 +1,6 @@
+/* eslint-disable*/
 import './contact.module.scss';
 
-/* eslint-disable-next-line */
 export interface ContactProps {}
 
 export function Contact(props: ContactProps) {
