@@ -37,11 +37,18 @@
     height: 100%;
 
     &__image-container {
-      width: 40%;
-      display: flex;
-      margin-left: 7%;
-      justify-content: space-evenly;
-      align-items: center;
+      margin: 0 0 0 30px;
+      a {
+        width: 100%;
+        display: flex;
+        margin-left: 7%;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        h1 {
+          margin: 0 0 0 20px;
+        }
+      }
 
       img {
         cursor: pointer;
@@ -55,9 +62,18 @@
   }
 
   &__image-container {
-    width: 20%;
-    display: flex;
-    margin-left: 7%;
+    margin: 0 0 0 30px;
+    a {
+      display: flex;
+      margin-left: 7%;
+      width: 100%;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+      h1 {
+        margin: 0 0 0 20px;
+      }
+    }
 
     img {
       cursor: pointer;

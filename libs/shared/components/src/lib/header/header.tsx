@@ -80,6 +80,9 @@ export function Header(props: HeaderProps) {
         <div className="header__image-container ">
           <Link to={`/${ROUTES.home}`}>
             <img src={logo} alt={props.headerText} />
+            <h1 style={{ color: transparent ? 'white' : 'black' }}>
+              {props.headerText}
+            </h1>
           </Link>
           <title>{props.headerText}</title>
         </div>
@@ -87,7 +90,10 @@ export function Header(props: HeaderProps) {
           {props.navItems.map((_, key) => {
             return (
               <li key={key} className="header__navitem-container__item">
-                <Link to={props.navItems[key].to}>
+                <Link
+                  to={props.navItems[key].to}
+                  style={{ color: transparent ? 'white' : 'black' }}
+                >
                   {props.navItems[key].text}
                 </Link>
               </li>
@@ -106,10 +112,12 @@ export function Header(props: HeaderProps) {
       >
         <div className="header__upper-container">
           <div className="header__upper-container__image-container ">
-            <img src={logo} alt={props.headerText} />
-            <h1 style={{ color: transparent ? 'white' : 'black' }}>
-              {props.headerText}
-            </h1>
+            <Link to={`/${ROUTES.home}`}>
+              <img src={logo} alt={props.headerText} />
+              <h1 style={{ color: transparent ? 'white' : 'black' }}>
+                {props.headerText}
+              </h1>
+            </Link>
           </div>
           <div className="header__upper-container__burger_container">
             <div

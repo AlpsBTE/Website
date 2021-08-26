@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
 import { Loader } from '@alpsbte/loader';
@@ -22,24 +22,24 @@ export const ROUTES: ROUTES = Object.keys(pages).reduce(
   {}
 ) as ROUTES;
 
-const headerProps: HeaderProps = {
-  mobileBreakpoint: 500,
-  forceColor: false,
-  headerText: 'Alps BTE',
-  navItems: [
-    { text: 'About Us', to: ROUTES.aboutUs },
-    { text: 'Gallery', to: ROUTES.gallery },
-    { text: 'Downloads', to: ROUTES.downloads },
-    { text: 'FAQ', to: ROUTES.faq },
-    {
-      text: 'Application',
-      to: ROUTES.application,
-    },
-    { text: 'Contact', to: ROUTES.contact },
-  ],
-};
-
 export const Router = () => {
+  const headerProps: HeaderProps = {
+    mobileBreakpoint: 800,
+    forceColor: window.location.pathname === '/home',
+    headerText: 'Alps BTE',
+    navItems: [
+      { text: 'About Us', to: ROUTES.aboutUs },
+      { text: 'Gallery', to: ROUTES.gallery },
+      { text: 'Downloads', to: ROUTES.downloads },
+      { text: 'FAQ', to: ROUTES.faq },
+      {
+        text: 'Application',
+        to: ROUTES.application,
+      },
+      { text: 'Contact', to: ROUTES.contact },
+    ],
+  };
+
   return (
     <BrowserRouter>
       <Suspense fallback={<Loader />}>

@@ -4,7 +4,6 @@ import { Button, Header, HeaderProps } from '@alpsbte/shared/components';
 import HomeContentSection from '../components/home-content-section/home-content-section';
 
 import { useState, useEffect } from 'react';
-import { transcode } from 'buffer';
 
 export interface HomeProps {}
 
@@ -37,8 +36,26 @@ export function Home(props: HomeProps) {
           <div className="head_line_box">
             <h1 className="head_line">Recreating Our Countries in Minecraft</h1>
             <div className="buttons">
-              <Button label="Join us" size="lg" color="#fff" style={{marginLeft: 'auto', marginRight: 'auto', marginTop: '5vh'}}/>
-              <Button label="IP: mc.alps-bte.com" size="lg" color="#fff" style={{marginLeft: 'auto', marginRight: 'auto', marginTop: '3vh'}}/>
+              <Button
+                label="Join us"
+                size="lg"
+                color="#fff"
+                style={{
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                  marginTop: '5vh',
+                }}
+              />
+              <Button
+                label="IP: mc.alps-bte.com"
+                size="lg"
+                color="#fff"
+                style={{
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                  marginTop: '3vh',
+                }}
+              />
             </div>
           </div>
         </div>
