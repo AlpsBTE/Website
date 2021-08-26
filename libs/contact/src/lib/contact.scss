@@ -1,0 +1,37 @@
+.contact {
+     font-family: sans-serif;
+     &__container {
+         display: inline-flex;
+         flex-direction: row;
+         text-align: center;
+         width: 100%;
+     }
+
+     &__social-media {
+          flex: 50%;
+            background-color: rgb(184, 173, 126);
+            padding: 10px;
+            flex: 50%;
+            text-align: right;
+            padding-right: 3vw;
+     }
+
+     &__outreach {
+          flex: 50%;
+            background-color: dodgerblue;
+            padding: 10px;
+            flex: 50%;
+
+     }
+     &__icon {
+          border: 1.8px solid #000000;
+          border-radius: 40px;
+          width: 25px;
+          height: 25px;
+          border-radius: 100px;
+          float: right;
+          margin-left: 1vw;
+     }
+
+    
+}
