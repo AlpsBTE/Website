@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
 .contact {
      font-family: sans-serif;
      font-weight: 100;
+     font-family: 'Roboto', sans-serif;
 
      &__container {
          display: inline-flex;
          flex-direction: row;
          text-align: center;
          width: 100%;
+     }
+     
+     &__title-font {
+          font-size: 1.7rem;
+          padding-bottom: 5px;
+          padding-top: 5px;
+          line-height: 0.4;
+
      }
 
      &__social-media {
@@ -37,6 +48,8 @@
 
             &__container {
                  display: block;
+                  line-height: 0.4;
+                  font-size: 14px;
 
             }
 

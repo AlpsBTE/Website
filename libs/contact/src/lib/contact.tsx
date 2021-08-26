@@ -16,7 +16,7 @@ return (
   <div className="contact__container">
 
     <div className="contact__social-media">
-      <h2>Social Media</h2>
+      <h2 className="contact__title-font">Social Media</h2>
       <div className="contact__social-icons">
         <div className="contact__social-media__icon">
           <FontAwesomeIcon icon={faInstagram} size='lg' />
@@ -40,19 +40,19 @@ return (
     <div className="contact__people">
       <div>
         <div className="contact__people__container">
-          <h2>Outreach</h2>
+          <h2 className="contact__title-font">Outreach</h2>
           <p>Gartensocke</p>
             <p>Email <a href="mailto:gartensocke@alps-bte.com">gartensocke@alps-bte.com</a></p>
             <p>Discord <a href="https://discord.com/invite/vgkspay">Gartensocke#1525</a></p>
           </div>
           <div className="contact__people__container">
-          <h2>Outreach</h2>
+          <h2 className="contact__title-font">Outreach</h2>
           <p>Gartensocke</p>
             <p>Email <a href="mailto:gartensocke@alps-bte.com">gartensocke@alps-bte.com</a></p>
             <p>Discord <a href="https://discord.com/invite/vgkspay">Gartensocke#1525</a></p>
           </div>
           <div className="contact__people__container">
-          <h2>Outreach</h2>
+          <h2 className="contact__title-font">Outreach</h2>
           <p>Gartensocke</p>
             <p>Email <a href="mailto:gartensocke@alps-bte.com">gartensocke@alps-bte.com</a></p>
             <p>Discord <a href="https://discord.com/invite/vgkspay">Gartensocke#1525</a></p>
