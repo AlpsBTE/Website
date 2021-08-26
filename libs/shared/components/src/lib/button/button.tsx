@@ -1,3 +1,4 @@
+import { CSSProperties } from 'react';
 import './button.scss';
 
 export interface ButtonProps {
@@ -6,12 +7,13 @@ export interface ButtonProps {
   disabled?: boolean;
   size?: 'lg' | 'md' | 'sm';
   color?: string;
+  style?: CSSProperties,
 }
 
 export function Button(props: ButtonProps) {
   return (
     <button
-      style={{
+      style={{...props.style,
         color: props.disabled ? 'gray' : props.color,
         borderColor: props.disabled ? 'gray' : props.color,
         opacity: props.disabled ? '0.5' : '1',

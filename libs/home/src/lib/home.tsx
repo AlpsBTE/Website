@@ -37,8 +37,8 @@ export function Home(props: HomeProps) {
           <div className="head_line_box">
             <h1 className="head_line">Recreating Our Countries in Minecraft</h1>
             <div className="buttons">
-              <Button label="Join us" size="lg" color="#fff" />
-              <Button label="IP: mc.alps-bte.com" size="lg" color="#fff" />
+              <Button label="Join us" size="lg" color="#fff" style={{marginLeft: 'auto', marginRight: 'auto', marginTop: '5vh'}}/>
+              <Button label="IP: mc.alps-bte.com" size="lg" color="#fff" style={{marginLeft: 'auto', marginRight: 'auto', marginTop: '3vh'}}/>
             </div>
           </div>
         </div>
