@@ -1,13 +1,9 @@
-//import like below (still looking for a better option)
-@import '/libs/shared/theme/index.scss';
+// below does not pass build pipeline for some reason
+// @import '/libs/shared/theme/index.scss';
+
+@import '../../../libs/shared/theme/index.scss';
 
 body {
   margin: 0;
   padding: 0;
-}
-
-a:-webkit-any-link {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
 }
