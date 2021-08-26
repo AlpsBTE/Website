@@ -9,7 +9,6 @@ export interface HomeContentSectionProps {
 }
 
 export function HomeContentSection(props: HomeContentSectionProps) {
-  const what = '';
   const alignFlexItemsText: 'flex-start' | 'center' | 'flex-end' =
     props.alignment === 'left'
       ? 'flex-start'
