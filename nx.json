@@ -67,7 +67,7 @@
       "tags": ["scope:shared-components", "type:ui"]
     },
     "shared-theme": {
-      "tags": []
+      "tags": ["scope:shared-theme", "type:ui"]
     },
     "shared-util": {
       "tags": ["scope:shared-util", "type:feature"]

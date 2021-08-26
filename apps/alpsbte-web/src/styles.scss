@@ -1,9 +1,9 @@
-@use '../../../libs/shared/theme/index.scss' as global;
+//import like below (still looking for a better option)
+@import '/libs/shared/theme/index.scss';
 
 body {
   margin: 0;
   padding: 0;
-  background-color: global.$variable;
 }
 
 a:-webkit-any-link {
