@@ -1,13 +1,14 @@
 
 /* eslint-disable*/
 import './gallery.module.scss';
+import { PageTitle } from '@alpsbte/shared/components';
 
 export interface GalleryProps {}
 
 export function Gallery(props: GalleryProps) {
   return (
     <div>
-      <h1>Welcome to Gallery!</h1>
+      <PageTitle title="Gallery" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,"/>
     </div>
   );
 }
