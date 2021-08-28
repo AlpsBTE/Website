@@ -1,5 +1,5 @@
 /* eslint-disable */
-import './faq.module.scss';
+import './faq.scss';
 import { PageTitle } from '@alpsbte/shared/components';
 
 export interface FaqProps {}
