@@ -4,7 +4,7 @@ import { PageTitle } from '@alpsbte/shared/components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faYoutube, faTwitter, faTiktok, faReddit } from '@fortawesome/free-brands-svg-icons'
 
-// Abstand Insagram
+// Es wird erst über die texte gemapped sobald das backend da ist
 export interface ContactProps {}
 
 export function Contact(props: ContactProps) {
@@ -17,9 +17,11 @@ export function Contact(props: ContactProps) {
 
     <div className="contact__social-media">
       <h2 className="contact__title-font">Social Media</h2>
-      <div className="contact__social-icons">
+          <div className="contact__social-icons">
+            
+
         <div className="contact__social-media__icon">
-          <FontAwesomeIcon icon={faInstagram} size='lg' /> 
+          <FontAwesomeIcon icon={faInstagram} size='lg'/> 
         </div>
         <div className="contact__social-media__icon">
           <FontAwesomeIcon icon={faYoutube} size='lg' />
