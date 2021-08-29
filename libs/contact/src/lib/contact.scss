@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+
+
+
+
+.contact {
+     font-family: sans-serif;
+     font-weight: 100;
+     font-family: 'Roboto', sans-serif;
+
+
+     &__container {
+             text-align: center;
+             width: 100%;
+             display: flex;
+             flex-direction: row;
+             margin-top: 5vh;
+             background-color: #F6F6F6;
+     }
+     &__title-font {
+          font-size: 1.5rem;
+          padding-bottom: 5px;
+          padding-top: 5px;
+          line-height: 0.4;
+     }
+
+     &__social-media {
+      
+          flex: 50%;
+            padding: 10px;
+            flex: 50%;
+            text-align: right;
+            padding-right: 4vw;
+
+             &__icon {
+               font-size: 20px;
+               color: rgb(32, 32, 32);
+               float: right;
+               margin-left: 1.3vw;
+             }
+     }
+
+     &__people {
+          flex: 50%;
+            padding: 10px;
+            flex: 50%;
+            text-align: left;
+            padding-right: 4vw;
+            
+
+            &__container {
+                 display: block;
+                  line-height: 0.4;
+                  font-size: 0.9em;
+
+            }
+     } 
+}
+
+
+@media screen and (max-width: 800px) {
+  .contact {
+       &__container {
+          flex-direction: column-reverse;
+       }
+    &__social-media {
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+
+            &__icon {
+                 display: flex;
+              font-size: 30px;
+              padding: 2vh;
+              
+            }
+    }
+
+    &__people {
+         text-align: center;
+    }
+
+    &__title-font {
+      font-size: 1.7rem;
+      padding-bottom: 12px;
+      padding-top: 12px;
+    }
+  }
+}
