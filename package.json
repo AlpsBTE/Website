@@ -11,6 +11,7 @@
     "build": "nx build",
     "test": "npx nx run-many --all --target=test --parallel",
     "lint": "nx run-many --all --target=lint --parallel",
+    "lint:fix": "nx run-many --all --target=lint --parallel --fix",
     "lint:affected": "nx affected:lint",
     "lint:affected:fix": "nx affected:lint --fix",
     "depgraph": "nx dep-graph",
