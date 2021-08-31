@@ -14,6 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "include": ["/lib/**/*"],
     "paths": {
       "@alpsbte/about-us": ["libs/about-us/src/index.ts"],
       "@alpsbte/application": ["libs/application/src/index.ts"],
