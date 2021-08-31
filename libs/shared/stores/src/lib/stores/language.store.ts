@@ -17,9 +17,8 @@ export class LanguageStore implements IStore {
   }
 }
 
+const hydrate = create({ storage: localStorage });
+
 export const languageStore = new LanguageStore();
 
-create({ storage: localStorage })<LanguageStore>(
-  languageStore.storeKey,
-  languageStore
-);
+hydrate<LanguageStore>(languageStore.storeKey, languageStore);
