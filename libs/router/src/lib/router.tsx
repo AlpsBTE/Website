@@ -59,17 +59,14 @@ export const Router = () => {
       <Suspense fallback={<Loader />}>
         <Header {...headerProps}></Header>
         <Switch>
-          {Object.entries(pages).map(([pageKey, component]) => {
-            console.log(pageKey, component);
-            return (
-              <Route
-                key={pageKey}
-                exact
-                path={`/${ROUTES[pageKey as keyof typeof pages]}`}
-                component={() => <component.component></component.component>}
-              ></Route>
-            );
-          })}
+          {Object.entries(pages).map(([pageKey, component]) => (
+            <Route
+              key={pageKey}
+              exact
+              path={`/${ROUTES[pageKey as keyof typeof pages]}`}
+              component={() => <component.component></component.component>}
+            ></Route>
+          ))}
           <Route path="*" component={() => <pages.error.component />} />
         </Switch>
       </Suspense>
