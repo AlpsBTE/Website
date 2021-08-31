@@ -1,19 +1,16 @@
 import { observable, action, makeAutoObservable } from 'mobx';
-
-export const languages = ['en', 'fr', 'de'] as const;
-
-export type Language = typeof languages[number];
+import { Language, LanguageEnum } from '../language/types/language';
 
 export class LanguageStore {
-  @observable language: Language = 'de';
+  @observable language: Language = LanguageEnum.de;
 
   constructor() {
     makeAutoObservable(this);
   }
 
-  @action setLanguage: (language: Language) => void = (language: Language) => {
+  @action setLanguage(language: Language): void {
     this.language = language;
-  };
+  }
 }
 
 export const languageStore = new LanguageStore();
