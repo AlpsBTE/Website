@@ -1,13 +1,16 @@
 /* eslint-disable */
+import React, { useState, useEffect } from 'react';
 import './home.scss';
 import { Button, Header, HeaderProps } from '@alpsbte/shared/components';
 import HomeContentSection from '../components/home-content-section/home-content-section';
+import { inject, observer } from 'mobx-react';
+import { LanguageStore } from '@alpsbte/shared/stores';
 
-import { useState, useEffect } from 'react';
+export interface HomeProps {
+  languageStore?: LanguageStore;
+}
 
-export interface HomeProps {}
-
-export function Home(props: HomeProps) {
+export const Home: React.FC<HomeProps> = ({ languageStore }: HomeProps) => {
   const [offsetY, setOffsetY] = useState(0);
 
   const scrollEvent = () => {
@@ -35,6 +38,7 @@ export function Home(props: HomeProps) {
         <div className="block">
           <div className="head_line_box">
             <h1 className="head_line">Recreating Our Countries in Minecraft</h1>
+            {JSON.stringify(languageStore) ?? 'undefined'}
             <div className="buttons">
               <Button
                 label="Join us"
@@ -98,6 +102,6 @@ export function Home(props: HomeProps) {
       </HomeContentSection>
     </>
   );
-}
+};
 
-export default Home;
+export default inject('languageStore')(observer(Home));
