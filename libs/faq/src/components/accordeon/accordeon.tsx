@@ -11,7 +11,7 @@ open?: boolean,
 export function Accordeon(props: AccordeonProps) {
 const [open, setOpen] = useState(props.open ? true : false);
 
-function accordeon__handleClick(e : any) {
+function accordeon__toggle(e : any) {
 e.preventDefault();
   
   if (open) {
@@ -23,19 +23,14 @@ e.preventDefault();
 }
   
 return (
-    <div className='accordeon'>
-    <button onClick={accordeon__handleClick} className="accordeon__container">
-    <div className="accordeon__container">
-      <p>{props.title}</p>
-    </div>
-    </button>
-      <div className="accordeon__content" style={{display: open ? 'inline' : 'none'}}>
-        <p>{props.content}</p>
-    </div>
-      
-   
-    </div>
-      
+    <div className="accordion">
+            <div className="accordion__title" onClick={accordeon__toggle}>
+                <span>{props.title}</span>
+            </div>
+            <div className="accordion__content" aria-expanded={!open}>
+                {props.content}
+            </div>
+        </div>
 );
 }
 

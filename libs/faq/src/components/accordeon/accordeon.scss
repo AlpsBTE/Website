@@ -1,7 +1,23 @@
-.accordeon {
-     &__container {
-          width:  80%;
-          border: 0;
-          background-color: rgb(153, 149, 149);
-     }
+.accordion {
+
+
+
+&__title {
+
+}
+
+&__title:hover {
+  cursor: pointer;
+}
+
+&__content {
+  overflow: hidden;
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
+}
+
+&__content[aria-expanded="true"] {
+  max-height: 0px;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
 }
