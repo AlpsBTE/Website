@@ -52,8 +52,6 @@ export const Router = () => {
     ],
   };
 
-  console.log(ROUTES);
-
   return (
     <BrowserRouter>
       <Suspense fallback={<Loader />}>
