@@ -390,6 +390,48 @@
         }
       }
     },
+    "shared-language": {
+      "root": "libs/shared/language",
+      "sourceRoot": "libs/shared/language/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared/language/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/language"],
+          "options": {
+            "jestConfig": "libs/shared/language/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "shared-stores": {
+      "root": "libs/shared/stores",
+      "sourceRoot": "libs/shared/stores/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared/stores/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/stores"],
+          "options": {
+            "jestConfig": "libs/shared/stores/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "shared-theme": {
       "root": "libs/shared/theme",
       "sourceRoot": "libs/shared/theme/src",

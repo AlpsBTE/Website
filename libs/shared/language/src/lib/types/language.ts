@@ -1,3 +1,4 @@
+/* eslint-disable */
 export enum LanguageEnum {
   de = 'de',
   en = 'en',

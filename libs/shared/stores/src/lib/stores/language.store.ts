@@ -1,5 +1,5 @@
 import { observable, action, makeAutoObservable } from 'mobx';
-import { Language, LanguageEnum } from '../language/index';
+import { Language, LanguageEnum } from '@alpsbte/shared/language';
 
 export class LanguageStore {
   @observable language: Language = LanguageEnum.de;
