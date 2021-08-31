@@ -10,6 +10,8 @@ export interface HomeProps {
   languageStore?: LanguageStore;
 }
 
+// @inject('languageStore')
+// @observer
 export const Home: React.FC<HomeProps> = ({ languageStore }: HomeProps) => {
   const [offsetY, setOffsetY] = useState(0);
 
