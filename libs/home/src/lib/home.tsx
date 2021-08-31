@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import './home.scss';
-import { Button, Header, HeaderProps } from '@alpsbte/shared/components';
+import { Button } from '@alpsbte/shared/components';
 import HomeContentSection from '../components/home-content-section/home-content-section';
 import { inject, observer } from 'mobx-react';
 import { LanguageStore } from '@alpsbte/shared/stores';
