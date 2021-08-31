@@ -19,4 +19,7 @@ export class LanguageStore implements IStore {
 
 export const languageStore = new LanguageStore();
 
-create()(languageStore.storeKey, languageStore);
+create({ storage: localStorage })<LanguageStore>(
+  languageStore.storeKey,
+  languageStore
+);
