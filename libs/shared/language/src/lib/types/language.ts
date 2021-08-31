@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable*/
 export enum LanguageEnum {
   de = 'de',
   en = 'en',
@@ -6,3 +6,4 @@ export enum LanguageEnum {
 }
 
 export type Language = keyof typeof LanguageEnum;
+/* eslint-enable */
