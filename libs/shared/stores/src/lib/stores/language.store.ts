@@ -5,7 +5,7 @@ import { LanguageEnum } from '@alpsbte/shared/language';
 import { IStore } from '../interfaces/store';
 
 export class LanguageStore implements IStore {
-  storeKey = 'languageStore';
+  storeKey = 'languageStore' as const;
   @persist @observable language: Language = LanguageEnum.de;
 
   constructor() {

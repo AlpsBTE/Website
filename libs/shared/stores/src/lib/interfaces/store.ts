@@ -1,3 +1,3 @@
 export interface IStore {
-  storeKey: string;
+  readonly storeKey: string;
 }
