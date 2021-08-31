@@ -1,24 +1,36 @@
 /*eslint-disable*/
-import { lazy, Suspense, useEffect, useState } from 'react';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
 import { Loader } from '@alpsbte/loader';
+import { nameof } from '@alpsbte/shared/util';
 
 const pages = {
-  home: lazy(() => import('@alpsbte/home')),
-  aboutUs: lazy(() => import('@alpsbte/about-us')),
-  gallery: lazy(() => import('@alpsbte/gallery')),
-  downloads: lazy(() => import('@alpsbte/downloads')),
-  faq: lazy(() => import('@alpsbte/faq')),
-  application: lazy(() => import('@alpsbte/application')),
-  contact: lazy(() => import('@alpsbte/contact')),
-  error: lazy(() => import('@alpsbte/error')),
+  home: {
+    component: lazy(() => import('@alpsbte/home')),
+  },
+  aboutUs: {
+    component: lazy(() => import('@alpsbte/about-us')),
+  },
+  gallery: { component: lazy(() => import('@alpsbte/gallery')) },
+  downloads: { component: lazy(() => import('@alpsbte/downloads')) },
+  faq: { component: lazy(() => import('@alpsbte/faq')) },
+  application: { component: lazy(() => import('@alpsbte/application')) },
+  contact: { component: lazy(() => import('@alpsbte/contact')) },
+  error: { component: lazy(() => import('@alpsbte/error')) },
 };
 
 export type ROUTES = { [K in keyof typeof pages]: K };
 
+/**
+ * @key => Route name
+ * @value => Route in URL (same as @key except for home; home: "")
+ */
 export const ROUTES: ROUTES = Object.keys(pages).reduce(
-  (acc, curr) => ({ ...acc, [curr]: curr }),
+  (acc, curr) =>
+    curr === nameof<typeof pages>(pages, (p) => p.home)
+      ? { ...acc, [curr]: '' }
+      : { ...acc, [curr]: curr },
   {}
 ) as ROUTES;
 
@@ -40,52 +52,24 @@ export const Router = () => {
     ],
   };
 
+  console.log(ROUTES);
+
   return (
     <BrowserRouter>
       <Suspense fallback={<Loader />}>
         <Header {...headerProps}></Header>
         <Switch>
-          <Route
-            path={`/${ROUTES.home}`}
-            exact
-            component={() => <pages.home />}
-          ></Route>
-          <Route
-            path={`/${ROUTES.aboutUs}`}
-            exact
-            component={() => <pages.aboutUs />}
-          />
-          <Route
-            path={`/${ROUTES.gallery}`}
-            exact
-            component={() => <pages.gallery />}
-          />
-          <Route
-            path={`/${ROUTES.downloads}`}
-            exact
-            component={() => <pages.downloads />}
-          />
-          <Route
-            path={`/${ROUTES.faq}`}
-            exact
-            component={() => <pages.faq />}
-          />
-          <Route
-            path={`/${ROUTES.application}`}
-            exact
-            component={() => <pages.application />}
-          />
-          <Route
-            path={`/${ROUTES.contact}`}
-            exact
-            component={() => <pages.contact />}
-          />
-          {/* Use below in case you want to show 404 */}
-          {/* <Route path="*" component={() => <pages.error />} /> */}
-          <Route
-            path="*"
-            component={() => <Redirect to={`/${ROUTES.home}`} />}
-          />
+          {Object.entries(pages).map(([pageKey, component]) => {
+            console.log(pageKey, component);
+            return (
+              <Route
+                key={pageKey}
+                path={`/${ROUTES[pageKey as keyof typeof pages]}`}
+                render={() => <component.component></component.component>}
+              ></Route>
+            );
+          })}
+          <Route path="*" component={() => <pages.error.component />} />
         </Switch>
       </Suspense>
     </BrowserRouter>
