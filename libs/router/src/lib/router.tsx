@@ -18,7 +18,7 @@ const pages = {
   application: { component: lazy(() => import('@alpsbte/application')) },
   contact: { component: lazy(() => import('@alpsbte/contact')) },
   error: { component: lazy(() => import('@alpsbte/error')) },
-};
+} as const;
 
 export type ROUTES = { [K in keyof typeof pages]: K };
 
