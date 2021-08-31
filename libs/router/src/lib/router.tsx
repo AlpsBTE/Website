@@ -23,8 +23,8 @@ const pages = {
 export type ROUTES = { [K in keyof typeof pages]: K };
 
 /**
- * @key => Route name
- * @value => Route in URL (same as @key except for home; home: "")
+ * @key Route name
+ * @value URL route (usually same as key. However, exceptions e.g. home => "" can be defined here)
  */
 export const ROUTES: ROUTES = Object.keys(pages).reduce(
   (acc, curr) =>
