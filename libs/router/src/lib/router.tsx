@@ -36,7 +36,7 @@ export const ROUTES: ROUTES = Object.keys(pages).reduce(
 
 export const Router = () => {
   const headerProps: HeaderProps = {
-    mobileBreakpoint: 800,
+    mobileBreakpoint: 900,
     forceColor: window.location.pathname === '/home',
     headerText: 'Alps BTE',
     navItems: [
