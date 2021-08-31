@@ -71,6 +71,9 @@
     },
     "shared-util": {
       "tags": ["scope:shared-util", "type:feature"]
+    },
+    "shared-language": {
+      "tags": ["scope:shared-language", "type:feature"]
     }
   }
 }
