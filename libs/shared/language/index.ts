@@ -1,1 +1,1 @@
-export * from './types/language';
+export * from './src/types/language';
