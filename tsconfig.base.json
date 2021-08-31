@@ -26,9 +26,10 @@
       "@alpsbte/loader": ["libs/loader/src/index.ts"],
       "@alpsbte/router": ["libs/router/src/index.ts"],
       "@alpsbte/shared/components": ["libs/shared/components/src/index.ts"],
+      "@alpsbte/shared/language": ["libs/shared/language/src/index.ts"],
+      "@alpsbte/shared/stores": ["libs/shared/stores/src/index.ts"],
       "@alpsbte/shared/theme": ["libs/shared/theme/src/index.ts"],
-      "@alpsbte/shared/util": ["libs/shared/util/src/index.ts"],
-      "@alpsbte/shared/stores": ["libs/shared/stores/index.ts"]
+      "@alpsbte/shared/util": ["libs/shared/util/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

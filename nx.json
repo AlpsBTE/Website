@@ -66,14 +66,17 @@
     "shared-components": {
       "tags": ["scope:shared-components", "type:ui"]
     },
+    "shared-language": {
+      "tags": ["scope:shared-language", "type:feature"]
+    },
+    "shared-stores": {
+      "tags": ["scope:shared-stores", "type:feature"]
+    },
     "shared-theme": {
       "tags": ["scope:shared-theme", "type:ui"]
     },
     "shared-util": {
       "tags": ["scope:shared-util", "type:feature"]
-    },
-    "shared-language": {
-      "tags": ["scope:shared-language", "type:feature"]
     }
   }
 }
