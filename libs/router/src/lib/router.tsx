@@ -64,8 +64,9 @@ export const Router = () => {
             return (
               <Route
                 key={pageKey}
+                exact
                 path={`/${ROUTES[pageKey as keyof typeof pages]}`}
-                render={() => <component.component></component.component>}
+                component={() => <component.component></component.component>}
               ></Route>
             );
           })}
