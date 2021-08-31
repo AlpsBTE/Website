@@ -63,7 +63,7 @@ export const Router = () => {
               exact
               path={`/${ROUTES[pageKey as keyof typeof pages]}`}
               component={() => <component.component></component.component>}
-            ></Route>
+            />
           ))}
           <Route path="*" component={() => <pages.error.component />} />
         </Switch>
