@@ -55,7 +55,7 @@ export const Router = () => {
   return (
     <BrowserRouter>
       <Suspense fallback={<Loader />}>
-        <Header {...headerProps}></Header>
+        <Header {...headerProps} />
         <Switch>
           {Object.entries(pages).map(([pageKey, component]) => (
             <Route
