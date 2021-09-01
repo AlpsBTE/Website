@@ -6,14 +6,15 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
-       "no-unused-vars": [
-        "error",
-        {
-          "vars": "all",
-          "args": "after-used",
-          "ignoreRestSiblings": false
-        }
-      ],
+        "no-unused-vars": [
+          "error",
+          {
+            "vars": "all",
+            "args": "after-used",
+            "ignoreRestSiblings": false
+          }
+        ],
+        "@typescript-eslint/no-explicit-any": "2",
         "@nrwl/nx/enforce-module-boundaries": [
           "error",
           {
@@ -22,64 +23,40 @@
             "depConstraints": [
               {
                 "sourceTag": "*",
-                "onlyDependOnLibsWithTags": [
-                  "*"
-                ]
+                "onlyDependOnLibsWithTags": ["*"]
               },
-             
+
               {
                 "sourceTag": "scope:about-us",
-                "onlyDependOnLibsWithTags": [
-                  "scope:about-us",
-                  "scope:shared"
-                ]
+                "onlyDependOnLibsWithTags": ["scope:about-us", "scope:shared"]
               },
               {
                 "sourceTag": "scope:api",
-                "onlyDependOnLibsWithTags": [
-                  "scope:api"
-                ]
+                "onlyDependOnLibsWithTags": ["scope:api"]
               },
               {
                 "sourceTag": "scope:shared",
-                "onlyDependOnLibsWithTags": [
-                  "scope:shared"
-                ]
+                "onlyDependOnLibsWithTags": ["scope:shared"]
               },
               {
                 "sourceTag": "scope:home",
-                "onlyDependOnLibsWithTags": [
-                  "scope:home",
-                  "scope:shared"
-                ]
+                "onlyDependOnLibsWithTags": ["scope:home", "scope:shared"]
               },
               {
                 "sourceTag": "scope:gallery",
-                "onlyDependOnLibsWithTags": [
-                  "scope:gallery",
-                  "scope:shared"
-                ]
+                "onlyDependOnLibsWithTags": ["scope:gallery", "scope:shared"]
               },
               {
                 "sourceTag": "scope:faq",
-                "onlyDependOnLibsWithTags": [
-                  "scope:faq",
-                  "scope:shared"
-                ]
+                "onlyDependOnLibsWithTags": ["scope:faq", "scope:shared"]
               },
               {
                 "sourceTag": "scope:downloads",
-                "onlyDependOnLibsWithTags": [
-                  "scope:download",
-                  "scope:shared"
-                ]
+                "onlyDependOnLibsWithTags": ["scope:download", "scope:shared"]
               },
               {
                 "sourceTag": "scope:contact",
-                "onlyDependOnLibsWithTags": [
-                  "scope:contact",
-                  "scope:shared"
-                ]
+                "onlyDependOnLibsWithTags": ["scope:contact", "scope:shared"]
               },
               {
                 "sourceTag": "scope:application",
@@ -90,10 +67,7 @@
               },
               {
                 "sourceTag": "scope:error",
-                "onlyDependOnLibsWithTags": [
-                  "scope:error",
-                  "scope:shared"
-                ]
+                "onlyDependOnLibsWithTags": ["scope:error", "scope:shared"]
               }
             ]
           }
