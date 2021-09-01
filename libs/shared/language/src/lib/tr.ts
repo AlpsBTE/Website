@@ -32,6 +32,5 @@ type TranslationPathFactory<T, D extends number = 10> = [D] extends [never]
 export type TranslationPath = TranslationPathFactory<typeof languageStore.set>;
 
 export function tr(key: TranslationPath): string {
-  const target = deepFind<ISet>(languageStore.set, key);
-  return target;
+  return deepFind<ISet>(languageStore.set, key);
 }
