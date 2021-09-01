@@ -111,4 +111,4 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
   })
 );
 
-export default inject('languageStore')(observer(Home));
+export default Home;
