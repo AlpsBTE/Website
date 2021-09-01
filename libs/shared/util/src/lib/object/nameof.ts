@@ -10,5 +10,3 @@ export function nameof<T extends object>(
   }, {} as Record<keyof T, keyof T>);
   return selector(keyRecord);
 }
-
-type Test = Record<string, number>;
