@@ -1,4 +1,4 @@
-import { observable, action, makeAutoObservable } from 'mobx';
+import { observable, action, makeAutoObservable, toJS } from 'mobx';
 import { create, persist } from 'mobx-persist';
 import type { ISet, Language } from '@alpsbte/shared/language';
 import { fetchTestdata } from '@alpsbte/shared/language';
@@ -8,11 +8,17 @@ import { IStore } from '../interfaces/store';
 export class LanguageStore implements IStore {
   storeKey = 'languageStore' as const;
   @persist @observable language: Language = LanguageEnum.de;
-  @observable set?: ISet;
+  @observable private _set!: ISet;
+  get set(): ISet {
+    return toJS(this._set);
+  }
+  set set(value: ISet) {
+    this.set = value;
+  }
 
   constructor() {
     makeAutoObservable(this);
-    (async () => (this.set = await this.fetchSet(this.language)))();
+    (async () => (this._set = await this.fetchSet(this.language)))();
   }
 
   @action async fetchSet(language: Language): Promise<ISet> {

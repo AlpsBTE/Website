@@ -6,6 +6,7 @@ import HomeContentSection from '../components/home-content-section/home-content-
 import { inject, observer } from 'mobx-react';
 import { languageStore, LanguageStore } from '@alpsbte/shared/stores';
 import { propnameOf } from '@alpsbte/shared/util';
+import { toJS } from 'mobx';
 
 export interface HomeProps {
   languageStore?: LanguageStore;
@@ -31,6 +32,8 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
       return componentWillUnmount;
     });
 
+    console.log(languageStore?.set);
+
     return (
       <>
         <div
@@ -42,7 +45,6 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
               <h1 className="head_line">
                 Recreating Our Countries in Minecraft
               </h1>
-              {JSON.stringify(languageStore) ?? 'undefined'}
               <div className="buttons">
                 <Button
                   label="Join us"
