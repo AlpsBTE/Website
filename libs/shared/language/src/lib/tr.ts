@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { languageStore } from '@alpsbte/shared/stores';
-import { deepFind } from '@alpsbte/shared/util';
+import { deepFind, throwError } from '@alpsbte/shared/util';
 import { ISet } from './interfaces/set';
 
 export type Divider = '.';
@@ -32,8 +32,6 @@ export type TranslationPath = TranslationPathFactory<typeof languageStore.set>;
 export function tr(key: TranslationPath): string {
   const target = deepFind<ISet>(languageStore.set, key);
   if (typeof target === typeof {})
-    throw new Error(
-      'Please only use endpoints because objects cannot be rendered!'
-    );
+    throwError('Please only use endpoints because objects cannot be rendered!');
   return target;
 }
