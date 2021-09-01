@@ -42,9 +42,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
         >
           <div className="block">
             <div className="head_line_box">
-              <h1 className="head_line">
-                Recreating Our Countries in Minecraft
-              </h1>
+              <h1 className="head_line">{languageStore?.set.home.headline}</h1>
               <div className="buttons">
                 <Button
                   label="Join us"
