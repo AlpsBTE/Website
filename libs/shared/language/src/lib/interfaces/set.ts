@@ -1,6 +1,8 @@
 /* eslint-disable*/
 export interface ISet {
-  navItems: { [x: string]: string };
+  home: {
+    headline: string;
+  };
   [x: string]: any;
 }
 /* eslint-enable*/
