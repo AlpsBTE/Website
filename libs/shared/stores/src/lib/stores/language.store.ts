@@ -16,7 +16,7 @@ export class LanguageStore implements IStore {
   }
 
   @action async fetchSet(language: Language): Promise<ISet> {
-    return <ISet>await fetchTestdata(language);
+    return await fetchTestdata(language);
   }
 
   @action setLanguage(language: Language): void {
