@@ -1,4 +1,4 @@
-import { propnameOf, nameOf } from './nameOf';
+import { propnameOf, nameOf } from './of';
 
 const testObject = {
   someProperty: 'someValue',
