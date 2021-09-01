@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { languageStore } from '@alpsbte/shared/stores';
+import { LanguageStore, languageStore } from '@alpsbte/shared/stores';
 import { deepFind } from '@alpsbte/shared/util';
 import { ISet } from './interfaces/set';
 
@@ -57,7 +57,7 @@ type Paths<T, D extends number = 10> = [D] extends [never]
     }[keyof T]
   : '';
 
-type TranslationPath = Paths<typeof languageStore.set>;
+export type TranslationPath = Paths<typeof languageStore.set>;
 
 export function tr(key: TranslationPath): string {
   const target = deepFind<ISet>(languageStore.set, key);
