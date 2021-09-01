@@ -5,7 +5,7 @@ import { Button } from '@alpsbte/shared/components';
 import HomeContentSection from '../components/home-content-section/home-content-section';
 import { inject, observer } from 'mobx-react';
 import { languageStore, LanguageStore } from '@alpsbte/shared/stores';
-import { nameof } from '@alpsbte/shared/util';
+import { propnameOf } from '@alpsbte/shared/util';
 
 export interface HomeProps {
   languageStore?: LanguageStore;

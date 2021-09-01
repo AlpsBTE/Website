@@ -1,5 +1,6 @@
 /* eslint-disable */
-export function nameof<T extends object>(
+
+export function propnameOf<T extends object>(
   obj: T,
   selector: (x: { [K in keyof T]: keyof T }) => keyof T
 ): keyof T {
@@ -11,4 +12,17 @@ export function nameof<T extends object>(
   return selector(keyRecord);
 }
 
-type Test = Record<string, number>;
+/**
+ * @param Pass the variable you want to the receive the name of as an OBJECT!
+ *
+ * Example:
+ *
+ * const testVariable = "test";
+ * nameOf<typeof testVariable>({ testVariable }); -> "testVariable"
+ * @returns The variable's name as string
+ */
+export function nameOf<T extends any>(elmt: {
+  [variableName: string]: T;
+}): string {
+  return Object.keys(elmt)[0];
+}
