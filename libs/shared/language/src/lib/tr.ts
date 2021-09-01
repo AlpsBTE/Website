@@ -4,20 +4,20 @@ import { deepFind } from '@alpsbte/shared/util';
 import { ISet } from './interfaces/set';
 
 export type Divider = '.';
-export type Empty = '';
+export type ___ = '';
 
 // Limiter is needed because type computations could be very complex or infinite
 type Limiter = [never, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ...0[]];
 
 type TranslationKeyJoin<K, P> = K extends string | number
   ? P extends string | number
-    ? `${K}${Empty extends P ? Empty : Divider}${P}`
+    ? `${K}${___ extends P ? ___ : Divider}${P}`
     : never
   : never;
 
 type TranslationPathFactory<T, D extends number = 10> = [D] extends [never]
   ? never
-  : T extends object
+  : T extends { [K in string | number]: any }
   ? {
       [K in keyof T]-?: K extends string | number
         ?
@@ -25,7 +25,7 @@ type TranslationPathFactory<T, D extends number = 10> = [D] extends [never]
             | TranslationKeyJoin<K, TranslationPathFactory<T[K], Limiter[D]>>
         : never;
     }[keyof T]
-  : Empty;
+  : ___;
 
 export type TranslationPath = TranslationPathFactory<typeof languageStore.set>;
 
@@ -33,7 +33,7 @@ export function tr(key: TranslationPath): string {
   const target = deepFind<ISet>(languageStore.set, key);
   if (typeof target === 'object')
     throw new Error(
-      'Please only use endpoints since object cannot be rendered'
+      'Please only use endpoints because objects cannot be rendered!'
     );
   return target;
 }
