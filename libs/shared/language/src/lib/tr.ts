@@ -3,6 +3,7 @@ import { languageStore } from '@alpsbte/shared/stores';
 import { deepFind } from '@alpsbte/shared/util';
 import { ISet } from './interfaces/set';
 
+// Limiter is needed because type computations could be very complex or infinite
 type Limiter = [
   never,
   0,
