@@ -17,12 +17,14 @@ type TranslationKeyJoin<K, P> = K extends string | number
 
 type TranslationPathFactory<T, D extends number = 10> = [D] extends [never]
   ? never
-  : T extends { [I in string | number]: any }
+  : T extends { [Z in string | number]: any }
   ? {
       [K in keyof T]-?: K extends string | number
-        ?
-            | `${K}`
-            | TranslationKeyJoin<K, TranslationPathFactory<T[K], Limiter[D]>>
+        ? T[K] extends { [Y in string | number]: any }
+          ? TranslationKeyJoin<K, TranslationPathFactory<T[K], Limiter[D]>>
+          :
+              | `${K}`
+              | TranslationKeyJoin<K, TranslationPathFactory<T[K], Limiter[D]>>
         : never;
     }[keyof T]
   : ___;
@@ -31,9 +33,5 @@ export type TranslationPath = TranslationPathFactory<typeof languageStore.set>;
 
 export function tr(key: TranslationPath): string {
   const target = deepFind<ISet>(languageStore.set, key);
-  if (typeof target === typeof {})
-    throwError(
-      'Please only use translation key endpoints because objects cannot be rendered!'
-    );
   return target;
 }
