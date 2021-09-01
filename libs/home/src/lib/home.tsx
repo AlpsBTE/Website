@@ -7,6 +7,7 @@ import { inject, observer } from 'mobx-react';
 import { languageStore, LanguageStore } from '@alpsbte/shared/stores';
 import { propnameOf } from '@alpsbte/shared/util';
 import { toJS } from 'mobx';
+import { tr } from '@alpsbte/shared/language';
 
 export interface HomeProps {
   languageStore?: LanguageStore;
@@ -32,8 +33,6 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
       return componentWillUnmount;
     });
 
-    console.log(languageStore?.set);
-
     return (
       <>
         <div
@@ -42,7 +41,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
         >
           <div className="block">
             <div className="head_line_box">
-              <h1 className="head_line">{languageStore?.set.home.headline}</h1>
+              <h1 className="head_line">{tr('')}</h1>
               <div className="buttons">
                 <Button
                   label="Join us"
