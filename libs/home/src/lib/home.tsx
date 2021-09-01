@@ -7,12 +7,10 @@ import { inject, observer } from 'mobx-react';
 import { languageStore, LanguageStore } from '@alpsbte/shared/stores';
 import { tr } from '@alpsbte/shared/language';
 
-export interface HomeProps {
-  languageStore?: LanguageStore;
-}
+export interface HomeProps {}
 
 export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
-  observer(({ languageStore }: HomeProps) => {
+  observer(({}: HomeProps) => {
     const [offsetY, setOffsetY] = useState(0);
 
     const scrollEvent = () => {
