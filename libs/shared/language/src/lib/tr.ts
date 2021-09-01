@@ -20,7 +20,7 @@ type TranslationPathFactory<T, D extends number = 10> = [D] extends [never]
   : T extends { [Z in string | number]: any }
   ? {
       [K in keyof T]-?: K extends string | number
-        ? T[K] extends { [Y in string | number]: any }
+        ? T[K] extends { [Y in string | number]: T[Y] } // not sure if T[Y] is bulletproof
           ? TranslationKeyJoin<K, TranslationPathFactory<T[K], Limiter[D]>>
           :
               | `${K}`
