@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
 import { Loader } from '@alpsbte/loader';
-import { nameof } from '@alpsbte/shared/util';
+import { propnameOf } from '@alpsbte/shared/util';
 
 const pages = {
   home: {
@@ -28,7 +28,7 @@ export type ROUTES = { [K in keyof typeof pages]: K };
  */
 export const ROUTES: ROUTES = Object.keys(pages).reduce(
   (acc, curr) =>
-    curr === nameof<typeof pages>(pages, (p) => p.home)
+    curr === propnameOf<typeof pages>(pages, (p) => p.home)
       ? { ...acc, [curr]: '' }
       : { ...acc, [curr]: curr },
   {}
