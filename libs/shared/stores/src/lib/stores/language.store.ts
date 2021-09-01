@@ -5,7 +5,7 @@ import type { ISet, Language } from '@alpsbte/shared/language';
 import { fetchTestdata } from '@alpsbte/shared/language';
 import { LanguageEnum } from '@alpsbte/shared/language';
 import { IStore } from '../interfaces/store';
-import * as localForage from 'localforage';
+import { createInstance, WEBSQL } from 'localforage';
 
 export class LanguageStore implements IStore {
   storeKey = 'languageStore' as const;
@@ -33,9 +33,9 @@ export class LanguageStore implements IStore {
 }
 
 const hydrate = create({
-  storage: localForage.createInstance({
+  storage: createInstance({
     name: 'languageStore',
-    driver: localForage.WEBSQL,
+    driver: WEBSQL,
   }),
 });
 
