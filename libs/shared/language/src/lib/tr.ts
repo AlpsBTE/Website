@@ -1,19 +1,7 @@
 /* eslint-disable */
-import { LanguageStore, languageStore } from '@alpsbte/shared/stores';
+import { languageStore } from '@alpsbte/shared/stores';
 import { deepFind } from '@alpsbte/shared/util';
 import { ISet } from './interfaces/set';
-
-const data = {
-  foo: 'foo',
-  bar: 'bar',
-  layer1: {
-    foo: 'foo',
-    layer2: {
-      foo: 'foo',
-      bar: 'bar',
-    },
-  },
-};
 
 type Limiter = [
   never,
