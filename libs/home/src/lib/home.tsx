@@ -37,7 +37,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
         >
           <div className="block">
             <div className="head_line_box">
-              <h1 className="head_line">{tr('home.headline')}</h1>
+              <h1 className="head_line">{tr('home')}</h1>
               <div className="buttons">
                 <Button
                   label="Join us"
