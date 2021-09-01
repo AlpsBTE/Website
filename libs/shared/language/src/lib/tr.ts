@@ -60,5 +60,10 @@ type Paths<T, D extends number = 10> = [D] extends [never]
 type TranslationPath = Paths<typeof languageStore.set>;
 
 export function tr(key: TranslationPath): string {
-  return deepFind<ISet>(languageStore.set, key);
+  const target = deepFind<ISet>(languageStore.set, key);
+  if (typeof target === 'object')
+    throw new Error(
+      'Please only use endpoints since object cannot be rendered'
+    );
+  return target;
 }
