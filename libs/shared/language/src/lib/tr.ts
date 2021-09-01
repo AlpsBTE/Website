@@ -32,6 +32,10 @@ type TranslationPathFactory<T, D extends number = Limit> = [D] extends [never]
 
 export type TranslationPath = TranslationPathFactory<typeof languageStore.set>;
 
+/**
+ * @param key (union) all possible language set endpoint paths
+ * @returns corresponding value on language set at key path argument
+ */
 export function tr(key: TranslationPath): string {
   return deepFind<ISet>(languageStore.set, key);
 }
