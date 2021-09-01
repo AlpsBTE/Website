@@ -14,7 +14,7 @@
             "ignoreRestSiblings": false
           }
         ],
-        "@typescript-eslint/no-explicit-any": "2",
+        "@typescript-eslint/no-explicit-any": 0,
         "@nrwl/nx/enforce-module-boundaries": [
           "error",
           {
