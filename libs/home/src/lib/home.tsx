@@ -4,7 +4,7 @@ import './home.scss';
 import { Button } from '@alpsbte/shared/components';
 import HomeContentSection from '../components/home-content-section/home-content-section';
 import { inject, observer } from 'mobx-react';
-import { languageStore, LanguageStore } from '@alpsbte/shared/stores';
+import { languageStore } from '@alpsbte/shared/stores';
 import { tr } from '@alpsbte/shared/language';
 
 export interface HomeProps {}
