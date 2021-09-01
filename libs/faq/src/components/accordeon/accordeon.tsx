@@ -26,9 +26,10 @@ return (
       <span className="accordeon__title">{props.title}</span>
       <span className="accordion__icon" style={{...props.style, rotate: open?'360deg':'180deg'}}><FontAwesomeIcon icon={faChevronUp}/>
       </span>
- 
+      
             <div className="accordion__content" aria-expanded={!open}>
                <p className="accordion__content__text">{props.content}</p>
+      
       </div>
       </div>
     

@@ -4,9 +4,9 @@ width: 60%;
 font-family: sans-serif;
 font-weight: 700;
 margin: 5%;
+overflow: hidden;
 
 margin-left: 20%;
-margin-right: 20%;
 border-radius: 10px;
 box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, 0.1);
 
@@ -30,9 +30,12 @@ padding: 20px;
   overflow: hidden;
   max-height: 1000px;
   transition:  1s ease-in-out;
+  
+ 
   &__text {
     padding-bottom: 0;
     margin-bottom: 0;
+    margin-right: 20px;
 
   }
 }
