@@ -4,31 +4,7 @@ import { deepFind } from '@alpsbte/shared/util';
 import { ISet } from './interfaces/set';
 
 // Limiter is needed because type computations could be very complex or infinite
-type Limiter = [
-  never,
-  0,
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  7,
-  8,
-  9,
-  10,
-  11,
-  12,
-  13,
-  14,
-  15,
-  16,
-  17,
-  18,
-  19,
-  20,
-  ...0[]
-];
+type Limiter = [never, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ...0[]];
 
 type Join<K, P> = K extends string | number
   ? P extends string | number
