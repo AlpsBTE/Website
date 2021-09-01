@@ -33,7 +33,7 @@ type TranslationPathFactory<T, D extends number = Limit> = [D] extends [never]
 export type TranslationPath = TranslationPathFactory<typeof languageStore.set>;
 
 /**
- * @param key (union) all possible language set endpoint-only! paths (this prevents react object render errors)
+ * @param key union of all possible language set endpoint-only! paths (this prevents react object render errors)
  * @returns corresponding value on language set at key path argument
  */
 export function tr(key: TranslationPath): string {
