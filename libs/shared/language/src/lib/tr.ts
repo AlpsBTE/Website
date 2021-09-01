@@ -17,7 +17,7 @@ type TranslationKeyJoin<K, P> = K extends string | number
 
 type TranslationPathFactory<T, D extends number = 10> = [D] extends [never]
   ? never
-  : T extends { [K in string | number]: any }
+  : T extends { [I in string | number]: any }
   ? {
       [K in keyof T]-?: K extends string | number
         ?
