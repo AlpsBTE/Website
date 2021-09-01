@@ -1,4 +1,4 @@
-/* eslint-disable-next-line */
+/* eslint-disable */
 import { languageStore } from '@alpsbte/shared/stores';
 import { deepFind } from '@alpsbte/shared/util';
 import { ISet } from './interfaces/set';
@@ -59,9 +59,6 @@ type Paths<T, D extends number = 10> = [D] extends [never]
 
 type TranslationPath = Paths<typeof languageStore.set>;
 
-export type TranslationKey =
-  `${keyof typeof languageStore.set}.${keyof typeof languageStore.set.home}`;
-
-export function tr(key: TranslationKey): string {
+export function tr(key: TranslationPath): string {
   return deepFind<ISet>(languageStore.set, key);
 }
