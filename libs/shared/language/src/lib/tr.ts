@@ -32,6 +32,8 @@ export type TranslationPath = TranslationPathFactory<typeof languageStore.set>;
 export function tr(key: TranslationPath): string {
   const target = deepFind<ISet>(languageStore.set, key);
   if (typeof target === typeof {})
-    throwError('Please only use endpoints because objects cannot be rendered!');
+    throwError(
+      'Please only use translation key endpoints because objects cannot be rendered!'
+    );
   return target;
 }
