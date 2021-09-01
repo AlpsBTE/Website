@@ -1,3 +1,4 @@
+/*eslint-disable */
 import { observable, action, makeAutoObservable, toJS } from 'mobx';
 import { create, persist } from 'mobx-persist';
 import type { ISet, Language } from '@alpsbte/shared/language';
