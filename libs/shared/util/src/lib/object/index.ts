@@ -1,2 +1,2 @@
-export * from './nameof';
-export * from './deepFind';
+export * from './nameOf/nameOf';
+export * from './deepFind/deepFind';
