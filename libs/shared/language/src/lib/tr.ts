@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { languageStore } from '@alpsbte/shared/stores';
-import { deepFind, throwError } from '@alpsbte/shared/util';
+import { deepFind } from '@alpsbte/shared/util';
 import { ISet } from './interfaces/set';
 
 type Divider = '.';
