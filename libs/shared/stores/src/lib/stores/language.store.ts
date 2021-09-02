@@ -11,7 +11,7 @@ import 'reflect-metadata';
 export class LanguageStore implements IStore {
   storeKey = 'languageStore' as const;
   @persist @observable language: Language = LanguageEnum.en;
-  @observable private _set!: ISet;
+  @persist @observable private _set!: ISet;
   get set(): ISet {
     return toJS(this._set);
   }
