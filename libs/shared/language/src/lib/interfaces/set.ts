@@ -10,7 +10,7 @@ export interface ISet {
   pages: {
     home: {
       headline: string;
-      joinButton: string;
+      joinUs: string;
       nested: {
         target: string;
       };

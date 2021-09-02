@@ -30,6 +30,7 @@ export class LanguageStore implements IStore {
 
   @action setLanguage(language: Language): void {
     this.language = language;
+    (async () => (this._set = await fetchTestdata(language)))();
   }
 }
 
