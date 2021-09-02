@@ -1,11 +1,11 @@
 /*eslint-disable*/
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
 import { Loader } from '@alpsbte/loader';
 import { propnameOf } from '@alpsbte/shared/util';
-import { tr } from '@alpsbte/shared/language';
-import { languageStore } from '@alpsbte/shared/stores';
+import { Language, tr } from '@alpsbte/shared/language';
+import { LanguageStore, languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
 
 const pages = {
@@ -23,17 +23,20 @@ const pages = {
   error: { component: lazy(() => import('@alpsbte/error')) },
 } as const;
 
-export type ROUTES = { [K in keyof typeof pages]: K };
-
 /**
  * @key Route name
- * @value URL route (usually same as key. However, exceptions e.g. home => "" can be defined here)
+ * @value URL route (usually same as key. However, exceptions e.g. home can be defined here)
  */
+export type ROUTES = {
+  [K in keyof typeof pages]: K extends 'home'
+    ? `${Language}`
+    : `${Language}/${K}`;
+};
 export const ROUTES: ROUTES = Object.keys(pages).reduce(
   (acc, curr) =>
     curr === propnameOf<typeof pages>(pages, (p) => p.home)
-      ? { ...acc, [curr]: '' }
-      : { ...acc, [curr]: curr },
+      ? { ...acc, [curr]: `${languageStore.language}` }
+      : { ...acc, [curr]: `${languageStore.language}/${curr}` },
   {}
 ) as ROUTES;
 
@@ -69,7 +72,14 @@ export const Router = inject(languageStore.storeKey)(
                 component={() => <component.component></component.component>}
               />
             ))}
-            <Route path="*" component={() => <pages.error.component />} />
+            <Route
+              path={`/${languageStore.language}/*`}
+              component={() => <pages.error.component />}
+            />
+            <Route
+              path={`*`}
+              component={() => <Redirect to={`/${languageStore.language}`} />}
+            />
           </Switch>
         </Suspense>
       </BrowserRouter>
