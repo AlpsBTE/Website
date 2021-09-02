@@ -9,6 +9,17 @@
   border-radius: 10px;
   box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, 0.1);
 
+  &__container {
+    padding: 20px;
+  }
+
+  &__subContainer {
+    padding: 20px;
+    margin: -20px;
+    z-index: 2;
+    user-select: none;
+  }
+
   &__title {
     padding: 20px;
   }
@@ -24,6 +35,7 @@
   }
 
   &__content {
+    z-index: 1;
     font-weight: 500;
     overflow: hidden;
     max-height: 1000px;

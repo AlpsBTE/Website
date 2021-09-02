@@ -11,7 +11,6 @@ export interface AccordeonProps {
   style?: CSSProperties;
 }
 
-
 export function Accordeon(props: AccordeonProps) {
   const [open, setOpen] = useState(props.open ? true : false);
 
@@ -23,17 +22,19 @@ export function Accordeon(props: AccordeonProps) {
 
   return (
     <div className="accordion">
-      <div className="accordion__title" onClick={accordeon__toggle}>
-        <span className="accordeon__title">{props.title}</span>
-        <span
-          className="accordion__icon"
-          style={{
-            ...props.style,
-            transform: open ? 'rotate(0deg)' : 'rotate(-180deg)',
-          }}
-        >
-          <FontAwesomeIcon icon={faChevronUp} />
-        </span>
+      <div className="accordion__container">
+        <div onClick={accordeon__toggle} className="accordion__subContainer">
+          <span className="accordeon_title">{props.title}</span>
+          <span
+            className="accordion__icon"
+            style={{
+              ...props.style,
+              transform: open ? 'rotate(0deg)' : 'rotate(-180deg)',
+            }}
+          >
+            <FontAwesomeIcon icon={faChevronUp} />
+          </span>
+        </div>
 
         <div className="accordion__content" aria-expanded={!open}>
           <p className="accordion__content__text">{props.content}</p>
