@@ -6,3 +6,4 @@ export const fetchTestdata = async (language: Language): Promise<ISet> => {
 };
 
 export default fetchTestdata;
+('');
