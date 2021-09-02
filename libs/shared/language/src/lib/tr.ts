@@ -35,6 +35,8 @@ export type TranslationPath = TranslationPathFactory<typeof languageStore.set>;
 /**
  * @param key union of all possible language set endpoint-only! paths (this prevents react object render errors)
  * @returns corresponding value on language set at key path argument
+ *
+ * Only works in components that have the languageStore injected!
  */
 export function tr(key: TranslationPath): string {
   return deepFind<ISet>(languageStore.set, key);

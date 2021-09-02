@@ -1,6 +1,16 @@
 {
-  "home": {
-    "headline": "Wir bauen unserer Länder in Minecraft",
-    "joinButton": "Mach mit!"
+  "navItems": {
+    "aboutUs": "Über uns",
+    "gallery": "Galerie",
+    "downloads": "Downloads",
+    "faq": "FAQ",
+    "application": "Bewerbung",
+    "contact": "Kontakt"
+  },
+  "pages": {
+    "home": {
+      "headline": "Unsere Länder in Minecraft neu erstellen",
+      "joinUs": "Mitmachen!"
+    }
   }
 }

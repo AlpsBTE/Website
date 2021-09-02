@@ -1,4 +1,12 @@
 {
+  "navItems": {
+    "aboutUs": "About Us",
+    "gallery": "Gallery",
+    "downloads": "Downloads",
+    "faq": "FAQ",
+    "application": "Application",
+    "contact": "Contact"
+  },
   "pages": {
     "home": {
       "headline": "Recreating our Countries in Minecraft",
