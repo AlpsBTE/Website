@@ -40,7 +40,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
               <h1 className="head_line">{tr('pages.home.headline')}</h1>
               <div className="buttons">
                 <Button
-                  label="Join us"
+                  label={tr('pages.home.joinUs')}
                   size="lg"
                   color="#fff"
                   style={{
