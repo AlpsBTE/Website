@@ -30,7 +30,7 @@ export function Accordeon(props: AccordeonProps) {
           className="accordion__icon"
           style={{
             ...props.style,
-            transform: open ? 'rotate(360deg)' : 'rotate(180deg)',
+            transform: open ? 'rotate(0deg)' : 'rotate(-180deg)',
           }}
         >
           <FontAwesomeIcon icon={faChevronUp} />
