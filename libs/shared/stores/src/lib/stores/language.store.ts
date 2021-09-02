@@ -9,7 +9,7 @@ import { createInstance, WEBSQL } from 'localforage';
 
 export class LanguageStore implements IStore {
   storeKey = 'languageStore' as const;
-  @persist @observable language: Language = LanguageEnum.de;
+  @persist @observable language: Language = LanguageEnum.en;
   @observable private _set!: ISet;
   get set(): ISet {
     return toJS(this._set);
@@ -34,7 +34,7 @@ export class LanguageStore implements IStore {
 
 const hydrate = create({
   storage: createInstance({
-    name: 'languageStore',
+    storeName: 'languageStore',
     driver: WEBSQL,
   }),
 });

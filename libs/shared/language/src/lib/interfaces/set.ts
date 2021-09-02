@@ -1,9 +1,19 @@
 export interface ISet {
-  home: {
-    headline: string;
-    joinButton: string;
-    nested: {
-      target: string;
+  navItems: {
+    aboutUs: string;
+    gallery: string;
+    downloads: string;
+    faq: string;
+    application: string;
+    contact: string;
+  };
+  pages: {
+    home: {
+      headline: string;
+      joinButton: string;
+      nested: {
+        target: string;
+      };
     };
   };
 }
