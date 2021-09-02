@@ -11,6 +11,7 @@ export interface AccordeonProps {
   style?: CSSProperties;
 }
 
+
 export function Accordeon(props: AccordeonProps) {
   const [open, setOpen] = useState(props.open ? true : false);
 
@@ -19,8 +20,6 @@ export function Accordeon(props: AccordeonProps) {
 
     setOpen(open ? false : true);
   }
-
-  //  + open ? '360deg' : '180deg' +
 
   return (
     <div className="accordion">
