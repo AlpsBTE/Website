@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { languageStore } from '@alpsbte/shared/stores';
-import { deepFind } from '@alpsbte/shared/util';
+import { deepFind, InternalError } from '@alpsbte/shared/util';
 import { ISet } from './interfaces/set';
 
 type Divider = '.';
@@ -41,5 +41,7 @@ export type TranslationPath = TranslationPathFactory<typeof languageStore.set>;
  * Only works in components that have the languageStore injected!
  */
 export function tr(key: TranslationPath): string {
-  return deepFind<ISet>(languageStore.set, key);
+  return (
+    deepFind<ISet>(languageStore.set, key) ?? InternalError.missingTranslation
+  );
 }
