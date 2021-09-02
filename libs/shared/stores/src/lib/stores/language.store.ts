@@ -6,6 +6,7 @@ import { fetchTestdata } from '@alpsbte/shared/language';
 import { LanguageEnum } from '@alpsbte/shared/language';
 import { IStore } from '../interfaces/store';
 import { createInstance, WEBSQL } from 'localforage';
+import 'reflect-metadata';
 
 export class LanguageStore implements IStore {
   storeKey = 'languageStore' as const;

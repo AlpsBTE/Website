@@ -4,6 +4,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
 import { Loader } from '@alpsbte/loader';
 import { propnameOf } from '@alpsbte/shared/util';
+import { tr } from '@alpsbte/shared/language';
+import { languageStore } from '@alpsbte/shared/stores';
+import { inject, observer } from 'mobx-react';
 
 const pages = {
   home: {
@@ -34,40 +37,42 @@ export const ROUTES: ROUTES = Object.keys(pages).reduce(
   {}
 ) as ROUTES;
 
-export const Router = () => {
-  const headerProps: HeaderProps = {
-    mobileBreakpoint: 900,
-    forceColor: window.location.pathname === '/home',
-    headerText: 'Alps BTE',
-    navItems: [
-      { text: 'About Us', to: ROUTES.aboutUs },
-      { text: 'Gallery', to: ROUTES.gallery },
-      { text: 'Downloads', to: ROUTES.downloads },
-      { text: 'FAQ', to: ROUTES.faq },
-      {
-        text: 'Application',
-        to: ROUTES.application,
-      },
-      { text: 'Contact', to: ROUTES.contact },
-    ],
-  };
+export const Router = inject(languageStore.storeKey)(
+  observer(() => {
+    const headerProps: HeaderProps = {
+      mobileBreakpoint: 900,
+      forceColor: window.location.pathname === '/home',
+      headerText: 'Alps BTE',
+      navItems: [
+        { text: tr('navItems.aboutUs'), to: ROUTES.aboutUs },
+        { text: tr('navItems.gallery'), to: ROUTES.gallery },
+        { text: tr('navItems.downloads'), to: ROUTES.downloads },
+        { text: tr('navItems.faq'), to: ROUTES.faq },
+        {
+          text: tr('navItems.application'),
+          to: ROUTES.application,
+        },
+        { text: tr('navItems.contact'), to: ROUTES.contact },
+      ],
+    };
 
-  return (
-    <BrowserRouter>
-      <Suspense fallback={<Loader />}>
-        <Header {...headerProps} />
-        <Switch>
-          {Object.entries(pages).map(([pageKey, component]) => (
-            <Route
-              key={pageKey}
-              exact
-              path={`/${ROUTES[pageKey as keyof typeof pages]}`}
-              component={() => <component.component></component.component>}
-            />
-          ))}
-          <Route path="*" component={() => <pages.error.component />} />
-        </Switch>
-      </Suspense>
-    </BrowserRouter>
-  );
-};
+    return (
+      <BrowserRouter>
+        <Suspense fallback={<Loader />}>
+          <Header {...headerProps} />
+          <Switch>
+            {Object.entries(pages).map(([pageKey, component]) => (
+              <Route
+                key={pageKey}
+                exact
+                path={`/${ROUTES[pageKey as keyof typeof pages]}`}
+                component={() => <component.component></component.component>}
+              />
+            ))}
+            <Route path="*" component={() => <pages.error.component />} />
+          </Switch>
+        </Suspense>
+      </BrowserRouter>
+    );
+  })
+);
