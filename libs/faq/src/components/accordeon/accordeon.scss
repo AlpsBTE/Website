@@ -1,0 +1,56 @@
+.accordion {
+  background-color: white;
+  width: 60%;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 3%;
+  overflow: hidden;
+  margin-left: 20%;
+  border-radius: 10px;
+  box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, 0.1);
+
+  &__container {
+    padding: 20px;
+  }
+
+  &__subContainer {
+    padding: 20px;
+    margin: -20px;
+    z-index: 2;
+    user-select: none;
+  }
+
+  &__title {
+    padding: 20px;
+  }
+
+  &__title:hover {
+    cursor: pointer;
+  }
+
+  &__icon {
+    float: right;
+    rotate: 180deg;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__content {
+    z-index: 1;
+    font-weight: 500;
+    overflow: hidden;
+    max-height: 1000px;
+    transition: 1s ease-in-out;
+
+    &__text {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+  }
+
+  &__content[aria-expanded='true'] {
+    max-height: 0px;
+    padding-top: 0vh;
+    transition: 0.4s cubic-bezier(0, 1, 0, 1);
+  }
+}
