@@ -1,6 +1,8 @@
 {
-  "home": {
-    "headline": "Recreating our Countries in Minecraft",
-    "joinUs": "Join Us!"
+  "pages": {
+    "home": {
+      "headline": "Recreating our Countries in Minecraft",
+      "joinUs": "Join Us!"
+    }
   }
 }
