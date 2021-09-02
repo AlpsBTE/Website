@@ -1,0 +1,21 @@
+@keyframes loader {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(-181deg);
+  }
+}
+
+.loader {
+  width: 80px;
+  color: rgb(66, 66, 66);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: loader;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
