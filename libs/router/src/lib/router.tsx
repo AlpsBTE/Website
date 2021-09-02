@@ -78,7 +78,7 @@ export const Router = inject(languageStore.storeKey)(
             />
             <Route
               path={`*`}
-              component={() => <Redirect to={`/${languageStore.language}`} />}
+              component={() => <Redirect to={`/${ROUTES.home}`} />}
             />
           </Switch>
         </Suspense>
