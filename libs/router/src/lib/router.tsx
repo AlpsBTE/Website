@@ -25,7 +25,7 @@ const pages = {
 
 /**
  * @key Route name
- * @value URL route (usually same as key. However, exceptions e.g. home can be defined here)
+ * @value URL route
  */
 export type ROUTES = {
   [K in keyof typeof pages]: K extends 'home'
