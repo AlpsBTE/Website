@@ -105,11 +105,9 @@ export const Header = inject(languageStore.storeKey)(
             })}
             <button
               onClick={() =>
-                languageStore.setLanguage(
-                  languageStore.language === LanguageEnum.de
-                    ? LanguageEnum.en
-                    : LanguageEnum.de
-                )
+                languageStore.language === LanguageEnum.de
+                  ? languageStore.setLanguage(LanguageEnum.en)
+                  : languageStore.setLanguage(LanguageEnum.de)
               }
             >
               Temporary Language Toggle
