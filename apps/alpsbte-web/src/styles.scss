@@ -1,7 +1,7 @@
 // below does not pass build pipeline for some reason
 // @import '/libs/shared/theme/index.scss';
 
-@import '../../../libs/shared/theme/index.scss';
+@import '../../../libs/shared/theme/src/lib/styles/index.scss';
 
 body {
   margin: 0;
