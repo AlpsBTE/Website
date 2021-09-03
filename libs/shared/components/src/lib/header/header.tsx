@@ -113,7 +113,7 @@ export const Header = inject(languageStore.storeKey)(
             >
               Temporary Language Toggle
             </button>
-            {/* building site - init */}test
+            {/* building site - init */}
           </ul>
         </nav>
       );
