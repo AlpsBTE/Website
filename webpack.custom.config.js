@@ -9,20 +9,23 @@ module.exports = (config, context) => {
     ...config,
     plugins: [
       ...config.plugins,
-      new WebpackNotifierPlugin({ title: 'AlpsBTE Frontend Build completed' }),
+      new WebpackNotifierPlugin({
+        title: 'AlpsBTE Frontend Build completed',
+        emoji: true,
+      }),
     ],
     resolve: {
       ...config.resolve,
       alias: {
         ...config.resolve.alias,
-        theme: path.join(__dirname, 'lib/shared/theme/theme.scss'),
+        theme: path.join(__dirname, 'libs/shared/theme/src/lib/theme.scss'),
         variables: path.join(
           __dirname,
-          'lib/shared/theme/src/lib/variables/index.scss'
+          'libs/shared/theme/src/lib/variables/index.scss'
         ),
         mixins: path.join(
           __dirname,
-          'lib/shared/theme/src/lib/mixins/index.scss'
+          'libs/shared/theme/src/lib/mixins/index.scss'
         ),
         defaultStyles: path.join(
           __dirname,

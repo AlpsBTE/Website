@@ -1,4 +1,4 @@
-@import '../../../shared/theme/index.scss';
+@import 'variables';
 
 .contact {
   font-weight: 100;
@@ -11,6 +11,7 @@
     margin-top: 5vh;
     background-color: $white;
   }
+
   &__title-font {
     font-size: 1.5rem;
     padding-bottom: 5px;
@@ -36,7 +37,7 @@
   &__people {
     flex: 50%;
     padding: 10px;
-    padding: $spacing-s;
+    padding: 10px;
     flex: 50%;
     text-align: left;
     padding-right: 4vw;
