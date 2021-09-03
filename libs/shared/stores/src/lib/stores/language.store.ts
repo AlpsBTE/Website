@@ -1,7 +1,8 @@
 /*eslint-disable */
 import { observable, action, makeAutoObservable, toJS } from 'mobx';
 import { create, persist } from 'mobx-persist';
-import { ISet, Language, languages } from '@alpsbte/shared/language';
+import { languages } from '@alpsbte/shared/language';
+import type { Language, ISet } from '@alpsbte/shared/language';
 import { fetchTestdata } from '@alpsbte/shared/language';
 import { LanguageEnum } from '@alpsbte/shared/language';
 import { IStore } from '../interfaces/store';
