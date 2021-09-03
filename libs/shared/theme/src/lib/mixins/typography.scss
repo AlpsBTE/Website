@@ -1,3 +1,11 @@
 @mixin bold {
   font-weight: 900;
 }
+
+@mixin h1 {
+  font-family: sans-serif;
+  font-size: 5vh;
+  margin-left: 2vw;
+  margin-right: 5vw;
+  text-align: center;
+}
