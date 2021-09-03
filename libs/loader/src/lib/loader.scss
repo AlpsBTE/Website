@@ -1,19 +1,18 @@
 @keyframes loader {
   from {
-    transform: rotate(180deg);
+    transform: rotate(45deg);
   }
   to {
-    transform: rotate(-181deg);
+    transform: rotate(-315deg);
   }
 }
 
 .loader {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40vh;
   width: 80px;
-  color: rgb(66, 66, 66);
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   animation-name: loader;
   animation-duration: 0.8s;
