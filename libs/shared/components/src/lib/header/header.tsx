@@ -9,14 +9,14 @@ import { languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
 import { LanguageEnum } from '@alpsbte/shared/language';
 
-interface navItems {
+interface NavItems {
   text: string;
   to: string;
 }
 export interface HeaderProps {
   headerText: string;
   mobileBreakpoint: number;
-  navItems: navItems[];
+  navItems: NavItems[];
   forceColor: boolean;
 }
 
