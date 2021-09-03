@@ -19,15 +19,15 @@ module.exports = (config, context) => {
       alias: {
         ...config.resolve.alias,
         theme: path.join(__dirname, 'libs/shared/theme/index.scss'),
-        variables: path.join(
+        'theme:variables': path.join(
           __dirname,
           'libs/shared/theme/src/lib/variables/index.scss'
         ),
-        mixins: path.join(
+        'theme:mixins': path.join(
           __dirname,
           'libs/shared/theme/src/lib/mixins/index.scss'
         ),
-        defaultStyles: path.join(
+        'theme:defaultStyles': path.join(
           __dirname,
           'libs/shared/theme/src/lib/styles/index.scss'
         ),
