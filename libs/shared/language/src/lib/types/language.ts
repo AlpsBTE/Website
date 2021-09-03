@@ -6,4 +6,6 @@ export enum LanguageEnum {
 }
 
 export type Language = keyof typeof LanguageEnum;
+
+export const languages = Object.keys(LanguageEnum);
 /* eslint-enable */
