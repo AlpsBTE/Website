@@ -18,7 +18,7 @@ module.exports = (config, context) => {
       ...config.resolve,
       alias: {
         ...config.resolve.alias,
-        theme: path.join(__dirname, 'libs/shared/theme/src/lib/theme.scss'),
+        theme: path.join(__dirname, 'libs/shared/theme/index.scss'),
         variables: path.join(
           __dirname,
           'libs/shared/theme/src/lib/variables/index.scss'
