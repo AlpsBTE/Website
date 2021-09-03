@@ -103,6 +103,7 @@ export const Header = inject(languageStore.storeKey)(
                 </li>
               );
             })}
+            {/* building site - init */}
             <button
               onClick={() =>
                 languageStore.language === LanguageEnum.de
@@ -112,6 +113,7 @@ export const Header = inject(languageStore.storeKey)(
             >
               Temporary Language Toggle
             </button>
+            {/* building site - init */}
           </ul>
         </nav>
       );
