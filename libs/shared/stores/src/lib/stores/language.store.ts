@@ -31,7 +31,7 @@ export class LanguageStore implements IStore {
   @action setLanguage(language: Language): void {
     this.language = language;
     (async () => (this._set = await this.fetchSet(language)))();
-    const end = window.location.href.split('/').pop();
+    const end = window.location.href.split('/').slice(4).join('/');
     window.history.pushState(
       null,
       '',
