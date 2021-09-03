@@ -1,7 +1,7 @@
 /*eslint-disable */
 import { observable, action, makeAutoObservable, toJS } from 'mobx';
 import { create, persist } from 'mobx-persist';
-import type { ISet, Language } from '@alpsbte/shared/language';
+import { ISet, Language, languages } from '@alpsbte/shared/language';
 import { fetchTestdata } from '@alpsbte/shared/language';
 import { LanguageEnum } from '@alpsbte/shared/language';
 import { IStore } from '../interfaces/store';
@@ -35,7 +35,7 @@ export class LanguageStore implements IStore {
     window.history.pushState(
       null,
       '',
-      (<string[]>Object.keys(LanguageEnum)).includes(end ?? '')
+      languages.includes(end ?? '')
         ? languageStore.language
         : `${languageStore.language}/${end}`
     );

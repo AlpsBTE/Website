@@ -7,7 +7,6 @@ import AnimateHeight from 'react-animate-height';
 import logo from '../shared/assets/logo.png';
 import { languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
-import { LanguageEnum } from '@alpsbte/shared/language';
 
 interface NavItems {
   text: string;
@@ -103,17 +102,6 @@ export const Header = inject(languageStore.storeKey)(
                 </li>
               );
             })}
-            {/* building site - init */}
-            <button
-              onClick={() =>
-                languageStore.language === LanguageEnum.de
-                  ? languageStore.setLanguage(LanguageEnum.en)
-                  : languageStore.setLanguage(LanguageEnum.de)
-              }
-            >
-              Temporary Language Toggle
-            </button>
-            {/* building site - init */}
           </ul>
         </nav>
       );
