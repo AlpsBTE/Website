@@ -12,7 +12,6 @@ export interface HomeProps {}
 export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
   observer(({}: HomeProps) => {
     const [offsetY, setOffsetY] = useState(0);
-
     const scrollEvent = () => {
       setOffsetY(window.pageYOffset);
     };
