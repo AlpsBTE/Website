@@ -1,5 +1,6 @@
+@use "../variables/colors.scss" as colors;
 a {
-  color: black;
+  color: colors.$black;
   text-decoration: none;
   cursor: pointer;
 }
