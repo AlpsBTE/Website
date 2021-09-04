@@ -3,4 +3,12 @@
     font-family: sans-serif;
     margin: 5% 10% 5% 10%;
   }
+
+  &__image-container {
+    display: flex;
+  }
+
+  &__image {
+    width: 300px;
+  }
 }

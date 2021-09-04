@@ -28,10 +28,19 @@ export function AboutUs(props: AboutUsProps) {
 
       <Button label="Contact us" />
 
-      <div className="aboutus_image-container">
-        <div className="aboutus_image-container">
-          <img className="aboutus_image" />
-        </div>
+      <div className="aboutus__image-container">
+        <img
+          className="aboutus__image"
+          src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+        />
+        <img
+          className="aboutus__image"
+          src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+        />
+        <img
+          className="aboutus__image"
+          src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+        />
       </div>
     </div>
   );
