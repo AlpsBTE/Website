@@ -24,7 +24,7 @@ export function AboutUs(props: AboutUsProps) {
       </p>
 
       <Button
-        label="Contact us"
+        label="Contact Us"
         size="md"
         color="#9A9A9A"
         style={{ marginLeft: 'auto', marginRight: 'auto' }}
