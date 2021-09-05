@@ -26,7 +26,12 @@ export function AboutUs(props: AboutUsProps) {
         ipsum dolor sit amet.
       </p>
 
-      <Button label="Contact us" />
+      <Button
+        label="Contact us"
+        size="md"
+        color="#9A9A9A"
+        style={{ marginLeft: 'auto', marginRight: 'auto' }}
+      />
 
       <div className="aboutus__image-container">
         <img
