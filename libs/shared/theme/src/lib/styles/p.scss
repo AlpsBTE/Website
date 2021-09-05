@@ -1,0 +1,8 @@
+@use "../variables/colors.scss" as colors;
+@use "../variables/typography.scss" as typography;
+
+p {
+  color: colors.$black;
+  text-decoration: none;
+  font-family: typography.$text;
+}
