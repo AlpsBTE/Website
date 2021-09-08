@@ -317,6 +317,27 @@
         }
       }
     },
+    "press": {
+      "root": "libs/press",
+      "sourceRoot": "libs/press/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/press/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/press"],
+          "options": {
+            "jestConfig": "libs/press/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "router": {
       "root": "libs/router",
       "sourceRoot": "libs/router/src",
