@@ -1,9 +1,15 @@
 .language-select {
-  cursor: pointer;
-  padding: 5px;
-  outline: none;
-  border: none;
-  margin: none;
-  font-weight: 600;
-  background-color: transparent;
+  &__icon {
+    font-size: 0.8em;
+  }
+
+  &__select {
+    cursor: pointer;
+    padding: 5px;
+    outline: none;
+    border: none;
+    margin: none;
+    font-weight: 600;
+    background-color: transparent;
+  }
 }
