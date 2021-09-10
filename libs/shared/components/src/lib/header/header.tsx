@@ -73,98 +73,95 @@ export const Header = inject(languageStore.storeKey)(
         setShowMenu(!showMenu);
       };
 
-    if (windowWidth >= props.mobileBreakpoint)
-      return (
-        <nav
-          className={`header ${
-            transparent && !props.forceColor ? 'transparent' : ''
-          }`}
-        >
-          <div className="header__image-container ">
+    return windowWidth >= props.mobileBreakpoint ? (
+      <nav
+        className={`header ${
+          transparent && !props.forceColor ? 'transparent' : ''
+        }`}
+      >
+        <div className="header__image-container ">
+          <Link to={`/${ROUTES.home}`}>
+            <img src={logo} alt={props.headerText} />
+            <h1 style={{ color: transparent ? 'white' : 'black' }}>
+              {props.headerText}
+            </h1>
+          </Link>
+          <title>{props.headerText}</title>
+        </div>
+        <ul className="header__navitem-container">
+          {props.navItems.map((_, key) => {
+            return (
+              <li key={key} className="header__navitem-container__item">
+                <Link
+                  to={`/${props.navItems[key].to}`}
+                  style={{ color: transparent ? 'white' : 'black' }}
+                >
+                  {props.navItems[key].text}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    ) : (
+      <nav
+        className={`header ${
+          transparent && !props.forceColor ? 'transparent' : ''
+        }`}
+        style={{
+          flexDirection: 'column',
+          maxHeight: '1000px',
+          height: 'auto',
+        }}
+      >
+        <div className="header__upper-container">
+          <div className="header__upper-container__image-container ">
             <Link to={`/${ROUTES.home}`}>
               <img src={logo} alt={props.headerText} />
               <h1 style={{ color: transparent ? 'white' : 'black' }}>
                 {props.headerText}
               </h1>
             </Link>
-            <title>{props.headerText}</title>
           </div>
-          <ul className="header__navitem-container">
+          <div className="header__upper-container__burger_container">
+            <div
+              id="nav-icon1"
+              ref={burgerRef}
+              className={`${showMenu ? 'open' : ''}`}
+            >
+              <span
+                style={{ backgroundColor: transparent ? 'white' : 'black' }}
+              ></span>
+              <span
+                style={{ backgroundColor: transparent ? 'white' : 'black' }}
+              ></span>
+              <span
+                style={{ backgroundColor: transparent ? 'white' : 'black' }}
+              ></span>
+            </div>
+          </div>
+        </div>
+        <ul className="header__lower-container__navitem-container">
+          <AnimateHeight duration={350} height={showMenu ? 'auto' : 0}>
             {props.navItems.map((_, key) => {
               return (
-                <li key={key} className="header__navitem-container__item">
+                <li
+                  key={key}
+                  className="header__lower-container__navitem-container__item"
+                >
                   <Link
+                    onClick={() => setShowMenu(false)}
                     to={`/${props.navItems[key].to}`}
-                    style={{ color: transparent ? 'white' : 'black' }}
                   >
                     {props.navItems[key].text}
                   </Link>
                 </li>
               );
             })}
-          </ul>
-        </nav>
-      );
-    else
-      return (
-        <nav
-          className={`header ${
-            transparent && !props.forceColor ? 'transparent' : ''
-          }`}
-          style={{
-            flexDirection: 'column',
-            maxHeight: '1000px',
-            height: 'auto',
-          }}
-        >
-          <div className="header__upper-container">
-            <div className="header__upper-container__image-container ">
-              <Link to={`/${ROUTES.home}`}>
-                <img src={logo} alt={props.headerText} />
-                <h1 style={{ color: transparent ? 'white' : 'black' }}>
-                  {props.headerText}
-                </h1>
-              </Link>
-            </div>
-            <div className="header__upper-container__burger_container">
-              <div
-                id="nav-icon1"
-                ref={burgerRef}
-                className={`${showMenu ? 'open' : ''}`}
-              >
-                <span
-                  style={{ backgroundColor: transparent ? 'white' : 'black' }}
-                ></span>
-                <span
-                  style={{ backgroundColor: transparent ? 'white' : 'black' }}
-                ></span>
-                <span
-                  style={{ backgroundColor: transparent ? 'white' : 'black' }}
-                ></span>
-              </div>
-            </div>
-          </div>
-          <ul className="header__lower-container__navitem-container">
-            <AnimateHeight duration={350} height={showMenu ? 'auto' : 0}>
-              {props.navItems.map((_, key) => {
-                return (
-                  <li
-                    key={key}
-                    className="header__lower-container__navitem-container__item"
-                  >
-                    <Link
-                      onClick={() => setShowMenu(false)}
-                      to={`/${props.navItems[key].to}`}
-                    >
-                      {props.navItems[key].text}
-                    </Link>
-                  </li>
-                );
-              })}
-            </AnimateHeight>
-          </ul>
-        </nav>
-      );
+          </AnimateHeight>
+        </ul>
+      </nav>
+    );
   })
 );
 
