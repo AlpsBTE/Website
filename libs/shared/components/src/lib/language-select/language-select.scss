@@ -2,8 +2,14 @@
   cursor: pointer;
   width: 100px;
 
+  &-opened {
+  }
+
   &__ul {
+    height: 100%;
+    display: flex;
     list-style-type: none;
+    flex-direction: column;
 
     &__active {
       color: black;
