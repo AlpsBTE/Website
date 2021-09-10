@@ -28,15 +28,13 @@ const pages = {
  * @value URL route
  */
 export type ROUTES = {
-  [K in keyof typeof pages]: K extends 'home'
-    ? `${Language}`
-    : `${Language}/${K}`;
+  [K in keyof typeof pages]: K extends 'home' ? `` : `${K}`;
 };
 export const ROUTES: ROUTES = Object.keys(pages).reduce(
   (acc, curr) =>
     curr === propnameOf<typeof pages>(pages, (p) => p.home)
-      ? { ...acc, [curr]: `${languageStore.language}` }
-      : { ...acc, [curr]: `${languageStore.language}/${curr}` },
+      ? { ...acc, [curr]: `` }
+      : { ...acc, [curr]: `${curr}` },
   {}
 ) as ROUTES;
 
@@ -47,15 +45,30 @@ export const Router = inject(languageStore.storeKey)(
       forceColor: window.location.pathname === '/home',
       headerText: 'Alps BTE',
       navItems: [
-        { text: tr('navItems.aboutUs'), to: ROUTES.aboutUs },
-        { text: tr('navItems.gallery'), to: ROUTES.gallery },
-        { text: tr('navItems.downloads'), to: ROUTES.downloads },
-        { text: tr('navItems.faq'), to: ROUTES.faq },
+        {
+          text: tr('navItems.aboutUs'),
+          to: `${languageStore.language}/${ROUTES.aboutUs}`,
+        },
+        {
+          text: tr('navItems.gallery'),
+          to: `${languageStore.language}/${ROUTES.gallery}`,
+        },
+        {
+          text: tr('navItems.downloads'),
+          to: `${languageStore.language}/${ROUTES.downloads}`,
+        },
+        {
+          text: tr('navItems.faq'),
+          to: `${languageStore.language}/${ROUTES.faq}`,
+        },
         {
           text: tr('navItems.application'),
-          to: ROUTES.application,
+          to: `${languageStore.language}/${ROUTES.application}`,
         },
-        { text: tr('navItems.contact'), to: ROUTES.contact },
+        {
+          text: tr('navItems.contact'),
+          to: `${languageStore.language}/${ROUTES.contact}`,
+        },
       ],
     };
 
@@ -68,7 +81,9 @@ export const Router = inject(languageStore.storeKey)(
               <Route
                 key={pageKey}
                 exact
-                path={`/${ROUTES[pageKey as keyof typeof pages]}`}
+                path={`/${languageStore.language}/${
+                  ROUTES[pageKey as keyof typeof pages]
+                }`}
                 component={() => <component.component></component.component>}
               />
             ))}
@@ -78,7 +93,9 @@ export const Router = inject(languageStore.storeKey)(
             />
             <Route
               path={`*`}
-              component={() => <Redirect to={`/${ROUTES.home}`} />}
+              component={() => (
+                <Redirect to={`/${languageStore.language}/${ROUTES.home}`} />
+              )}
             />
           </Switch>
         </Suspense>
