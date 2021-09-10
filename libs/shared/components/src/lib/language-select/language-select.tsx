@@ -1,9 +1,10 @@
 /* eslint-disable */
 import './language-select.scss';
-import { languages } from '@alpsbte/shared/language';
+import { LanguageEnum, languages } from '@alpsbte/shared/language';
 import type { Language } from '@alpsbte/shared/language';
 import { inject, observer } from 'mobx-react';
 import { languageStore } from '@alpsbte/shared/stores';
+import { ChangeEvent } from 'react';
 
 export interface LanguageSelectProps {}
 
@@ -17,7 +18,7 @@ export const LanguageSelect: React.FC<LanguageSelectProps> = inject(
           languageStore.isSelectOpened ? 'language-select-opened' : ''
         }`}
       >
-        <ul className="language-select__ul">
+        {/* <ul className="language-select__ul">
           <li
             className="language-select__ul__active"
             onClick={() =>
@@ -44,7 +45,21 @@ export const LanguageSelect: React.FC<LanguageSelectProps> = inject(
                   </li>
                 );
               })}
-        </ul>
+        </ul> */}
+        <select
+          className="language-select"
+          onChange={(e: ChangeEvent<HTMLSelectElement>) =>
+            languageStore.setLanguage(e.target.value as Language)
+          }
+        >
+          {languages.map((o: string, i: number) => {
+            return (
+              <option key={i} value={o}>
+                {o}
+              </option>
+            );
+          })}
+        </select>
       </div>
     );
   })
