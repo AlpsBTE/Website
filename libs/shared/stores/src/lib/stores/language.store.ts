@@ -20,6 +20,8 @@ export class LanguageStore implements IStore {
     this.set = value;
   }
 
+  @observable isSelectOpened: boolean = false;
+
   constructor() {
     makeAutoObservable(this);
     (async () => (this._set = await this.fetchSet(this.language)))();
@@ -40,6 +42,10 @@ export class LanguageStore implements IStore {
         ? languageStore.language
         : `${languageStore.language}/${end}`
     );
+  }
+
+  @action setIsSelectedOpened(value: boolean): void {
+    this.isSelectOpened = value;
   }
 }
 

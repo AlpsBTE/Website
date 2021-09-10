@@ -1,0 +1,16 @@
+.language-select {
+  cursor: pointer;
+  width: 100px;
+
+  &__ul {
+    list-style-type: none;
+
+    &__active {
+      color: black;
+    }
+
+    &__inactive {
+      color: gray;
+    }
+  }
+}
