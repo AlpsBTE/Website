@@ -1,7 +1,6 @@
 /*eslint-disable */
 import { observable, action, makeAutoObservable, toJS } from 'mobx';
 import { create, persist } from 'mobx-persist';
-import { languages } from '@alpsbte/shared/language';
 import type { Language, ISet } from '@alpsbte/shared/language';
 import { fetchTestdata } from '@alpsbte/shared/language';
 import { LanguageEnum } from '@alpsbte/shared/language';
@@ -35,13 +34,9 @@ export class LanguageStore implements IStore {
     this.language = language;
     (async () => (this._set = await this.fetchSet(language)))();
     const end = window.location.href.split('/').slice(4).join('/');
-    window.history.pushState(
-      null,
-      '',
-      languages.includes(end ?? '')
-        ? languageStore.language
-        : `${languageStore.language}/${end}`
-    );
+    console.log(end);
+    // window.location.assign(`/${languageStore.language}/${end}`);
+    // window.history.pushState(null, null, `/${languageStore.language}/${end}`);
   }
 
   @action setIsSelectedOpened(value: boolean): void {
