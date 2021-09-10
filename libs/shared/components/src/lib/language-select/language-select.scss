@@ -3,11 +3,8 @@
   width: 100px;
   padding: 5px;
   outline: none;
-  margin: 1px solid black;
-
-  option:hover {
-    background-color: red;
-  }
+  border: 2px solid black;
+  font-weight: 600;
 
   &-opened {
     justify-self: flex-end;
