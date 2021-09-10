@@ -12,11 +12,19 @@ export const LanguageSelect: React.FC<LanguageSelectProps> = inject(
 )(
   observer(({}: LanguageSelectProps) => {
     return (
-      <div className="language-select">
+      <div
+        className={`${`language-select`} ${
+          languageStore.isSelectOpened ? 'language-select-opened' : ''
+        }`}
+      >
         <ul className="language-select__ul">
           <li
             className="language-select__ul__active"
-            onClick={() => languageStore.setIsSelectedOpened(true)}
+            onClick={() =>
+              languageStore.setIsSelectedOpened(
+                languageStore.isSelectOpened ? false : true
+              )
+            }
           >
             {languageStore.language}
           </li>
