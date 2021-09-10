@@ -7,6 +7,7 @@ import AnimateHeight from 'react-animate-height';
 import logo from '../shared/assets/logo.png';
 import { languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
+import LanguageSelect from '../language-select/language-select';
 
 interface NavItem {
   text: string;
@@ -101,6 +102,7 @@ export const Header = inject(languageStore.storeKey)(
               </li>
             );
           })}
+          <LanguageSelect />
         </ul>
       </nav>
     ) : (
