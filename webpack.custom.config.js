@@ -1,5 +1,4 @@
 const path = require('path');
-const WebpackNotifierPlugin = require('webpack-notifier');
 const nrwlConfig = require('@nrwl/react/plugins/webpack.js');
 
 module.exports = (config) => {
@@ -7,13 +6,6 @@ module.exports = (config) => {
 
   return {
     ...config,
-    plugins: [
-      ...config.plugins,
-      new WebpackNotifierPlugin({
-        title: 'AlpsBTE Frontend Build completed',
-        emoji: true,
-      }),
-    ],
     resolve: {
       ...config.resolve,
       alias: {
