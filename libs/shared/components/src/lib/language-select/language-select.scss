@@ -1,8 +1,17 @@
 .language-select {
   cursor: pointer;
   width: 100px;
+  padding: 5px;
+  outline: none;
+  margin: 1px solid black;
+
+  option:hover {
+    background-color: red;
+  }
 
   &-opened {
+    justify-self: flex-end;
+    align-self: flex-end;
   }
 
   &__ul {
@@ -10,6 +19,7 @@
     display: flex;
     list-style-type: none;
     flex-direction: column;
+    justify-content: flex-end;
 
     &__active {
       color: black;
@@ -18,5 +28,9 @@
     &__inactive {
       color: gray;
     }
+
+    // li:not(li:first-child) {
+    //   margin-top: 20px;
+    // }
   }
 }
