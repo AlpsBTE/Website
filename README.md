@@ -11,11 +11,11 @@ This is a rework of the AlpsBTE website. The main audience is a professional tar
 * Desktop: [open Desktop (click)](https://xd.adobe.com/view/0ba20a0e-d13a-4c14-ad3f-28d8845cca87-5ef1/)
 
 
-### Problems/Bugs:
+### Problems/Bugs
 If you have any bugs, suggestions for improvement or other comments about the website, we would be very happy if you would create an *issue*. This helps us to keep an overview.  
 [Create an issue! (click)](https://github.com/AlpsBTE/alpsbte-website/issues/new)
 
-### For Contributers:
+### For Contributers
 
 1. Clone the Repo
 ```bash
