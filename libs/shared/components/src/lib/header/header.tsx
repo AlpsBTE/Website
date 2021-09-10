@@ -94,7 +94,7 @@ export const Header = inject(languageStore.storeKey)(
               return (
                 <li key={key} className="header__navitem-container__item">
                   <Link
-                    to={props.navItems[key].to}
+                    to={`/${props.navItems[key].to}`}
                     style={{ color: transparent ? 'white' : 'black' }}
                   >
                     {props.navItems[key].text}
@@ -154,7 +154,7 @@ export const Header = inject(languageStore.storeKey)(
                   >
                     <Link
                       onClick={() => setShowMenu(false)}
-                      to={props.navItems[key].to}
+                      to={`/${props.navItems[key].to}`}
                     >
                       {props.navItems[key].text}
                     </Link>
