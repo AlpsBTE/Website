@@ -2,7 +2,7 @@ const path = require('path');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const nrwlConfig = require('@nrwl/react/plugins/webpack.js');
 
-module.exports = (config, context) => {
+module.exports = (config) => {
   nrwlConfig(config);
 
   return {
