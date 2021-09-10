@@ -8,14 +8,14 @@ import logo from '../shared/assets/logo.png';
 import { languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
 
-interface NavItems {
+interface NavItem {
   text: string;
   to: string;
 }
 export interface HeaderProps {
   headerText: string;
   mobileBreakpoint: number;
-  navItems: NavItems[];
+  navItems: NavItem[];
   forceColor: boolean;
 }
 
