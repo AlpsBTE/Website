@@ -39,8 +39,7 @@ export const Loader: React.FC = () => {
   console.log(animation);
   return (
     <div className="loader">
-      {/* eslint-disable */}
-      <img src={require(`../assets/${animation}.gif`)} alt={'test'} />
+      <img src={require(`../assets/${animation}.gif`)} alt={animation} />
     </div>
   );
 };
