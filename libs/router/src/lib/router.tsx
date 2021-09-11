@@ -10,7 +10,7 @@ import { inject, observer } from 'mobx-react';
 
 const pages = {
   home: {
-    component: lazy(() => import('@alpsbte/home')),
+    component: lazy(() => import('@alpsbte/loader')),
   },
   aboutUs: {
     component: lazy(() => import('@alpsbte/about-us')),
