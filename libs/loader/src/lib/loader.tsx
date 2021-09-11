@@ -1,4 +1,6 @@
-import React from 'react';
+/* eslint-disable */
+import React, { useEffect, useState } from 'react';
+import { useDelayUnmount } from '@alpsbte/shared/util';
 import './loader.scss';
 
 const possibilities = [
@@ -34,12 +36,30 @@ const possibilities = [
 ].sort((a: string, b: string) => a.localeCompare(b));
 
 export const Loader: React.FC = () => {
+  const [isMounted, setIsMounted] = useState(true);
+  const shouldRenderChild = useDelayUnmount(isMounted, 500);
+  const mountedStyle = { opacity: 1, transition: 'opacity 500ms ease-in' };
+  const unmountedStyle = { opacity: 0, transition: 'opacity 500ms ease-in' };
+
+  useEffect(() => {
+    setIsMounted(true);
+    return setIsMounted(false);
+  }, [isMounted]);
+
   const animation =
     possibilities[Math.floor(Math.random() * possibilities.length)];
+
   return (
-    <div className="loader">
-      <img src={require(`../assets/${animation}.gif`)} alt={animation} />
-    </div>
+    <>
+      {shouldRenderChild && (
+        <div
+          className="loader"
+          style={isMounted ? mountedStyle : unmountedStyle}
+        >
+          <img src={require(`../assets/${animation}.gif`)} alt={animation} />
+        </div>
+      )}
+    </>
   );
 };
 
