@@ -1,5 +1,11 @@
-@mixin center {
+@mixin align-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin align-bottom-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }

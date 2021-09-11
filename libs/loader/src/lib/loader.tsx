@@ -35,31 +35,28 @@ const possibilities = [
   'wolf',
 ].sort((a: string, b: string) => a.localeCompare(b));
 
+const animation =
+  possibilities[Math.floor(Math.random() * possibilities.length)];
+
 export const Loader: React.FC = () => {
-  const [isMounted, setIsMounted] = useState(true);
-  const shouldRenderChild = useDelayUnmount(isMounted, 500);
-  const mountedStyle = { opacity: 1, transition: 'opacity 500ms ease-in' };
-  const unmountedStyle = { opacity: 0, transition: 'opacity 500ms ease-in' };
-
+  const [dots, setDots] = useState<number>(0);
   useEffect(() => {
-    setIsMounted(true);
-    return setIsMounted(false);
-  }, [isMounted]);
+    setTimeout(() => setDots(dots === 3 ? 0 : dots + 1), 300);
+  }, [dots]);
 
-  const animation =
-    possibilities[Math.floor(Math.random() * possibilities.length)];
+  const test = new Array(dots).fill('.');
+  console.log(test);
 
   return (
-    <>
-      {shouldRenderChild && (
-        <div
-          className="loader"
-          style={isMounted ? mountedStyle : unmountedStyle}
-        >
-          <img src={require(`../assets/${animation}.gif`)} alt={animation} />
-        </div>
-      )}
-    </>
+    <div className="loader">
+      <div className="loader__content">
+        <h3>
+          Loading
+          {new Array(dots).fill('.').map((e) => e)}
+        </h3>
+        <img src={require(`../assets/${animation}.gif`)} alt={animation} />
+      </div>
+    </div>
   );
 };
 
