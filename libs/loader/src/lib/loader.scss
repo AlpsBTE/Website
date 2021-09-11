@@ -1,20 +1,15 @@
-@keyframes loader {
-  from {
-    transform: rotate(45deg);
-  }
-  to {
-    transform: rotate(-315deg);
-  }
-}
+@use 'theme:variables' as variables;
+@use 'theme:mixins' as mixins;
 
 .loader {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40vh;
-  width: 80px;
-  transform: translate(-50%, -50%);
-  animation-name: loader;
-  animation-duration: 0.8s;
-  animation-iteration-count: infinite;
+  position: fixed;
+  background-color: variables.$cream;
+  height: 100vh;
+  width: 100vw;
+  @include mixins.center;
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
 }
