@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
 import { Loader } from '@alpsbte/loader';
@@ -40,6 +40,11 @@ export const ROUTES: ROUTES = Object.keys(pages).reduce(
 
 export const Router = inject(languageStore.storeKey)(
   observer(() => {
+    useEffect(
+      () => languageStore.setLanguage(languageStore.language),
+      [languageStore.language]
+    );
+
     const headerProps: HeaderProps = {
       mobileBreakpoint: 900,
       forceColor: window.location.pathname === '/home',
