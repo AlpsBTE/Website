@@ -26,10 +26,11 @@ export const LanguageSelect: React.FC<LanguageSelectProps> = inject(
           onChange={(e: ChangeEvent<HTMLSelectElement>) =>
             languageStore.setLanguage(e.target.value as Language)
           }
+          value={languageStore.language}
         >
           {languages.map((o: string, i: number) => {
             return (
-              <option key={i} value={o} defaultValue={languageStore.language}>
+              <option key={i} value={o}>
                 {o}
               </option>
             );
