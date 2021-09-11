@@ -4,13 +4,13 @@ import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Header, HeaderProps } from '@alpsbte/shared/components';
 import { Loader } from '@alpsbte/loader';
 import { propnameOf } from '@alpsbte/shared/util';
-import { Language, tr } from '@alpsbte/shared/language';
+import { tr } from '@alpsbte/shared/language';
 import { languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
 
 const pages = {
   home: {
-    component: lazy(() => import('@alpsbte/home')),
+    component: lazy(() => import('@alpsbte/loader')),
   },
   aboutUs: {
     component: lazy(() => import('@alpsbte/about-us')),
