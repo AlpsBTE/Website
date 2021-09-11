@@ -36,7 +36,6 @@ const possibilities = [
 export const Loader: React.FC = () => {
   const animation =
     possibilities[Math.floor(Math.random() * possibilities.length)];
-  console.log(animation);
   return (
     <div className="loader">
       <img src={require(`../assets/${animation}.gif`)} alt={animation} />
