@@ -2,7 +2,6 @@
 @use 'theme:mixins' as mixins;
 
 .loader {
-  box-sizing: border-box;
   position: fixed;
   background-color: variables.$cream;
   height: 100vh;
