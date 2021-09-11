@@ -1,6 +1,7 @@
+import React from 'react';
 import './loader.scss';
 
-export const Loader = () => {
+export const Loader: React.FC = () => {
   return (
     <div>
       <svg
