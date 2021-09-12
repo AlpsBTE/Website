@@ -64,40 +64,25 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
         </div>
         <div>
           <HomeContentSection
-            title="Our Mission"
+            title={tr('pages.home.contentBlocks.mission.title')}
             image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
             isImageAlignedLeft={true}
           >
-            Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian
-            doedn djse desjd neoand doe Lorem Impsum dolor sit amet ding dong
-            das theos doean ejal ndian doedn djse desjd neoand doe Lorem Impsum
-            dolor sit amet ding dong das theos doean ejal ndian doedn djse desjd
-            neoand doe Lorem Impsum dolor sit amet ding dong das theos doean
-            ejal ndian doedn djse desjd neoand doe
+            {tr('pages.home.contentBlocks.mission.description')}
           </HomeContentSection>
           <HomeContentSection
-            title="Title"
+            title={tr('pages.home.contentBlocks.server.title')}
             image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
             isImageAlignedLeft={false}
           >
-            Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian
-            doedn djse desjd neoand doe Lorem Impsum dolor sit amet ding dong
-            das theos doean ejal ndian doedn djse desjd neoand doe Lorem Impsum
-            dolor sit amet ding dong das theos doean ejal ndian doedn djse desjd
-            neoand doe Lorem Impsum dolor sit amet ding dong das theos doean
-            ejal ndian doedn djse desjd neoand doe
+            {tr('pages.home.contentBlocks.server.description')}
           </HomeContentSection>
           <HomeContentSection
-            title="Title"
+            title={tr('pages.home.contentBlocks.how.title')}
             image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
             isImageAlignedLeft={true}
           >
-            Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian
-            doedn djse desjd neoand doe Lorem Impsum dolor sit amet ding dong
-            das theos doean ejal ndian doedn djse desjd neoand doe Lorem Impsum
-            dolor sit amet ding dong das theos doean ejal ndian doedn djse desjd
-            neoand doe Lorem Impsum dolor sit amet ding dong das theos doean
-            ejal ndian doedn djse desjd neoand doe
+            {tr('pages.home.contentBlocks.how.description')}
           </HomeContentSection>
         </div>
       </>
