@@ -5,18 +5,31 @@
   width: 100%;
   background-color: variables.$white;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   padding: variables.$spacing-l variables.$spacing-5xl;
   padding: variables.$spacing-l 10vw;
 
+  @include mixins.for-phone {
+    flex-direction: column;
+  }
+
   &__aligned-right {
     flex-direction: row-reverse;
+
+    @include mixins.for-phone {
+      flex-direction: column;
+    }
 
     .home-content-section__image-container {
       display: flex;
       justify-content: flex-end;
       align-items: flex-start;
+
+      @include mixins.for-phone {
+        flex-direction: column;
+        align-items: center;
+        padding: variables.$spacing-xl 0;
+      }
     }
   }
 
@@ -26,18 +39,27 @@
     align-items: flex-start;
     padding: variables.$spacing-xl;
 
+    @include mixins.for-phone {
+      flex-direction: column;
+      align-items: center;
+      padding: variables.$spacing-xl 0;
+    }
+
     &__image {
       height: 200px;
     }
   }
 
   &__text-container {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding: variables.$spacing-xl;
+
+    @include mixins.for-phone {
+      align-items: center;
+    }
 
     &__title {
       margin-top: 0;
