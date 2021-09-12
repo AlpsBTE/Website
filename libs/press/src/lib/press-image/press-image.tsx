@@ -9,7 +9,7 @@ export interface PressImageProps {
 export function PressImage(props: PressImageProps) {
   return (
     <div className="press-image">
-      <a href={props.redirect}>
+      <a href={props.redirect} className="press-image__spacings">
         <img
           className="press-image__image"
           src={props.src}
