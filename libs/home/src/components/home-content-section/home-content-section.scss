@@ -6,14 +6,14 @@
   background-color: variables.$white;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: variables.$spacing-l variables.$spacing-5xl;
+  padding: variables.$spacing-l 10vw;
 
   &__aligned-right {
     flex-direction: row-reverse;
 
     .home-content-section__image-container {
-      flex: 1;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -21,7 +21,6 @@
   }
 
   &__image-container {
-    flex: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
