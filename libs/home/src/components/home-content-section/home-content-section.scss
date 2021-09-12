@@ -47,6 +47,11 @@
 
     &__image {
       height: 200px;
+
+      @include mixins.for-phone {
+        width: 100%;
+        height: initial;
+      }
     }
   }
 
