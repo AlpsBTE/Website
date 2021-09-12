@@ -1,3 +1,5 @@
+@use "theme:variables" as variables;
+
 .accordion {
   background-color: white;
   width: 60%;
@@ -9,18 +11,18 @@
   box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, 0.1);
 
   &__container {
-    padding: 20px;
+    padding: variables.$spacing-l;
   }
 
   &__subContainer {
-    padding: 20px;
-    margin: -20px;
+    padding: variables.$spacing-l;
+    margin: -(variables.$spacing-l);
     z-index: 2;
     user-select: none;
   }
 
   &__title {
-    padding: 20px;
+    padding: variables.$spacing-l;
   }
 
   &__title:hover {
@@ -43,7 +45,7 @@
     &__text {
       padding-bottom: 0;
       margin-bottom: 0;
-      margin-right: 20px;
+      margin-right: variables.$spacing-l;
     }
   }
 

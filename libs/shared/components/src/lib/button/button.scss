@@ -1,3 +1,5 @@
+@use "theme:variables" as variables;
+
 .button {
   display: block;
   border: solid;
@@ -6,17 +8,20 @@
   transition: color 0.35s ease-in-out;
   transition: border-color 0.35s ease-in-out;
   transition: opacity 0.35s ease-in-out;
+
   &__lg {
     font-size: 1.1rem;
-    padding: 8px 50px 8px 50px;
+    padding: variables.$spacing-s variables.$spacing-4xl;
   }
+
   &__md {
-    padding: 5px 20px 5px 20px;
+    padding: variables.$spacing-xs variables.$spacing-4xl;
     border-width: 2px;
   }
+
   &__sm {
     font-size: 0.8em;
-    padding: 3px 30px 3px 30px;
+    padding: variables.$spacing-xs variables.$spacing-xl;
     border-width: 2px;
   }
 }

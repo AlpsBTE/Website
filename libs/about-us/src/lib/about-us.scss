@@ -1,7 +1,9 @@
+@use "theme:variables" as variables;
+
 .aboutus {
   &__text {
     font-family: sans-serif;
-    margin: 5% 20% 5% 20%;
+    margin: variables.$spacing-xl variables.$spacing-5xl;
     text-align: center;
   }
 
@@ -15,6 +17,6 @@
 
   &__image {
     width: 300px;
-    padding: 15px;
+    padding: variables.$spacing-m;
   }
 }
