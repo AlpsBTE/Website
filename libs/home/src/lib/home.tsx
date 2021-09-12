@@ -62,42 +62,44 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
             </div>
           </div>
         </div>
-        <HomeContentSection
-          title="Title"
-          alignment="center"
-          image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
-        >
-          Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian doedn
-          djse desjd neoand doe Lorem Impsum dolor sit amet ding dong das theos
-          doean ejal ndian doedn djse desjd neoand doe Lorem Impsum dolor sit
-          amet ding dong das theos doean ejal ndian doedn djse desjd neoand doe
-          Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian doedn
-          djse desjd neoand doe
-        </HomeContentSection>
-        <HomeContentSection
-          title="Title"
-          alignment="center"
-          image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
-        >
-          Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian doedn
-          djse desjd neoand doe Lorem Impsum dolor sit amet ding dong das theos
-          doean ejal ndian doedn djse desjd neoand doe Lorem Impsum dolor sit
-          amet ding dong das theos doean ejal ndian doedn djse desjd neoand doe
-          Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian doedn
-          djse desjd neoand doe
-        </HomeContentSection>
-        <HomeContentSection
-          title="Title"
-          alignment="center"
-          image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
-        >
-          Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian doedn
-          djse desjd neoand doe Lorem Impsum dolor sit amet ding dong das theos
-          doean ejal ndian doedn djse desjd neoand doe Lorem Impsum dolor sit
-          amet ding dong das theos doean ejal ndian doedn djse desjd neoand doe
-          Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian doedn
-          djse desjd neoand doe
-        </HomeContentSection>
+        <div>
+          <HomeContentSection
+            title="Title"
+            image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+            isImageAlignedLeft={true}
+          >
+            Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian
+            doedn djse desjd neoand doe Lorem Impsum dolor sit amet ding dong
+            das theos doean ejal ndian doedn djse desjd neoand doe Lorem Impsum
+            dolor sit amet ding dong das theos doean ejal ndian doedn djse desjd
+            neoand doe Lorem Impsum dolor sit amet ding dong das theos doean
+            ejal ndian doedn djse desjd neoand doe
+          </HomeContentSection>
+          <HomeContentSection
+            title="Title"
+            image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+            isImageAlignedLeft={false}
+          >
+            Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian
+            doedn djse desjd neoand doe Lorem Impsum dolor sit amet ding dong
+            das theos doean ejal ndian doedn djse desjd neoand doe Lorem Impsum
+            dolor sit amet ding dong das theos doean ejal ndian doedn djse desjd
+            neoand doe Lorem Impsum dolor sit amet ding dong das theos doean
+            ejal ndian doedn djse desjd neoand doe
+          </HomeContentSection>
+          <HomeContentSection
+            title="Title"
+            image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+            isImageAlignedLeft={true}
+          >
+            Lorem Impsum dolor sit amet ding dong das theos doean ejal ndian
+            doedn djse desjd neoand doe Lorem Impsum dolor sit amet ding dong
+            das theos doean ejal ndian doedn djse desjd neoand doe Lorem Impsum
+            dolor sit amet ding dong das theos doean ejal ndian doedn djse desjd
+            neoand doe Lorem Impsum dolor sit amet ding dong das theos doean
+            ejal ndian doedn djse desjd neoand doe
+          </HomeContentSection>
+        </div>
       </>
     );
   })
