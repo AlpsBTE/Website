@@ -1,39 +1,51 @@
+@use "theme:variables" as variables;
+@use "theme:mixins" as mixins;
+
 .home-content-section {
   width: 100%;
-  background-color: white;
-  align-items: center;
+  background-color: variables.$white;
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: variables.$spacing-l variables.$spacing-5xl;
+
+  &__aligned-right {
+    flex-direction: row-reverse;
+
+    .home-content-section__image-container {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
 
   &__image-container {
-    min-height: 300px;
     flex: 1;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
+    padding: variables.$spacing-xl;
 
     &__image {
       height: 200px;
-      margin: 0 40px;
     }
   }
+
   &__text-container {
-    min-height: 300px;
     flex: 1;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    padding: variables.$spacing-xl;
+
     &__title {
-      border-bottom: black 4px solid;
-      font-size: 32px;
-      display: block;
-      width: 140px;
-      padding: 20px 0;
-      margin: 0 40px 10px 40px;
     }
+
     &__text {
-      margin: 10px 40px 0px 40px;
       display: block;
-      width: 80%;
+      text-align: justify;
     }
   }
 }

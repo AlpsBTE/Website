@@ -1,62 +1,41 @@
 /* eslint-disable */
+import { ReactNode } from 'react';
 import './home-content-section.scss';
 
 export interface HomeContentSectionProps {
   title: string;
-  children: string;
-  alignment: 'left' | 'center' | 'right';
-  image: never | string;
+  image: string;
+  isImageAlignedLeft: boolean;
+  children: ReactNode;
 }
 
-export function HomeContentSection(props: HomeContentSectionProps) {
-  const alignFlexItemsText: 'flex-start' | 'center' | 'flex-end' =
-    props.alignment === 'left'
-      ? 'flex-start'
-      : props.alignment === 'center'
-      ? 'center'
-      : 'flex-end';
-  const flexDirection: 'row' | 'column' | 'row-reverse' =
-    props.alignment === 'right'
-      ? 'row'
-      : props.alignment === 'left'
-      ? 'row-reverse'
-      : 'column';
-
-  const justifyContentImage: 'flex-start' | 'center' | 'flex-end' =
-    props.alignment === 'right'
-      ? 'flex-start'
-      : props.alignment === 'center'
-      ? 'center'
-      : 'flex-end';
-
+export const HomeContentSection = ({
+  title = 'Title',
+  image,
+  isImageAlignedLeft = true,
+  children,
+}: HomeContentSectionProps) => {
   return (
     <section
-      className="home-content-section"
-      style={{ flexDirection: flexDirection }}
+      className={`home-content-section ${
+        !isImageAlignedLeft && 'home-content-section__aligned-right'
+      }`}
     >
-      <div
-        className="home-content-section__image-container"
-        style={{ justifyContent: justifyContentImage }}
-      >
+      <div className="home-content-section__image-container">
         <img
-          src={props.image}
-          alt={props.title}
+          src={image}
+          alt={title}
           className="home-content-section__image-container__image"
         />
       </div>
-      <div
-        className="home-content-section__text-container"
-        style={{ textAlign: props.alignment, alignItems: alignFlexItemsText }}
-      >
-        <header className="home-content-section__text-container__title">
-          {props.title}
-        </header>
+      <div className="home-content-section__text-container">
+        <h2 className="home-content-section__text-container__title">{title}</h2>
         <article className="home-content-section__text-container__text">
-          {props.children}
+          {children}
         </article>
       </div>
     </section>
   );
-}
+};
 
 export default HomeContentSection;
