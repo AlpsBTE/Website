@@ -9,8 +9,22 @@
   },
   "pages": {
     "home": {
-      "headline": "Unsere Länder in Minecraft neu erstellen",
-      "joinUs": "Mitmachen!"
+      "headline": "Unsere Länder in Minecraft neu erschaffen",
+      "joinUs": "Mitmachen!",
+      "contentBlocks": {
+        "mission": {
+          "title": "Unsere Mission",
+          "description": "Unsere Mission ist es, Österreich, die Schweiz und Liechtenstein in einem großen Maßstab nachzubauen im Videospiel Minecraft. Ein Block in Minecraft entspricht ungefähr einem Meter in der realen Welt, was bedeutet, dass dieses Projekt die Größe unserer Länder vollständig nachbilden wird. Jeder kann sich uns als Builder anschließen und zum größten und umfangreichsten Build-Projekt beitragen, das jemals in Minecraft versucht wurde, geleitet von der Hauptorganisation Build the Earth."
+        },
+        "server": {
+          "title": "Unser Server",
+          "description": "Sobald Sie unserem Servernetzwerk mit der IP mc.alps-bte.com in der Minecraft-Version 1.12.2-1.17 beitreten, spawnen Sie im \"Hub\" unserer Lobby. Sie haben zwei Möglichkeiten: Entweder Sie möchten sofort mit dem Bauen beginnen und daher dem \"Plot-System\" beitreten oder Sie entscheiden sich, bereits bebaute Gebiete zu besuchen, indem Sie dem \"Terra Server\" beitreten. Das \"Plot System\" ist der einfachste und schnellste Weg, sich als offizieller Alps HdO Builder zu bewerben. Wenn Sie als Builder in das Build-Team aufgenommen werden, können Sie bauen."
+        },
+        "how": {
+          "title": "Wie wir es machen",
+          "description": "Unser Key-Tool ist der kostenlose Messenger Discord. Wir nutzen es zur Koordination des Projekts und zur Kommunikation zwischen unseren Mitgliedern. Dies ist der richtige Weg, wenn Sie mehr darüber erfahren möchten, was wir tun, Hilfe erhalten oder mit aktuellen Build-Entwicklungen Schritt halten möchten. Für den Aufbau auf dem Open-World \"Terra Server\" verwenden wir ein Modpack - eine Modifikation des Spiels - welches die Höhenbegrenzung von Minecraft aufhebt und das Terrain generiert"
+        }
+      }
     }
   }
 }

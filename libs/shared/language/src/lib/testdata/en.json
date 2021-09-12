@@ -10,7 +10,21 @@
   "pages": {
     "home": {
       "headline": "Recreating our Countries in Minecraft",
-      "joinUs": "Join Us!"
+      "joinUs": "Join Us!",
+      "contentBlocks": {
+        "mission": {
+          "title": "Our Mission",
+          "description": "Our Mission is to fully recreate Austria, Switzerland and Liechtenstein at a scale in the video game Minecraft. One block in Minecraft equates to roughly one metre in the real world, meaning that this project will fully recreate the size of our countries. Anyone is able to join us as Builder and contribute to the largest and most expansive build project to ever have been attempted in Minecraft, lead by the head organisation Build the Earth."
+        },
+        "server": {
+          "title": "Our Server",
+          "description": "Once you join our server network with the IP mc.alps-bte.com in the Minecraft version 1.12.2-1.17 you spawn at the \"Hub\" our lobby. You have two options: Either you want to start building right away and therefore join the \"Plot System\" or you decide to visit already built areas by joining the \"Terra Server\". The \"Plot System\" is the easiest and fastest way to apply as an official Alps BTE Builder. If you are accepted into the Build Team as a Builder, you can build."
+        },
+        "how": {
+          "title": "How we do it",
+          "description": "Our Key tool is the free messenger Discord. We use it for coordinating the project and for communication between our members. It is the way to go if you want to learn more about what we are doing, getting help or keeping up with current build developments. For building on the open-world \"Terra Server\" we use a modpack - a modification of the game - which gets rid of the hight limitation of Minecraft and generates the terrain, Furthermore, it "
+        }
+      }
     }
   }
 }
