@@ -64,7 +64,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
         </div>
         <div>
           <HomeContentSection
-            title="Title"
+            title="Our Mission"
             image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
             isImageAlignedLeft={true}
           >
