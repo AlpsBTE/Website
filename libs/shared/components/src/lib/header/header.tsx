@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import { ROUTES } from '@alpsbte/router';
 import './header.scss';
 import AnimateHeight from 'react-animate-height';
-import logo from '../shared/assets/logo.png';
 import { languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
 import LanguageSelect from '../language-select/language-select';
+import { Logo } from '../..';
 
 interface NavItem {
   text: string;
@@ -82,7 +82,7 @@ export const Header = inject(languageStore.storeKey)(
       >
         <div className="header__image-container ">
           <Link to={`/${ROUTES.home}`}>
-            <img src={logo} alt={props.headerText} />
+            <Logo />
             <h1 style={{ color: transparent ? 'white' : 'black' }}>
               {props.headerText}
             </h1>
@@ -119,7 +119,7 @@ export const Header = inject(languageStore.storeKey)(
         <div className="header__upper-container">
           <div className="header__upper-container__image-container ">
             <Link to={`/${ROUTES.home}`}>
-              <img src={logo} alt={props.headerText} />
+              <Logo />
               <h1 style={{ color: transparent ? 'white' : 'black' }}>
                 {props.headerText}
               </h1>
