@@ -15,8 +15,6 @@
   }
 
   &__about {
-    background-color: red;
-
     &__title {
       display: flex;
       justify-content: flex-start;
@@ -29,11 +27,9 @@
     }
 
     &__copyright {
-      
     }
   }
 
   &__quick-links {
-    background-color: blue;
   }
 }
