@@ -21,7 +21,7 @@ export const Footer = inject(languageStore.storeKey)(
             <h3>Alps BTE</h3>
           </Link>
           <p className="footer__about__copyright">
-            Copyright {new Date().getFullYear()} - {tr('footer.rightsReserved')}
+            {tr("footer.copyright")} {new Date().getFullYear()} - {tr('footer.rightsReserved')}
           </p>
         </div>
         <div className="footer__quick-links">content</div>
