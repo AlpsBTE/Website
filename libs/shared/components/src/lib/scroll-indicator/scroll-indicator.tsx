@@ -22,7 +22,7 @@ export const ScrollIndicator = ({
     <i
       className={`scroll-indicator scroll-indicator__${direction}`}
       style={style}
-      onClick={() => window.scrollBy({ top: window.innerHeight })}
+      onClick={() => window.scrollBy({ top: window.screen.height })}
     >
       <></>
     </i>
