@@ -27,4 +27,7 @@ export interface ISet {
       };
     };
   };
+  footer: {
+    rightsReserved: string;
+  };
 }

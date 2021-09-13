@@ -26,5 +26,8 @@
         }
       }
     }
+  },
+  "footer": {
+    "rightsReserved": "All Rights Reserved"
   }
 }
