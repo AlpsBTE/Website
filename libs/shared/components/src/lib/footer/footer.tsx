@@ -1,12 +1,13 @@
 /* eslint-disable*/
-import './footer.module.scss';
+import './footer.scss';
 
 export interface FooterProps {}
 
 export const Footer = ({}: FooterProps) => {
   return (
     <footer className="footer">
-      <h1>Welcome to Footer!</h1>
+      <div className="footer__about">about</div>
+      <div className="footer__quick-links">content</div>
     </footer>
   );
 };
