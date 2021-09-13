@@ -102,7 +102,7 @@ export const Header = inject(languageStore.storeKey)(
               </li>
             );
           })}
-          <LanguageSelect />
+          <LanguageSelect style={{ color: transparent ? 'white' : 'black' }} />
         </ul>
       </nav>
     ) : (
