@@ -13,6 +13,7 @@ interface NavItem {
   text: string;
   to: string;
 }
+
 export interface HeaderProps {
   headerText: string;
   mobileBreakpoint: number;
