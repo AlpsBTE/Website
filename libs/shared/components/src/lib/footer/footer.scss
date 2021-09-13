@@ -2,21 +2,23 @@
 
 .footer {
   width: 100vw;
-  height: variables.$vertical-spacer-xl;
+  min-height: variables.$vertical-spacer-xl;
   background-color: variables.$cream;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
 
-  &__about {
-    height: 100%;
+  &__about,
+  &__quick-links {
     flex: 1;
+    padding: variables.$spacing-3xl;
+  }
+
+  &__about {
     background-color: red;
   }
 
   &__quick-links {
-    height: 100%;
-    flex: 1;
     background-color: blue;
   }
 }
