@@ -6,7 +6,7 @@ import './about-us.scss';
 
 export interface AboutUsProps {}
 
-export function AboutUs(props: AboutUsProps) {
+export const AboutUs = ({}: AboutUsProps) => {
   return (
     <div>
       <PageTitle title="About us" />
@@ -46,6 +46,6 @@ export function AboutUs(props: AboutUsProps) {
       </div>
     </div>
   );
-}
+};
 
 export default AboutUs;
