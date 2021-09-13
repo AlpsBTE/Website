@@ -1,4 +1,5 @@
 @use "theme:variables" as variables;
+@use "theme:mixins" as mixins;
 
 .footer {
   width: 100vw;
@@ -9,6 +10,10 @@
   align-items: flex-start;
   padding: variables.$spacing-l variables.$horizontal-spacer-xs 0
     variables.$horizontal-spacer-xs;
+
+  @include mixins.for-phone {
+    flex-direction: column;
+  }
 
   &__about,
   &__quick-links {
