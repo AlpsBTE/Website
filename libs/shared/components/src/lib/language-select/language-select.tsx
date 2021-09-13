@@ -4,18 +4,20 @@ import { languages } from '@alpsbte/shared/language';
 import type { Language } from '@alpsbte/shared/language';
 import { inject, observer } from 'mobx-react';
 import { languageStore } from '@alpsbte/shared/stores';
-import { ChangeEvent } from 'react';
+import { ChangeEvent, CSSProperties } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
-export interface LanguageSelectProps {}
+export interface LanguageSelectProps {
+  style?: CSSProperties;
+}
 
 export const LanguageSelect: React.FC<LanguageSelectProps> = inject(
   languageStore.storeKey
 )(
-  observer(({}: LanguageSelectProps) => {
+  observer(({ style = {} }: LanguageSelectProps) => {
     return (
-      <div className="language-select">
+      <div className="language-select" style={style}>
         <FontAwesomeIcon
           icon={faGlobe}
           size="lg"
