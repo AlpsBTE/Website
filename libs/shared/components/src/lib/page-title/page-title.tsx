@@ -10,8 +10,8 @@ export interface PageTitleProps {
 export const PageTitle = ({
   title,
   subtitle,
-  showImage = false,
-  image,
+  showImage = true,
+  image = 'https://via.placeholder.com/1000',
 }: PageTitleProps) => {
   return (
     <div className="page-title">
@@ -26,11 +26,6 @@ export const PageTitle = ({
       {subtitle ? <h2 className="page-title__subtitle">{subtitle}</h2> : ''}
     </div>
   );
-};
-
-PageTitle.defaultProps = {
-  showImage: true,
-  image: 'https://via.placeholder.com/1000',
 };
 
 export default PageTitle;
