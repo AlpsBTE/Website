@@ -1,0 +1,21 @@
+@use "theme:variables" as variables;
+
+.footer {
+  width: 100vw;
+  min-height: 50px;
+  background-color: variables.$cream;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+
+  &__about {
+    flex: 2;
+    background-color: red;
+  }
+
+  &__quick-links {
+    flex: 3;
+    background-color: blue;
+  }
+}
