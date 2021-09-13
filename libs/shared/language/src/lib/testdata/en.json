@@ -28,6 +28,7 @@
     }
   },
   "footer": {
+    "copyright": "Copyright",
     "rightsReserved": "All Rights Reserved"
   }
 }
