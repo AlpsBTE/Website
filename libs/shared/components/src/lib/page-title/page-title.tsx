@@ -4,7 +4,7 @@ export interface PageTitleProps {
   title: string;
   subtitle?: string;
   showImage?: boolean;
-  image: string;
+  image?: string;
 }
 
 export const PageTitle = ({
