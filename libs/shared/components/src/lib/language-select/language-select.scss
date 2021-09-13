@@ -1,8 +1,11 @@
 @use "theme:variables" as variables;
 
 .language-select {
+  cursor: pointer;
+
   &__icon {
     font-size: 0.8em;
+    margin-right: variables.$spacing-xs;
   }
 
   &__select {
@@ -12,6 +15,7 @@
     border: none;
     font-weight: 600;
     background-color: transparent;
+    appearance: none;
 
     option {
       color: variables.$black;
