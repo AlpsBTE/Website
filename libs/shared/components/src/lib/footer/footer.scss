@@ -16,6 +16,21 @@
 
   &__about {
     background-color: red;
+
+    &__title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: variables.$spacing-xl;
+
+      img {
+        padding-right: variables.$spacing-m;
+      }
+    }
+
+    &__copyright {
+      
+    }
   }
 
   &__quick-links {
