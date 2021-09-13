@@ -17,14 +17,7 @@ export const LanguageSelect: React.FC<LanguageSelectProps> = inject(
 )(
   observer(({ style = {} }: LanguageSelectProps) => {
     return (
-      <div
-        className="language-select"
-        style={style}
-        onClick={() => {
-          console.log(select.current?.focus());
-          console.log(select.current);
-        }}
-      >
+      <div className="language-select" style={style}>
         <FontAwesomeIcon
           icon={faGlobe}
           size="lg"
