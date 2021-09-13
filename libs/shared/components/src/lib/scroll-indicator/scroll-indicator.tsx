@@ -17,7 +17,7 @@ export const ScrollIndicator = ({
 }: ScrollIndicatorProps) => {
   return (
     <i className={`scroll-indicator scroll-indicator__${direction}`}>
-      <div></div>
+      <></>
     </i>
   );
 };
