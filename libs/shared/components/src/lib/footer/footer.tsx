@@ -53,6 +53,9 @@ export const Footer = inject(languageStore.storeKey)(
           </div>
           <div className="footer__quick-links__help">
             <h4>{tr('footer.quickLinks.help')}</h4>
+            <Link to={`/${languageStore.language}/${ROUTES.faq}`}>
+              {tr('navItems.faq')}
+            </Link>
           </div>
           <div className="footer__quick-links__socials">
             <h4>{tr('footer.quickLinks.socials')}</h4>
