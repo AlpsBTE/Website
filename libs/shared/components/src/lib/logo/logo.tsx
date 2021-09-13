@@ -1,5 +1,5 @@
 import { CSSProperties } from 'react';
-import './logo.module.scss';
+import './logo.scss';
 
 import logo from '../shared/assets/logo.png';
 
@@ -8,7 +8,7 @@ export interface LogoProps {
 }
 
 export const Logo = ({ style = {} }: LogoProps) => {
-  return <img src={logo} alt="Alps BTE Logo" style={style} />;
+  return <img className="logo" src={logo} alt="Alps BTE Logo" style={style} />;
 };
 
 export default Logo;
