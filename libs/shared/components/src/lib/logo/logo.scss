@@ -1,0 +1,5 @@
+@use "theme:variables" as variables;
+
+.logo {
+  height: variables.$spacing-xxl;
+}
