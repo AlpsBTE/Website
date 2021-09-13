@@ -1,5 +1,5 @@
 /* eslint-disable */
-import './scroll-indicator.module.scss';
+import './scroll-indicator.scss';
 
 export enum ScrollIndicatorPointingDirection {
   up = 'up',
@@ -8,13 +8,17 @@ export enum ScrollIndicatorPointingDirection {
   left = 'left',
 }
 
-export interface ScrollIndicatorProps {}
+export interface ScrollIndicatorProps {
+  direction?: ScrollIndicatorPointingDirection;
+}
 
-export const ScrollIndicator = ({}: ScrollIndicatorProps) => {
+export const ScrollIndicator = ({
+  direction = ScrollIndicatorPointingDirection.down,
+}: ScrollIndicatorProps) => {
   return (
-    <div className="scroll-indicator">
+    <i className={`scroll-indicator scroll-indicator__${direction}`}>
       <div></div>
-    </div>
+    </i>
   );
 };
 

@@ -1,0 +1,30 @@
+@use "theme:variables" as variables;
+
+.scroll-indicator {
+  &::before {
+    position: relative;
+    content: '';
+    display: inline-block;
+    border-style: solid;
+    border-width: variables.$spacing-xxs variables.$spacing-xxs 0 0;
+    border-color: variables.$white;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    height: variables.$spacing-m;
+    width: variables.$spacing-m;
+  }
+
+  &__down:before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__left:before {
+    transform: rotate(-135deg);
+  }
+
+  &__right:before {
+    left: 0;
+    transform: rotate(45deg);
+  }
+}

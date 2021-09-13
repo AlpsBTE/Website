@@ -6,6 +6,7 @@ import HomeContentSection from '../components/home-content-section/home-content-
 import { inject, observer } from 'mobx-react';
 import { languageStore } from '@alpsbte/shared/stores';
 import { tr } from '@alpsbte/shared/language';
+import { ScrollIndicator } from '@alpsbte/shared/components';
 
 export interface HomeProps {}
 
@@ -34,7 +35,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
           className="heading"
           style={{ backgroundPositionY: `${offsetY * 0.5}px` }}
         >
-          <div className="block">
+          <div className="home__content block">
             <div className="head_line_box">
               <h1 className="head_line">{tr('pages.home.headline')}</h1>
               <div className="buttons">
@@ -60,6 +61,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
                 />
               </div>
             </div>
+            <ScrollIndicator />
           </div>
         </div>
         <div>
