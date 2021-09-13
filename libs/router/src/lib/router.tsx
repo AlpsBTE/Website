@@ -1,7 +1,7 @@
 /*eslint-disable*/
 import { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
-import { Header, HeaderProps } from '@alpsbte/shared/components';
+import { Footer, Header, HeaderProps } from '@alpsbte/shared/components';
 import { Loader } from '@alpsbte/loader';
 import { propnameOf } from '@alpsbte/shared/util';
 import { tr } from '@alpsbte/shared/language';
@@ -103,6 +103,7 @@ export const Router = inject(languageStore.storeKey)(
               )}
             />
           </Switch>
+          <Footer />
         </Suspense>
       </BrowserRouter>
     );
