@@ -30,5 +30,11 @@ export interface ISet {
   footer: {
     copyright: string;
     rightsReserved: string;
+    quickLinks: {
+      team: string;
+      showcase: string;
+      help: string;
+      socials: string;
+    };
   };
 }

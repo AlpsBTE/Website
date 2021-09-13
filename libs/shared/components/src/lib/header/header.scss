@@ -13,6 +13,7 @@
   left: 0;
   transition: max-height 0.35s ease-in-out;
   transition: background-color 0.35s ease-in-out;
+  padding: 0 variables.$horizontal-spacer-xs;
 
   &__lower-container {
     &__navitem-container {
@@ -31,6 +32,7 @@
       }
     }
   }
+
   &__upper-container {
     width: 100%;
     display: flex;
@@ -39,8 +41,6 @@
     height: 100%;
 
     &__image-container {
-      margin: 0 0 0 30px;
-
       a {
         width: 100%;
         display: flex;
@@ -50,7 +50,7 @@
         align-items: center;
 
         h1 {
-          margin: 0 0 0 20px;
+          margin: 0 0 0 variables.$spacing-m;
         }
       }
 
@@ -65,8 +65,6 @@
   }
 
   &__image-container {
-    margin: 0 0 0 30px;
-
     a {
       display: flex;
       margin-left: 7%;
@@ -76,7 +74,7 @@
       align-items: center;
 
       h1 {
-        margin: 0 0 0 20px;
+        margin: 0 0 0 variables.$spacing-m;
       }
     }
 

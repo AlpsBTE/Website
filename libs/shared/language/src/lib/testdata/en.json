@@ -29,6 +29,12 @@
   },
   "footer": {
     "copyright": "Copyright",
-    "rightsReserved": "All Rights Reserved"
+    "rightsReserved": "All Rights Reserved",
+    "quickLinks": {
+      "team": "Team",
+      "showcase": "Showcase",
+      "help": "Help",
+      "socials": "Socials"
+    }
   }
 }
