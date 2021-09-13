@@ -29,6 +29,12 @@
   },
   "footer": {
     "copyright": "Urheberrechte",
-    "rightsReserved": "Alle Rechte vorbehalten"
+    "rightsReserved": "Alle Rechte vorbehalten",
+    "quickLinks": {
+      "team": "Team",
+      "showcase": "Schaukasten",
+      "help": "Hilfe",
+      "socials": "Soziale Medien"
+    }
   }
 }

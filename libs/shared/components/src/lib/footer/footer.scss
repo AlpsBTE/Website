@@ -7,11 +7,12 @@
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  padding: variables.$spacing-l variables.$horizontal-spacer-xs 0
+    variables.$horizontal-spacer-xs;
 
   &__about,
   &__quick-links {
     flex: 1;
-    padding: variables.$spacing-3xl;
   }
 
   &__about {
@@ -22,7 +23,7 @@
       margin-bottom: variables.$spacing-xl;
 
       img {
-        padding-right: variables.$spacing-m;
+        margin-right: variables.$spacing-m;
       }
     }
 
@@ -31,5 +32,31 @@
   }
 
   &__quick-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__team,
+    &__showcase,
+    &__help,
+    &__socials {
+      margin: 0 variables.$horizontal-spacer-xxs;
+
+      a {
+        display: block;
+      }
+    }
+
+    &__team {
+    }
+
+    &__showcase {
+    }
+
+    &__help {
+    }
+
+    &__socials {
+    }
   }
 }
