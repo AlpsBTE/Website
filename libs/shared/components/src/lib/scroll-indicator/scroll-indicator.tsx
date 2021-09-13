@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { CSSProperties } from 'react';
 import './scroll-indicator.scss';
 
 export enum ScrollIndicatorPointingDirection {
@@ -10,13 +11,19 @@ export enum ScrollIndicatorPointingDirection {
 
 export interface ScrollIndicatorProps {
   direction?: ScrollIndicatorPointingDirection;
+  style?: CSSProperties;
 }
 
 export const ScrollIndicator = ({
   direction = ScrollIndicatorPointingDirection.down,
+  style = {},
 }: ScrollIndicatorProps) => {
   return (
-    <i className={`scroll-indicator scroll-indicator__${direction}`}>
+    <i
+      className={`scroll-indicator scroll-indicator__${direction}`}
+      style={style}
+      onClick={() => window.scrollBy({ top: window.innerHeight })}
+    >
       <></>
     </i>
   );

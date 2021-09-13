@@ -1,6 +1,8 @@
 @use "theme:variables" as variables;
 
 .scroll-indicator {
+  cursor: pointer;
+
   &::before {
     position: relative;
     content: '';

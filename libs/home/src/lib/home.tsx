@@ -35,7 +35,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
           className="heading"
           style={{ backgroundPositionY: `${offsetY * 0.5}px` }}
         >
-          <div className="home__content block">
+          <div className="home__hero block">
             <div className="head_line_box">
               <h1 className="head_line">{tr('pages.home.headline')}</h1>
               <div className="buttons">
@@ -64,7 +64,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
             <ScrollIndicator />
           </div>
         </div>
-        <div>
+        <div className="home__content">
           <HomeContentSection
             title={tr('pages.home.contentBlocks.mission.title')}
             image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"

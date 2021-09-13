@@ -17,12 +17,20 @@
   color: white;
   font-size: 5vh;
   text-align: center;
+  margin-top: 35vh;
 }
 
 .block {
   display: block;
 }
 
-.home__content {
-  @include mixins.align-center(column);
+.home {
+  &__hero {
+    @include mixins.align-center(column);
+    justify-content: space-between;
+    height: 90vh;
+  }
+
+  &__content {
+  }
 }
