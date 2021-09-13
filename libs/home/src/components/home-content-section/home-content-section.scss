@@ -6,8 +6,7 @@
   background-color: variables.$white;
   display: flex;
   justify-content: center;
-  padding: variables.$spacing-l variables.$spacing-5xl;
-  padding: variables.$spacing-l 10vw;
+  padding: variables.$spacing-l variables.$horizontal-spacer-s;
 
   @include mixins.for-phone {
     flex-direction: column;
