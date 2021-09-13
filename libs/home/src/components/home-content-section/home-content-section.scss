@@ -45,7 +45,7 @@
     }
 
     &__image {
-      height: 200px;
+      height: variables.$horizontal-spacer-m;
 
       @include mixins.for-phone {
         width: 100%;
