@@ -2,20 +2,21 @@
 
 .footer {
   width: 100vw;
-  min-height: 50px;
+  height: variables.$vertical-spacer-xl;
   background-color: variables.$cream;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
+  align-items: flex-start;
 
   &__about {
-    flex: 2;
+    height: 100%;
+    flex: 1;
     background-color: red;
   }
 
   &__quick-links {
-    flex: 3;
+    height: 100%;
+    flex: 1;
     background-color: blue;
   }
 }
