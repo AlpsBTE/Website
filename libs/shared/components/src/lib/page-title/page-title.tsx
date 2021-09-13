@@ -1,32 +1,32 @@
 import './page-title.scss';
 
-/* eslint-disable-next-line */
 export interface PageTitleProps {
   title: string;
   subtitle?: string;
   showImage?: boolean;
-  image?: string;
+  image: string;
 }
 
-export function PageTitle(props: PageTitleProps) {
+export const PageTitle = ({
+  title,
+  subtitle,
+  showImage = false,
+  image,
+}: PageTitleProps) => {
   return (
     <div className="page-title">
-      {props.showImage === true && (
+      {showImage === true && (
         <img
           className="page-title__image"
-          src={props.image}
+          src={image}
           alt="Page Titlepicture"
         />
       )}
-      <h1 className="page-title__title">{props.title}</h1>
-      {props.subtitle ? (
-        <h2 className="page-title__subtitle">{props.subtitle}</h2>
-      ) : (
-        ''
-      )}
+      <h1 className="page-title__title">{title}</h1>
+      {subtitle ? <h2 className="page-title__subtitle">{subtitle}</h2> : ''}
     </div>
   );
-}
+};
 
 PageTitle.defaultProps = {
   showImage: true,
