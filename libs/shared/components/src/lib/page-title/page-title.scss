@@ -1,4 +1,6 @@
+@use "theme:variables" as variables;
 .page-title {
+  background-color: variables.$white;
   &__image {
     width: 100%;
     height: 25vh;
