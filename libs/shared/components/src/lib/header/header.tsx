@@ -22,155 +22,160 @@ export interface HeaderProps {
 }
 
 export const Header = inject(languageStore.storeKey)(
-  observer((props: HeaderProps) => {
-    const [transparent, setTransparent] = useState<boolean>(true);
-    const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
-    const [showMenu, setShowMenu] = useState<boolean>(false);
+  observer(
+    ({ headerText, mobileBreakpoint, navItems, forceColor }: HeaderProps) => {
+      const scrollBreakpoint = 100 as const;
+      const [transparent, setTransparent] = useState<boolean>(true);
+      const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+      const [showMenu, setShowMenu] = useState<boolean>(false);
 
-    const burgerRef = useRef<HTMLDivElement>(null);
+      const burgerRef = useRef<HTMLDivElement>(null);
 
-    const resizeEvent = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    const scrollEvent = () => {
-      if (props.forceColor) return;
-
-      if (showMenu) {
-        setTransparent(false);
-      } else {
-        if (window.scrollY >= 100) {
-          if (transparent) {
-            setTransparent(false);
-          }
-        } else {
-          if (!transparent) {
-            setTransparent(true);
-          }
-        }
-      }
-    };
-
-    const componentDidMount = () => {
-      window.addEventListener('resize', resizeEvent);
-      window.addEventListener('scroll', scrollEvent);
-    };
-
-    const componentWillUnmount = () => {
-      window.removeEventListener('resize', resizeEvent);
-      window.removeEventListener('scroll', scrollEvent);
-    };
-
-    useEffect(() => {
-      componentDidMount();
-      return componentWillUnmount;
-    });
-
-    if (burgerRef.current)
-      burgerRef.current.onclick = () => {
-        if (!showMenu) {
-          setTransparent(false);
-        } else if (window.scrollY <= 100) setTransparent(true);
-
-        setShowMenu(!showMenu);
+      const resizeEvent = () => {
+        setWindowWidth(window.innerWidth);
       };
 
-    return windowWidth >= props.mobileBreakpoint ? (
-      <nav
-        className={`header ${
-          transparent && !props.forceColor ? 'transparent' : ''
-        }`}
-      >
-        <div className="header__image-container ">
-          <Link to={`/${ROUTES.home}`}>
-            <Logo />
-            <h1 style={{ color: transparent ? 'white' : 'black' }}>
-              {props.headerText}
-            </h1>
-          </Link>
-          <title>{props.headerText}</title>
-        </div>
-        <ul className="header__navitem-container">
-          {props.navItems.map((_, key) => {
-            return (
-              <li key={key} className="header__navitem-container__item">
-                <Link
-                  to={`/${props.navItems[key].to}`}
-                  style={{ color: transparent ? 'white' : 'black' }}
-                >
-                  {props.navItems[key].text}
-                </Link>
-              </li>
-            );
-          })}
-          <LanguageSelect style={{ color: transparent ? 'white' : 'black' }} />
-        </ul>
-      </nav>
-    ) : (
-      <nav
-        className={`header ${
-          transparent && !props.forceColor ? 'transparent' : ''
-        }`}
-        style={{
-          flexDirection: 'column',
-          maxHeight: '1000px',
-          height: 'auto',
-        }}
-      >
-        <div className="header__upper-container">
-          <div className="header__upper-container__image-container ">
+      const scrollEvent = () => {
+        if (forceColor) return;
+
+        if (showMenu) {
+          setTransparent(false);
+        } else {
+          if (window.scrollY >= scrollBreakpoint) {
+            if (transparent) {
+              setTransparent(false);
+            }
+          } else {
+            if (!transparent) {
+              setTransparent(true);
+            }
+          }
+        }
+      };
+
+      const componentDidMount = () => {
+        window.addEventListener('resize', resizeEvent);
+        window.addEventListener('scroll', scrollEvent);
+      };
+
+      const componentWillUnmount = () => {
+        window.removeEventListener('resize', resizeEvent);
+        window.removeEventListener('scroll', scrollEvent);
+      };
+
+      useEffect(() => {
+        componentDidMount();
+        return componentWillUnmount;
+      });
+
+      if (burgerRef.current)
+        burgerRef.current.onclick = () => {
+          if (!showMenu) {
+            setTransparent(false);
+          } else if (window.scrollY <= scrollBreakpoint) setTransparent(true);
+
+          setShowMenu(!showMenu);
+        };
+
+      return windowWidth >= mobileBreakpoint ? (
+        <nav
+          className={`header ${
+            transparent && !forceColor ? 'transparent' : ''
+          }`}
+        >
+          <div className="header__image-container ">
             <Link to={`/${ROUTES.home}`}>
               <Logo />
               <h1 style={{ color: transparent ? 'white' : 'black' }}>
-                {props.headerText}
+                {headerText}
               </h1>
             </Link>
+            <title>{headerText}</title>
           </div>
-          <div className="header__upper-container__burger_container">
-            <div
-              id="nav-icon1"
-              ref={burgerRef}
-              className={`${showMenu ? 'open' : ''}`}
-            >
-              <span
-                style={{ backgroundColor: transparent ? 'white' : 'black' }}
-              ></span>
-              <span
-                style={{ backgroundColor: transparent ? 'white' : 'black' }}
-              ></span>
-              <span
-                style={{ backgroundColor: transparent ? 'white' : 'black' }}
-              ></span>
-            </div>
-          </div>
-        </div>
-        <ul className="header__lower-container__navitem-container">
-          <AnimateHeight duration={350} height={showMenu ? 'auto' : 0}>
-            {props.navItems.map((_, key) => {
+          <ul className="header__navitem-container">
+            {navItems.map((_, key) => {
               return (
-                <li
-                  key={key}
-                  className="header__lower-container__navitem-container__item"
-                >
+                <li key={key} className="header__navitem-container__item">
                   <Link
-                    onClick={() => setShowMenu(false)}
-                    to={`/${props.navItems[key].to}`}
+                    to={`/${navItems[key].to}`}
+                    style={{ color: transparent ? 'white' : 'black' }}
                   >
-                    {props.navItems[key].text}
+                    {navItems[key].text}
                   </Link>
                 </li>
               );
             })}
-            <li className="header__lower-container__navitem-container__item">
-              <LanguageSelect
-                style={{ color: transparent ? 'white' : 'black' }}
-              />
-            </li>
-          </AnimateHeight>
-        </ul>
-      </nav>
-    );
-  })
+            <LanguageSelect
+              style={{ color: transparent ? 'white' : 'black' }}
+            />
+          </ul>
+        </nav>
+      ) : (
+        <nav
+          className={`header ${
+            transparent && !forceColor ? 'transparent' : ''
+          }`}
+          style={{
+            flexDirection: 'column',
+            maxHeight: '1000px',
+            height: 'auto',
+          }}
+        >
+          <div className="header__upper-container">
+            <div className="header__upper-container__image-container ">
+              <Link to={`/${ROUTES.home}`}>
+                <Logo />
+                <h1 style={{ color: transparent ? 'white' : 'black' }}>
+                  {headerText}
+                </h1>
+              </Link>
+            </div>
+            <div className="header__upper-container__burger_container">
+              <div
+                id="nav-icon1"
+                ref={burgerRef}
+                className={`${showMenu ? 'open' : ''}`}
+              >
+                <span
+                  style={{ backgroundColor: transparent ? 'white' : 'black' }}
+                ></span>
+                <span
+                  style={{ backgroundColor: transparent ? 'white' : 'black' }}
+                ></span>
+                <span
+                  style={{ backgroundColor: transparent ? 'white' : 'black' }}
+                ></span>
+              </div>
+            </div>
+          </div>
+          <ul className="header__lower-container__navitem-container">
+            <AnimateHeight duration={350} height={showMenu ? 'auto' : 0}>
+              {navItems.map((_, key) => {
+                return (
+                  <li
+                    key={key}
+                    className="header__lower-container__navitem-container__item"
+                  >
+                    <Link
+                      onClick={() => setShowMenu(false)}
+                      to={`/${navItems[key].to}`}
+                    >
+                      {navItems[key].text}
+                    </Link>
+                  </li>
+                );
+              })}
+              <li className="header__lower-container__navitem-container__item">
+                <LanguageSelect
+                  style={{ color: transparent ? 'white' : 'black' }}
+                />
+              </li>
+            </AnimateHeight>
+          </ul>
+        </nav>
+      );
+    }
+  )
 );
 
 export default Header;

@@ -7,6 +7,7 @@ import { propnameOf } from '@alpsbte/shared/util';
 import { tr } from '@alpsbte/shared/language';
 import { languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
+import { breakpoints } from '@alpsbte/shared/config';
 
 const pages = {
   home: {
@@ -46,7 +47,7 @@ export const Router = inject(languageStore.storeKey)(
     );
 
     const headerProps: HeaderProps = {
-      mobileBreakpoint: 900,
+      mobileBreakpoint: breakpoints.phone,
       forceColor: window.location.pathname === '/home',
       headerText: 'Alps BTE',
       navItems: [
