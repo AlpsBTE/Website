@@ -6,6 +6,7 @@ import { inject, observer } from 'mobx-react';
 import { tr } from '@alpsbte/shared/language';
 import { Link } from 'react-router-dom';
 import { ROUTES } from '@alpsbte/router';
+import { socials } from '@alpsbte/shared/config';
 
 export interface FooterProps {}
 
@@ -59,6 +60,9 @@ export const Footer = inject(languageStore.storeKey)(
           </div>
           <div className="footer__quick-links__socials">
             <h4>{tr('footer.quickLinks.socials')}</h4>
+            {Object.values(socials).map((s) => {
+              return <a href={s.link}>{s.text}</a>;
+            })}
           </div>
         </div>
       </footer>

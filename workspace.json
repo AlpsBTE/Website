@@ -390,6 +390,27 @@
         }
       }
     },
+    "shared-config": {
+      "root": "libs/shared/config",
+      "sourceRoot": "libs/shared/config/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared/config/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/config"],
+          "options": {
+            "jestConfig": "libs/shared/config/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "shared-language": {
       "root": "libs/shared/language",
       "sourceRoot": "libs/shared/language/src",

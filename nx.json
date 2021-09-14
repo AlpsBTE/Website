@@ -66,6 +66,9 @@
     "shared-components": {
       "tags": ["scope:shared-components", "type:ui"]
     },
+    "shared-config": {
+      "tags": []
+    },
     "shared-language": {
       "tags": ["scope:shared-language", "type:feature"]
     },
