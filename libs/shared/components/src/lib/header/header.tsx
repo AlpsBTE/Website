@@ -160,6 +160,11 @@ export const Header = inject(languageStore.storeKey)(
                 </li>
               );
             })}
+            <li className="header__lower-container__navitem-container__item">
+              <LanguageSelect
+                style={{ color: transparent ? 'white' : 'black' }}
+              />
+            </li>
           </AnimateHeight>
         </ul>
       </nav>
