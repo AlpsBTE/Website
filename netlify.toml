@@ -1,0 +1,9 @@
+[build]
+  base = "/"
+  publish = "dist/apps/alpsbte-web"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
