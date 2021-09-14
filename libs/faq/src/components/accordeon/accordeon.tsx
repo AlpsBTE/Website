@@ -1,4 +1,4 @@
-import { CSSProperties, useState } from 'react';
+import { CSSProperties, useState, MouseEvent } from 'react';
 import './accordeon.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
@@ -14,16 +14,19 @@ export interface AccordeonProps {
 export function Accordeon(props: AccordeonProps) {
   const [open, setOpen] = useState(props.open ? true : false);
 
-  function accordeon__toggle(e: any) {
+  const toggleAccordeon = (e: MouseEvent) => {
     e.preventDefault();
 
     setOpen(open ? false : true);
-  }
+  };
 
   return (
     <div className="accordion">
       <div className="accordion__container">
-        <div onClick={accordeon__toggle} className="accordion__subContainer">
+        <div
+          onClick={(e) => toggleAccordeon(e)}
+          className="accordion__subContainer"
+        >
           <span className="accordeon_title">{props.title}</span>
           <span
             className="accordion__icon"
