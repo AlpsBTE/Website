@@ -2,6 +2,7 @@
 
 .gallery {
   &__image-container {
+    margin-top: variables.$vertical-spacer-xs;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
