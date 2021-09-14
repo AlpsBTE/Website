@@ -1,4 +1,3 @@
-/* eslint-disable*/
 import './footer.scss';
 import { Logo } from '@alpsbte/shared/components';
 import { languageStore } from '@alpsbte/shared/stores';
@@ -8,9 +7,11 @@ import { Link } from 'react-router-dom';
 import { ROUTES } from '@alpsbte/router';
 import { socials } from '@alpsbte/shared/config';
 
+/*eslint-disable-next-line */
 export interface FooterProps {}
 
 export const Footer = inject(languageStore.storeKey)(
+  /*eslint-disable-next-line */
   observer(({}: FooterProps) => {
     return (
       <footer className="footer">
@@ -61,7 +62,11 @@ export const Footer = inject(languageStore.storeKey)(
           <div className="footer__quick-links__socials">
             <h4>{tr('footer.quickLinks.socials')}</h4>
             {Object.values(socials).map((s) => {
-              return <a href={s.link}>{s.text}</a>;
+              return (
+                <a href={s.link} target="_blank" rel="noreferrer">
+                  {s.text}
+                </a>
+              );
             })}
           </div>
         </div>
