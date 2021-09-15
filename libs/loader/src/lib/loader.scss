@@ -7,7 +7,7 @@
   height: 100vh;
   width: 100vw;
   @include mixins.align-bottom-right;
-  padding: variables.$spacing-xl variables.$spacing-4xl;
+  padding: variables.$spacing-3xl variables.$spacing-4xl;
 
   &__content {
     display: flex;
