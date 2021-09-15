@@ -1,0 +1,14 @@
+@use "theme:variables" as variables;
+
+.gallery {
+  &__image-container {
+    margin-top: variables.$vertical-spacer-xs;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__image {
+    margin: variables.$spacing-s;
+  }
+}

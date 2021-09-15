@@ -1,4 +1,7 @@
+@use "theme:variables" as variables;
 .page-title {
+  background-color: variables.$white;
+  padding-bottom: variables.$vertical-spacer-xs;
   &__image {
     width: 100%;
     height: 25vh;
