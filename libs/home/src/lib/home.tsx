@@ -8,6 +8,7 @@ import { languageStore } from '@alpsbte/shared/stores';
 import { tr } from '@alpsbte/shared/language';
 import { ScrollIndicator } from '@alpsbte/shared/components';
 import { AnimatePresence, motion } from 'framer-motion';
+import { scrollLinks } from '@alpsbte/shared/config';
 
 export interface HomeProps {}
 
@@ -65,7 +66,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
             <ScrollIndicator />
           </div>
         </div>
-        <div className="home__content">
+        <div className="home__content" id={`${scrollLinks.ourMission}`}>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.mission.title')}
             image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
