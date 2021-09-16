@@ -35,6 +35,10 @@
         margin-right: variables.$spacing-m;
       }
     }
+
+    &__copyright {
+      font-size: variables.$font-size-s;
+    }
   }
 
   &__quick-links {
