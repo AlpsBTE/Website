@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import { lazy, Suspense, useEffect } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Footer, Header, HeaderProps } from '@alpsbte/shared/components';
 import { Loader } from '@alpsbte/loader';
@@ -7,11 +7,19 @@ import { propnameOf } from '@alpsbte/shared/util';
 import { tr } from '@alpsbte/shared/language';
 import { languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
-import { breakpoints } from '@alpsbte/shared/config';
+import { breakpoints, pageLoading } from '@alpsbte/shared/config';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const pages = {
   home: {
-    component: lazy(() => import('@alpsbte/home')),
+    component: lazy(() => {
+      return new Promise((resolve: any) => {
+        setTimeout(
+          () => resolve(import('@alpsbte/home')),
+          pageLoading.artificialPageLoadDelay
+        );
+      });
+    }),
   },
   aboutUs: {
     component: lazy(() => import('@alpsbte/about-us')),
@@ -41,10 +49,14 @@ export const ROUTES: ROUTES = Object.keys(pages).reduce(
 
 export const Router = inject(languageStore.storeKey)(
   observer(() => {
-    useEffect(
-      () => languageStore.setLanguage(languageStore.language),
-      [languageStore.language]
-    );
+    const [isMounted, setIsMounted] = useState<boolean>(false);
+    useEffect(() => {
+      languageStore.setLanguage(languageStore.language);
+    }, [languageStore.language]);
+
+    useEffect(() => {
+      setIsMounted(true);
+    }, []);
 
     const headerProps: HeaderProps = {
       mobileBreakpoint: breakpoints.tablet,
@@ -90,7 +102,20 @@ export const Router = inject(languageStore.storeKey)(
                 path={`/${languageStore.language}/${
                   ROUTES[pageKey as keyof typeof pages]
                 }`}
-                component={() => <component.component></component.component>}
+                component={() => (
+                  <AnimatePresence>
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 1 }}
+                      transition={{
+                        duration: pageLoading.fadeTransitionDuration / 1000,
+                      }}
+                    >
+                      <component.component />
+                    </motion.div>
+                  </AnimatePresence>
+                )}
               />
             ))}
             <Route
