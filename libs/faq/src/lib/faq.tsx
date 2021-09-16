@@ -5,7 +5,7 @@ import Accordeon from '../components/accordeon/accordeon';
 
 export interface FaqProps {}
 
-export function Faq(props: FaqProps) {
+export const Faq: React.FC = (props: FaqProps) => {
   const FaqData = [
     {
       title: 'Titel',
@@ -43,6 +43,6 @@ export function Faq(props: FaqProps) {
       ))}
     </div>
   );
-}
+};
 
 export default Faq;
