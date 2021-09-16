@@ -7,6 +7,7 @@ import { inject, observer } from 'mobx-react';
 import { languageStore } from '@alpsbte/shared/stores';
 import { tr } from '@alpsbte/shared/language';
 import { ScrollIndicator } from '@alpsbte/shared/components';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export interface HomeProps {}
 
