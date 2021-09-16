@@ -54,7 +54,7 @@
           margin: 0 0 0 variables.$spacing-l;
           font-size: variables.$font-size-s;
           letter-spacing: 1.5px;
-          font-weight: 500;
+          font-weight: variables.$font-weight-light;
           text-transform: uppercase;
         }
       }
@@ -82,7 +82,7 @@
         margin: 0 0 0 variables.$spacing-l;
         font-size: variables.$font-size-s;
         letter-spacing: 1.5px;
-        font-weight: 500;
+        font-weight: variables.$font-weight-light;
         text-transform: uppercase;
       }
     }
