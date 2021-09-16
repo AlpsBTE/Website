@@ -46,12 +46,16 @@
         width: 100%;
         display: flex;
         margin-left: 7%;
-        justify-content: space-evenly;
+        justify-content: stretch;
         flex-direction: row;
         align-items: center;
 
         h1 {
-          margin: 0 0 0 variables.$spacing-m;
+          margin: 0 0 0 variables.$spacing-l;
+          font-size: variables.$size-s;
+          letter-spacing: 1.5px;
+          font-weight: 500;
+          text-transform: uppercase;
         }
       }
 
@@ -75,7 +79,11 @@
       align-items: center;
 
       h1 {
-        margin: 0 0 0 variables.$spacing-m;
+        margin: 0 0 0 variables.$spacing-l;
+        font-size: variables.$size-s;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+        text-transform: uppercase;
       }
     }
 
@@ -89,13 +97,13 @@
   }
 
   &__navitem-container {
-    font-size: 1.2em;
+    font-size: variables.$size-s;
     margin-right: 7%;
     width: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-around;
+    width: 60%;
     text-decoration: none;
     color: black !important;
     list-style-type: none;
