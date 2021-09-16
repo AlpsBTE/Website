@@ -52,7 +52,7 @@
 
         h1 {
           margin: 0 0 0 variables.$spacing-l;
-          font-size: variables.$size-s;
+          font-size: variables.$font-size-s;
           letter-spacing: 1.5px;
           font-weight: 500;
           text-transform: uppercase;
@@ -80,7 +80,7 @@
 
       h1 {
         margin: 0 0 0 variables.$spacing-l;
-        font-size: variables.$size-s;
+        font-size: variables.$font-size-s;
         letter-spacing: 1.5px;
         font-weight: 500;
         text-transform: uppercase;
@@ -97,7 +97,7 @@
   }
 
   &__navitem-container {
-    font-size: variables.$size-s;
+    font-size: variables.$font-size-s;
     margin-right: 7%;
     width: auto;
     display: flex;

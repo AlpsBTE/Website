@@ -3,6 +3,7 @@
     "ms-vscode.powershell",
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "mrmlnc.vscode-scss"
   ]
 }
