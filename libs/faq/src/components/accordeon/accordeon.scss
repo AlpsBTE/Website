@@ -3,7 +3,7 @@
 .accordion {
   background-color: white;
   width: 60%;
-  font-weight: 700;
+  font-weight: variables.$font-weight-bold;
   margin: 3%;
   overflow: hidden;
   margin-left: 20%;
@@ -37,7 +37,7 @@
 
   &__content {
     z-index: 1;
-    font-weight: 500;
+    font-weight: variables.$font-weight-light;
     overflow: hidden;
     max-height: 1000px;
     transition: 1s ease-in-out;
