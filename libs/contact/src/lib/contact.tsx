@@ -9,6 +9,7 @@ import {
   faTiktok,
   faReddit,
 } from '@fortawesome/free-brands-svg-icons';
+import { socials } from '@alpsbte/shared/config';
 
 // Es wird erst über die texte gemapped sobald das backend da ist
 export interface ContactProps {}
@@ -25,21 +26,46 @@ export const Contact = ({}: ContactProps) => {
         <div className="contact__social-media">
           <h2 className="contact__title-font">Social Media</h2>
           <div className="contact__social-icons">
-            <div className="contact__social-media__icon">
+            <a
+              href={socials.instagram.link}
+              target="_blank"
+              rel="noreferrer"
+              className="contact__social-media__icon"
+            >
               <FontAwesomeIcon icon={faInstagram} size="lg" />
-            </div>
-            <div className="contact__social-media__icon">
+            </a>
+            <a
+              href={socials.youtube.link}
+              target="_blank"
+              rel="noreferrer"
+              className="contact__social-media__icon"
+            >
               <FontAwesomeIcon icon={faYoutube} size="lg" />
-            </div>
-            <div className="contact__social-media__icon">
+            </a>
+            <a
+              href={socials.reddit.link}
+              target="_blank"
+              rel="noreferrer"
+              className="contact__social-media__icon"
+            >
               <FontAwesomeIcon icon={faReddit} size="lg" />
-            </div>
-            <div className="contact__social-media__icon">
+            </a>
+            <a
+              href={socials.twitter.link}
+              target="_blank"
+              rel="noreferrer"
+              className="contact__social-media__icon"
+            >
               <FontAwesomeIcon icon={faTwitter} size="lg" />
-            </div>
-            <div className="contact__social-media__icon">
+            </a>
+            <a
+              href={socials.tiktok.link}
+              target="_blank"
+              rel="noreferrer"
+              className="contact__social-media__icon"
+            >
               <FontAwesomeIcon icon={faTiktok} size="lg" />
-            </div>
+            </a>
           </div>
         </div>
 
