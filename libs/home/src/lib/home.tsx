@@ -9,7 +9,7 @@ import { tr } from '@alpsbte/shared/language';
 import { ScrollIndicator } from '@alpsbte/shared/components';
 import { scrollLinks, server, socials } from '@alpsbte/shared/config';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
-import { faCheck, faCopy } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faCompass } from '@fortawesome/free-solid-svg-icons';
 
 export interface HomeProps {}
 
@@ -64,7 +64,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
                       : tr('pages.home.copiedToClipboard')
                   }`}
                   size="lg"
-                  icon={!copiedClipboard ? faCopy : faCheck}
+                  icon={!copiedClipboard ? faCompass : faCheck}
                   style={{
                     marginLeft: 'auto',
                     marginRight: 'auto',
