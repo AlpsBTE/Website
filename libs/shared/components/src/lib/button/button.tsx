@@ -39,16 +39,12 @@ export const Button = ({
     </button>
   );
 
-  return (
-    <>
-      {link ? (
-        <a href={link} target="_blank" rel="noreferrer">
-          {button}
-        </a>
-      ) : (
-        button
-      )}
-    </>
+  return link ? (
+    <a href={link} target="_blank" rel="noreferrer">
+      {button}
+    </a>
+  ) : (
+    button
   );
 };
 
