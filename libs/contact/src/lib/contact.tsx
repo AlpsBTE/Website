@@ -79,7 +79,7 @@ export const Contact = inject(languageStore.storeKey)(
           <div className="contact__people">
             <div>
               <div className="contact__people__container">
-                <h2></h2>
+                <h2>{tr('pages.contact.contact.outreach')}</h2>
                 <p>
                   Gartensocke
                   <br />
@@ -95,7 +95,7 @@ export const Contact = inject(languageStore.storeKey)(
                 </p>
               </div>
               <div className="contact__people__container">
-                <h2>Outreach</h2>
+                <h2>{tr('pages.contact.contact.community')}</h2>
                 <p>
                   Gartensocke
                   <br />
@@ -111,7 +111,7 @@ export const Contact = inject(languageStore.storeKey)(
                 </p>
               </div>
               <div className="contact__people__container">
-                <h2>Outreach</h2>
+                <h2>{tr('pages.contact.contact.management')}</h2>
                 <p>
                   Gartensocke
                   <br />
