@@ -1,3 +1,5 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CSSProperties } from 'react';
 import './button.scss';
 
@@ -8,6 +10,7 @@ export interface ButtonProps {
   size?: 'lg' | 'md' | 'sm';
   style?: CSSProperties;
   className?: string;
+  icon?: IconProp;
 }
 
 export const Button = ({
@@ -17,21 +20,19 @@ export const Button = ({
   style = {},
   size = 'md',
   className = '',
+  icon,
 }: ButtonProps) => {
   return (
     <button
-      style={{
-        ...style,
-        borderColor: disabled ? 'gray' : 'white',
-        opacity: disabled ? '0.5' : '1',
-      }}
+      style={style}
       disabled={disabled}
       className={`button button__${size} ${className} button__${
         disabled ? 'disabled' : ''
       }`}
       onClick={onClick}
     >
-      {label}
+      {icon && <FontAwesomeIcon className="button__icon" icon={icon} />}
+      <span className="button__label">{label}</span>
     </button>
   );
 };
