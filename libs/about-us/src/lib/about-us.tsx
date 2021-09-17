@@ -26,7 +26,6 @@ export const AboutUs = ({}: AboutUsProps) => {
       <Button
         label="Contact Us"
         size="md"
-        color="#9A9A9A"
         style={{ marginLeft: 'auto', marginRight: 'auto' }}
       />
 

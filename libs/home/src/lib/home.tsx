@@ -44,8 +44,8 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
                 <Button
                   label={tr('pages.home.joinUs')}
                   size="lg"
-                  color="#fff"
                   style={{
+                    display: 'block',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginTop: '5vh',
@@ -54,8 +54,8 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
                 <Button
                   label="IP: mc.alps-bte.com"
                   size="lg"
-                  color="#fff"
                   style={{
+                    display: 'block',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginTop: '3vh',
