@@ -12,6 +12,7 @@ export interface ButtonProps {
   style?: CSSProperties;
   className?: string;
   icon?: IconProp;
+  link?: string;
 }
 
 export const Button = ({
@@ -22,8 +23,9 @@ export const Button = ({
   size = 'md',
   className = '',
   icon,
+  link,
 }: ButtonProps) => {
-  return (
+  const button = (
     <button
       style={style}
       disabled={disabled}
@@ -35,6 +37,18 @@ export const Button = ({
       {icon && <FontAwesomeIcon className="button__icon" icon={icon} />}
       <span className="button__label">{label}</span>
     </button>
+  );
+
+  return (
+    <>
+      {link ? (
+        <a href={link} target="_blank" rel="noreferrer">
+          {button}
+        </a>
+      ) : (
+        button
+      )}
+    </>
   );
 };
 

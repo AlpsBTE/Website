@@ -7,7 +7,7 @@ import { inject, observer } from 'mobx-react';
 import { languageStore } from '@alpsbte/shared/stores';
 import { tr } from '@alpsbte/shared/language';
 import { ScrollIndicator } from '@alpsbte/shared/components';
-import { scrollLinks, server } from '@alpsbte/shared/config';
+import { scrollLinks, server, socials } from '@alpsbte/shared/config';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faCheck, faCopy } from '@fortawesome/free-solid-svg-icons';
 
@@ -53,6 +53,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
                     marginRight: 'auto',
                     marginTop: '5vh',
                   }}
+                  link={socials.discord.link}
                 />
                 <Button
                   label={`${
@@ -68,8 +69,10 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
                     marginTop: '3vh',
                   }}
                   onClick={() => {
-                    setCopiedClipboard(true);
-                    setTimeout(() => setCopiedClipboard(false), 3000);
+                    if (!copiedClipboard) {
+                      setCopiedClipboard(true);
+                      setTimeout(() => setCopiedClipboard(false), 3000);
+                    }
                   }}
                 />
               </div>
