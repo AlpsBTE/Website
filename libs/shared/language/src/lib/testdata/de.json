@@ -26,6 +26,15 @@
           "description": "Unser Key-Tool ist der kostenlose Messenger Discord. Wir nutzen es zur Koordination des Projekts und zur Kommunikation zwischen unseren Mitgliedern. Dies ist der richtige Weg, wenn Sie mehr darüber erfahren möchten, was wir tun, Hilfe erhalten oder mit aktuellen Build-Entwicklungen Schritt halten möchten. Für den Aufbau auf dem Open-World \"Terra Server\" verwenden wir ein Modpack - eine Modifikation des Spiels - welches die Höhenbegrenzung von Minecraft aufhebt und das Terrain generiert"
         }
       }
+    },
+    "contact": {
+      "title": "Kontact",
+      "contact": {
+        "outreach": "Öffentlichkeitsarbeit",
+        "community": "Community",
+        "management": "Verwaltung"
+      },
+      "socialMedia": "Soziale Medien"
     }
   },
   "footer": {
