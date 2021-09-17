@@ -72,7 +72,23 @@ export const Contact = ({}: ContactProps) => {
         <div className="contact__people">
           <div>
             <div className="contact__people__container">
-              <h2 className="contact__title-font">Outreach</h2>
+              <h2>Outreach</h2>
+              <p>
+                Gartensocke
+                <br />
+                Email{' '}
+                <a className="link" href="mailto:gartensocke@alps-bte.com">
+                  gartensocke@alps-bte.com
+                </a>
+                <br />
+                Discord{' '}
+                <a className="link" href="https://discord.com/invite/vgkspay">
+                  Gartensocke#1525
+                </a>
+              </p>
+            </div>
+            <div className="contact__people__container">
+              <h2>Outreach</h2>
               <p>Gartensocke</p>
               <p>
                 Email{' '}
@@ -88,23 +104,7 @@ export const Contact = ({}: ContactProps) => {
               </p>
             </div>
             <div className="contact__people__container">
-              <h2 className="contact__title-font">Outreach</h2>
-              <p>Gartensocke</p>
-              <p>
-                Email{' '}
-                <a className="link" href="mailto:gartensocke@alps-bte.com">
-                  gartensocke@alps-bte.com
-                </a>
-              </p>
-              <p>
-                Discord{' '}
-                <a className="link" href="https://discord.com/invite/vgkspay">
-                  Gartensocke#1525
-                </a>
-              </p>
-            </div>
-            <div className="contact__people__container">
-              <h2 className="contact__title-font">Outreach</h2>
+              <h2>Outreach</h2>
               <p>Gartensocke</p>
               <p>
                 Email{' '}
