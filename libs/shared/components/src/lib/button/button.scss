@@ -23,7 +23,8 @@
   &__icon {
     display: inline-block;
     margin-right: variables.$spacing-m;
-    font-size: variables.$font-size-xl;
+    font-size: variables.$font-size-l;
+    color: white;
   }
 
   &__lg {
