@@ -1,27 +1,29 @@
 @use "theme:variables" as variables;
 
 .button {
-  display: block;
-  border: solid;
-  border-radius: 0;
-  background-color: transparent;
-  transition: color 0.35s ease-in-out;
-  transition: border-color 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
+  outline: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: variables.$white;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: variables.$cream;
+  }
 
   &__lg {
-    font-size: 1.1rem;
+    font-size: variables.$font-size-m;
     padding: variables.$spacing-s variables.$spacing-4xl;
   }
 
   &__md {
     padding: variables.$spacing-xs variables.$spacing-4xl;
-    border-width: 2px;
   }
 
   &__sm {
     font-size: 0.8em;
+    font-size: variables.$font-size-s;
     padding: variables.$spacing-xs variables.$spacing-xl;
-    border-width: 2px;
   }
 }

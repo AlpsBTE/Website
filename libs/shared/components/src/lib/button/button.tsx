@@ -6,34 +6,34 @@ export interface ButtonProps {
   onClick?: () => void;
   disabled?: boolean;
   size?: 'lg' | 'md' | 'sm';
-  color?: string;
-  style?: CSSProperties,
+  style?: CSSProperties;
+  className?: string;
 }
 
-export function Button(props: ButtonProps) {
+export const Button = ({
+  label,
+  onClick = () => void 0,
+  disabled = false,
+  style = {},
+  size = 'md',
+  className = '',
+}: ButtonProps) => {
   return (
     <button
-      style={{...props.style,
-        color: props.disabled ? 'gray' : props.color,
-        borderColor: props.disabled ? 'gray' : props.color,
-        opacity: props.disabled ? '0.5' : '1',
+      style={{
+        ...style,
+        borderColor: disabled ? 'gray' : 'white',
+        opacity: disabled ? '0.5' : '1',
       }}
-      disabled={props.disabled}
-      className={`button button__${props.size} button__${
-        props.disabled ? 'disabled' : ''
+      disabled={disabled}
+      className={`button button__${size} ${className} button__${
+        disabled ? 'disabled' : ''
       }`}
-      onClick={props.onClick}
+      onClick={onClick}
     >
-      {props.label}
+      {label}
     </button>
   );
-}
-
-Button.defaultProps = {
-  size: 'md',
-  disabled: false,
-  onclick: () => null,
-  color: '#000',
 };
 
 export default Button;

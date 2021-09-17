@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: variables.$black-1-transparent 0px 0px variables.$spacing-l 0px;
   position: fixed;
   top: 0;
   left: 0;
