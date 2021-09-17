@@ -26,6 +26,15 @@
           "description": "Our Key tool is the free messenger Discord. We use it for coordinating the project and for communication between our members. It is the way to go if you want to learn more about what we are doing, getting help or keeping up with current build developments. For building on the open-world \"Terra Server\" we use a modpack - a modification of the game - which gets rid of the hight limitation of Minecraft and generates the terrain, Furthermore, it "
         }
       }
+    },
+    "contact": {
+      "title": "Contact",
+      "contact": {
+        "outreach": "Outreach",
+        "community": "Community",
+        "management": "Management"
+      },
+      "socialMedia": "Social Media"
     }
   },
   "footer": {

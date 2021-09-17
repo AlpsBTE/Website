@@ -27,6 +27,15 @@ export interface ISet {
         };
       };
     };
+    contact: {
+      title: string;
+      contact: {
+        outreach: string;
+        community: string;
+        management: string;
+      };
+      socialMedia: string;
+    };
   };
   footer: {
     copyright: string;
