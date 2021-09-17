@@ -18,6 +18,8 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
     const [offsetY, setOffsetY] = useState<number>(0);
     const [copiedClipboard, setCopiedClipboard] = useState<boolean>(false);
 
+    const handleCopyClipboardClick = (): void => {};
+
     const scrollEvent = () => {
       setOffsetY(window.pageYOffset);
     };
@@ -72,6 +74,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
                     if (!copiedClipboard) {
                       setCopiedClipboard(true);
                       setTimeout(() => setCopiedClipboard(false), 3000);
+                      navigator.clipboard.writeText(server.address);
                     }
                   }}
                 />
