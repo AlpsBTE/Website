@@ -5,3 +5,7 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+a.link {
+  color: colors.$link;
+}
