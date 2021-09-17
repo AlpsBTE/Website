@@ -49,14 +49,10 @@ export const ROUTES: ROUTES = Object.keys(pages).reduce(
 
 export const Router = inject(languageStore.storeKey)(
   observer(() => {
-    const [isMounted, setIsMounted] = useState<boolean>(false);
-    useEffect(() => {
-      languageStore.setLanguage(languageStore.language);
-    }, [languageStore.language]);
-
-    useEffect(() => {
-      setIsMounted(true);
-    }, []);
+    useEffect(
+      () => languageStore.setLanguage(languageStore.language),
+      [languageStore.language]
+    );
 
     const headerProps: HeaderProps = {
       mobileBreakpoint: breakpoints.tablet,
