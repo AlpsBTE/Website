@@ -89,14 +89,14 @@ export const Contact = ({}: ContactProps) => {
             </div>
             <div className="contact__people__container">
               <h2>Outreach</h2>
-              <p>Gartensocke</p>
               <p>
+                Gartensocke
+                <br />
                 Email{' '}
                 <a className="link" href="mailto:gartensocke@alps-bte.com">
                   gartensocke@alps-bte.com
                 </a>
-              </p>
-              <p>
+                <br />
                 Discord{' '}
                 <a className="link" href="https://discord.com/invite/vgkspay">
                   Gartensocke#1525
@@ -105,14 +105,14 @@ export const Contact = ({}: ContactProps) => {
             </div>
             <div className="contact__people__container">
               <h2>Outreach</h2>
-              <p>Gartensocke</p>
               <p>
+                Gartensocke
+                <br />
                 Email{' '}
                 <a className="link" href="mailto:gartensocke@alps-bte.com">
                   gartensocke@alps-bte.com
                 </a>
-              </p>
-              <p>
+                <br />
                 Discord{' '}
                 <a className="link" href="https://discord.com/invite/vgkspay">
                   Gartensocke#1525
