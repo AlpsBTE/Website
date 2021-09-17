@@ -1,5 +1,4 @@
 @use "theme:variables" as variables;
-@import 'theme';
 
 .contact {
   font-weight: variables.$font-weight-thin;
@@ -8,24 +7,16 @@
     text-align: center;
     width: 100%;
     display: flex;
-    flex-direction: row;
     margin-top: variables.$vertical-spacer-xs;
-    background-color: $white;
-  }
-
-  &__title-font {
-    font-size: 1.5rem;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    line-height: 0.4;
+    background-color: variables.$white;
+    padding: variables.$spacing-xl;
   }
 
   &__social-media {
-    flex: 50%;
     padding: variables.$spacing-s;
     flex: 50%;
     text-align: right;
-    padding-right: 4vw;
+    margin-right: variables.$horizontal-spacer-xs;
 
     &__icon {
       font-size: 20px;
@@ -37,16 +28,8 @@
 
   &__people {
     flex: 50%;
-    padding: $spacing-s;
-    flex: 50%;
     text-align: left;
     padding-right: variables.$horizontal-spacer-xs;
-
-    &__container {
-      display: block;
-      line-height: 0.4;
-      font-size: 0.9em;
-    }
   }
 }
 
