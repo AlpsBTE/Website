@@ -50,13 +50,13 @@ export function Contact(props: ContactProps) {
               <p>Gartensocke</p>
               <p>
                 Email{' '}
-                <a href="mailto:gartensocke@alps-bte.com">
+                <a className="link" href="mailto:gartensocke@alps-bte.com">
                   gartensocke@alps-bte.com
                 </a>
               </p>
               <p>
                 Discord{' '}
-                <a href="https://discord.com/invite/vgkspay">
+                <a className="link" href="https://discord.com/invite/vgkspay">
                   Gartensocke#1525
                 </a>
               </p>
@@ -66,13 +66,13 @@ export function Contact(props: ContactProps) {
               <p>Gartensocke</p>
               <p>
                 Email{' '}
-                <a href="mailto:gartensocke@alps-bte.com">
+                <a className="link" href="mailto:gartensocke@alps-bte.com">
                   gartensocke@alps-bte.com
                 </a>
               </p>
               <p>
                 Discord{' '}
-                <a href="https://discord.com/invite/vgkspay">
+                <a className="link" href="https://discord.com/invite/vgkspay">
                   Gartensocke#1525
                 </a>
               </p>
@@ -82,13 +82,13 @@ export function Contact(props: ContactProps) {
               <p>Gartensocke</p>
               <p>
                 Email{' '}
-                <a href="mailto:gartensocke@alps-bte.com">
+                <a className="link" href="mailto:gartensocke@alps-bte.com">
                   gartensocke@alps-bte.com
                 </a>
               </p>
               <p>
                 Discord{' '}
-                <a href="https://discord.com/invite/vgkspay">
+                <a className="link" href="https://discord.com/invite/vgkspay">
                   Gartensocke#1525
                 </a>
               </p>
