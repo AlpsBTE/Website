@@ -9,12 +9,15 @@ import { tr } from '@alpsbte/shared/language';
 import { ScrollIndicator } from '@alpsbte/shared/components';
 import { scrollLinks, server } from '@alpsbte/shared/config';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faCheck, faCopy } from '@fortawesome/free-solid-svg-icons';
 
 export interface HomeProps {}
 
 export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
   observer(({}: HomeProps) => {
-    const [offsetY, setOffsetY] = useState(0);
+    const [offsetY, setOffsetY] = useState<number>(0);
+    const [copiedClipboard, setCopiedClipboard] = useState<boolean>(false);
+
     const scrollEvent = () => {
       setOffsetY(window.pageYOffset);
     };
@@ -52,12 +55,21 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
                   }}
                 />
                 <Button
-                  label={`${server.address}`}
+                  label={`${
+                    !copiedClipboard
+                      ? server.address
+                      : tr('pages.home.copiedToClipboard')
+                  }`}
                   size="lg"
+                  icon={!copiedClipboard ? faCopy : faCheck}
                   style={{
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginTop: '3vh',
+                  }}
+                  onClick={() => {
+                    setCopiedClipboard(true);
+                    setTimeout(() => setCopiedClipboard(false), 3000);
                   }}
                 />
               </div>

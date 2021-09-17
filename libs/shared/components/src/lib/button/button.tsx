@@ -1,11 +1,12 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { CSSProperties } from 'react';
+import React, { CSSProperties } from 'react';
 import './button.scss';
 
 export interface ButtonProps {
   label: string;
-  onClick?: () => void;
+  /*eslint-disable-next-line */
+  onClick?: (e: React.MouseEvent<HTMLElement>) => void;
   disabled?: boolean;
   size?: 'lg' | 'md' | 'sm';
   style?: CSSProperties;
