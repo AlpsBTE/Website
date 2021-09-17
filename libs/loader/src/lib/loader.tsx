@@ -1,6 +1,6 @@
 /* eslint-disable */
-import React from 'react';
 import './loader.scss';
+import React from 'react';
 
 const possibilities = [
   'bat',
@@ -39,7 +39,7 @@ const animation =
 
 export const Loader: React.FC = () => {
   return (
-    <div className="loader">
+    <div className={`loader`}>
       <div className="loader__content">
         <h2>Loading</h2>
         <img src={require(`../assets/${animation}.gif`)} alt={animation} />

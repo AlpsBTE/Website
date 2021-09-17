@@ -5,7 +5,7 @@ import Accordeon from '../components/accordeon/accordeon';
 
 export interface FaqProps {}
 
-export function Faq(props: FaqProps) {
+export const Faq: React.FC = (props: FaqProps) => {
   const FaqData = [
     {
       title: 'Titel',
@@ -38,11 +38,15 @@ export function Faq(props: FaqProps) {
         title="FAQ"
         subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,"
       />
-      {FaqData.map((faqItem) => (
-        <Accordeon title={faqItem.title} content={faqItem.content}></Accordeon>
+      {FaqData.map((faqItem: any, i: number) => (
+        <Accordeon
+          title={faqItem.title}
+          key={i}
+          content={faqItem.content}
+        ></Accordeon>
       ))}
     </div>
   );
-}
+};
 
 export default Faq;

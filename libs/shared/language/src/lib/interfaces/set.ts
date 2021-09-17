@@ -11,6 +11,7 @@ export interface ISet {
     home: {
       headline: string;
       joinUs: string;
+      copiedToClipboard: string;
       contentBlocks: {
         mission: {
           title: string;

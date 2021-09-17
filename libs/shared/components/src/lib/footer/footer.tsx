@@ -20,7 +20,7 @@ export const Footer = inject(languageStore.storeKey)(
             className="footer__about__title"
           >
             <Logo />
-            <h3>Alps BTE</h3>
+            <h3>ALPS BTE</h3>
           </Link>
           <p className="footer__about__copyright">
             {tr('footer.copyright')} {new Date().getFullYear()} -{' '}

@@ -34,6 +34,17 @@
       img {
         margin-right: variables.$spacing-m;
       }
+
+      h3 {
+        font-size: variables.$font-size-s;
+        letter-spacing: 1.5px;
+        font-weight: variables.$font-weight-light;
+        text-transform: uppercase;
+      }
+    }
+
+    &__copyright {
+      font-size: variables.$font-size-s;
     }
   }
 
@@ -55,6 +66,7 @@
       a {
         display: block;
         margin: variables.$spacing-s 0;
+        font-size: variables.$font-size-s;
       }
     }
 

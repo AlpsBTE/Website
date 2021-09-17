@@ -7,12 +7,19 @@ import { inject, observer } from 'mobx-react';
 import { languageStore } from '@alpsbte/shared/stores';
 import { tr } from '@alpsbte/shared/language';
 import { ScrollIndicator } from '@alpsbte/shared/components';
+import { scrollLinks, server, socials } from '@alpsbte/shared/config';
+import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faCheck, faCompass } from '@fortawesome/free-solid-svg-icons';
 
 export interface HomeProps {}
 
 export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
   observer(({}: HomeProps) => {
-    const [offsetY, setOffsetY] = useState(0);
+    const [offsetY, setOffsetY] = useState<number>(0);
+    const [copiedClipboard, setCopiedClipboard] = useState<boolean>(false);
+
+    const handleCopyClipboardClick = (): void => {};
+
     const scrollEvent = () => {
       setOffsetY(window.pageYOffset);
     };
@@ -42,21 +49,33 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
                 <Button
                   label={tr('pages.home.joinUs')}
                   size="lg"
-                  color="#fff"
+                  icon={faDiscord}
                   style={{
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginTop: '5vh',
                   }}
+                  link={socials.discord.link}
                 />
                 <Button
-                  label="IP: mc.alps-bte.com"
+                  label={`${
+                    !copiedClipboard
+                      ? server.address
+                      : tr('pages.home.copiedToClipboard')
+                  }`}
                   size="lg"
-                  color="#fff"
+                  icon={!copiedClipboard ? faCompass : faCheck}
                   style={{
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginTop: '3vh',
+                  }}
+                  onClick={() => {
+                    if (!copiedClipboard) {
+                      setCopiedClipboard(true);
+                      setTimeout(() => setCopiedClipboard(false), 3000);
+                      navigator.clipboard.writeText(server.address);
+                    }
                   }}
                 />
               </div>
@@ -64,7 +83,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
             <ScrollIndicator />
           </div>
         </div>
-        <div className="home__content">
+        <div className="home__content" id={`${scrollLinks.ourMission}`}>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.mission.title')}
             image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"

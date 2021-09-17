@@ -1,39 +1,51 @@
-import { CSSProperties } from 'react';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { CSSProperties } from 'react';
 import './button.scss';
 
 export interface ButtonProps {
   label: string;
-  onClick?: () => void;
+  /*eslint-disable-next-line */
+  onClick?: (e: React.MouseEvent<HTMLElement>) => void;
   disabled?: boolean;
   size?: 'lg' | 'md' | 'sm';
-  color?: string;
-  style?: CSSProperties,
+  style?: CSSProperties;
+  className?: string;
+  icon?: IconProp;
+  link?: string;
 }
 
-export function Button(props: ButtonProps) {
-  return (
+export const Button = ({
+  label,
+  onClick = () => void 0,
+  disabled = false,
+  style = {},
+  size = 'md',
+  className = '',
+  icon,
+  link,
+}: ButtonProps) => {
+  const button = (
     <button
-      style={{...props.style,
-        color: props.disabled ? 'gray' : props.color,
-        borderColor: props.disabled ? 'gray' : props.color,
-        opacity: props.disabled ? '0.5' : '1',
-      }}
-      disabled={props.disabled}
-      className={`button button__${props.size} button__${
-        props.disabled ? 'disabled' : ''
+      style={style}
+      disabled={disabled}
+      className={`button button__${size} ${className} button__${
+        disabled ? 'disabled' : ''
       }`}
-      onClick={props.onClick}
+      onClick={onClick}
     >
-      {props.label}
+      {icon && <FontAwesomeIcon className="button__icon" icon={icon} />}
+      <span className="button__label">{label}</span>
     </button>
   );
-}
 
-Button.defaultProps = {
-  size: 'md',
-  disabled: false,
-  onclick: () => null,
-  color: '#000',
+  return link ? (
+    <a href={link} target="_blank" rel="noreferrer">
+      {button}
+    </a>
+  ) : (
+    button
+  );
 };
 
 export default Button;
