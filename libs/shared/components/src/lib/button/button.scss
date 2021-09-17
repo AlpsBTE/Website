@@ -1,24 +1,39 @@
 @use "theme:variables" as variables;
+@use "theme:mixins" as mixins;
 
 .button {
   outline: 0;
   margin: 0;
   border: 0;
   cursor: pointer;
-  background-color: variables.$white;
+  color: variables.$white;
+  background-color: transparent;
+  border: variables.$spacing-xxs solid variables.$white;
   transition: 0.2s;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
 
   &:hover {
-    background-color: variables.$cream;
+    box-shadow: 0px 0px variables.$spacing-m variables.$spacing-xxs
+      variables.$white-transparent;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-right: variables.$spacing-m;
+    font-size: variables.$font-size-xl;
   }
 
   &__lg {
     font-size: variables.$font-size-m;
-    padding: variables.$spacing-s variables.$spacing-4xl;
+    padding: 10px variables.$spacing-xxl;
+    font-weight: variables.$font-weight-semibold;
   }
 
   &__md {
-    padding: variables.$spacing-xs variables.$spacing-4xl;
+    padding: variables.$spacing-xs variables.$spacing-xl;
   }
 
   &__sm {

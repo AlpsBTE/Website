@@ -7,8 +7,8 @@ import { inject, observer } from 'mobx-react';
 import { languageStore } from '@alpsbte/shared/stores';
 import { tr } from '@alpsbte/shared/language';
 import { ScrollIndicator } from '@alpsbte/shared/components';
-import { AnimatePresence, motion } from 'framer-motion';
-import { scrollLinks } from '@alpsbte/shared/config';
+import { scrollLinks, server } from '@alpsbte/shared/config';
+import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 export interface HomeProps {}
 
@@ -44,18 +44,17 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
                 <Button
                   label={tr('pages.home.joinUs')}
                   size="lg"
+                  icon={faDiscord}
                   style={{
-                    display: 'block',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginTop: '5vh',
                   }}
                 />
                 <Button
-                  label="IP: mc.alps-bte.com"
+                  label={`${server.address}`}
                   size="lg"
                   style={{
-                    display: 'block',
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     marginTop: '3vh',
