@@ -29,6 +29,7 @@ export interface ISet {
     };
     contact: {
       title: string;
+      description: string;
       contact: {
         outreach: string;
         community: string;
