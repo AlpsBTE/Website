@@ -18,7 +18,7 @@ export interface IStaff {
   contactable?: boolean;
 }
 
-export const contact: { [key: string]: IStaff } = {
+export const contact = <const>{
   cinnazeyy: {
     discordUsername: 'Cinnazeyy#2440',
     role: StaffRole.Manager,
