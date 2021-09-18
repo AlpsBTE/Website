@@ -27,6 +27,28 @@ export interface ISet {
         };
       };
     };
+    application: {
+      title: string;
+      description: string;
+      steps: {
+        discord: {
+          title: string;
+          description: string;
+        };
+        plotSystem: {
+          title: string;
+          description: string;
+        };
+        applicationForm: {
+          title: string;
+          description: string;
+        };
+        becomingBuilder: {
+          title: string;
+          description: string;
+        };
+      };
+    };
     contact: {
       title: string;
       description: string;

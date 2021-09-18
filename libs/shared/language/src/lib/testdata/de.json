@@ -19,7 +19,7 @@
         },
         "server": {
           "title": "Unser Server",
-          "description": "Sobald Sie unserem Servernetzwerk mit der IP mc.alps-bte.com in der Minecraft-Version 1.12.2-1.17 beitreten, spawnen Sie im \"Hub\" unserer Lobby. Sie haben zwei Möglichkeiten: Entweder Sie möchten sofort mit dem Bauen beginnen und daher dem \"Plot-System\" beitreten oder Sie entscheiden sich, bereits bebaute Gebiete zu besuchen, indem Sie dem \"Terra Server\" beitreten. Das \"Plot System\" ist der einfachste und schnellste Weg, sich als offizieller Alps HdO Builder zu bewerben. Wenn Sie als Builder in das Build-Team aufgenommen werden, können Sie bauen."
+          "description": "Sobald Sie unserem Servernetzwerk mit der IP mc.alps-bte.com in der Minecraft-Version 1.12.2-1.17 beitreten, spawnen Sie im \"Hub\" unserer Lobby. Sie haben zwei Möglichkeiten: Entweder Sie möchten sofort mit dem Bauen beginnen und daher dem \"Plot-System\" beitreten oder Sie entscheiden sich, bereits bebaute Gebiete zu besuchen, indem Sie dem \"Terra Server\" beitreten. Das \"Plot System\" ist der einfachste und schnellste Weg, sich als offizieller Alps BTE Builder zu bewerben. Wenn Sie als Builder in das Build-Team aufgenommen werden, können Sie bauen."
         },
         "how": {
           "title": "Wie wir es machen",
@@ -36,6 +36,28 @@
         "management": "Verwaltung"
       },
       "socialMedia": "Soziale Medien"
+    },
+    "application": {
+      "title": "Bewerbung",
+      "description": "Dies ist ein Überblick darüber, wie Sie ein \"Builder\" werden - ein Mitglied unseres Build-Teams. Für weitere Informationen treten Sie unserem Discord bei. Wenn Sie eine ausführliche Erklärung zur Bewerbung wünschen, sehen Sie sich unser Tutorial-Video unten an.",
+      "steps": {
+        "discord": {
+          "title": "Discord",
+          "description": "Wir nutzen Discord zur Koordination des Projekts und zur Kommunikation zwischen unseren Mitgliedern. Laden Sie den kostenlosen Messenger herunter und treten Sie unserem Alps BTE Discord-Server bei, indem Sie hier klicken (LINK). Lesen Sie die Informationskanäle durch, um sich an das Projekt zu gewöhnen und mit unserer Community in Kontakt zu treten."
+        },
+        "plotSystem": {
+          "title": "Plotsystem",
+          "description": "Treten Sie unserem Minecraft-Server mit den Versionen 1.12.2-1.17 bei und beginnen Sie mit dem Bauen mit dem \"Plot-System\", indem Sie mit der rechten Maustaste auf den Netherstern in Ihrem Inventar klicken. Wählen Sie die Stadt aus, in der Sie bauen möchten, und legen Sie los. Sobald Sie zwei Grundstücke eingereicht haben, können Sie sich als Bauherr bewerben."
+        },
+        "applicationForm": {
+          "title": "Application Form",
+          "description": "Gehen Sie zu buildtheearth.net/buildteams und suchen Sie nach Alps BTE. Klicken Sie auf \"Bewerben\" und füllen Sie das Formular aus. Fügen Sie die IDs Ihrer gebauten Grundstücke hinzu, damit wir bestätigen können, dass Sie BTE bauen können. Für den Anfang empfehlen wir dringend unsere Builders Guide-Reihe auf unserem YouTube-Kanal, die jeden Aspekt des Bauens in BTE abdeckt."
+        },
+        "becomingBuilder": {
+          "title": "Builder werden",
+          "description": "Sobald Sie Ihr Formular abgeschickt haben, wird es in weniger als 48 Stunden von einem unserer Rezensenten überprüft. In der Zwischenzeit könnt ihr das offizielle Modpack herunterladen - eine Modifikation des Spiels - das für den Aufbau auf der Open-World \"Terra Server\" entscheidend ist. Wenn du ins Team aufgenommen wurdest, bekommst du die Rolle \"Builder\" und alle Rechte auf unserem Discord- und Minecraftserver. Auf dem \"Terra Server\" kannst du jetzt überall in Österreich, der Schweiz und Liechtenstein bauen, wo immer du willst."
+        }
+      }
     }
   },
   "footer": {
