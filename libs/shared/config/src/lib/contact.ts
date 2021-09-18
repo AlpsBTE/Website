@@ -10,14 +10,14 @@ export interface IStaff {
   discordUsername: string;
   role: StaffRole;
   displayName: string;
-  email?: string;
+  email?: `${string}@alps-bte.com`;
   /**
    * Defines whether a staff member will be displayed on the website contact section
    */
   contactable?: boolean;
 }
 
-export const contact = <const>{
+export const contact: { [key: string]: IStaff } = {
   cinnazeyy: {
     discordUsername: 'Cinnazeyy#2440',
     role: StaffRole.Manager,
@@ -39,6 +39,18 @@ export const contact = <const>{
     email: 'kami@alps-bte.com',
     contactable: false,
   },
+  blackstarhd: {
+    discordUsername: 'BlackStarHD#1333',
+    role: StaffRole.Helper,
+    displayName: 'BlackStar',
+    email: 'blackstarhd@alps-bte.com',
+  },
+  chaosschnitzel: {
+    discordUsername: 'ChaosSchnitzl#4206',
+    role: StaffRole.Helper,
+    displayName: 'ChaosSchnitzel',
+    email: 'chaosschnitzel@alps-bte.com',
+  },
   behemoth: {
     discordUsername: 'Behemoth#4026',
     role: StaffRole.Developer,
@@ -56,5 +68,12 @@ export const contact = <const>{
     role: StaffRole.Developer,
     displayName: 'jo_kil',
     contactable: false,
+  },
+  fxbyy: {
+    discordUsername: 'Fxbyy#1753',
+    role: StaffRole.PublicRelation,
+    displayName: 'Fxbyy',
+    email: 'fxbyy@alps-bte.com',
+    contactable: true,
   },
 };
