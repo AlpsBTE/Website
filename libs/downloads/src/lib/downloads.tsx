@@ -1,18 +1,23 @@
 /* eslint-disable */
 import './downloads.module.scss';
 import { PageTitle } from '@alpsbte/shared/components';
+import { languageStore } from '@alpsbte/shared/stores';
+import { inject, observer } from 'mobx-react';
+import { tr } from '@alpsbte/shared/language';
 
 export interface DownloadsProps {}
 
-export const Downloads = (props: DownloadsProps) => {
-  return (
-    <div>
-      <PageTitle
-        title="Downloads"
-        subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,"
-      />
-    </div>
-  );
-};
+export const Downloads = inject(languageStore.storeKey)(
+  observer(({}: DownloadsProps) => {
+    return (
+      <div>
+        <PageTitle
+          title={tr('pages.downloads.title')}
+          subtitle={tr('pages.downloads.description')}
+        />
+      </div>
+    );
+  })
+);
 
 export default Downloads;
