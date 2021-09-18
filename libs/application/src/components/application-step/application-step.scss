@@ -1,19 +1,31 @@
 @use "theme:variables" as variables;
+@use "theme:mixins" as mixins;
+
 .application-step {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: variables.$spacing-m;
+  padding: 0 variables.$horizontal-spacer-s;
   margin-bottom: variables.$vertical-spacer-xxs;
+
+  @include mixins.for-phone {
+    flex-direction: column;
+  }
 
   &__img {
     img {
       height: variables.$vertical-spacer-m;
       margin-right: variables.$spacing-xxl;
+
+      @include mixins.for-phone {
+        margin: initial;
+      }
     }
   }
 
   &__content {
-    width: 65%;
+    @include mixins.for-phone {
+      padding: variables.$vertical-spacer-xxs variables.$horizontal-spacer-xs;
+    }
   }
 }
