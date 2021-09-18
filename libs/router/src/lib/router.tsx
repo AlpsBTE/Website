@@ -84,8 +84,10 @@ export const Router = inject(languageStore.storeKey)(
           text: tr('navItems.contact'),
           to: `${languageStore.language}/${ROUTES.contact}`,
         },
-        { text: tr('navItems.contact'), to: ROUTES.contact },
-        { text: tr('navItems.press'), to: ROUTES.press },
+        {
+          text: tr('navItems.press'),
+          to: `${languageStore.language}/${ROUTES.press}`,
+        },
       ],
     };
 
