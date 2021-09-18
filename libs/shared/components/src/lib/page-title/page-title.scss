@@ -1,4 +1,5 @@
 @use "theme:variables" as variables;
+
 .page-title {
   &__image {
     width: 100%;
@@ -8,15 +9,14 @@
   }
 
   &__title {
-    font-size: 2.5em;
+    font-size: variables.$font-size-4xl;
     text-align: center;
-    margin-top: 1.5em;
+    margin-top: variables.$spacing-3xl;
   }
 
   &__subtitle {
     text-align: center;
     font-weight: variables.$font-weight-thin;
-    width: 50%;
-    margin: auto;
+    margin: 0 variables.$horizontal-spacer-m;
   }
 }
