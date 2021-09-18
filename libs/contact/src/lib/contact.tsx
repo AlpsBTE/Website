@@ -20,37 +20,35 @@ export interface ContactProps {}
 
 export const Contact = inject(languageStore.storeKey)(
   observer(({}: ContactProps) => {
-    const renderContact = (contact: IStaff) => {
-      return (
-        <p>
-          {contact.displayName}
-          <br />
-          {contact.email && (
-            <>
-              Email{' '}
-              <a
-                className="link"
-                href={`mailto:${contact.email}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {contact.email}
-              </a>
-            </>
-          )}
-          <br />
-          {socials.discord.text}{' '}
-          <a
-            className="link"
-            href={`${socials.discord.link}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {contact.discordUsername}
-          </a>
-        </p>
-      );
-    };
+    const renderContact = (contact: IStaff) => (
+      <p>
+        {contact.displayName}
+        <br />
+        {contact.email && (
+          <>
+            Email{' '}
+            <a
+              className="link"
+              href={`mailto:${contact.email}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {contact.email}
+            </a>
+          </>
+        )}
+        <br />
+        {socials.discord.text}{' '}
+        <a
+          className="link"
+          href={`${socials.discord.link}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {contact.discordUsername}
+        </a>
+      </p>
+    );
 
     return (
       <div className="contact">
