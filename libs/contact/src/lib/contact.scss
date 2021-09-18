@@ -1,4 +1,5 @@
 @use "theme:variables" as variables;
+@use "theme:mixins" as mixins;
 
 .contact {
   font-weight: variables.$font-weight-thin;
@@ -10,6 +11,10 @@
     margin-top: variables.$vertical-spacer-xs;
     background-color: variables.$white;
     padding: variables.$spacing-xl;
+
+    @include mixins.for-phone {
+      flex-direction: column-reverse;
+    }
   }
 
   &__social-media {
@@ -17,11 +22,22 @@
     text-align: right;
     margin-right: variables.$horizontal-spacer-xs;
 
+    @include mixins.for-phone {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     &__icon {
-      font-size: 20px;
-      color: rgb(32, 32, 32);
+      font-size: variables.$font-size-xl;
       float: right;
       margin-left: variables.$spacing-m;
+
+      @include mixins.for-phone {
+        display: flex;
+        font-size: variables.$font-size-m;
+        padding: variables.$spacing-s;
+      }
     }
   }
 
@@ -30,41 +46,22 @@
     text-align: left;
     padding-right: variables.$horizontal-spacer-xs;
 
+    @include mixins.for-phone {
+      text-align: center;
+    }
+
     h2 {
       margin-bottom: variables.$spacing-s;
+
+      @include mixins.for-phone {
+        font-size: variables.$font-size-xxl;
+        padding-bottom: variables.$spacing-xs;
+        padding-top: variables.$spacing-m;
+      }
     }
 
     p {
       margin-top: variables.$spacing-s;
-    }
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .contact {
-    &__container {
-      flex-direction: column-reverse;
-    }
-    &__social-media {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-
-      &__icon {
-        display: flex;
-        font-size: 30px;
-        padding: variables.$spacing-s;
-      }
-    }
-
-    &__people {
-      text-align: center;
-    }
-
-    &__title-font {
-      font-size: 1.7rem;
-      padding-bottom: 12px;
-      padding-top: 12px;
     }
   }
 }
