@@ -9,7 +9,7 @@ import {
   faTiktok,
   faReddit,
 } from '@fortawesome/free-brands-svg-icons';
-import { socials } from '@alpsbte/shared/config';
+import { contact, IStaff, socials } from '@alpsbte/shared/config';
 import { languageStore } from '@alpsbte/shared/stores';
 import { observer } from 'mobx-react-lite';
 import { inject } from 'mobx-react';
@@ -75,24 +75,34 @@ export const Contact = inject(languageStore.storeKey)(
               </a>
             </div>
           </div>
-
           <div className="contact__people">
             <div>
               <div className="contact__people__container">
                 <h2>{tr('pages.contact.contact.outreach')}</h2>
-                <p>
-                  Gartensocke
-                  <br />
-                  Email{' '}
-                  <a className="link" href="mailto:gartensocke@alps-bte.com">
-                    gartensocke@alps-bte.com
-                  </a>
-                  <br />
-                  Discord{' '}
-                  <a className="link" href="https://discord.com/invite/vgkspay">
-                    Gartensocke#1525
-                  </a>
-                </p>
+                {Object.values(contact).map((p: IStaff) => {
+                  return (
+                    <p>
+                      {p.displayName}
+                      <br />
+                      {p.email && (
+                        <>
+                          Email{' '}
+                          <a className="link" href={`mailto:${p.email}`}>
+                            {p.email}
+                          </a>
+                        </>
+                      )}
+                      <br />
+                      Discord{' '}
+                      <a
+                        className="link"
+                        href="https://discord.com/invite/vgkspay"
+                      >
+                        {p.discordUsername}
+                      </a>
+                    </p>
+                  );
+                })}
               </div>
               <div className="contact__people__container">
                 <h2>{tr('pages.contact.contact.community')}</h2>
