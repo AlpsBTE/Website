@@ -16,7 +16,9 @@ export const Application = inject(languageStore.storeKey)(
             subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,"
           />
         </div>
-        <div className="application__content">test</div>
+        <div className="application__content">
+          
+        </div>
       </>
     );
   })

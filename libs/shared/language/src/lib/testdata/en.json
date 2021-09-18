@@ -27,6 +27,28 @@
         }
       }
     },
+    "application": {
+      "title": "Application",
+      "description": "This is an overview on how to become a \"Builder\" - a member of our build team. For further information join our Discord. If you want an in-depth explanation on how to apply, watch our tutorial video down below.",
+      "steps": {
+        "discord": {
+          "title": "Discord",
+          "description": "We use Discord for coordinating the project and for communication between our members. Download the free messenger and join our Alps BTE Discord-Server by clicking here (LINK). Read through the information channels to get used to the project and get in touch with our community."
+        },
+        "plotSystem": {
+          "title": "Plot System",
+          "description": "Wir nutzen Discord zur Koordination des Projekts und zur Kommunikation zwischen unseren Mitgliedern. Laden Sie den kostenlosen Messenger herunter und treten Sie unserem Alps BTE Discord-Server bei, indem Sie hier klicken (LINK). Lesen Sie die Informationskanäle durch, um sich an das Projekt zu gewöhnen und mit unserer Community in Kontakt zu treten."
+        },
+        "applicationForm": {
+          "title": "Application Form",
+          "description": "Go to buildtheearth.net/buildteams and search for Alps BTE. Click \"Apply\" and fill out the form. Add the IDs of your constructed plots so that we can confirm you are able to build in BTE. For starting off we highly recommend our Builders Guide series on our YouTube channel which covers every aspect of building in BTE."
+        },
+        "becomingBuilder": {
+          "title": "Becoming a Builder",
+          "description": "Once you have sent off your form it will be reviewed in less than 48 hours by one of our Reviewers. Meanwhile you can download the official Modpack - a modification of the game - that is crucial for building on the open-world \"Terra Server\". If you have been accepted into the team you get the \"Builder\" role and all its rights on our Discord- and Minecraftserver. On the \"Terra Server\" you are now free to build wherever you want in Austria, Switzerland and Liechtenstein."
+        }
+      }
+    },
     "contact": {
       "title": "Contact",
       "description": "Alps BTE is an independent subsidiary organisation of Build The Earth. It was founded in March 2020 and aims to recreate Austria, Switzerland and Liechtenstein at a 1:1 scale in the block game Minecraft.",
