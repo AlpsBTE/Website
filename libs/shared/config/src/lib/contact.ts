@@ -6,6 +6,7 @@ export enum StaffRole {
   Developer,
   PublicRelation,
 }
+
 export interface IStaff {
   discordUsername: string;
   role: StaffRole;
@@ -39,6 +40,13 @@ export const contact: { [key: string]: IStaff } = {
     email: 'kami@alps-bte.com',
     contactable: false,
   },
+  napartas: {
+    discordUsername: 'N. Apartas#7089',
+    role: StaffRole.Manager,
+    displayName: 'N. Apartas',
+    email: 'napartas@alps-bte.com',
+    contactable: true,
+  },
   blackstarhd: {
     discordUsername: 'BlackStarHD#1333',
     role: StaffRole.Helper,
@@ -50,6 +58,13 @@ export const contact: { [key: string]: IStaff } = {
     role: StaffRole.Helper,
     displayName: 'ChaosSchnitzel',
     email: 'chaosschnitzel@alps-bte.com',
+  },
+  gartensocke: {
+    discordUsername: 'Gartensocke#1525',
+    role: StaffRole.PublicRelation,
+    displayName: 'Gartensocke',
+    email: 'gartensocke@alps-bte.com',
+    contactable: true,
   },
   behemoth: {
     discordUsername: 'Behemoth#4026',
