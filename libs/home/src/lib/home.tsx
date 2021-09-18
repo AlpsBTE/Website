@@ -88,6 +88,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
             title={tr('pages.home.contentBlocks.mission.title')}
             image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
             isImageAlignedLeft={true}
+            className="home__content__our-mission"
           >
             {tr('pages.home.contentBlocks.mission.description')}
           </HomeContentSection>

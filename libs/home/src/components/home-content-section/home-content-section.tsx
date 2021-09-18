@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { ReactNode } from 'react';
+import { CSSProperties, ReactNode } from 'react';
 import './home-content-section.scss';
 
 export interface HomeContentSectionProps {
@@ -7,6 +7,7 @@ export interface HomeContentSectionProps {
   image: string;
   isImageAlignedLeft: boolean;
   children: ReactNode;
+  className?: string;
 }
 
 export const HomeContentSection = ({
@@ -14,12 +15,13 @@ export const HomeContentSection = ({
   image,
   isImageAlignedLeft = true,
   children,
+  className = '',
 }: HomeContentSectionProps) => {
   return (
     <section
       className={`home-content-section ${
         !isImageAlignedLeft && 'home-content-section__aligned-right'
-      }`}
+      } ${className}`}
     >
       <div className="home-content-section__image-container">
         <img
