@@ -1,5 +1,5 @@
 /* eslint-disable*/
-import './application.module.scss';
+import './application.scss';
 import { PageTitle } from '@alpsbte/shared/components';
 import { languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
@@ -16,7 +16,7 @@ export const Application = inject(languageStore.storeKey)(
             subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,"
           />
         </div>
-        <div className="application__content"></div>
+        <div className="application__content">test</div>
       </>
     );
   })
