@@ -9,7 +9,7 @@ import {
   faTiktok,
   faReddit,
 } from '@fortawesome/free-brands-svg-icons';
-import { contact, IStaff, socials, StaffRole } from '@alpsbte/shared/config';
+import { contact, IStaff, socials } from '@alpsbte/shared/config';
 import { languageStore } from '@alpsbte/shared/stores';
 import { observer } from 'mobx-react-lite';
 import { inject } from 'mobx-react';

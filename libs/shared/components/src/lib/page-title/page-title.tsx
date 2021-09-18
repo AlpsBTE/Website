@@ -11,7 +11,7 @@ export const PageTitle = ({
   title,
   subtitle,
   showImage = true,
-  image = 'https://via.placeholder.com/1000',
+  image = 'https://cdn.discordapp.com/splashes/696795397376442440/40095e7ba07bfa5b4b22f81c4c662ec5.jpg?size=3072',
 }: PageTitleProps) => {
   return (
     <div className="page-title">
