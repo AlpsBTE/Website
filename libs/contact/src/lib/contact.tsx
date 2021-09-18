@@ -20,40 +20,36 @@ export interface ContactProps {}
 
 export const Contact = inject(languageStore.storeKey)(
   observer(({}: ContactProps) => {
-    const renderContactGroup = (role: StaffRole) => {
-      return Object.values(contact)
-        .filter((p) => p.role === role)
-        .map((p: IStaff) => {
-          return (
-            <p>
-              {p.displayName}
-              <br />
-              {p.email && (
-                <>
-                  Email{' '}
-                  <a
-                    className="link"
-                    href={`mailto:${p.email}`}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {p.email}
-                  </a>
-                </>
-              )}
-              <br />
-              {socials.discord.text}{' '}
+    const renderContact = (contact: IStaff) => {
+      return (
+        <p>
+          {contact.displayName}
+          <br />
+          {contact.email && (
+            <>
+              Email{' '}
               <a
                 className="link"
-                href={`${socials.discord.link}`}
+                href={`mailto:${contact.email}`}
                 target="_blank"
                 rel="noreferrer"
               >
-                {p.discordUsername}
+                {contact.email}
               </a>
-            </p>
-          );
-        });
+            </>
+          )}
+          <br />
+          {socials.discord.text}{' '}
+          <a
+            className="link"
+            href={`${socials.discord.link}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {contact.discordUsername}
+          </a>
+        </p>
+      );
     };
 
     return (
@@ -115,14 +111,15 @@ export const Contact = inject(languageStore.storeKey)(
             <div>
               <div className="contact__people__container">
                 <h2>{tr('pages.contact.contact.outreach')}</h2>
-                {renderContactGroup(StaffRole.PublicRelation)}
+                {renderContact(contact.gartensocke)}
               </div>
               <div className="contact__people__container">
                 <h2>{tr('pages.contact.contact.community')}</h2>
-                {renderContactGroup(StaffRole.Manager)}
+                {renderContact(contact.napartas)}
               </div>
               <div className="contact__people__container">
                 <h2>{tr('pages.contact.contact.management')}</h2>
+                {renderContact(contact.cinnazeyy)}
               </div>
             </div>
           </div>
