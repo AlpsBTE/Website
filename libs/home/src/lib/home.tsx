@@ -18,16 +18,22 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
     const [offsetY, setOffsetY] = useState<number>(0);
     const [copiedClipboard, setCopiedClipboard] = useState<boolean>(false);
 
-    const handleCopyClipboardClick = (): void => {};
+    const handleCopyClipboardClick = (): void => {
+      if (!copiedClipboard) {
+        setCopiedClipboard(true);
+        setTimeout(() => setCopiedClipboard(false), 3000);
+        navigator.clipboard.writeText(server.address);
+      }
+    };
 
-    const scrollEvent = () => {
+    const scrollEvent = (): void => {
       setOffsetY(window.pageYOffset);
     };
 
-    const componentDidMount = () => {
+    const componentDidMount = (): void => {
       window.addEventListener('scroll', scrollEvent);
     };
-    const componentWillUnmount = () => {
+    const componentWillUnmount = (): void => {
       window.removeEventListener('scroll', scrollEvent);
     };
 
@@ -70,13 +76,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
                     marginRight: 'auto',
                     marginTop: '3vh',
                   }}
-                  onClick={() => {
-                    if (!copiedClipboard) {
-                      setCopiedClipboard(true);
-                      setTimeout(() => setCopiedClipboard(false), 3000);
-                      navigator.clipboard.writeText(server.address);
-                    }
-                  }}
+                  onClick={() => handleCopyClipboardClick()}
                 />
               </div>
             </div>
