@@ -27,6 +27,7 @@ export interface ISet {
         };
       };
     };
+    downloads: { title: string; description: string };
     application: {
       title: string;
       description: string;
