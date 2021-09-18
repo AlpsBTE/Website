@@ -3,5 +3,7 @@
 .application {
   &__content {
     background-color: variables.$white;
+    padding: variables.$spacing-xl variables.$horizontal-spacer-s;
+    margin-top: variables.$vertical-spacer-xs;
   }
 }
