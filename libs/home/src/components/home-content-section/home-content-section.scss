@@ -6,6 +6,7 @@
   background-color: variables.$white;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: variables.$spacing-l variables.$horizontal-spacer-s;
 
   @include mixins.for-phone {
@@ -22,7 +23,7 @@
     .home-content-section__image-container {
       display: flex;
       justify-content: flex-end;
-      align-items: flex-start;
+      align-items: center;
 
       @include mixins.for-phone {
         flex-direction: column;
@@ -45,7 +46,7 @@
     }
 
     &__image {
-      height: variables.$horizontal-spacer-m;
+      height: (variables.$spacing-5xl * 4);
 
       @include mixins.for-phone {
         width: 100%;
@@ -66,6 +67,7 @@
     }
 
     &__title {
+      margin-top: 0;
     }
 
     &__text {
