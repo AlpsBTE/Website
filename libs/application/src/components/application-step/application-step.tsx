@@ -16,7 +16,9 @@ export const ApplicationStep = ({
 }: ApplicationStepProps) => {
   return (
     <div className="application-step">
-      <h1>Welcome to ApplicationStep!</h1>
+      <div className="application-stepp__img">
+        <img src="" alt="Application Step Discord" />
+      </div>
     </div>
   );
 };
