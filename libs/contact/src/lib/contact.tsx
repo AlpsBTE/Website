@@ -56,7 +56,6 @@ export const Contact = inject(languageStore.storeKey)(
           title={tr('pages.contact.title')}
           subtitle={tr('pages.contact.description')}
         />
-
         <div className="contact__container">
           <div className="contact__social-media">
             <h2 className="contact__title-font">
