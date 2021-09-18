@@ -1,0 +1,7 @@
+@use "theme:variables" as variables;
+
+.application {
+  &__content {
+    background-color: variables.$white;
+  }
+}
