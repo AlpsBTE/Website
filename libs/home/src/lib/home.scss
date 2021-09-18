@@ -36,7 +36,7 @@
 
   &__content {
     &__our-mission {
-      padding-top: variables.$spacing-4xl !important;
+      padding-top: variables.$spacing-4xl !important; //unfortunately necessary here
     }
   }
 }
