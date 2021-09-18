@@ -15,7 +15,6 @@ import { observer } from 'mobx-react-lite';
 import { inject } from 'mobx-react';
 import { tr } from '@alpsbte/shared/language';
 
-// Es wird erst über die texte gemapped sobald das backend da ist
 export interface ContactProps {}
 
 export const Contact = inject(languageStore.storeKey)(
