@@ -1,15 +1,19 @@
 @use "theme:variables" as variables;
 .application-step {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: variables.$spacing-m;
   margin-bottom: variables.$vertical-spacer-xxs;
 
   &__img {
     img {
-      max-height: 200px;
+      height: variables.$vertical-spacer-m;
       margin-right: variables.$spacing-xxl;
     }
+  }
+
+  &__content {
+    width: 65%;
   }
 }
