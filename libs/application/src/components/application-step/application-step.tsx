@@ -1,4 +1,4 @@
-/* eslint-disble */
+/* eslint-disable */
 import './application-step.scss';
 
 export interface ApplicationStepProps {
