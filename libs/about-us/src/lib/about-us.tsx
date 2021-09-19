@@ -1,39 +1,47 @@
 /* eslint-disable*/
+import { ROUTES } from '@alpsbte/router';
 import { Button } from '@alpsbte/shared/components';
 import { PageTitle } from '@alpsbte/shared/components';
+import { tr } from '@alpsbte/shared/language';
+import { languageStore } from '@alpsbte/shared/stores';
+import { inject, observer } from 'mobx-react';
+import { Link } from 'react-router-dom';
 
 import './about-us.scss';
 
 export interface AboutUsProps {}
 
-export const AboutUs = ({}: AboutUsProps) => {
-  return (
-    <div>
-      <PageTitle
-        title="About us"
-        subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-      />
-      <Button
-        label="Contact Us"
-        size="md"
-        style={{ marginLeft: 'auto', marginRight: 'auto' }}
-      />
-      <div className="aboutus__image-container">
-        <img
-          className="aboutus__image"
-          src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+export const AboutUs = inject(languageStore.storeKey)(
+  observer(({}: AboutUsProps) => {
+    return (
+      <div className="about-us">
+        <PageTitle
+          title={tr('pages.aboutUs.title')}
+          subtitle={tr('pages.aboutUs.description')}
         />
-        <img
-          className="aboutus__image"
-          src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
-        />
-        <img
-          className="aboutus__image"
-          src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
-        />
+        <Link
+          to={`/${languageStore.language}/${ROUTES.contact}`}
+          className="about-us__contact-us"
+        >
+          {tr('pages.aboutUs.contactUs')}
+        </Link>
+        <div className="about-us__image-container">
+          <img
+            className="about-us__image"
+            src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+          />
+          <img
+            className="about-us__image"
+            src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+          />
+          <img
+            className="about-us__image"
+            src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+          />
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  })
+);
 
 export default AboutUs;

@@ -1,13 +1,19 @@
 @use "theme:variables" as variables;
 
-.aboutus {
+.about-us {
   &__text {
     margin: variables.$spacing-xl variables.$spacing-5xl;
     text-align: center;
   }
 
+  &__contact-us {
+    display: block;
+    text-align: center;
+    font-weight: variables.$font-weight-bold;
+  }
+
   &__image-container {
-    margin-top: 5vh; //TODO set to defalt values
+    margin-top: variables.$horizontal-spacer-xs;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
