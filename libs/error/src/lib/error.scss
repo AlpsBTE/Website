@@ -14,11 +14,20 @@
 
   &__content {
     padding: variables.$spacing-xxl variables.$horizontal-spacer-s;
-    display: flex;
-    justify-content: center;
 
     &__back-home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: variables.$spacing-xl;
+        margin-right: variables.$spacing-m;
+        transform: scaleX(-1);
+      }
+
       span {
+        text-align: center;
         font-weight: variables.$font-weight-bold;
         margin-left: variables.$spacing-s;
       }
