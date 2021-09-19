@@ -62,6 +62,10 @@
           "description": "Sobald Sie Ihr Formular abgeschickt haben, wird es in weniger als 48 Stunden von einem unserer Rezensenten überprüft. In der Zwischenzeit könnt ihr das offizielle Modpack herunterladen - eine Modifikation des Spiels - das für den Aufbau auf der Open-World \"Terra Server\" entscheidend ist. Wenn du ins Team aufgenommen wurdest, bekommst du die Rolle \"Builder\" und alle Rechte auf unserem Discord- und Minecraftserver. Auf dem \"Terra Server\" kannst du jetzt überall in Österreich, der Schweiz und Liechtenstein bauen, wo immer du willst."
         }
       }
+    },
+    "error": {
+      "title": "Seite nicht gefunden!",
+      "description": ""
     }
   },
   "footer": {
