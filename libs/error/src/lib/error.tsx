@@ -25,6 +25,10 @@ export const Error = inject(languageStore.storeKey)(
             to={`/${languageStore.language}`}
             className="error-page__content__back-home"
           >
+            <img
+              src="https://www.nicepng.com/png/full/231-2315420_portal-to-hell-minecraft-wiki-minecraft-nether-portal.png"
+              alt="nether portal"
+            />
             <FontAwesomeIcon icon={faArrowLeft} />
             <span>{tr('pages.error.backHome')}</span>
           </Link>
