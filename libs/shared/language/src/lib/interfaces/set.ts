@@ -60,6 +60,10 @@ export interface ISet {
       };
       socialMedia: string;
     };
+    error: {
+      title: string;
+      description: string;
+    };
   };
   footer: {
     copyright: string;

@@ -62,6 +62,10 @@
         "management": "Management"
       },
       "socialMedia": "Social Media"
+    },
+    "error": {
+      "title": "Page not Found!",
+      "description": ""
     }
   },
   "footer": {

@@ -1,14 +1,23 @@
 /* eslint-disable */
-import './error.module.scss';
+import './error.scss';
+import { PageTitle } from '@alpsbte/shared/components';
+import { languageStore } from '@alpsbte/shared/stores';
+import { inject, observer } from 'mobx-react';
+import { tr } from '@alpsbte/shared/language';
 
 export interface ErrorProps {}
 
-export function Error(props: ErrorProps) {
-  return (
-    <div>
-      <h1>Welcome to Error!</h1>
-    </div>
-  );
-}
+export const Error = inject(languageStore.storeKey)(
+  observer(({}: ErrorProps) => {
+    return (
+      <div className="error-page">
+        <PageTitle
+          title={tr('pages.error.title')}
+          subtitle={tr('pages.error.description')}
+        />
+      </div>
+    );
+  })
+);
 
 export default Error;
