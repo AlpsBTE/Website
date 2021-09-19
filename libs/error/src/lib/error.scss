@@ -14,10 +14,13 @@
 
   &__content {
     padding: variables.$spacing-xxl variables.$horizontal-spacer-s;
+    display: flex;
+    justify-content: center;
 
     &__back-home {
       span {
-        margin-right: variables.$spacing-xs;
+        font-weight: variables.$font-weight-bold;
+        margin-left: variables.$spacing-s;
       }
     }
   }
