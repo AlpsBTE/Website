@@ -27,6 +27,11 @@
         }
       }
     },
+    "aboutUs": {
+      "title": "About Us",
+      "description": "Missing",
+      "contactUs": "Contact Us"
+    },
     "downloads": {
       "title": "Downloads",
       "description": "Um Journalisten bei ihrer Arbeit zu unterstützen, haben wir hier offizielle Pressefotos und Informationen zu Alps BTE zum Download bereitgestellt. Sie können diese Informationen gerne für nicht-kommerzielle Veröffentlichungen verwenden, ohne uns zu kontaktieren. Die redaktionelle Nutzung ist gestattet. Bei Veröffentlichung bitten wir um Übersendung eines Korrekturabzuges an unsere Pressestelle."
