@@ -1,6 +1,5 @@
 /* eslint-disable*/
 import { ROUTES } from '@alpsbte/router';
-import { Button } from '@alpsbte/shared/components';
 import { PageTitle } from '@alpsbte/shared/components';
 import { tr } from '@alpsbte/shared/language';
 import { languageStore } from '@alpsbte/shared/stores';
@@ -32,14 +31,17 @@ export const AboutUs = inject(languageStore.storeKey)(
           <img
             className="about-us__container__image"
             src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+            alt="about us"
           />
           <img
             className="about-us__container__image"
             src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+            alt="about us"
           />
           <img
             className="about-us__container__image"
             src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+            alt="about us"
           />
         </div>
       </div>
