@@ -5,6 +5,7 @@ export interface PageTitleProps {
   subtitle?: string;
   showImage?: boolean;
   image?: string;
+  className?: string;
 }
 
 export const PageTitle = ({
@@ -12,9 +13,10 @@ export const PageTitle = ({
   subtitle,
   showImage = true,
   image = 'https://cdn.discordapp.com/splashes/696795397376442440/40095e7ba07bfa5b4b22f81c4c662ec5.jpg?size=3072',
+  className = '',
 }: PageTitleProps) => {
   return (
-    <div className="page-title">
+    <div className={`page-title ${className}`}>
       {showImage === true && (
         <img
           className="page-title__image"
