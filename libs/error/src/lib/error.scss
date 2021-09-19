@@ -13,6 +13,7 @@
   }
 
   &__content {
+    background-color: variables.$white;
     padding: variables.$spacing-xxl variables.$horizontal-spacer-s;
 
     &__back-home {
