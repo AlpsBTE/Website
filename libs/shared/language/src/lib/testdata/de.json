@@ -65,7 +65,8 @@
     },
     "error": {
       "title": "Seite nicht gefunden!",
-      "description": ""
+      "description": "",
+      "backHome": "Zurück zur Startseite"
     }
   },
   "footer": {
