@@ -14,6 +14,8 @@ export const Error = inject(languageStore.storeKey)(
         <PageTitle
           title={tr('pages.error.title')}
           subtitle={tr('pages.error.description')}
+          image="https://i.imgur.com/qTC69pF.png"
+          className="error-page__page-title"
         />
       </div>
     );

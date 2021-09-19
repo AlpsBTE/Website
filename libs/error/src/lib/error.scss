@@ -1,0 +1,12 @@
+.error-page {
+  &__img {
+    height: 50vh;
+  }
+
+  &__page-title {
+    img {
+      height: 40vh;
+      filter: initial;
+    }
+  }
+}
