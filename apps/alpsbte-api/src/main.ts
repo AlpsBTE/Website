@@ -1,5 +1,6 @@
 import * as express from 'express';
 import * as cors from 'cors';
+import * as path from 'path';
 import { config } from './config';
 
 import { base, assets } from './app/routes';
@@ -16,6 +17,10 @@ app.get('/', (req: express.Request, res: express.Response) => {
 
 app.use(`/${config.base}`, base);
 app.use(`/${config.base}/assets`, assets);
+// app.use(
+//   `/${config.base}/assets`,
+//   express.static(path.join(__dirname, 'assets'))
+// );
 
 const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/${config.base}`);
