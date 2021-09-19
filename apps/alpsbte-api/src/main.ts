@@ -16,10 +16,6 @@ app.get('/', (req: express.Request, res: express.Response) => {
 
 app.use(`/${config.base}`, base);
 app.use(`/${config.base}/assets`, assets);
-// app.use(
-//   `/${config.base}/assets`,
-//   express.static(path.join(__dirname, 'assets'))
-// );
 
 const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/${config.base}`);
