@@ -46,6 +46,7 @@
     "@types/react-router-dom": "^5.1.8",
     "add": "^2.0.6",
     "core-js": "^3.6.5",
+    "cors": "^2.8.5",
     "express": "4.17.1",
     "framer-motion": "^4.1.17",
     "localforage": "^1.10.0",
