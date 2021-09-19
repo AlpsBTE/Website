@@ -4,6 +4,8 @@ import { Button } from '@alpsbte/shared/components';
 import { PageTitle } from '@alpsbte/shared/components';
 import { tr } from '@alpsbte/shared/language';
 import { languageStore } from '@alpsbte/shared/stores';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { inject, observer } from 'mobx-react';
 import { Link } from 'react-router-dom';
 
@@ -23,19 +25,20 @@ export const AboutUs = inject(languageStore.storeKey)(
           to={`/${languageStore.language}/${ROUTES.contact}`}
           className="about-us__contact-us"
         >
-          {tr('pages.aboutUs.contactUs')}
+          <span>{tr('pages.aboutUs.contactUs')}</span>
+          <FontAwesomeIcon icon={faArrowRight} />
         </Link>
-        <div className="about-us__image-container">
+        <div className="about-us__container">
           <img
-            className="about-us__image"
+            className="about-us__container__image"
             src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
           />
           <img
-            className="about-us__image"
+            className="about-us__container__image"
             src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
           />
           <img
-            className="about-us__image"
+            className="about-us__container__image"
             src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
           />
         </div>

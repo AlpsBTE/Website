@@ -28,9 +28,9 @@
       }
     },
     "aboutUs": {
-      "title": "Über Uns",
-      "description": "Fehlt",
-      "contactUs": "Kontaktiere Uns"
+      "title": "About Us",
+      "description": "Missing",
+      "contactUs": "Contact Us"
     },
     "downloads": {
       "title": "Downloads",

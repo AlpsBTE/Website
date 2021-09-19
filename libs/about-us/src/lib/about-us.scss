@@ -10,18 +10,24 @@
     display: block;
     text-align: center;
     font-weight: variables.$font-weight-bold;
+
+    span {
+      margin-right: variables.$spacing-s;
+    }
   }
 
-  &__image-container {
-    margin-top: variables.$horizontal-spacer-xs;
+  &__container {
+    margin-top: variables.$spacing-xl;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  }
+    background-color: variables.$white;
+    padding: variables.$spacing-xl variables.$horizontal-spacer-s;
 
-  &__image {
-    width: 300px;
-    padding: variables.$spacing-m;
+    &__image {
+      width: 300px;
+      padding: variables.$spacing-m;
+    }
   }
 }
