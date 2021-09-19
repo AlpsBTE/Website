@@ -63,6 +63,7 @@ export interface ISet {
     error: {
       title: string;
       description: string;
+      backHome: string;
     };
   };
   footer: {

@@ -65,7 +65,8 @@
     },
     "error": {
       "title": "Page not Found!",
-      "description": ""
+      "description": "",
+      "backHome": "Back to Home"
     }
   },
   "footer": {

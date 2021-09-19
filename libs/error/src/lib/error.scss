@@ -1,3 +1,5 @@
+@use "theme:variables" as variables;
+
 .error-page {
   &__img {
     height: 50vh;
@@ -7,6 +9,16 @@
     img {
       height: 40vh;
       filter: initial;
+    }
+  }
+
+  &__content {
+    padding: variables.$spacing-xxl variables.$horizontal-spacer-s;
+
+    &__back-home {
+      span {
+        margin-right: variables.$spacing-xs;
+      }
     }
   }
 }
