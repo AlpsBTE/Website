@@ -64,8 +64,9 @@
       margin-left: variables.$horizontal-spacer-xs;
       a {
         display: block;
-        margin: variables.$vertical-spacer-xxs 0;
+        margin-top: variables.$spacing-s;
         font-size: variables.$font-size-s;
+        color: variables.$gray-6;
       }
     }
 
