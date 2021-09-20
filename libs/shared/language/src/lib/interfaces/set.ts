@@ -33,6 +33,7 @@ export interface ISet {
       contactUs: string;
     };
     downloads: { title: string; description: string };
+    faq: { title: string; description: string;};
     application: {
       title: string;
       description: string;
