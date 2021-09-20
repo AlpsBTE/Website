@@ -2,13 +2,13 @@
 @use "theme:mixins" as mixins;
 
 .footer {
-  width: 100vw;
+  width: auto;
   background-color: variables.$cream;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding: variables.$spacing-l variables.$horizontal-spacer-xs
-    variables.$vertical-spacer-s variables.$horizontal-spacer-xs;
+  padding: variables.$spacing-l variables.$horizontal-spacer-s
+    variables.$vertical-spacer-s variables.$horizontal-spacer-s;
 
   @include mixins.for-phone {
     flex-direction: column;
@@ -61,11 +61,10 @@
     &__showcase,
     &__help,
     &__socials {
-      margin: 0 variables.$horizontal-spacer-xxs;
-
+      margin-left: variables.$horizontal-spacer-xs;
       a {
         display: block;
-        margin: variables.$spacing-s 0;
+        margin: variables.$vertical-spacer-xxs 0;
         font-size: variables.$font-size-s;
       }
     }
