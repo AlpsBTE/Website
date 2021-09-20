@@ -32,8 +32,9 @@ export interface ISet {
       description: string;
       contactUs: string;
     };
+    gallery: { title: string; description: string };
     downloads: { title: string; description: string };
-    faq: { title: string; description: string;};
+    faq: { title: string; description: string };
     application: {
       title: string;
       description: string;

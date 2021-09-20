@@ -32,6 +32,10 @@
       "description": "Missing",
       "contactUs": "Contact Us"
     },
+    "gallery": {
+      "title": "Gallery",
+      "description": "This page shows a collection of some of our building efforts. The content will be updated continuously. High resolution pictures for news coverage can be found in \"Downloads\""
+    },
     "downloads": {
       "title": "Downloads",
       "description": "To support journalists in their work, we have made official press photos and information on Alps BTE available here for download. You are welcome to use this information for non-commercial publications without contacting us. Editorial use is permitted. In case of publication, we kindly request that a proof copy be sent to our press office."
