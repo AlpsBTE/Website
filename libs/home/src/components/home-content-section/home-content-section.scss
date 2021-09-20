@@ -41,7 +41,7 @@
     @include mixins.for-phone {
       flex-direction: column;
       align-items: center;
-      padding: variables.$spacing-xl 0;
+      padding: variables.$spacing-xl;
     }
 
     &__image {
@@ -64,6 +64,7 @@
 
     @include mixins.for-phone {
       align-items: center;
+      padding: 0px;
     }
 
     &__title {
@@ -79,5 +80,9 @@
   &__aligned-right > &__text-container {
     padding-left: 0px;
     padding-right: variables.$spacing-xxl;
+
+    @include mixins.for-phone {
+      padding: 0px;
+    }
   }
 }
