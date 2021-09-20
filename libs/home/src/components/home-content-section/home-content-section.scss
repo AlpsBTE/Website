@@ -37,7 +37,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: variables.$spacing-xl;
 
     @include mixins.for-phone {
       flex-direction: column;
@@ -60,7 +59,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: variables.$spacing-xl;
+    padding: variables.$spacing-xxl;
+    padding-right: 0px;
 
     @include mixins.for-phone {
       align-items: center;
@@ -74,5 +74,10 @@
       display: block;
       text-align: justify;
     }
+  }
+
+  &__aligned-right > &__text-container {
+    padding-left: 0px;
+    padding-right: variables.$spacing-xxl;
   }
 }
