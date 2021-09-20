@@ -65,6 +65,7 @@
     @include mixins.for-phone {
       align-items: center;
       padding: 0px;
+      padding-top: variables.$vertical-spacer-xs;
     }
 
     &__title {
@@ -83,6 +84,7 @@
 
     @include mixins.for-phone {
       padding: 0;
+      padding-top: variables.$vertical-spacer-xs;
     }
   }
 }
