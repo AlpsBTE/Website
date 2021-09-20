@@ -1,11 +1,13 @@
 const path = require('path');
 const nrwlConfig = require('@nrwl/react/plugins/webpack.js');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = (config) => {
   nrwlConfig(config);
 
   return {
     ...config,
+    plugins: [...config.plugins, new Dotenv()],
     resolve: {
       ...config.resolve,
       alias: {
