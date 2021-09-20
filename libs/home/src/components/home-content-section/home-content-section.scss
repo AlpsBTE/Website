@@ -71,6 +71,8 @@
 
     &__title {
       margin-top: 0;
+      border-bottom: solid;
+      border-width: variables.$spacing-xs;
     }
 
     &__text {
