@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   padding: variables.$spacing-l variables.$horizontal-spacer-s;
+  padding-bottom: variables.$vertical-spacer-s;
 
   @include mixins.for-phone {
     flex-direction: column;
