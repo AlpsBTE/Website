@@ -30,6 +30,8 @@
       &__item {
         list-style: none;
         display: block;
+
+        padding-bottom: variables.$horizontal-spacer-xs;
       }
     }
   }
