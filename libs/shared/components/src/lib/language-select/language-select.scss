@@ -2,21 +2,24 @@
 
 .language-select {
   cursor: pointer;
+  display: inline-block;
+  padding: 0;
 
   &__icon {
-    font-size: 0.8em;
+    font-size: variables.$font-size-s;
     margin-right: variables.$spacing-xs;
+    padding: 0;
+    padding-bottom: 1px;
   }
 
   &__select {
     cursor: pointer;
-    padding: variables.$spacing-xs;
     outline: none;
     border: none;
     font-weight: variables.$font-weight-semibold;
     background-color: transparent;
     appearance: none;
-    padding-right: variables.$spacing-m;
+    padding: 0;
 
     option {
       color: variables.$black;
