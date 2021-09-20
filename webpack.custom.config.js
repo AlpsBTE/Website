@@ -8,6 +8,10 @@ module.exports = (config) => {
   return {
     ...config,
     plugins: [...config.plugins, new Dotenv()],
+    node: {
+      ...config.node,
+      fs: 'empty',
+    },
     resolve: {
       ...config.resolve,
       alias: {

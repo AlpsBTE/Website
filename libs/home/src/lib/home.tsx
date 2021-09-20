@@ -42,6 +42,8 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
       return componentWillUnmount;
     });
 
+    console.log(process.env.REACT_APP_TEST);
+
     return (
       <>
         <div
