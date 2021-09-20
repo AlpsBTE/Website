@@ -1,21 +1,33 @@
 @use "theme:variables" as variables;
 
-.aboutus {
+.about-us {
   &__text {
     margin: variables.$spacing-xl variables.$spacing-5xl;
     text-align: center;
   }
 
-  &__image-container {
-    margin-top: 5vh; //TODO set to defalt values
+  &__contact-us {
+    display: block;
+    text-align: center;
+    font-weight: variables.$font-weight-bold;
+
+    span {
+      margin-right: variables.$spacing-s;
+    }
+  }
+
+  &__container {
+    margin-top: variables.$spacing-xl;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  }
+    background-color: variables.$white;
+    padding: variables.$spacing-xl variables.$horizontal-spacer-s;
 
-  &__image {
-    width: 300px;
-    padding: variables.$spacing-m;
+    &__image {
+      width: 300px;
+      padding: variables.$spacing-m;
+    }
   }
 }

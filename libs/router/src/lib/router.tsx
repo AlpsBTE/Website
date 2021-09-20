@@ -56,7 +56,7 @@ export const Router = inject(languageStore.storeKey)(
 
     const headerProps: HeaderProps = {
       mobileBreakpoint: breakpoints.tablet,
-      forceColor: window.location.pathname === '/home',
+      forceColor: false,
       headerText: 'Alps BTE',
       navItems: [
         {

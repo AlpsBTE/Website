@@ -1,16 +1,24 @@
-
 /* eslint-disable*/
 import './gallery.module.scss';
 import { PageTitle } from '@alpsbte/shared/components';
+import React from 'react';
+import { inject, observer } from 'mobx-react';
+import { languageStore } from '@alpsbte/shared/stores';
+import { tr } from '@alpsbte/shared/language';
 
 export interface GalleryProps {}
 
-export function Gallery(props: GalleryProps) {
-  return (
-    <div>
-      <PageTitle title="Gallery" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,"/>
-    </div>
-  );
-}
+export const Gallery: React.FC = inject(languageStore.storeKey)(
+  observer(({}: GalleryProps) => {
+    return (
+      <div>
+        <PageTitle
+          title={tr('pages.gallery.title')}
+          subtitle={tr('pages.gallery.description')}
+        />
+      </div>
+    );
+  })
+);
 
 export default Gallery;

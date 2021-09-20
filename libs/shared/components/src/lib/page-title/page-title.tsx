@@ -1,3 +1,4 @@
+import React from 'react';
 import './page-title.scss';
 
 export interface PageTitleProps {
@@ -8,7 +9,7 @@ export interface PageTitleProps {
   className?: string;
 }
 
-export const PageTitle = ({
+export const PageTitle: React.FC<PageTitleProps> = ({
   title,
   subtitle,
   showImage = true,
