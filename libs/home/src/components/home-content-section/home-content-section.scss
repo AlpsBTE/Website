@@ -28,7 +28,7 @@
       @include mixins.for-phone {
         flex-direction: column;
         align-items: center;
-        padding: variables.$spacing-xl 0;
+        padding: 0px;
       }
     }
   }
@@ -41,7 +41,7 @@
     @include mixins.for-phone {
       flex-direction: column;
       align-items: center;
-      padding: variables.$spacing-xl;
+      padding: 0px;
     }
 
     &__image {
@@ -82,7 +82,7 @@
     padding-right: variables.$spacing-xxl;
 
     @include mixins.for-phone {
-      padding: 0px;
+      padding: 0;
     }
   }
 }
