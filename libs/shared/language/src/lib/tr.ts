@@ -41,7 +41,7 @@ export type TranslationPath = TranslationPathFactory<typeof languageStore.set>;
  * Only works in components that have the languageStore injected!
  */
 export function tr(key: TranslationPath): string {
-  return (
-    deepFind<ISet>(languageStore.set, key) ?? InternalError.missingTranslation
-  );
+  const text = (deepFind<ISet>(languageStore.set, key) ??
+    InternalError.missingTranslation) as string;
+  return text;
 }
