@@ -8,4 +8,8 @@ a {
 
 a.link {
   color: colors.$link;
+
+  &:visited {
+    color: colors.$link-visited;
+  }
 }
