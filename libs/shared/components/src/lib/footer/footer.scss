@@ -2,7 +2,7 @@
 @use "theme:mixins" as mixins;
 
 .footer {
-  border-width: variables.$spacing-xxs 0 0 0;
+  border-width: 0.5px 0 0 0;
   border-color: variables.$gray-6;
   border-style: solid;
   width: auto;
