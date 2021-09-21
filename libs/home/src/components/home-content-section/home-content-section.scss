@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   padding: variables.$spacing-l variables.$horizontal-spacer-s;
+  padding-bottom: variables.$vertical-spacer-s;
 
   @include mixins.for-phone {
     flex-direction: column;
@@ -28,7 +29,7 @@
       @include mixins.for-phone {
         flex-direction: column;
         align-items: center;
-        padding: variables.$spacing-xl 0;
+        padding: 0px;
       }
     }
   }
@@ -37,12 +38,11 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: variables.$spacing-xl;
 
     @include mixins.for-phone {
       flex-direction: column;
       align-items: center;
-      padding: variables.$spacing-xl 0;
+      padding: 0px;
     }
 
     &__image {
@@ -60,10 +60,13 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: variables.$spacing-xl;
+    padding: variables.$spacing-xxl;
+    padding-right: 0px;
 
     @include mixins.for-phone {
       align-items: center;
+      padding: 0px;
+      padding-top: variables.$vertical-spacer-xs;
     }
 
     &__title {
@@ -73,6 +76,16 @@
     &__text {
       display: block;
       text-align: justify;
+    }
+  }
+
+  &__aligned-right > &__text-container {
+    padding-left: 0px;
+    padding-right: variables.$spacing-xxl;
+
+    @include mixins.for-phone {
+      padding: 0;
+      padding-top: variables.$vertical-spacer-xs;
     }
   }
 }

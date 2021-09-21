@@ -1,4 +1,5 @@
 @use "theme:variables" as variables;
+@use "theme:mixins" as mixins;
 
 .header {
   z-index: 2;
@@ -14,22 +15,23 @@
   left: 0;
   transition: max-height 0.35s ease-in-out;
   transition: background-color 0.35s ease-in-out;
-  padding: 0 variables.$horizontal-spacer-xs;
+  padding: 0 variables.$horizontal-spacer-s;
 
   &__lower-container {
     &__navitem-container {
       margin: 0;
+      padding: 0;
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      padding: 0;
       text-align: center;
 
       &__item {
-        padding: variables.$spacing-l 0;
         list-style: none;
         display: block;
+
+        padding-bottom: variables.$horizontal-spacer-xs;
       }
     }
   }
@@ -45,17 +47,18 @@
       a {
         width: 100%;
         display: flex;
-        margin-left: 7%;
         justify-content: stretch;
         flex-direction: row;
         align-items: center;
 
         h1 {
-          margin: 0 0 0 variables.$spacing-l;
           font-size: variables.$font-size-s;
           letter-spacing: 1.5px;
           font-weight: variables.$font-weight-light;
           text-transform: uppercase;
+          @include mixins.for-phone {
+            padding-left: variables.$spacing-m;
+          }
         }
       }
 
@@ -63,16 +66,12 @@
         cursor: pointer;
       }
     }
-
-    &__burger_container {
-      margin: 0 30px 0 0;
-    }
   }
 
   &__image-container {
     a {
       display: flex;
-      margin-left: 7%;
+
       width: 100%;
       justify-content: space-evenly;
       flex-direction: row;
@@ -97,12 +96,12 @@
   }
 
   &__navitem-container {
+    padding: 0;
     font-size: variables.$font-size-s;
-    margin-right: 7%;
     width: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 60%;
     text-decoration: none;
     color: black !important;
