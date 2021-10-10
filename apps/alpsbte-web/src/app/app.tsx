@@ -9,7 +9,7 @@ const stores = {
   languageStore,
 };
 
-export const App = () => {
+export const App: React.FC = () => {
   return (
     <React.StrictMode>
       <StoreProvider {...stores}>

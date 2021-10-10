@@ -1,16 +1,17 @@
 import * as express from 'express';
+import { Request, Response } from 'express';
 import * as cors from 'cors';
 import { config } from './config';
 
 import { base, assets } from './app/routes';
 
-const port = process.env.port || 3333;
+const port = config.port ?? 3333;
 
 const app = express();
 app.use(cors('*'));
 app.use(express.json());
 
-app.get('/', (req: express.Request, res: express.Response) => {
+app.get('/', (req: Request, res: Response) => {
   return res.redirect(`/${config.base}`);
 });
 
