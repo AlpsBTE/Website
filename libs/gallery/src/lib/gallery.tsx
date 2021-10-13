@@ -19,25 +19,19 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
           title={tr('pages.gallery.title')}
           subtitle={tr('pages.gallery.description')}
         />
+        <button onClick={() => setPlace('basel')} />
         <Button
           label="Wien"
-          textColor="#fff"
-          fillColor="#6D6D6D"
+          style={{ color: '#000' }}
           size="lg"
-          onClick={() => alert('Test')}
+          onClick={() => setPlace('basel')}
         />
 
         <div className="gallery__container">
           <div className="gallery__image-container">
             {[...Array(9)].map((x, i) => (
               <img
-                src={
-                  'http://localhost:3333/api/assets/' +
-                  place +
-                  '/' +
-                  i +
-                  '.webp'
-                }
+                src={`http://localhost:3333/api/assets/${place}/${i}.webp`}
                 className="gallery__image"
               ></img>
             ))}

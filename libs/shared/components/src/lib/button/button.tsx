@@ -31,6 +31,7 @@ export const Button = ({
 }: ButtonProps) => {
   const button = (
     <button
+      onClick={onClick}
       style={{
         ...style,
         backgroundColor: fillColor !== undefined ? fillColor : 'unset',
