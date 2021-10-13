@@ -1,6 +1,16 @@
 @use "theme:variables" as variables;
 
 .gallery {
+  &__button-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: variables.$horizontal-spacer-m;
+    padding-right: variables.$horizontal-spacer-m;
+    margin-bottom: variables.$vertical-spacer-xs;
+  }
+
   &__image-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
