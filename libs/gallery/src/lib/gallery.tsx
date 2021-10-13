@@ -28,7 +28,7 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
       setPlace('loading');
       setTimeout(() => {
         setPlace(newPlace);
-      }, 1);
+      }, 20);
     };
 
     return (
