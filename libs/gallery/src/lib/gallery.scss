@@ -13,5 +13,8 @@
     width: 100%;
     pointer-events: none;
     user-select: none;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
 }

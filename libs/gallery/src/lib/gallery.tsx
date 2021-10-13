@@ -21,7 +21,7 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
             {[...Array(9)].map((x, i) => (
               <img
                 loading="lazy"
-                src={'http://localhost:3333/api/assets/basel/' + i + '.webp'}
+                src={'http://localhost:3333/api/assets/wien/' + i + '.webp'}
                 className="gallery__image"
               ></img>
             ))}
