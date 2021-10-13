@@ -2,13 +2,16 @@
 
 .gallery {
   &__image-container {
-    margin-top: variables.$vertical-spacer-xs;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 0 variables.$horizontal-spacer-s variables.$vertical-spacer-s
+      variables.$horizontal-spacer-s;
   }
 
   &__image {
-    margin: variables.$spacing-s;
+    width: 100%;
+    pointer-events: none;
+    user-select: none;
   }
 }
