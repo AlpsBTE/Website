@@ -13,8 +13,6 @@ export interface ButtonProps {
   className?: string;
   icon?: IconProp;
   link?: string;
-  fillColor?: string;
-  textColor?: string;
 }
 
 export const Button = ({
@@ -26,16 +24,12 @@ export const Button = ({
   className = '',
   icon,
   link,
-  fillColor,
-  textColor,
 }: ButtonProps) => {
   const button = (
     <button
       onClick={onClick}
       style={{
         ...style,
-        backgroundColor: fillColor !== undefined ? fillColor : 'unset',
-        borderColor: fillColor !== undefined ? fillColor : 'unset',
       }}
       disabled={disabled}
       className={`button button__${size} ${className} button__${
@@ -43,12 +37,7 @@ export const Button = ({
       }`}
     >
       {icon && <FontAwesomeIcon className="button__icon" icon={icon} />}
-      <span
-        className="button__label"
-        style={{ color: textColor !== undefined ? textColor : 'unset' }}
-      >
-        {label}
-      </span>
+      <span className="button__label">{label}</span>
     </button>
   );
 
