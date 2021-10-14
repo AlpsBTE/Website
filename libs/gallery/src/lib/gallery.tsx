@@ -60,8 +60,11 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
           <div className="gallery__image-container">
             {[...Array(9)].map((x, i) => (
               <img
-                src={`http://localhost:3333/api/assets/${place}/${i}.webp`}
+                src={`http://localhost:3333/api/assets/${place}/${
+                  place == 'loading' ? '0' : i
+                }.webp`}
                 className="gallery__image"
+                alt={`Image in ${place}`}
               ></img>
             ))}
           </div>
