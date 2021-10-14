@@ -6,7 +6,6 @@ import { inject, observer } from 'mobx-react';
 import { languageStore } from '@alpsbte/shared/stores';
 import { tr } from '@alpsbte/shared/language';
 import { Button } from '@alpsbte/shared/components';
-import { url } from 'inspector';
 
 export interface GalleryProps {}
 
@@ -28,7 +27,7 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
       setPlace('loading');
       setTimeout(() => {
         setPlace(newPlace);
-      }, 20);
+      }, 50);
     };
 
     return (

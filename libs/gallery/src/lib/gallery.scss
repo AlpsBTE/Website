@@ -5,7 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-left: variables.$horizontal-spacer-m;
     padding-right: variables.$horizontal-spacer-m;
     margin-bottom: variables.$vertical-spacer-xs;
