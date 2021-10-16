@@ -19,7 +19,7 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
       salzburg: 'Salzburg',
       schweiz: 'Schweiz',
       wien: 'Wien',
-    };
+    } as const;
 
     const [place, setPlace] = useState('basel');
 
@@ -37,11 +37,10 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
           subtitle={tr('pages.gallery.description')}
         />
         <div className="gallery__button-group">
-          {Object.keys(places).map(function (placeKey: string, i: number) {
+          {Object.keys(places).map((placeKey: string) => {
             return (
               <Button
-                // @ts-ignore
-                label={places[placeKey]}
+                label={places[placeKey as keyof typeof places]}
                 style={{
                   color: placeKey === place ? '#fff' : '#6D6D6D',
                   backgroundColor: placeKey === place ? '#6D6D6D' : 'unset',
@@ -57,7 +56,7 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
 
         <div className="gallery__container">
           <div className="gallery__image-container">
-            {[...Array(9)].map((x, i) => (
+            {[...Array(9)].map((_, i) => (
               <img
                 src={`http://localhost:3333/api/assets/${place}/${
                   place == 'loading' ? '0' : i
