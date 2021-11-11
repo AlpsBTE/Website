@@ -24,7 +24,6 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
     const [place, setPlace] = useState('basel');
     const [dropDown, setDropDown] = useState(true);
 
-
     const changePlace = (newPlace: string) => {
       setPlace('loading');
       setTimeout(() => {
@@ -59,15 +58,25 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
             className="gallery__dropdown__button"
             onClick={() => setDropDown(!dropDown)}
           >
-            Open Dropdown
+            {places[place as keyof typeof places]}
           </button>
           <div
             className="gallery__dropdown__content"
             style={{ display: dropDown ? 'flex' : 'none' }}
           >
-            <p>cancle</p>
-            <p>mobile</p>
-            <p>NOW</p>
+            {Object.keys(places).map((placeKey: string) => {
+              return (
+                <p
+                  onClick={() => {
+                    changePlace(placeKey);
+                    setDropDown(false);
+                  }}
+                >
+                  {console.log(places[placeKey as keyof typeof places])}
+                  {places[placeKey as keyof typeof places]}
+                </p>
+              );
+            })}
           </div>
         </div>
 
