@@ -29,7 +29,6 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
         setPlace(newPlace);
       }, 50);
     };
-
     return (
       <div>
         <PageTitle
@@ -52,6 +51,14 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
               />
             );
           })}
+        </div>
+        <div className="gallery__dropdown">
+          <button className="gallery__dropdown__button">Open Dropdown</button>
+          <div className="gallery__dropdown__content">
+            <p>cancle</p>
+            <p>mobile</p>
+            <p>NOW</p>
+          </div>
         </div>
 
         <div className="gallery__container">
