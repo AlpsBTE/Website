@@ -39,18 +39,20 @@
     &__button {
       font-size: variables.$font-size-m;
       font-family: variables.$text;
-      width: 40%;
+      width: 45%;
       font-weight: 500;
       height: 40px;
       background-color: white;
       border: none;
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
       color: variables.$gray-6;
+      margin-bottom: 15px;
+      cursor: pointer;
     }
 
     &__content {
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
-      width: 40%;
+      width: 45%;
       z-index: 1;
       position: absolute;
       display: flex;
@@ -62,6 +64,7 @@
 
       p {
         margin: 5px;
+        cursor: pointer;
       }
     }
   }

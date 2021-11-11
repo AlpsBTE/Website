@@ -22,6 +22,8 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
     } as const;
 
     const [place, setPlace] = useState('basel');
+    const [dropDown, setDropDown] = useState(true);
+
 
     const changePlace = (newPlace: string) => {
       setPlace('loading');
@@ -53,8 +55,16 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
           })}
         </div>
         <div className="gallery__dropdown">
-          <button className="gallery__dropdown__button">Open Dropdown</button>
-          <div className="gallery__dropdown__content">
+          <button
+            className="gallery__dropdown__button"
+            onClick={() => setDropDown(!dropDown)}
+          >
+            Open Dropdown
+          </button>
+          <div
+            className="gallery__dropdown__content"
+            style={{ display: dropDown ? 'flex' : 'none' }}
+          >
             <p>cancle</p>
             <p>mobile</p>
             <p>NOW</p>
