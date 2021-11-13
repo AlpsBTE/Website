@@ -22,6 +22,10 @@
     grid-gap: 10px;
     margin: 0 variables.$horizontal-spacer-s variables.$vertical-spacer-s
       variables.$horizontal-spacer-s;
+
+      @include mixins.for-phone {
+        grid-template-columns: repeat(1, 1fr);
+      }
   }
 
   &__image {
@@ -45,6 +49,7 @@
       align-items: center;
       flex-direction: column;
       position: relative;
+      margin-bottom: variables.$vertical-spacer-xs;
 
       &__button {
         font-size: variables.$font-size-m;
