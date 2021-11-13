@@ -22,7 +22,7 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
     } as const;
 
     const [place, setPlace] = useState('basel');
-    const [dropDown, setDropDown] = useState(true);
+    const [dropDown, setDropDown] = useState(false);
 
     const changePlace = (newPlace: string) => {
       setPlace('loading');
