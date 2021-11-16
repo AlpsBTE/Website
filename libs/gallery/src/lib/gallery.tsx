@@ -8,7 +8,7 @@ import { tr } from '@alpsbte/shared/language';
 import { Button } from '@alpsbte/shared/components';
 
 export interface GalleryProps {}
-
+// git test
 export const Gallery: React.FC = inject(languageStore.storeKey)(
   observer(({}: GalleryProps) => {
     const places = {
