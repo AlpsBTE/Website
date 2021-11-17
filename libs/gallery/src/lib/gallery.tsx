@@ -6,6 +6,10 @@ import { inject, observer } from 'mobx-react';
 import { languageStore } from '@alpsbte/shared/stores';
 import { tr } from '@alpsbte/shared/language';
 import { Button } from '@alpsbte/shared/components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { recordAnnotationApplied } from 'mobx/dist/internal';
+
 
 export interface GalleryProps {}
 // git test
@@ -59,10 +63,15 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
             onClick={() => setDropDown(!dropDown)}
           >
             {places[place as keyof typeof places]}
+            <span className="gallery__dropdown__button__icon" >
+                  <FontAwesomeIcon icon={faCaretDown} size="lg" style={{transform: dropDown ? "rotate(-180deg)" : "rotate(0deg)",
+                  transition: "transform 0.2s ease-in-out"}} />
+
+            </span>
           </button>
           <div
             className="gallery__dropdown__content"
-            style={{ display: dropDown ? 'flex' : 'none' }}
+            style={{ display: dropDown ? 'flex' : 'none'}}
           >
             {Object.keys(places).map((placeKey: string) => {
               return (
@@ -74,6 +83,8 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
                 >
                   {console.log(places[placeKey as keyof typeof places])}
                   {places[placeKey as keyof typeof places]}
+                  
+                
                 </p>
               );
             })}

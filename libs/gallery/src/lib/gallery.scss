@@ -64,9 +64,15 @@
         margin-bottom: 15px;
         cursor: pointer;
         text-align: left;
+
+        &__icon {
+          float: right;
+          padding-right: variables.$spacing-s;
+        }
       }
 
       &__content {
+   
         box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
         width: 45%;
         z-index: 1;
@@ -81,6 +87,7 @@
         p {
           margin: 5px;
           cursor: pointer;
+
         }
       }
     }
