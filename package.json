@@ -49,6 +49,7 @@
     "cors": "^2.8.5",
     "express": "4.17.1",
     "framer-motion": "^4.1.17",
+    "i": "^0.3.7",
     "localforage": "^1.10.0",
     "mobx": "^6.3.2",
     "mobx-persist": "^0.4.1",

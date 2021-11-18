@@ -1,0 +1,95 @@
+@use "theme:variables" as variables;
+@use "theme:mixins" as mixins;
+
+.gallery {
+  &__button-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-left: variables.$horizontal-spacer-m;
+    padding-right: variables.$horizontal-spacer-m;
+    margin-bottom: variables.$vertical-spacer-xs;
+
+    @include mixins.for-phone {
+      display: none;
+    }
+  }
+
+  &__image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 0 variables.$horizontal-spacer-s variables.$vertical-spacer-s
+      variables.$horizontal-spacer-s;
+
+      @include mixins.for-phone {
+        grid-template-columns: repeat(1, 1fr);
+      }
+  }
+
+  &__image {
+    width: 100%;
+    pointer-events: none;
+    user-select: none;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  &__dropdown {
+    display: none;
+  }
+
+  @include mixins.for-phone {
+    &__dropdown {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: variables.$vertical-spacer-xs;
+
+      &__button {
+        font-size: variables.$font-size-m;
+        font-family: variables.$text;
+        width: 45%;
+        font-weight: 500;
+        height: 40px;
+        background-color: white;
+        border: none;
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+        color: variables.$gray-6;
+        margin-bottom: 15px;
+        cursor: pointer;
+        text-align: left;
+
+        &__icon {
+          float: right;
+          padding-right: variables.$spacing-s;
+        }
+      }
+
+      &__content {
+   
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+        width: 45%;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 48px;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+
+        p {
+          margin: 5px;
+          cursor: pointer;
+
+        }
+      }
+    }
+  }
+}

@@ -27,12 +27,14 @@ export const Button = ({
 }: ButtonProps) => {
   const button = (
     <button
-      style={style}
+      onClick={onClick}
+      style={{
+        ...style,
+      }}
       disabled={disabled}
       className={`button button__${size} ${className} button__${
         disabled ? 'disabled' : ''
       }`}
-      onClick={onClick}
     >
       {icon && <FontAwesomeIcon className="button__icon" icon={icon} />}
       <span className="button__label">{label}</span>
@@ -49,3 +51,6 @@ export const Button = ({
 };
 
 export default Button;
+
+//backgroundColor: fillColor !== undefined ? fillColor : 'unset',
+//      borderColor: fillColor !== undefined ? fillColor : 'unset',
