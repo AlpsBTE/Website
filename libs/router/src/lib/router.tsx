@@ -4,7 +4,7 @@ import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Footer, Header, HeaderProps } from '@alpsbte/shared/components';
 import { Loader } from '@alpsbte/loader';
 import { propnameOf } from '@alpsbte/shared/util';
-import { tr } from '@alpsbte/shared/language';
+import { Language, tr, TranslationPath } from '@alpsbte/shared/language';
 import { languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
 import { breakpoints, pageLoading } from '@alpsbte/shared/config';
@@ -29,6 +29,7 @@ const pages = {
   faq: { component: lazy(() => import('@alpsbte/faq')) },
   application: { component: lazy(() => import('@alpsbte/application')) },
   contact: { component: lazy(() => import('@alpsbte/contact')) },
+  press: { component: lazy(() => import('@alpsbte/press')) },
   error: { component: lazy(() => import('@alpsbte/error')) },
 } as const;
 
@@ -82,6 +83,10 @@ export const Router = inject(languageStore.storeKey)(
         {
           text: tr('navItems.contact'),
           to: `${languageStore.language}/${ROUTES.contact}`,
+        },
+        {
+          text: tr('navItems.press'),
+          to: `${languageStore.language}/${ROUTES.press}`,
         },
       ],
     };

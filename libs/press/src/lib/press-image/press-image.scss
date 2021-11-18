@@ -1,0 +1,22 @@
+.press-image {
+  position: relative;
+  &__image {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+
+    border-radius: 100%;
+    object-fit: contain;
+  }
+
+  &__spacings {
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    display: flex;
+  }
+
+  &__image:hover {
+    cursor: pointer;
+  }
+}

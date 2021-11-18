@@ -26,6 +26,7 @@
       "@alpsbte/gallery": ["libs/gallery/src/index.ts"],
       "@alpsbte/home": ["libs/home/src/index.ts"],
       "@alpsbte/loader": ["libs/loader/src/index.ts"],
+      "@alpsbte/press": ["libs/press/src/index.ts"],
       "@alpsbte/router": ["libs/router/src/index.ts"],
       "@alpsbte/shared/components": ["libs/shared/components/src/index.ts"],
       "@alpsbte/shared/config": ["libs/shared/config/src/index.ts"],

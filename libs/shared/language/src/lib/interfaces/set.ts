@@ -6,6 +6,7 @@ export interface ISet {
     faq: string;
     application: string;
     contact: string;
+    press: string;
   };
   pages: {
     home: {

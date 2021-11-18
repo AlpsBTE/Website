@@ -60,6 +60,9 @@
     "loader": {
       "tags": ["scope:loader", "type:feature"]
     },
+    "press": {
+      "tags": ["scopr:press", "type:feature"]
+    },
     "router": {
       "tags": ["sccope:router", "type:feature"]
     },
