@@ -10,39 +10,16 @@ export interface FaqProps {}
 
 export const Faq: React.FC = inject(languageStore.storeKey)(
   observer(({}: FaqProps) => {
-    const FaqData = [
-      {
-        title: 'Titel',
-        content: 'content',
-      },
-      {
-        title: 'Titel',
-        content: 'content',
-      },
-      {
-        title: 'Titel',
-        content: 'content',
-      },
-      {
-        title: 'Titel',
-        content: 'content',
-      },
-      {
-        title: 'Titel',
-        content: 'content',
-      },
-      {
-        title: 'Titel',
-        content: 'content',
-      },
-    ];
+    // for some rason string[] is not working. Using any instead
+    const FaqData: any = tr('pages.faq.questions');
+
     return (
       <div>
         <PageTitle
           title={tr('pages.faq.title')}
           subtitle={tr('pages.faq.description')}
         />
-        <p>{tr('pages.faq.description')}</p>
+
         {FaqData.map((faqItem: any, i: number) => (
           <Accordeon
             title={faqItem.title}

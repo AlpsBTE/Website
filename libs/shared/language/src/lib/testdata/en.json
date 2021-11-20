@@ -43,9 +43,9 @@
     "faq": {
       "title": "FAQ",
       "description": "Here you can find frequently asked questions about Alps BTE and the tools we use. If you have any questions that are not answered here, please contact us",
-      "questions": {
-        "question1": "text"
-      }
+      "questions": [
+        {"title": "a", "content": "b"}
+      ]
     },
     "application": {
       "title": "Application",
