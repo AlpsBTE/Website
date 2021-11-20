@@ -42,6 +42,7 @@ export const Faq: React.FC = inject(languageStore.storeKey)(
           title={tr('pages.faq.title')}
           subtitle={tr('pages.faq.description')}
         />
+        <p>{tr('pages.faq.description')}</p>
         {FaqData.map((faqItem: any, i: number) => (
           <Accordeon
             title={faqItem.title}
