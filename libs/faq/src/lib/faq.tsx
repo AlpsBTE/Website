@@ -10,8 +10,7 @@ export interface FaqProps {}
 
 export const Faq: React.FC = inject(languageStore.storeKey)(
   observer(({}: FaqProps) => {
-    // for some rason string[] is not working. Using any instead
-    const FaqData: any = tr('pages.faq.questions');
+    const FaqData: string[] = tr('pages.faq.questions') as unknown as string[];
 
     return (
       <div>
