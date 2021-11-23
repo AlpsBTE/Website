@@ -29,7 +29,7 @@ export interface ISet {
     };
     aboutUs: {
       title: string;
-      description: string;
+      description: string[];
       contactUs: string;
     };
     gallery: { title: string; description: string };

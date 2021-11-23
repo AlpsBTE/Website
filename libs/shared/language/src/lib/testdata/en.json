@@ -29,7 +29,24 @@
     },
     "aboutUs": {
       "title": "About Us",
-      "description": "Missing",
+      "description": [
+        {
+          "title": "The Project",
+          "description": "Alps BTE was founded on 06.04.2020 and is an open build team and subproject of BuildTheEarth.net. With members mostly from Austria, Switzerland and Liechtenstein, we are dedicated to the detailed 1:1 scale replication of the three countries in the video game Minecraft. With almost 400 international builders and 1800+ Discord members, we reconstruct entire cities, villages and landscapes in Minecraft version 1.12."
+        },
+        {
+          "title": "The Technology",
+          "description": "“Mods” - short for “Modifications” - are community-created and -maintained, i.e. unofficial additions the the source code of a video game, which open up entirely new possibilities for their users. Essential parts of our project are two such mods: Cubic Chunks splits the maps of the video game into three-dimensional loading units, which remove the technical limitations caused by the unmodified “Vanilla”-Minecraft, especially the height limit of 256 blocks, and are thus a prerequisite for the proper functioning of all processes based on it. Terra++ can - thanks to Cubic Chunks - generate an accurate map projection of the terrain within a Minecraft map using OpenStreetMap altitude data. The mod also allows us to integrate altitude data of other kinds, e.g. LiDAR data collected by the Swiss Federal Office of Topography for Switzerland and Liechtenstein, as well as LiDAR collected by the Austrian GlSes into the system. Due to this, our projection is much more precise and tedious manual work to adjust the terrain is a thing of the past. In addition, there are a variety of other modifications and plugins that provide additional support for our builders. Our Developer-Team is also always working behind the scenes on new innovations for our network - for example, the plot system added for our first anniversary, which allows even inexperienced members to participate in the project, even without any mods, thus making it easier for them to join our project. Furthermore, our developers also take care of routine work on the server in order to provide our members with an experience that is as free of disturbances and lag as possible. They are in active contact with our international colleagues if more comprehensive technical questions arise."
+        },
+        {
+          "title": "The Community",
+          "description": "Alps BTE is known for it’s helpful and committed community. The challenging recruitment process for our Builders is unattractive for trolls and scammers and keeps the project free of discrimination, spam, griefing and fraud. It also guarantees a minimum level of building skill. The supposed barriers in our linguistic landscape are rarely a problem. Instead, a very friendly community has developed, which results in many new friendships, side projects as well as meetups of the members. "
+        },
+        {
+          "title": "The Team",
+          "description": "The Alps BTE “staff team” consists of numerous committed people who volunteer to help Alps BTE growing. They make sure our builders, as well as visitors, have a smooth and uncomplicated experience. Furthermore, they also do PR work and raise attention to our project all over the world. Below is a breakdown of the different sub-teams of our build team management: Managers: They manage the project. Each Manager is responsible for his/her own sub-team. They take care of basic decisions and hiring new staff members. Helpers: They support the Managers in their tasks and take care of their own areas of competence (e.g. event planning and moderation). Reviewers: They are responsible for reviewing applications and submitted plots. Developers: They take care of all technical aspects of our project. For more information, see chapter “The Technology”. Public Relations: They represent Alps BTE in public and take care of our social media. Furthermore, they translate texts into several languages, conduct interviews and handle press inquiries. Architects: They take care of creating new plots to build on. They also support the helpers in event preparation."
+        }
+      ],
       "contactUs": "Contact Us"
     },
     "gallery": {
@@ -43,9 +60,7 @@
     "faq": {
       "title": "FAQ",
       "description": "Here you can find frequently asked questions about Alps BTE and the tools we use. If you have any questions that are not answered here, please contact us",
-      "questions": [
-        {"title": "a", "content": "b"}
-      ]
+      "questions": [{ "title": "a", "content": "b" }]
     },
     "application": {
       "title": "Application",
