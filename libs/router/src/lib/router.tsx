@@ -4,7 +4,7 @@ import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Footer, Header, HeaderProps } from '@alpsbte/shared/components';
 import { Loader } from '@alpsbte/loader';
 import { propnameOf } from '@alpsbte/shared/util';
-import { tr } from '@alpsbte/shared/language';
+import { Language, tr } from '@alpsbte/shared/language';
 import { languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
 import { breakpoints, pageLoading } from '@alpsbte/shared/config';
@@ -86,6 +86,13 @@ export const Router = inject(languageStore.storeKey)(
       ],
     };
 
+    if (window.location.pathname.split('/')[1] != '') {
+      if (window.location.pathname.split('/')[1] != languageStore.language) {
+        languageStore.setLanguage(
+          window.location.pathname.split('/')[1] as Language
+        );
+      }
+    }
     return (
       <BrowserRouter>
         <Suspense fallback={<Loader />}>
