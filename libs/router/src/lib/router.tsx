@@ -53,6 +53,7 @@ export const Router = inject(languageStore.storeKey)(
       () => languageStore.setLanguage(languageStore.language),
       [languageStore.language]
     );
+    console.log(languageStore.language + ' 0');
 
     const headerProps: HeaderProps = {
       mobileBreakpoint: breakpoints.tablet,
@@ -85,7 +86,7 @@ export const Router = inject(languageStore.storeKey)(
         },
       ],
     };
-
+    console.log(languageStore.language + ' 1');
     if (window.location.pathname.split('/')[1] != '') {
       if (window.location.pathname.split('/')[1] != languageStore.language) {
         languageStore.setLanguage(
@@ -93,6 +94,7 @@ export const Router = inject(languageStore.storeKey)(
         );
       }
     }
+    console.log(languageStore.language + ' finished');
     return (
       <BrowserRouter>
         <Suspense fallback={<Loader />}>
