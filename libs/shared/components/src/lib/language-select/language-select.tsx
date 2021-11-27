@@ -8,6 +8,7 @@ import { ChangeEvent, CSSProperties, useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { Redirect } from 'react-router';
+import { useLocation } from 'react-router-dom';
 
 export interface LanguageSelectProps {
   style?: CSSProperties;
@@ -17,6 +18,7 @@ export const LanguageSelect: React.FC<LanguageSelectProps> = inject(
   languageStore.storeKey
 )(
   observer(({ style = {} }: LanguageSelectProps) => {
+    const location = useLocation();
     return (
       <div className="language-select" style={style}>
         <FontAwesomeIcon
@@ -24,15 +26,12 @@ export const LanguageSelect: React.FC<LanguageSelectProps> = inject(
           size="lg"
           className="language-select__icon"
         />
-        <p>{window.location.pathname.split('/')[2]}</p>
         <select
           className="language-select__select"
           onChange={(e: ChangeEvent<HTMLSelectElement>) => {
             languageStore.setLanguage(e.target.value as Language);
             window.location.replace(
-              `/${languageStore.language}/${
-                window.location.pathname.split('/')[2]
-              }`
+              `/${languageStore.language}/${location.pathname.split('/')[2]}`
             );
           }}
           value={languageStore.language}
