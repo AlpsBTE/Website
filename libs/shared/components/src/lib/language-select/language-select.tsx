@@ -40,7 +40,7 @@ export const LanguageSelect: React.FC<LanguageSelectProps> = inject(
         </button>
         <div
           className="language-select__content"
-          style={{ display: dropdown ? 'block' : 'none' }}
+          style={{ display: dropdown ? 'block' : 'none'}}
         >
           {languages.map((o: string, i: number) => {
             return (

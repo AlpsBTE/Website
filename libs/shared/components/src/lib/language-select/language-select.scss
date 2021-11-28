@@ -34,6 +34,9 @@
 
   &__content {
     position: absolute;
+    @include mixins.for-phone {
+      position: relative;
+    }
     margin-top: variables.$spacing-s;
     right: variables.$horizontal-spacer-s;
     width: variables.$horizontal-spacer-s;
