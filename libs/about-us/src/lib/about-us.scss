@@ -10,6 +10,7 @@
     display: block;
     text-align: center;
     font-weight: variables.$font-weight-bold;
+    margin-bottom: variables.$vertical-spacer-xs;
 
     span {
       margin-right: variables.$spacing-s;
@@ -17,17 +18,28 @@
   }
 
   &__container {
-    margin-top: variables.$spacing-xl;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     background-color: variables.$white;
     padding: variables.$spacing-xl variables.$horizontal-spacer-s;
+    flex-direction: column;
+    align-items: center;
 
-    &__image {
-      width: 300px;
-      padding: variables.$spacing-m;
+    h2 {
+      margin: 0;
+      margin-top: variables.$vertical-spacer-xs;
+    }
+    p {
+      hyphens: none;
+    }
+
+    &__image-container {
+      &__image {
+        width: 450px;
+        padding: variables.$spacing-m;
+      }
     }
   }
 }

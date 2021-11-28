@@ -10,45 +10,26 @@ export interface FaqProps {}
 
 export const Faq: React.FC = inject(languageStore.storeKey)(
   observer(({}: FaqProps) => {
-    const FaqData = [
-      {
-        title: 'Titel',
-        content: 'content',
-      },
-      {
-        title: 'Titel',
-        content: 'content',
-      },
-      {
-        title: 'Titel',
-        content: 'content',
-      },
-      {
-        title: 'Titel',
-        content: 'content',
-      },
-      {
-        title: 'Titel',
-        content: 'content',
-      },
-      {
-        title: 'Titel',
-        content: 'content',
-      },
-    ];
+    const FaqData: string[] = tr('pages.faq.questions') as unknown as string[];
+
     return (
-      <div>
+      <div className="faq">
         <PageTitle
           title={tr('pages.faq.title')}
           subtitle={tr('pages.faq.description')}
         />
-        {FaqData.map((faqItem: any, i: number) => (
-          <Accordeon
-            title={faqItem.title}
-            key={i}
-            content={faqItem.content}
-          ></Accordeon>
-        ))}
+
+        {FaqData.map((faqItem: any, i: number) =>
+          faqItem.title != null ? (
+            <Accordeon
+              title={faqItem.title}
+              key={i}
+              content={faqItem.content}
+            ></Accordeon>
+          ) : (
+            <h2 className="faq__spacer">{faqItem.spacer}</h2>
+          )
+        )}
       </div>
     );
   })

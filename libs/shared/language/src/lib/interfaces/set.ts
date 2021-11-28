@@ -29,12 +29,12 @@ export interface ISet {
     };
     aboutUs: {
       title: string;
-      description: string;
+      description: string[];
       contactUs: string;
     };
     gallery: { title: string; description: string };
     downloads: { title: string; description: string };
-    faq: { title: string; description: string };
+    faq: { title: string; description: string; questions: string[]};
     application: {
       title: string;
       description: string;

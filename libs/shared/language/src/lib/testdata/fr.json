@@ -1,0 +1,181 @@
+{
+  "navItems": {
+    "aboutUs": "About Us",
+    "gallery": "Gallery",
+    "downloads": "Downloads",
+    "faq": "FAQ",
+    "application": "Application",
+    "contact": "Contact"
+  },
+  "pages": {
+    "home": {
+      "headline": "Recréer nos pays dans Minecraft",
+      "joinUs": "Rejoignez-nous",
+      "copiedToClipboard": "copié",
+      "contentBlocks": {
+        "mission": {
+          "title": "Notre mission",
+          "description": "Notre mission est de recréer entièrement l'Autriche, la Suisse et le Liechtenstein à l'échelle 1:1 dans le jeu vidéo Minecraft. Dans Minecraft, un bloc est égal à un mètre. Pour atteindre cet objectif presque impossible, tout le monde peut nous rejoindre en tant que Builder et contribuer au plus grand et au plus vaste projet de construction jamais tenté dans Minecraft."
+        },
+        "server": {
+          "title": "Notre serveur",
+          "description": "ne fois que vous avez rejoint notre réseau de serveurs avec l'IP mc.alps-bte.com dans la version 1.12.2-1.17 de Minecraft, vous avez deux options : Soit commencer à construire immédiatement en utilisant le \"Plot System\", soit visiter des zones déjà construites en rejoignant le \"Terra Server\". Le \"Plot System\" est le moyen le plus simple et le plus rapide pour devenir un constructeur officiel. Si vous êtes accepté dans l'équipe de construction en tant que Builder, vous pouvez construire ce que vous voulez sur notre monde ouvert \"Terra Server\"."
+        },
+        "how": {
+          "title": "How we do it",
+          "description": "Nous utilisons divers systèmes d'information géographique accessibles au public, LiDAR, des images 360 et des images de drone pour recréer toute structure avec le plus haut degré de précision et de détail possible dans Minecraft. Étant donné que la construction hors angle est très différente de la construction classique dans Minecraft, nous avons également développé une grande variété d'outils pour faciliter la prise en main. En outre, pour surmonter la limite de hauteur de Minecraft, nous utilisons des modifications astucieuses côté serveur comme les \"Cubic Chunks\"."
+        }
+      }
+    },
+    "aboutUs": {
+      "title": "A propos de nous",
+      "description": [
+        {
+          "title": "Le projet",
+          "description": "Alps BTE a été fondé le 06.04.2020 et est une équipe de construction ouverte et un sous-projet de BuildTheEarth.net. Avec des membres provenant principalement d'Autriche, de Suisse et du Liechtenstein, nous nous consacrons à la réplication détaillée à l'échelle 1:1 de ces trois pays dans le jeu vidéo Minecraft. Avec près de 400 constructeurs internationaux et plus de 1800 membres Discord, nous reconstruisons des villes, villages et paysages entiers dans la version 1.12 de Minecraft."
+        },
+        {
+          "title": "La technologie",
+          "description": "Les \"mods\" - abréviation de \"Modifications\" - sont des ajouts non officiels au code source d'un jeu vidéo, créés et maintenus par la communauté, qui ouvrent de toutes nouvelles possibilités à leurs utilisateurs. Deux mods de ce type constituent des éléments essentiels de notre projet: Cubic Chunks divise les cartes du jeu vidéo en unités de chargement tridimensionnelles, qui suppriment les limitations techniques causées par la version non modifiée de \"Vanilla\"-Minecraft, en particulier la limite de hauteur de 256 blocs, et sont donc une condition préalable au bon fonctionnement de tous les processus basés sur cette version. Terra++ peut - grâce aux Cubic Chunks - générer une projection cartographique précise du terrain dans une carte Minecraft en utilisant les données d'altitude d'OpenStreetMap. Le mod nous permet également d'intégrer dans le système des données d'altitude d'autres types, par exemple les données LiDAR collectées par l'Office fédéral de topographie pour la Suisse et le Liechtenstein, ainsi que les LiDAR collectées par le GlS autrichien. Grâce à cela, notre projection est beaucoup plus précise et le travail manuel fastidieux pour ajuster le terrain appartient au passé. En outre, il existe une variété d'autres modifications et plugins qui fournissent un soutien supplémentaire à nos constructeurs. Notre équipe de développeurs travaille également en permanence en coulisses sur de nouvelles innovations pour notre réseau - par exemple, le système de parcelles ajouté pour notre premier anniversaire, qui permet même aux membres inexpérimentés de participer au projet, même sans mods, facilitant ainsi leur adhésion au projet. En outre, nos développeurs s'occupent également des travaux de routine sur le serveur afin d'offrir à nos membres une expérience aussi exempte de perturbations et de décalage que possible. Ils sont en contact actif avec nos collègues internationaux si des questions techniques plus complètes se posent."
+        },
+        {
+          "title": "La communauté",
+          "description": "Alps BTE est connu pour sa communauté serviable et engagée. Le processus de recrutement exigeant de nos constructeurs est peu attrayant pour les trolls et les escrocs et préserve le projet de toute discrimination, spam, griefing et fraude. Il garantit également un niveau minimum de compétences en matière de construction. Les barrières supposées de notre paysage linguistique sont rarement un problème. Au lieu de cela, une communauté très amicale s'est développée, ce qui se traduit par de nombreuses nouvelles amitiés, des projets secondaires ainsi que des rencontres entre les membres.           "
+        },
+        {
+          "title": "L’équipe",
+          "description": "The Alps BTE “staff team” consists of numerous committed people who volunteer to help Alps L’équipe du personnel d'Alps BTE est composée de nombreuses personnes engagées qui contribuent bénévolement à la croissance d'Alps BTE. Ils veillent à ce que nos constructeurs, ainsi que les visiteurs, vivent une expérience agréable et simple. En outre, ils effectuent également un travail de relations publiques et attirent l'attention sur notre projet dans le monde entier. Vous trouverez ci-dessous la répartition des différentes sous-équipes de l'équipe de gestion de la construction : Les managers : Ils gèrent le projet. Chaque manager est responsable de sa propre sous-équipe. Ils prennent les décisions de base et engagent les nouveaux membres du personnel. Aides : Ils soutiennent les managers dans leurs tâches et s'occupent de leurs propres domaines de compétence (par exemple, l'organisation d'événements et la modération). Réviseurs : Ils sont chargés d'examiner les demandes et les parcelles soumises. Développeurs : Ils s'occupent de tous les aspects techniques de notre projet. Pour plus d'informations, voir le chapitre \"La technologie\". Relations publiques : Ils représentent Alps BTE en public et s'occupent de nos médias sociaux. En outre, ils traduisent les textes en plusieurs langues, mènent des interviews et traitent les demandes de la presse. Architectes : Ils s'occupent de la création de nouveaux terrains à bâtir. Ils soutiennent également les aides dans la préparation des événements."
+        }
+      ],
+      "contactUs": "Contactez-nous"
+    },
+    "gallery": {
+      "title": "Galerie",
+      "description": "Cette page présente une collection de certains de nos efforts de construction. Le contenu sera mis à jour en permanence. Des images en haute résolution pour les reportages peuvent également être téléchargées ici."
+    },
+    "downloads": {
+      "title": "Downloads",
+      "description": "To support journalists in their work, we have made official press photos and information on Alps BTE available here for download. You are welcome to use this information for non-commercial publications without contacting us. Editorial use is permitted. In case of publication, we kindly request that a proof copy be sent to our press office."
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Vous trouverez ici les questions fréquemment posées sur Alps BTE et les outils que nous utilisons. Si vous avez des questions auxquelles vous ne trouvez pas de réponse ici, veuillez nous contacter.",
+      "questions": [
+        { "spacer": "Minecraft Server" },
+        {
+          "title": "Comment puis-je participer?",
+          "content": "Rejoignez notre Discord (https://discord.com/invite/vgkspay), grâce auquel nous gérons le projet et communiquons avec les membres. Pour construire avec nous, vous avez besoin du jeu Minecraft. Une fois que vous êtes sur le serveur, vous pouvez commencer à construire immédiatement en utilisant le \"Système de parcelles\" dans Minecraft versions 1.12-1.17.1. Choisissez-y une \"parcelle\" - il s'agit d'une petite plate-forme volante avec des contours de construction déjà corrigés. Vous recevrez des liens vers les références appropriées via le chat. Une fois que vous avez terminé deux parcelles, vous pouvez demander à devenir un \"Builder\" (participant) officiel sur le site Web du BTE. Après avoir été accepté, vous pouvez construire sur le serveur du monde ouvert et choisir n'importe quel endroit en Autriche, en Suisse et au Liechtenstein."
+        },
+        {
+          "title": "Qu’est-ce que le Système de parcelles?",
+          "content": "Le Système de parcelles est un système que nous avons développé pour faciliter les débuts des nouveaux arrivants sur Alps BTE. Tout ce dont vous avez besoin pour vous inscrire est Minecraft Java Edition (version 1.12-1.17). Une fois que vous aurez créé votre première parcelle en sautant dans le portail au spawn, vous arriverez sur une petite île flottante avec un contour de bâtiment. Les liens dans le chat vous fourniront les références appropriées au bâtiment et vous pourrez immédiatement commencer à le reconstruire dans Minecraft. Si vous avez besoin d'aide, consultez notre chaîne YouTube \"Alps BTE\". Vous y trouverez de nombreux conseils utiles dans nos vidéos \"Guide du constructeur\". Dès que le bâtiment est terminé, vous le remettez et pouvez immédiatement commencer avec le suivant. Les bâtiments terminés seront évalués par nos réviseurs et si quelque chose ne convient pas, vous recevrez un retour et aurez la possibilité de le réviser. Une fois que deux parcelles ont été acceptées, vous pouvez demander à devenir un constructeur officiel."
+        },
+        {
+          "title": "Qu’est-ce que le serveur Terra?",
+          "content": "Notre serveur open-world est également connu sous le nom de serveur Terra. Sur ce serveur, les visiteurs peuvent trouver tous les bâtiments qui ont été construits par nous. Il s'agit du serveur principal sur lequel les constructeurs agréés peuvent construire dans n'importe quelle région d'Autriche, de Suisse et du Liechtenstein. Les parcelles du système de parcelles sont transférées sur le serveur dès qu'elles sont acceptées. C'est généralement là que se déroulent nos événements de 48 heures."
+        },
+        {
+          "title": "Comment puis-je visiter?",
+          "content": "Vous pouvez visiter notre serveur à tout moment pour voir l'avancement actuel. Entrez l'IP ci-dessous (les joueurs de l'édition Bedrock doivent ensuite entrer /bt Alps dans le chat) et sautez dans le portail Terra au centre du serveur (panneau avec un grand \"T\" flottant au-dessus). Edition Java : mc.alps-bte.com (Version 1.8 - 1.17) Edition Bedrock : bedrock.buildtheearth.net (Port : 19132)"
+        },
+        {
+          "title": "Combien a-t-on déjà construit?          ",
+          "content": "Surtout dans les grandes villes comme Vienne, Graz, Salzbourg, Berne, Bâle et Lucerne, il y a beaucoup de progrès et plusieurs points de repère ont déjà été construits. Certains villages et paysages ont déjà été entièrement reconstruits. Cependant, comme il y a d'innombrables bâtiments dans notre région, seul environ 0,01% de la surface totale est terminée."
+        },
+        {
+          "title": "Ai-je besoin de mods?",
+          "content": "Vous n'avez pas besoin de mods pour visiter sur le Terra-Server et le système de parcelles. Cependant, pour une meilleure performance sur le Terra-Server, nous vous recommandons de télécharger le BTE-Modpack. Vous pouvez trouver le téléchargement pour votre système d'exploitation sur Discord."
+        },
+        { "spacer": "Application" },
+        {
+          "title": "Que sont les builders?",
+          "content": "Les builders sont des \"constructeurs\" officiels d'Alps BTE. Ils ont suivi le processus de candidature et leur candidature a été acceptée par nos évaluateurs. Ils disposent de droits de construction sur notre serveur Terra (voir \"Qu'est-ce que le serveur Terra ?\") et ont accès aux canaux vocaux et textuels des constructeurs."
+        },
+        {
+          "title": "Pourquoi dois-je poser ma candidature?",
+          "content": "Pour garantir la qualité des bâtiments, les constructeurs potentiels doivent nous adresser une demande. Au cours du processus de candidature, deux bâtiments sont recréés, qui doivent présenter un niveau minimum de précision et de détails. En outre, cela nous permet de nous assurer que les Griefers ne causent pas de dommages au serveur.          "
+        },
+        {
+          "title": "Comment puis-je postuler?",
+          "content": "Une fois que vous avez soumis 2 parcelles au serveur de parcelles, vous pouvez postuler pour devenir un constructeur via ce lien : https://buildtheearth.net/bte-alps. Des instructions détaillées sont disponibles ici : https://youtu.be/zeX3rRKJenw (sous-titres disponibles en anglais, français et italien)."
+        },
+        {
+          "title": "Combien de temps faut-il pour traiter ma demande?",
+          "content": "Après avoir posé votre candidature, vous devriez recevoir une réponse via Discord dans les 48 heures. Comme seules quelques personnes traitent les candidatures, ce délai peut varier selon les cas. Si vous avez des questions, n'hésitez pas à contacter nos examinateurs."
+        },
+        {
+          "title": "Dois-je toujours être actif?",
+          "content": "Contrairement à de nombreuses autres équipes de build, les builders de BTE sont entièrement libres de travailler sur leurs propres projets et peuvent donc faire une pause pendant une période plus longue. Nous ne retirons pas les droits de construction pour cause d'inactivité."
+        },
+        { "spacer": "Construction" },
+        {
+          "title": "Quelles sont nos références en matière de construction?",
+          "content": "Nous utilisons principalement Google Maps, Google Earth et les données SIG (systèmes d'information géographique) régionales comme matériel de référence. Parfois, notre travail est également facilité par des photos et des vidéos prises indépendamment."
+        },
+        {
+          "title": "Qu'est-ce que WorldEdit?",
+          "content": "WorldEdit (WE) est un mod qui simplifie considérablement les activités de construction. Grâce à certaines commandes, entre autres, des murs en pente, des toits ou des paysages entiers peuvent être édités sans aucun problème. Nous expliquons les fonctions les plus importantes dans plusieurs tutoriels sur YouTube."
+        },
+        {
+          "title": "Que sont les événements et les collaborations ?",
+          "content": "Lors des événements, beaucoup de nos constructeurs construisent ensemble dans une zone - préparée à l'avance - dans les 48 heures. Le lieu des événements change constamment entre l'Autriche et la Suisse, construisant le plus souvent des endroits plus célèbres comme Hallstatt ou des parties de Lucerne. Ces événements ont généralement lieu tous les mois et sont devenus un élément incontournable de notre communauté. Les collabs sont fondamentalement les mêmes que les événements, mais en coopération avec d'autres équipes de construction régionales. Par conséquent, les collabs peuvent avoir lieu en dehors de nos frontières et durer plus de 48 heures."
+        },
+        {
+          "title": "Que sont les Building Sessions?",
+          "content": "Les Building Sessions sont des \"événements\" organisés par des constructeurs, qui peuvent durer d'un jour à deux semaines. Ils ont pour but de rendre Alps BTE plus populaire et d'apporter de la variété à une époque où les événements officiels sont peu nombreux. Le lieu et le moment des Building Sessions peuvent être choisis par les constructeurs. Au cours de ces événements, une grande partie de la vieille ville de Bâle a été construite, ainsi que la Stephansplatz à Vienne.          "
+        },
+        {
+          "title": "Correction d'erreurs d'affichage typiques",
+          "content": "l peut arriver que l'affichage soit modifié involontairement en raison des raccourcis clavier de certaines modifications. Certains mods incluent des \"aides visuelles\" qui facilitent le travail du constructeur, mais qui peuvent aussi être désactivées. Si vous souhaitez supprimer les coordonnées orange, il suffit d'utiliser la touche \"K\" une ou deux fois. Avec \"F4\", vous pouvez supprimer les lignes verticales rouges (marquez les limites du chunk avec \"F3 + G\")."
+        }
+      ]
+    },
+    "application": {
+      "title": "Candidature",
+      "description": "Voici un aperçu de la façon de devenir un \"Builder\" - un membre de notre équipe de construction. Pour plus d'informations, rejoignez notre Discord. Si vous voulez une explication approfondie sur la façon de postuler, regardez notre vidéo tutoriel ci-dessous.      ",
+      "steps": {
+        "discord": {
+          "title": "Discord",
+          "description": "Nous utilisons Discord pour coordonner le projet et pour la communication entre nos membres. Téléchargez le messager gratuit et rejoignez notre serveur Discord Alps BTE en cliquant ici (LIEN). Lisez les canaux d'information pour vous habituer au projet et entrer en contact avec notre communauté."
+        },
+        "plotSystem": {
+          "title": "Système de parcelles",
+          "description": "Rejoignez notre serveur Minecraft avec les versions 1.12.2-1.17 et commencez à construire avec le \"Système de parcelles\" en faisant un clic droit sur l'étoile du néant dans votre inventaire. Choisissez la ville dans laquelle vous voulez construire et commencez. Une fois que vous avez soumis deux parcelles, vous pouvez postuler en tant que Builder.          "
+        },
+        "applicationForm": {
+          "title": "Formulaire de candidature ",
+          "description": "Allez sur https://buildtheearth.net/bte-alps, cliquez sur \"Postuler\" et remplissez le formulaire. Ajoutez les identifiants de vos parcelles construites afin que nous puissions confirmer que vous êtes en mesure de construire sur BTE. Pour commencer, nous vous recommandons vivement notre série de guides du constructeur sur notre chaîne YouTube, qui couvre tous les aspects de la construction dans BTE."
+        },
+        "becomingBuilder": {
+          "title": "Devenir un constructeur ",
+          "description": "Une fois que vous aurez envoyé votre formulaire, il sera examiné en moins de 48 heures par l'un de nos examinateurs. Pendant ce temps, vous pouvez télécharger le Modpack officiel - une modification du jeu - qui est essentiel pour construire sur le monde ouvert \"Terra Server\". Si vous avez été accepté dans l'équipe, vous obtenez le rôle de \"Builder\" et êtes maintenant libre de construire où vous voulez en Autriche, en Suisse et au Liechtenstein."
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Alps BTE est une organisation subsidiaire indépendante du projet Build The Earth. Elle a été fondée en mars 2020 et vise à recréer l'Autriche, la Suisse et le Liechtenstein à l'échelle 1:1 dans le jeu de blocs Minecraft.",
+      "contact": {
+        "outreach": "Outreach",
+        "community": "Community",
+        "management": "Management"
+      },
+      "socialMedia": "Social Media"
+    },
+    "error": {
+      "title": "Page non trouvée",
+      "description": "",
+      "backHome": "Retour à la page d'accueil"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "rightsReserved": "All Rights Reserved",
+    "quickLinks": {
+      "team": "Team",
+      "showcase": "Showcase",
+      "help": "Help",
+      "socials": "Socials"
+    }
+  }
+}

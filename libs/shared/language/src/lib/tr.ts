@@ -45,3 +45,4 @@ export function tr(key: TranslationPath): string {
     deepFind<ISet>(languageStore.set, key) ?? InternalError.missingTranslation
   );
 }
+
