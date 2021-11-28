@@ -23,17 +23,13 @@ export const Application = inject(languageStore.storeKey)(
             stepNumber={1}
             title={tr('pages.application.steps.discord.title')}
             description={tr('pages.application.steps.discord.description')}
-            img={
-              'https://cdn.discordapp.com/attachments/702818655750193152/881594516698726450/2021-08-29_19.04.45.png'
-            }
+            img={'http://localhost:3333/api/assets/application/2.png'}
           />
           <ApplicationStep
             stepNumber={2}
             title={tr('pages.application.steps.plotSystem.title')}
             description={tr('pages.application.steps.plotSystem.description')}
-            img={
-              'https://cdn.discordapp.com/attachments/702818655750193152/881594516698726450/2021-08-29_19.04.45.png'
-            }
+            img={'http://localhost:3333/api/assets/application/0.png'}
           />
           <ApplicationStep
             stepNumber={3}
@@ -41,9 +37,7 @@ export const Application = inject(languageStore.storeKey)(
             description={tr(
               'pages.application.steps.applicationForm.description'
             )}
-            img={
-              'https://cdn.discordapp.com/attachments/702818655750193152/881594516698726450/2021-08-29_19.04.45.png'
-            }
+            img={'http://localhost:3333/api/assets/application/3.png'}
           />
           <ApplicationStep
             stepNumber={4}
@@ -51,9 +45,7 @@ export const Application = inject(languageStore.storeKey)(
             description={tr(
               'pages.application.steps.becomingBuilder.description'
             )}
-            img={
-              'https://cdn.discordapp.com/attachments/702818655750193152/881594516698726450/2021-08-29_19.04.45.png'
-            }
+            img={'http://localhost:3333/api/assets/application/1.png'}
           />
         </div>
       </>

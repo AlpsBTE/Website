@@ -86,7 +86,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
         <div className="home__content" id={`${scrollLinks.ourMission}`}>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.mission.title')}
-            image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+            image="http://localhost:3333/api/assets/home/0.png"
             isImageAlignedLeft={true}
             className="home__content__our-mission"
           >
@@ -94,14 +94,14 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
           </HomeContentSection>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.server.title')}
-            image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+            image="http://localhost:3333/api/assets/home/1.png"
             isImageAlignedLeft={false}
           >
             {tr('pages.home.contentBlocks.server.description')}
           </HomeContentSection>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.how.title')}
-            image="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
+            image="http://localhost:3333/api/assets/home/2.png"
             isImageAlignedLeft={true}
           >
             {tr('pages.home.contentBlocks.how.description')}
