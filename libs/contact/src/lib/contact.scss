@@ -31,7 +31,7 @@
     &__icon {
       font-size: variables.$font-size-xl;
       float: right;
-      margin: 0 variables.$spacing-m;
+      margin-left: variables.$spacing-xl;
 
       @include mixins.for-phone {
         display: flex;

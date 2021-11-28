@@ -27,7 +27,11 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
     };
 
     const scrollEvent = (): void => {
-      setOffsetY(window.pageYOffset);
+      if (window.innerWidth < 1000) {
+        setOffsetY(0);
+      } else {
+        setOffsetY(window.pageYOffset);
+      }
     };
 
     const componentDidMount = (): void => {
@@ -86,7 +90,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
         <div className="home__content" id={`${scrollLinks.ourMission}`}>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.mission.title')}
-            image="http://localhost:3333/api/assets/home/0.png"
+            image="http://localhost:3333/api/assets/home/1.png"
             isImageAlignedLeft={true}
             className="home__content__our-mission"
           >
@@ -94,7 +98,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
           </HomeContentSection>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.server.title')}
-            image="http://localhost:3333/api/assets/home/1.png"
+            image="http://localhost:3333/api/assets/home/0.png"
             isImageAlignedLeft={false}
           >
             {tr('pages.home.contentBlocks.server.description')}

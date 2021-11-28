@@ -34,13 +34,10 @@
 
   &__content {
     position: absolute;
-    @include mixins.for-phone {
-      position: relative;
-    }
+    background-color: variables.$white;
     margin-top: variables.$spacing-s;
     right: variables.$horizontal-spacer-s;
     width: variables.$horizontal-spacer-s;
-    background-color: white;
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.4);
     font-size: variables.$font-size-m;
     border-radius: 3px;
@@ -59,6 +56,8 @@
       left: 0;
       right: 0;
       border-radius: 0;
+      position: relative;
+      background-color: transparent;
 
       &__text:hover {
         background-color: transparent;

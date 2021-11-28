@@ -48,7 +48,7 @@ export const Contact = inject(languageStore.storeKey)(
         </a>
       </p>
     );
-
+    // Contactdings wird in Zukunft eingefügt. Manager sind sich aber noch nicht einig wie genau. Sorry
     return (
       <div className="contact">
         <PageTitle
@@ -104,9 +104,6 @@ export const Contact = inject(languageStore.storeKey)(
             </div>
           </div>
           <div className="contact__people">
-
-// Contactdings wird in Zukunft eingefügt. Manager sind sich aber noch nicht einig wie genau. Sorry
-
             <div>
               <div className="contact__people__container">
                 <h2>{tr('pages.contact.contact.outreach')}</h2>

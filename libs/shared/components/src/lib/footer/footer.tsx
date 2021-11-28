@@ -48,9 +48,6 @@ export const Footer = inject(languageStore.storeKey)(
             <Link to={`/${languageStore.language}/${ROUTES.contact}`}>
               {tr('navItems.contact')}
             </Link>
-            <Link to={`/${languageStore.language}/${ROUTES.downloads}`}>
-              {tr('navItems.downloads')}
-            </Link>
           </div>
           <div className="footer__quick-links__help">
             <h4>{tr('footer.quickLinks.help')}</h4>
