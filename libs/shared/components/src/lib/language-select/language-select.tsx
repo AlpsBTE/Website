@@ -18,33 +18,50 @@ export const LanguageSelect: React.FC<LanguageSelectProps> = inject(
   languageStore.storeKey
 )(
   observer(({ style = {} }: LanguageSelectProps) => {
-    const location = useLocation();
+    const location = useLocation(); // URL location
+    const [dropdown, setDropdown] = useState(false);
+    const shortToLong: { [key: string]: string } = {
+      en: 'English',
+      de: 'Deutsch',
+      fr: 'Français',
+      it: 'Italiano',
+    };
+
     return (
-      <div className="language-select" style={style}>
-        <FontAwesomeIcon
-          icon={faGlobe}
-          size="lg"
-          className="language-select__icon"
-        />
-        <select
-          className="language-select__select"
-          onChange={(e: ChangeEvent<HTMLSelectElement>) => {
-            languageStore.setLanguage(e.target.value as Language);
-            window.location.replace(
-              `/${languageStore.language}/${location.pathname.split('/')[2]}`
-            );
-          }}
-          value={languageStore.language}
-          style={style}
+      <div className="language-select">
+        <button onClick={() => setDropdown(!dropdown)} style={style}>
+          <FontAwesomeIcon
+            icon={faGlobe}
+            size="lg"
+            className="language-select__icon"
+            style={style}
+          />
+          {shortToLong[languageStore.language]}
+        </button>
+        <div
+          className="language-select__content"
+          style={{ display: dropdown ? 'block' : 'none' }}
         >
           {languages.map((o: string, i: number) => {
             return (
-              <option key={i} value={o}>
-                {o}
-              </option>
+              <div
+                id={o}
+                className="language-select__content__text"
+                onClick={() => {
+                  setDropdown(false);
+                  languageStore.setLanguage(o as Language);
+                  window.location.replace(
+                    `/${languageStore.language}/${
+                      location.pathname.split('/')[2]
+                    }`
+                  );
+                }}
+              >
+                <p> {o != languageStore.language ? shortToLong[o] : ''} </p>
+              </div>
             );
           })}
-        </select>
+        </div>
       </div>
     );
   })
