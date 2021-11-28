@@ -31,7 +31,7 @@ export const AboutUs = inject(languageStore.storeKey)(
         </Link>
         <div className="about-us__container">
           {aboutUsData.map((aboutUsItem: any, i: number) => (
-            <React.Fragment>
+            <>
               <h2>{aboutUsItem.title}</h2>
               <p>{aboutUsItem.description}</p>
               <img
@@ -39,7 +39,7 @@ export const AboutUs = inject(languageStore.storeKey)(
                 src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
                 alt="about us"
               />
-            </React.Fragment>
+            </>
           ))}
         </div>
       </div>
