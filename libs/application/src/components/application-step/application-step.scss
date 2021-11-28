@@ -16,6 +16,9 @@
     img {
       height: variables.$vertical-spacer-m;
       margin-right: variables.$spacing-xxl;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
 
       @include mixins.for-phone {
         margin: initial;

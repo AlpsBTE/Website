@@ -34,11 +34,6 @@ export const AboutUs = inject(languageStore.storeKey)(
             <>
               <h2>{aboutUsItem.title}</h2>
               <p>{aboutUsItem.description}</p>
-              <img
-                className="about-us__container__image-container__image"
-                src="https://alps-bte.com/img/user_buildings_showcase/jesuitenkirche.png"
-                alt="about us"
-              />
             </>
           ))}
         </div>

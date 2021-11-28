@@ -104,14 +104,21 @@ export const Contact = inject(languageStore.storeKey)(
             </div>
           </div>
           <div className="contact__people">
+
+// Contactdings wird in Zukunft eingefügt. Manager sind sich aber noch nicht einig wie genau. Sorry
+
             <div>
               <div className="contact__people__container">
                 <h2>{tr('pages.contact.contact.outreach')}</h2>
-                {renderContact(contact.napartas)}
+                <a href="mailto:press@alps-bte.com" className="link">
+                  press@alps-bte.com
+                </a>
               </div>
               <div className="contact__people__container">
                 <h2>{tr('pages.contact.contact.management')}</h2>
-                {renderContact(contact.cinnazeyy)}
+                <a href="mailto:office@alps-bte.com" className="link">
+                  office@alps-bte.com
+                </a>
               </div>
             </div>
           </div>
