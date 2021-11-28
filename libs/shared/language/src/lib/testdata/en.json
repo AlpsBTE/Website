@@ -61,6 +61,7 @@
       "title": "FAQ",
       "description": "Here you can find frequently asked questions about Alps BTE and the tools we use. If you have any questions that are not answered here, please contact us",
       "questions": [
+        { "spacer": "Minecraft Server" },
         {
           "title": "What is the Plot System?",
           "content": "The Plot System is a system we have developed to make it easy for newcomers to get started with Alps BTE. All you need to join is Minecraft Java Edition (version 1.12-1.17). Once you have created your first plot by jumping into the portal at the spawn, you will arrive at a small floating island with a building outline. The links in the chat will provide you with appropriate references to the building and you can immediately start rebuilding it in Minecraft. If you need help, check out our YouTube channel \"Alps BTE\". There you will find many helpful tips in our \"Builders Guide\" videos. As soon as the building is finished, you hand it in and can immediately start with the next one. The finished buildings will be evaluated by our reviewers and if something doesn't fit, you'll get feedback and the opportunity to revise it. Once two plots have been accepted, you can apply to become an official builder."
@@ -81,6 +82,7 @@
           "title": "Do I need mods?",
           "content": "You don't need any mods to look around on the Terra-Server and for the plot-system. However, for a better performance on the Terra-Server we recommend to download the BTE-Modpack. You can find the download for your operating system on Discord."
         },
+        { "spacer": "Application" },
         {
           "title": "What are builders?",
           "content": "Builders are official \"builders\" of Alps BTE. They have gone through the application process and their application has been accepted by our reviewers. They have building rights on our Terra Server (see \"What is the Terra Server?\") and access to the Builder voice and text channels."
@@ -101,6 +103,7 @@
           "title": "Do I always have to be active?",
           "content": "Unlike many other build teams, builders at BTE are completely free to work on their own projects and can therefore take a break for a longer period of time. We do not remove build rights due to inactivity"
         },
+        { "spacer": "Building" },
         {
           "title": "What are our building references?",
           "content": "We mainly use Google Maps, Google Earth and regional GIS data (geographic information systems) as reference material. Sometimes our work is also facilitated by independently taken photos and videos."
