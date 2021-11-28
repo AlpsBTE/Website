@@ -69,10 +69,6 @@ export const Router = inject(languageStore.storeKey)(
           to: `${languageStore.language}/${ROUTES.gallery}`,
         },
         {
-          text: tr('navItems.downloads'),
-          to: `${languageStore.language}/${ROUTES.downloads}`,
-        },
-        {
           text: tr('navItems.faq'),
           to: `${languageStore.language}/${ROUTES.faq}`,
         },
