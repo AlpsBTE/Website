@@ -23,7 +23,7 @@ export const contact = <const>{
     discordUsername: 'Cinnazeyy#2440',
     role: StaffRole.Manager,
     displayName: 'Cinnazeyy',
-    email: 'cinnazeyy@alps-bte.com',
+    email: 'office@alps-bte.com',
     contactable: true,
   },
   r3tuxn: {
@@ -44,7 +44,7 @@ export const contact = <const>{
     discordUsername: 'N. Apartas#7089',
     role: StaffRole.Manager,
     displayName: 'N. Apartas',
-    email: 'napartas@alps-bte.com',
+    email: 'press@alps-bte.com',
     contactable: true,
   },
   blackstarhd: {
