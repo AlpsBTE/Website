@@ -1,0 +1,177 @@
+{
+  "navItems": {
+    "aboutUs": "Chi siamo",
+    "gallery": "Galleria",
+    "downloads": "Downloads",
+    "faq": "FAQ",
+    "application": "Applicazione",
+    "contact": "Contatti"
+  },
+  "pages": {
+    "home": {
+      "headline": "Ricreare i nostri paesi in \"Minecraft\"",
+      "joinUs": "Unisciti a noi!",
+      "copiedToClipboard": "Copiato negli appunti",
+      "contentBlocks": {
+        "mission": {
+          "title": "La nostra missione",
+          "description": "La nostra missione è quella di ricreare l'Austria, la Svizzera e il Liechtenstein in scala 1:1 su MInecraft. Un blocco su Minecraft equivale a 1 metro.Per raggiungere questo obiettivo quasi impossibile, tutti sono invitati a diventare builder nel progetto più grande mai tentato su Minecraft."
+        },
+        "server": {
+          "title": "Il nostro server",
+          "description": "Una volta entrato nel network del nostro server con l’IP mc.alps-bte.com nella versione di Minecraft 1.12.2 o 1.17, hai due opzioni: O cominci subito a costruire grazie al “Plot System” o visiti zone già costruite cliccando “Terra Server”. Il “Plot System” è il modo più veloce e facile per diventare Builder. Se sei stato accettato nel Build Team come Builder allora sei libero di costruire ovunque tu voglia nel “Terra Server”."
+        },
+        "how": {
+          "title": "Come lo facciamo ",
+          "description": "Utilizziamo vari sistemi di geoinformazione accessibili al pubblico, LiDAR,immagini a 360° e foto aeree per ricreare qualsiasi struttura più precisamente possibile nei limiti di Minecraft. Visto che costruire in diagonale è un pò diverso dal costruire nel modo tradizionale, abbiamo sviluppato diverse funzionalità per rendere più facile iniziare. Inoltre, per aggirare il limite d’altezza di minecraft usiamo delle mod che ci permettono di farlo come “Cubic Chunks”."
+        }
+      }
+    },
+    "aboutUs": {
+      "title": "About Us",
+      "description": [
+        {
+          "title": "Il progetto",
+          "description": "Alps BTE è stata fondata il giorno 06.04.2020 ed è un subteam aperto a tutti di BuildTheEarth.net. Con membri soprattutto.Austriaci, Svizzeri e del Liechtenstein ci impegnamo nella riproduzione in scala 1:1 di queste tre nazioni su Minecraft. Con circa 800 builder da tutto il mondo e 1800+ membri su Discord, ricostruiamo intere città, paesi e paesaggi su Minecraft nella versione 1.12"
+        },
+        {
+          "title": "La tecnologia",
+          "description": "\"Mods\" - abbreviazione di \"Modifiche\" - sono community-create e -mantenute, i.e. aggiunte non ufficiali al codice sorgente di un videogioco, che aprono completamente nuove possibilità per i loro utenti. Le parti essenziali del nostro progetto sono due modifiche: Cubic Chunks divide le mappe del videogioco in unità di carico tridimensionali, che eliminano le limitazioni tecniche causate dal non modificato \"Vanilla\"-Minecraft, in particolare il limite di altezza di 256 blocchi, e sono quindi un prerequisito per il corretto funzionamento di tutti i processi basati su di esso. Terra++ può - grazie a Cubic Chunks - generare una proiezione accurata del terreno all'interno di una mappa di Minecraft utilizzando i dati di altitudine Openstreetmap. Il mod ci permette anche di integrare dati di altitudine di altro tipo, ad es. dati Lidar raccolti dall'Ufficio federale di topografia per la Svizzera e il Liechtenstein, nonché dati Lidar raccolti dai GAL austriaci nel sistema. A causa di questo, la nostra proiezione è molto più preciso e noioso lavoro manuale per regolare il terreno è una cosa del passato. Inoltre, ci sono una varietà di altre modifiche e plugin che forniscono un supporto aggiuntivo per i nostri costruttori. Il nostro Developer-Team è anche sempre al lavoro dietro le quinte su nuove innovazioni per la nostra rete - per esempio, il sistema di trama aggiunto per il nostro primo anniversario, che permette anche ai membri inesperti di partecipare al progetto, anche senza modifiche, rendendo così più facile per loro aderire al nostro progetto. Inoltre, i nostri sviluppatori si occupano anche del lavoro di routine sul server al fine di fornire ai nostri membri un'esperienza il più possibile libera da disturbi e ritardi. Sono in contatto attivo con i nostri colleghi internazionali se sorgono questioni tecniche più complete."
+        },
+        {
+          "title": "La Comunità",
+          "description": "Alps BTE è noto per la sua comunità utile e impegnata. L'impegnativo processo di reclutamento per i nostri Costruttori è poco attraente per troll e truffatori e mantiene il progetto libero da discriminazioni, spam, dolore e frodi. Garantisce anche un livello minimo di abilità costruttiva. Le presunte barriere nel nostro paesaggio linguistico sono raramente un problema. Invece, si è sviluppata una comunità molto amichevole, che si traduce in molte nuove amicizie, progetti collaterali e incontri dei membri."
+        },
+        {
+          "title": "La squadra",
+          "description": "Il BTE Alps \"staff team\" è composto da numerose persone impegnate che si offrono volontariamente per aiutare la crescita di Alps BTE. Si assicurano che i nostri costruttori, così come i visitatori, abbiano un'esperienza fluida e semplice. Inoltre, svolgono anche attività di PR e pongono l'attenzione sul nostro progetto in tutto il mondo. Di seguito è riportata una ripartizione dei diversi sotto-team del nostro team di build management: Manager: Gestiscono il progetto. Ogni Manager è responsabile del suo/ il proprio sub-team. Si prendono cura delle decisioni di base e l'assunzione di nuovi membri del personale. Helper: Supportano i Manager nei loro compiti e si occupano delle proprie aree di competenza (ad es. pianificazione degli eventi e moderazione). Revisori: Essi sono responsabili per la revisione delle domande e presentate appezzamenti. Sviluppatori: Si prendono cura di tutti gli aspetti tecnici del nostro progetto. Per maggiori informazioni, vedere il capitolo \"La tecnologia\". Pubbliche Relazioni: Rappresentano Alps BTE in pubblico e prendersi cura dei nostri social media. Inoltre, traducono testi in diverse lingue, conducono interviste e gestiscono inchieste sulla stampa. Architetti: Si prendono cura di creare nuove trame per costruire su. Essi supportano anche gli aiutanti nella preparazione di eventi."
+        }
+      ],
+      "contactUs": "Contattaci"
+    },
+    "gallery": {
+      "title": "Galleria",
+      "description": "Questa pagina mostra delle foto di alcune delle nostre costruzioni. Il contenuto verrà aggiornato in continuazione. Foto ad alta qualità possono essere inoltre scaricate in questa pagina."
+    },
+    "downloads": {
+      "title": "Pagina di stampa",
+      "description": "Per aiutare i giornalisti nel loro lavoro abbiamo fatto delle foto stampa e informazioni su Alps BTE che sono disponibili per il download. siete pregati di usare tali informazioni per usi non commerciali. L’uso editoriale è invece permesso. Nel caso di pubblicazione, vi chiediamo gentilmente che una copia di prova venga mandata al nostro ufficio stampa."
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Qui puoi trovare domande frequenti su Alps BTE e gli strumenti che utilizziamo. Se avete domande, non esitate a contattarci.",
+      "questions": [
+        { "spacer": "Minecraft Server" },
+        {
+          "title": "Cos'è il Sistema Grafico?",
+          "content": "Il Plot System è un sistema che abbiamo sviluppato per rendere più facile per i nuovi arrivati iniziare con Alps BTE. Tutto ciò che serve per partecipare è Minecraft Java Edition (versione 1.12-1.17). Una volta creato il tuo primo lotto saltando nel portale alla deposizione delle uova, si arriva a una piccola isola galleggiante con un contorno di edificio. I link nella chat vi fornirà riferimenti appropriati per l'edificio e si può immediatamente iniziare a ricostruirlo in Minecraft. Se avete bisogno di aiuto, date un'occhiata al nostro canale Youtube \"Alps BTE\". Lì troverete molti consigli utili nei nostri video \"Guida ai costruttori\". Non appena l'edificio è finito, si consegna e può immediatamente iniziare con il prossimo. Gli edifici finiti saranno valutati dai nostri recensori e se qualcosa non si adatta, si otterrà un feedback e la possibilità di rivedere. Una volta che due trame sono state accettate, è possibile applicare per diventare un costruttore ufficiale."
+        },
+        {
+          "title": "Che cos'è il Terraserver?",
+          "content": "Il nostro server open-world è anche conosciuto come il server Terra. Sul server, i visitatori possono trovare tutti gli edifici che sono mai stati costruiti da noi. Funge da server principale dove i costruttori verificati possono costruire in qualsiasi regione in Austria, Svizzera e Liechtenstein. Le trame dal Sistema di Trama sono trasferite al server appena sono accettate. Questo è solitamente dove i nostri eventi di 48 ore hanno luogo."
+        },
+        {
+          "title": "Come posso osservare in giro?",
+          "content": "Puoi visitare il nostro server in qualsiasi momento per vedere i progressi attuali. Inserisci l'IP qui sotto (i giocatori di Bedrock Edition devono quindi entrare /bt Alps nella chat) e saltare nel Portale Terra presso l'hub del server (firma con grande \"T\" galleggiante sopra). Edizione Java: mc.alps-Bte.com (versione 1.8 - 1.17) Edizione Bedrock: bedrock.buildtheearth.net (Port: 19132)"
+        },
+        {
+          "title": "Quanto è già stato costruito?",
+          "content": "Soprattutto nelle grandi città come Vienna, Graz, Salisburgo, Berna, Basilea e Lucerna ci sono molti progressi e diversi punti di riferimento sono già stati costruiti. Singoli villaggi e paesaggi sono già stati completamente ricostruiti. Tuttavia, poiché ci sono innumerevoli edifici nella nostra regione, solo circa lo 0,01% della superficie totale è finito."
+        },
+        {
+          "title": "Ho bisogno di modifiche?",
+          "content": "Non hai bisogno di modifiche per guardare in giro sul Terra-Server e per il sistema di trama. Tuttavia, per migliorare le prestazioni sul Terra-Server si consiglia di scaricare il BTE-Modpack. Puoi trovare il download per il tuo sistema operativo su Discord."
+        },
+        { "spacer": "Applicazione" },
+        {
+          "title": "Che cosa sono i costruttori?",
+          "content": "I costruttori sono \"costruttori\" ufficiali di Alps BTE. Sono passati attraverso il processo di applicazione e la loro applicazione è stata accettata dai nostri revisori. Hanno i diritti di costruzione sul nostro Terra Server (vedi \"Che cos'è il Terra Server?\") e l'accesso ai canali voce e testo del Costruttore."
+        },
+        {
+          "title": "Perché mi devo iscrivere?",
+          "content": "Per garantire la qualità degli edifici, i potenziali costruttori devono rivolgersi a noi. Durante il processo di applicazione, vengono ricreati due edifici, che devono avere un livello minimo di accuratezza e dettaglio. Inoltre, questo ci permette di garantire che i dolenti non causano danni al server."
+        },
+        {
+          "title": "Come posso iscrivermi?",
+          "content": "Dopo aver inviato 2 grafici al server plot, è possibile richiedere di diventare un costruttore tramite questo link: https://buildtheearth.net/bte-alps. Istruzioni dettagliate possono essere trovate qui: https://youtu.be/zeX3rRKJenw (sottotitoli disponibili in inglese, francese e italiano)."
+        },
+        {
+          "title": "Quanto tempo ci vorrà per controllare la mia domanda?",
+          "content": "Dopo aver fatto domanda, si dovrebbe ricevere una risposta tramite Discord entro 48 ore. Poiché solo poche persone elaborano le applicazioni, questa volta può variare in singoli casi. Se avete domande, non esitate a contattare i nostri recensori."
+        },
+        {
+          "title": "Devo sempre essere attivo?",
+          "content": "A differenza di molti altri team di build, i costruttori di BTE sono completamente liberi di lavorare sui propri progetti e possono quindi prendere una pausa per un periodo di tempo più lungo. Non rimuoviamo i diritti di costruzione a causa dell'inattività."
+        },
+        { "spacer": "Costruzione" },
+        {
+          "title": "Cosa usiamo come riferimento per le csotruzioni?",
+          "content": "Utilizziamo principalmente Google Maps, Google Earth e i dati GIS regionali (sistemi di informazione geografica) come materiale di riferimento. A volte il nostro lavoro è facilitato anche da foto e video realizzati in modo indipendente."
+        },
+        {
+          "title": "Che cosa è Worldedit?",
+          "content": "Worldedit (WE) è un mod che semplifica significativamente le attività di costruzione. Attraverso alcuni comandi, tra gli altri, pareti inclinate, tetti o paesaggi interi possono essere modificati senza problemi. Spieghiamo le funzioni più importanti in diversi tutorial su Youtube."
+        },
+        {
+          "title": "Cosa sono gli eventi e le collabs?",
+          "content": "In eventi, molti dei nostri costruttori costruire insieme in uno - preparato in anticipo - area entro 48 ore. La posizione degli eventi cambia costantemente tra l'Austria e la Svizzera, per lo più costruendo località più famose come Hallstatt o parti di Lucerna. Questi eventi si svolgono di solito mensilmente e sono diventati un appuntamento fisso nella nostra comunità. I collabs sono fondamentalmente gli stessi eventi, solo in cooperazione con altri team di costruzione regionali. Pertanto, le collaborazioni possono avvenire al di fuori dei nostri confini e durare più di 48 ore."
+        },
+        {
+          "title": "Cosa sono le sessioni di costruzione?",
+          "content": "Le sessioni di costruzione sono \"eventi\" organizzati da costruttori che possono durare da un giorno a due settimane. Essi mirano a rendere Alps BTE più di base e fornire varietà in tempi di pochi eventi ufficiali. La posizione e i tempi delle sessioni di costruzione possono essere scelti dai costruttori. Nel corso di questi eventi, gran parte del centro storico di Basilea è stato costruito, così come la Stephansplatz a Vienna"
+        },
+        {
+          "title": "Correggere errori di visualizzazione tipici",
+          "content": "Può accadere che il display venga modificato involontariamente a causa delle scorciatoie chiave delle singole modifiche. Alcune modifiche includono \"aiuti visivi\" che rendono il lavoro del costruttore più facile, ma possono anche essere disattivati. Se si desidera rimuovere le coordinate arancioni, è sufficiente utilizzare il tasto \"K\" una o due volte. Con \"F4\" è possibile rimuovere le linee verticali rosse (segnare i confini chunk a \"F3 + G\")."
+        }
+      ]
+    },
+    "application": {
+      "title": "Applicazione",
+      "description": "Questa è una panoramica su come diventare un \"Builder\" - un membro del nostro build team. Per ulteriori informazioni unisciti al nostro Discord. Se vuoi una spiegazione approfondita su come diventare builder, guarda il nostro video tutorial qui sotto.",
+      "steps": {
+        "discord": {
+          "title": "Discord",
+          "description": "Usiamo Discord per coordinare il progetto e per la comunicazione tra i nostri membri. Scarica il social gratuitamente e unisciti al nostro Alps BTE Discord-Server cliccando qui (LINK). Leggi attraverso i canali di informazione per abituarti al progetto e entrare in contatto con la nostra community."
+        },
+        "plotSystem": {
+          "title": "Plot System",
+          "description": "Unisciti al nostro server Minecraft nelle versioni 1.12.2-1.17 e inizia a costruire con il \"Plot System\" facendo clic con il tasto destro sulla stella nell'inventario. Scegli la città in cui vuoi costruire e inizia. Una volta che hai presentato due costruzioni è possibile diventare builder."
+        },
+        "applicationForm": {
+          "title": "Modulo per diventare builder",
+          "description": "Vai a buildtheearth.net/buildteams e cerca Alps BTE. Clicca su \"Apply\" e compila il modulo. Aggiungi gli ID delle tue due costruzioni costruite in modo che possiamo confermare che sei in grado di costruire in BTE. Per iniziare consigliamo vivamente la nostra serie Builders Guide sul nostro canale Youtube che copre ogni aspetto della costruzione su BTE."
+        },
+        "becomingBuilder": {
+          "title": "Diventare un Costruttore",
+          "description": "Una volta inviato il modulo, sarà esaminato entro 48 ore da uno dei nostri Revisori. Nel frattempo è possibile scaricare il Modpack ufficiale - una modifica del gioco - che è fondamentale per costruire sul \"Terra Server\". Se sei stato accettato nel team, ottieni il ruolo di \"Builder\" e ora sei libero di costruire dove vuoi in Austria, Svizzera e Liechtenstein."
+        }
+      }
+    },
+    "contact": {
+      "title": "Contatti",
+      "description": "Alps BTE (scritto in grassetto) è un subteam indipendente che fa parte del progetto Build The Earth. È stato fondato nel Marzo 2020 e il suo obiettivo è quello di ricreare Austria, Svizzera e Liechtenstein in scala 1:1 su Minecraft.",
+      "contact": {
+        "outreach": "Outreach",
+        "community": "Comunità",
+        "management": "Gestione"
+      },
+      "socialMedia": "Media Sociali"
+    },
+    "error": {
+      "title": "Pagina non trovata!",
+      "description": "",
+      "backHome": "Torno a casa"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "rightsReserved": "Tutti i diritti riservati",
+    "quickLinks": {
+      "team": "Squadra",
+      "showcase": "Vetrina",
+      "help": "Aiuto",
+      "socials": "Sociali"
+    }
+  }
+}
