@@ -47,6 +47,15 @@ export const Application = inject(languageStore.storeKey)(
             )}
             img={'http://localhost:3333/api/assets/application/1.png'}
           />
+          <div className="application__video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/zeX3rRKJenw"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </div>
         </div>
       </>
     );

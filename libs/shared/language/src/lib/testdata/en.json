@@ -55,11 +55,11 @@
       "places": {
         "basel": "Basel",
         "graz": "Graz",
-        "luzern": "Luzern",
-        "oesterreich": "Österreich",
+        "luzern": "Lucerne",
+        "oesterreich": "Austria",
         "salzburg": "Salzburg",
-        "schweiz": "Schweiz",
-        "wien": "Wien"
+        "schweiz": "Switzerland",
+        "wien": "Vienna"
       }
     },
     "downloads": {
