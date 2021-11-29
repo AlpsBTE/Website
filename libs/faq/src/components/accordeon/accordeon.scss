@@ -1,16 +1,18 @@
 @use "theme:variables" as variables;
+@use "theme:mixins" as mixins;
 
 .accordion {
   background-color: white;
-  width: 60%;
+  width: auto;
   font-weight: variables.$font-weight-bold;
-  margin: 3%;
   overflow: hidden;
   margin-left: 20%;
   box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.8%;
-  margin-top: 1.8%;
-
+  margin: variables.$horizontal-spacer-xxs variables.$vertical-spacer-m;
+  @include mixins.for-phone {
+    width: auto;
+    margin: variables.$horizontal-spacer-xs variables.$vertical-spacer-xs;
+  }
   &__container {
     padding: variables.$spacing-l;
   }

@@ -6,4 +6,9 @@
     padding: variables.$spacing-xl variables.$horizontal-spacer-s;
     margin-top: variables.$vertical-spacer-xs;
   }
+  &__video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: variables.$vertical-spacer-xs;
+  }
 }

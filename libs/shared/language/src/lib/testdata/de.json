@@ -51,7 +51,16 @@
     },
     "gallery": {
       "title": "Gallery",
-      "description": "Hier findest du eine Kollektion einiger bereits von uns gebauter Bauwerke. Die Inhalte werden laufend aktualisiert. Hochauflösende Fotos für Presse etc. können hier ebenfalls heruntergeladen werden."
+      "description": "Hier findest du eine Kollektion einiger bereits von uns gebauter Bauwerke. Die Inhalte werden laufend aktualisiert. Hochauflösende Fotos für Presse etc. können hier ebenfalls heruntergeladen werden.",
+      "places": {
+        "basel": "Basel",
+        "graz": "Graz",
+        "luzern": "Luzern",
+        "oesterreich": "Österreich",
+        "salzburg": "Salzburg",
+        "schweiz": "Schweiz",
+        "wien": "Wien"
+      }
     },
     "downloads": {
       "title": "Downloads",

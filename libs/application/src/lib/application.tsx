@@ -5,6 +5,7 @@ import { languageStore } from '@alpsbte/shared/stores';
 import { inject, observer } from 'mobx-react';
 import ApplicationStep from '../components/application-step/application-step';
 import { tr } from '@alpsbte/shared/language';
+import { apiUrl } from '@alpsbte/shared/config';
 
 export interface ApplicationProps {}
 
@@ -23,13 +24,13 @@ export const Application = inject(languageStore.storeKey)(
             stepNumber={1}
             title={tr('pages.application.steps.discord.title')}
             description={tr('pages.application.steps.discord.description')}
-            img={'http://localhost:3333/api/assets/application/2.png'}
+            img={`${apiUrl}/api/assets/application/2.png`}
           />
           <ApplicationStep
             stepNumber={2}
             title={tr('pages.application.steps.plotSystem.title')}
             description={tr('pages.application.steps.plotSystem.description')}
-            img={'http://localhost:3333/api/assets/application/0.png'}
+            img={`${apiUrl}/api/assets/application/0.png`}
           />
           <ApplicationStep
             stepNumber={3}
@@ -37,7 +38,7 @@ export const Application = inject(languageStore.storeKey)(
             description={tr(
               'pages.application.steps.applicationForm.description'
             )}
-            img={'http://localhost:3333/api/assets/application/3.png'}
+            img={`${apiUrl}/api/assets/application/3.png`}
           />
           <ApplicationStep
             stepNumber={4}
@@ -45,8 +46,17 @@ export const Application = inject(languageStore.storeKey)(
             description={tr(
               'pages.application.steps.becomingBuilder.description'
             )}
-            img={'http://localhost:3333/api/assets/application/1.png'}
+            img={`${apiUrl}/api/assets/application/1.png`}
           />
+          <div className="application__video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/zeX3rRKJenw"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </div>
         </div>
       </>
     );

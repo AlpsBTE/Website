@@ -37,6 +37,8 @@
         display: flex;
         font-size: variables.$font-size-m;
         padding: variables.$spacing-s;
+        margin-left: variables.$spacing-s;
+        margin-right: variables.$spacing-s;
       }
     }
   }

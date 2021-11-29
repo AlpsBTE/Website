@@ -51,7 +51,16 @@
     },
     "gallery": {
       "title": "Galerie",
-      "description": "Cette page présente une collection de certains de nos efforts de construction. Le contenu sera mis à jour en permanence. Des images en haute résolution pour les reportages peuvent également être téléchargées ici."
+      "description": "Cette page présente une collection de certains de nos efforts de construction. Le contenu sera mis à jour en permanence. Des images en haute résolution pour les reportages peuvent également être téléchargées ici.",
+      "places": {
+        "basel": "Bâle",
+        "graz": "Graz",
+        "luzern": "Lucerne",
+        "oesterreich": "Autriche",
+        "salzburg": "Salzbourg",
+        "schweiz": "Suisse",
+        "wien": "Vienne"
+      }
     },
     "downloads": {
       "title": "Téléchargements",

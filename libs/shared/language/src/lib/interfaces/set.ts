@@ -32,7 +32,7 @@ export interface ISet {
       description: string[];
       contactUs: string;
     };
-    gallery: { title: string; description: string };
+    gallery: { title: string; description: string; places: Record<string, string> };
     downloads: { title: string; description: string };
     faq: { title: string; description: string; questions: string[]};
     application: {

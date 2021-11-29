@@ -51,7 +51,16 @@
     },
     "gallery": {
       "title": "Gallery",
-      "description": "This page shows a collection of some of our building efforts. The content will be updated continuously. High resolution pictures for news coverage can be downloaded here as well."
+      "description": "This page shows a collection of some of our building efforts. The content will be updated continuously. High resolution pictures for news coverage can be downloaded here as well.",
+      "places": {
+        "basel": "Basel",
+        "graz": "Graz",
+        "luzern": "Lucerne",
+        "oesterreich": "Austria",
+        "salzburg": "Salzburg",
+        "schweiz": "Switzerland",
+        "wien": "Vienna"
+      }
     },
     "downloads": {
       "title": "Downloads",
