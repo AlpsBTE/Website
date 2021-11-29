@@ -53,13 +53,13 @@
       "title": "Galleria",
       "description": "Questa pagina mostra delle foto di alcune delle nostre costruzioni. Il contenuto verrà aggiornato in continuazione. Foto ad alta qualità possono essere inoltre scaricate in questa pagina.",
       "places": {
-        "basel": "Basel",
+        "basel": "Basilea",
         "graz": "Graz",
-        "luzern": "Luzern",
-        "oesterreich": "Österreich",
-        "salzburg": "Salzburg",
-        "schweiz": "Schweiz",
-        "wien": "Wien"
+        "luzern": "Lucerna",
+        "oesterreich": "Austria",
+        "salzburg": "Salzburgo",
+        "schweiz": "Svizzera",
+        "wien": "Vienna"
       }
     },
     "downloads": {
