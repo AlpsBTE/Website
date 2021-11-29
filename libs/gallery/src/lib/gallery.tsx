@@ -8,7 +8,7 @@ import { tr } from '@alpsbte/shared/language';
 import { Button } from '@alpsbte/shared/components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
-import { recordAnnotationApplied } from 'mobx/dist/internal';
+import { apiUrl } from '@alpsbte/shared/config';
 
 export interface GalleryProps {}
 export const Gallery: React.FC = inject(languageStore.storeKey)(
@@ -93,7 +93,7 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
           <div className="gallery__image-container">
             {[...Array(9)].map((_, i) => (
               <img
-                src={`http://localhost:3333/api/assets/gallery/${place}/${
+                src={`${apiUrl}/api/assets/gallery/${place}/${
                   place == 'loading' ? '0' : i
                 }.webp`}
                 className="gallery__image"

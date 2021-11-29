@@ -7,7 +7,7 @@ import { inject, observer } from 'mobx-react';
 import { languageStore } from '@alpsbte/shared/stores';
 import { tr } from '@alpsbte/shared/language';
 import { ScrollIndicator } from '@alpsbte/shared/components';
-import { scrollLinks, server, socials } from '@alpsbte/shared/config';
+import { scrollLinks, server, socials, apiUrl } from '@alpsbte/shared/config';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faCheck, faCompass } from '@fortawesome/free-solid-svg-icons';
 
@@ -50,7 +50,12 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
       <>
         <div
           className="heading"
-          style={{ backgroundPositionY: `${offsetY * 0.5}px` }}
+          style={{
+            backgroundPositionY: `${offsetY * 0.5}px`,
+            backgroundImage: `url(${apiUrl}/api/assets/home/3.png`,
+            background: `linear-gradient(90deg, rgba(0,0,0,0.5) 100%, rgba(0,0,0,0.5) 100%), url(${apiUrl}/api/assets/home/3.png)`,
+            backgroundSize: 'cover',
+          }}
         >
           <div className="home__hero block">
             <div className="head_line_box">
@@ -90,7 +95,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
         <div className="home__content" id={`${scrollLinks.ourMission}`}>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.mission.title')}
-            image="http://localhost:3333/api/assets/home/1.png"
+            image={`${apiUrl}/api/assets/home/1.png`}
             isImageAlignedLeft={true}
             className="home__content__our-mission"
           >
@@ -98,14 +103,14 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
           </HomeContentSection>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.server.title')}
-            image="http://localhost:3333/api/assets/home/0.png"
+            image={`${apiUrl}/api/assets/home/0.png`}
             isImageAlignedLeft={false}
           >
             {tr('pages.home.contentBlocks.server.description')}
           </HomeContentSection>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.how.title')}
-            image="http://localhost:3333/api/assets/home/2.png"
+            image={`${apiUrl}/api/assets/home/2.png`}
             isImageAlignedLeft={true}
           >
             {tr('pages.home.contentBlocks.how.description')}
