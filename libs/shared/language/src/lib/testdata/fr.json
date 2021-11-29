@@ -1,8 +1,8 @@
 {
   "navItems": {
-    "aboutUs": "About Us",
-    "gallery": "Gallery",
-    "downloads": "Downloads",
+    "aboutUs": "À propos",
+    "gallery": "Gallerie",
+    "downloads": "Téléchargements",
     "faq": "FAQ",
     "application": "Application",
     "contact": "Contact"
@@ -19,11 +19,11 @@
         },
         "server": {
           "title": "Notre serveur",
-          "description": "ne fois que vous avez rejoint notre réseau de serveurs avec l'IP mc.alps-bte.com dans la version 1.12.2-1.17 de Minecraft, vous avez deux options : Soit commencer à construire immédiatement en utilisant le \"Plot System\", soit visiter des zones déjà construites en rejoignant le \"Terra Server\". Le \"Plot System\" est le moyen le plus simple et le plus rapide pour devenir un constructeur officiel. Si vous êtes accepté dans l'équipe de construction en tant que Builder, vous pouvez construire ce que vous voulez sur notre monde ouvert \"Terra Server\"."
+          "description": "Une fois que vous avez rejoint notre réseau de serveurs avec l'IP mc.alps-bte.com dans la version 1.12.2-1.17 de Minecraft, vous avez deux options : Soit commencer à construire immédiatement en utilisant le \"Plot System\", soit visiter des zones déjà construites en rejoignant le \"Terra Server\". Le \"Plot System\" est le moyen le plus simple et le plus rapide pour devenir un constructeur officiel. Si vous êtes accepté dans l'équipe de construction en tant que Builder, vous pouvez construire ce que vous voulez sur notre monde ouvert \"Terra Server\"."
         },
         "how": {
-          "title": "How we do it",
-          "description": "Nous utilisons divers systèmes d'information géographique accessibles au public, LiDAR, des images 360 et des images de drone pour recréer toute structure avec le plus haut degré de précision et de détail possible dans Minecraft. Étant donné que la construction hors angle est très différente de la construction classique dans Minecraft, nous avons également développé une grande variété d'outils pour faciliter la prise en main. En outre, pour surmonter la limite de hauteur de Minecraft, nous utilisons des modifications astucieuses côté serveur comme les \"Cubic Chunks\"."
+          "title": "Comment construisons-nous ?",
+          "description": "Nous utilisons divers systèmes d'information géographique accessibles au public; LiDAR, des images 360-degrés et des images de drone pour recréer toute structure avec le plus haut degré de précision et de détail possible dans Minecraft. Étant donné que la construction hors angle est très différente de la construction classique dans Minecraft, nous avons également développé une grande variété d'outils pour faciliter la prise en main. En outre, pour surmonter la limite de hauteur de Minecraft, nous utilisons des modifications astucieuses côté serveur comme les \"Cubic Chunks\"."
         }
       }
     },
@@ -44,7 +44,7 @@
         },
         {
           "title": "L’équipe",
-          "description": "The Alps BTE “staff team” consists of numerous committed people who volunteer to help Alps L’équipe du personnel d'Alps BTE est composée de nombreuses personnes engagées qui contribuent bénévolement à la croissance d'Alps BTE. Ils veillent à ce que nos constructeurs, ainsi que les visiteurs, vivent une expérience agréable et simple. En outre, ils effectuent également un travail de relations publiques et attirent l'attention sur notre projet dans le monde entier. Vous trouverez ci-dessous la répartition des différentes sous-équipes de l'équipe de gestion de la construction : Les managers : Ils gèrent le projet. Chaque manager est responsable de sa propre sous-équipe. Ils prennent les décisions de base et engagent les nouveaux membres du personnel. Aides : Ils soutiennent les managers dans leurs tâches et s'occupent de leurs propres domaines de compétence (par exemple, l'organisation d'événements et la modération). Réviseurs : Ils sont chargés d'examiner les demandes et les parcelles soumises. Développeurs : Ils s'occupent de tous les aspects techniques de notre projet. Pour plus d'informations, voir le chapitre \"La technologie\". Relations publiques : Ils représentent Alps BTE en public et s'occupent de nos médias sociaux. En outre, ils traduisent les textes en plusieurs langues, mènent des interviews et traitent les demandes de la presse. Architectes : Ils s'occupent de la création de nouveaux terrains à bâtir. Ils soutiennent également les aides dans la préparation des événements."
+          "description": "L’équipe du personnel d'Alps BTE est composée de nombreuses personnes engagées qui contribuent bénévolement à la croissance d'Alps BTE. Ils veillent à ce que nos constructeurs, ainsi que les visiteurs, vivent une expérience agréable et simple. En outre, ils effectuent également un travail de relations publiques et attirent l'attention sur notre projet dans le monde entier. Vous trouverez ci-dessous la répartition des différentes sous-équipes de l'équipe de gestion de la construction. Les managers : Ils gèrent le projet. Chaque manager est responsable de sa propre sous-équipe. Ils prennent les décisions de base et engagent les nouveaux membres du personnel. Les modérateurs : Ils soutiennent les managers dans leurs tâches et s'occupent de leurs propres domaines de compétence (par exemple, l'organisation d'événements et la modération). Les examinateurs : Ils sont chargés d'examiner les demandes et les parcelles soumises. Les développeurs : Ils s'occupent de tous les aspects techniques de notre projet. Pour plus d'informations, voir le chapitre \"La technologie\". Les rapports publiques : Ils représentent Alps BTE en public et s'occupent de nos médias sociaux. En outre, ils traduisent les textes en plusieurs langues, mènent des interviews et traitent les demandes de la presse. Les architectes : Ils s'occupent de la création de nouveaux terrains à bâtir. Ils soutiennent également les aides dans la préparation des événements."
         }
       ],
       "contactUs": "Contactez-nous"
@@ -54,8 +54,8 @@
       "description": "Cette page présente une collection de certains de nos efforts de construction. Le contenu sera mis à jour en permanence. Des images en haute résolution pour les reportages peuvent également être téléchargées ici."
     },
     "downloads": {
-      "title": "Downloads",
-      "description": "To support journalists in their work, we have made official press photos and information on Alps BTE available here for download. You are welcome to use this information for non-commercial publications without contacting us. Editorial use is permitted. In case of publication, we kindly request that a proof copy be sent to our press office."
+      "title": "Téléchargements",
+      "description": "Pour aider les journalistes dans leur travail, nous avons mis à disposition des photos officielles et des informations sur Alps BTE à télécharger ici. Vous pouvez utiliser ces informations pour des publications non commerciales sans nous contacter. L'utilisation éditoriale est autorisée. En cas de publication, nous vous prions de bien vouloir envoyer une copie à notre service de presse."
     },
     "faq": {
       "title": "FAQ",
@@ -72,7 +72,7 @@
         },
         {
           "title": "Qu’est-ce que le serveur Terra?",
-          "content": "Notre serveur open-world est également connu sous le nom de serveur Terra. Sur ce serveur, les visiteurs peuvent trouver tous les bâtiments qui ont été construits par nous. Il s'agit du serveur principal sur lequel les constructeurs agréés peuvent construire dans n'importe quelle région d'Autriche, de Suisse et du Liechtenstein. Les parcelles du système de parcelles sont transférées sur le serveur dès qu'elles sont acceptées. C'est généralement là que se déroulent nos événements de 48 heures."
+          "content": "Notre serveur open-world est également connu sous le nom de serveur Terra. Sur ce serveur, les visiteurs peuvent trouver tous les bâtiments que nous avons construit. Il s'agit du serveur principal sur lequel les constructeurs agréés peuvent construire dans n'importe quelle région d'Autriche, de Suisse et du Liechtenstein. Les parcelles du système de parcelles sont transférées sur le serveur dès qu'elles sont acceptées. C'est aussi généralement sur ce serveur que se déroulent nos événements de 48 heures."
         },
         {
           "title": "Comment puis-je visiter?",
@@ -126,7 +126,7 @@
         },
         {
           "title": "Correction d'erreurs d'affichage typiques",
-          "content": "l peut arriver que l'affichage soit modifié involontairement en raison des raccourcis clavier de certaines modifications. Certains mods incluent des \"aides visuelles\" qui facilitent le travail du constructeur, mais qui peuvent aussi être désactivées. Si vous souhaitez supprimer les coordonnées orange, il suffit d'utiliser la touche \"K\" une ou deux fois. Avec \"F4\", vous pouvez supprimer les lignes verticales rouges (marquez les limites du chunk avec \"F3 + G\")."
+          "content": "Il peut arriver que l'affichage soit modifié involontairement en raison des raccourcis clavier de certaines modifications. Certains mods incluent des \"aides visuelles\" qui facilitent le travail du constructeur, mais qui peuvent aussi être désactivées. Si vous souhaitez supprimer les coordonnées orange, il suffit d'utiliser la touche \"K\" une ou deux fois. Avec \"F4\", vous pouvez supprimer les lignes verticales rouges (marquez les limites du chunk avec \"F3 + G\")."
         }
       ]
     },
@@ -156,11 +156,11 @@
       "title": "Contact",
       "description": "Alps BTE est une organisation subsidiaire indépendante du projet Build The Earth. Elle a été fondée en mars 2020 et vise à recréer l'Autriche, la Suisse et le Liechtenstein à l'échelle 1:1 dans le jeu de blocs Minecraft.",
       "contact": {
-        "outreach": "Outreach",
-        "community": "Community",
+        "outreach": "Presse",
+        "community": "Communauté",
         "management": "Management"
       },
-      "socialMedia": "Social Media"
+      "socialMedia": "Réseaux Sociaux"
     },
     "error": {
       "title": "Page non trouvée",
@@ -173,9 +173,9 @@
     "rightsReserved": "All Rights Reserved",
     "quickLinks": {
       "team": "Team",
-      "showcase": "Showcase",
-      "help": "Help",
-      "socials": "Socials"
+      "showcase": "Gallerie",
+      "help": "Aide",
+      "socials": "Réseaux sociaux"
     }
   }
 }
