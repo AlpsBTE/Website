@@ -2,6 +2,9 @@
 import { languageStore } from '@alpsbte/shared/stores';
 import { deepFind, InternalError } from '@alpsbte/shared/util';
 import { ISet } from './interfaces/set';
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+
 
 type Divider = '.';
 type ___ = '';

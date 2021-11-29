@@ -58,9 +58,11 @@
     "react-animate-height": "^2.0.23",
     "react-burger-menu": "^3.0.6",
     "react-dom": "17.0.2",
+    "react-markdown": "^7.1.1",
     "react-router-dom": "^5.2.0",
     "reflect-metadata": "^0.1.13",
     "regenerator-runtime": "0.13.7",
+    "remark-gfm": "^3.0.1",
     "sass": "^1.37.5",
     "storybook-react-router": "^1.0.8",
     "tslib": "^2.0.0"
