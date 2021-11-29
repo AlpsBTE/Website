@@ -15,11 +15,11 @@
       "contentBlocks": {
         "mission": {
           "title": "Unsere Mission",
-          "description": "Unsere Mission ist es, die drei Länder Österreich, Schweiz und Liechtenstein 1:1 im Computerspiel Minecraft nachzubauen. Ein Block in Minecraft ist äquivalent zu einem Meter. Um dieses fast unmögliche Ziel zu erreichen, kann bei uns jede*r als Builder*in mitbauen und zum grössten und am stärksten expandierenden Minecraft Projekt beitragen."
+          "description": "Unsere Mission ist es, die drei Länder Österreich, Schweiz und Liechtenstein 1:1 im Computerspiel Minecraft nachzubauen. Ein Block in Minecraft ist äquivalent zu einem Meter. Um dieses fast unmögliche Ziel zu erreichen, kann bei uns jede*r als Builder mitbauen und zum grössten und am stärksten expandierenden Minecraft Projekt beitragen."
         },
         "server": {
           "title": "Unser Server",
-          "description": "Um unserem Server Netzwerk mit der Adresse mc.alps-bte.com und einer Minecraft Version zwischen 1.12 und 1.17 beizutreten, hast du zwei Möglichkeiten: Du kannst entweder auf unserem “Plot-System” direkt anfangen zu bauen oder du schaust dir die bereits gebauten Bereiche an, indem du auf unseren „Terra-Server“ gehts. Das „Plot-System“ ist der einfachste und schnellste Weg, dich als offizielle*r Builder*in zu bewerben. Sobald du als Builder*in angenommen wurdest, kannst du auf unserem Open-World „Terra-Server“ bauen."
+          "description": "Um unserem Server Netzwerk mit der Adresse mc.alps-bte.com und einer Minecraft Version zwischen 1.12 und 1.17 beizutreten, hast du zwei Möglichkeiten: Du kannst entweder auf unserem “Plot-System” direkt anfangen zu bauen oder du schaust dir die bereits gebauten Bereiche an, indem du auf unseren „Terra-Server“ gehst. Das „Plot-System“ ist der einfachste und schnellste Weg, dich als offizieller Builder zu bewerben. Sobald du als Builder*in angenommen wurdest, kannst du auf unserem Open-World „Terra-Server“ bauen."
         },
         "how": {
           "title": "Wie wir Bauen",
@@ -28,7 +28,7 @@
       }
     },
     "aboutUs": {
-      "title": "Über Uns",
+      "title": "Über uns",
       "description": [
         {
           "title": "Das Projekt",
@@ -36,7 +36,7 @@
         },
         {
           "title": "Die Technik",
-          "description": "Modifikationen – oder „Mods“ – sind von der Community erstellte und -gepflegte, d.h. inoffizielle Additionen zum Quellcode eines Videospiels, welche ganz neue Möglichkeiten für ihre Nutzer erschliessen lassen. Grundbausteine unseres Projekts sind zwei solcher Mods: Cubic Chunks teilt die Karten des Videospiels in dreidimensionale Lade-Einheiten auf, welche die technischen Beschränkungen durch das unmodifizierte - \"Vanilla\" - Minecraft, insbesondere das Höhenlimit von 256 Blöcken, aufheben und damit Voraussetzung sind für das einwandfreie Funktionieren aller darauf aufbauender Prozesse. Terra++ kann dank Cubic Chunks anhand von OpenStreetMap-Höhendaten eine akkurate Kartenprojektion des Terrains innerhalb einer Minecraft-Karte generieren. Durch die Mod lassen sich auch Höhendaten anderen Ursprungs einspeisen, was uns erlaubt, vom Schweizerischen Bundesamt für Topografie für die Schweiz und Liechtenstein sowie von den österreichischen GISes erhobene LiDAR-Daten ins System zu integrieren. Unsere Projektion ist seither erheblich genauer und mühselige Handarbeit beim Terrain anpassen gehört der Vergangenheit an. Zudem gibt es eine Vielzahl an weiteren Modifikationen und Plugins, welche unsere Builder im kleinen und grossen Rahmen noch zusätzlich unterstützen. Beispiele dafür sind WorldEdit und das eigenentwickeltes Plot-System zum effizienten und einfachen Bauen.  Unser Developer-Team arbeitet zudem hinter den Kulissen immer eifrig an neuen Innovationen für unser Netzwerk – beispielsweise dem anlässlich des ersten Jubiläums hinzugefügten Plot-System, welches unerfahrenen Mitgliedern die Teilnahme am Projekt auch ohne Modifikationen und damit den leichteren Einstieg in unser Projekt ermöglicht. Unsere Entwickler kümmern sich selbstverständlich auch um Routinearbeiten am Server, um unseren Mitgliedern eine möglichst unterbruchs- und lagfreie Bauerfahrung zu ermöglichen und stehen im regen Kontakt mit unseren internationalen Kollegen, falls es um technisch umfassendere Fragen geht."
+          "description": "Modifikationen – oder „Mods“ – sind von der Community erstellte und -gepflegte, d.h. inoffizielle Additionen zum Quellcode eines Videospiels, welche ganz neue Möglichkeiten für ihre Nutzer erschliessen lassen. Grundbausteine unseres Projekts sind zwei solcher Mods: Cubic Chunks teilt die Karten des Videospiels in dreidimensionale Lade-Einheiten auf, welche die technischen Beschränkungen durch das unmodifizierte - \"Vanilla\" - Minecraft, insbesondere das Höhenlimit von 256 Blöcken, aufheben und damit Voraussetzung sind für das einwandfreie Funktionieren aller darauf aufbauender Prozesse. Terra++ kann dank Cubic Chunks anhand von OpenStreetMap-Höhendaten eine akkurate Kartenprojektion des Terrains innerhalb einer Minecraft-Karte generieren. Durch die Mod lassen sich auch Höhendaten anderen Ursprungs einspeisen, was uns erlaubt, vom Schweizerischen Bundesamt für Topografie für die Schweiz und Liechtenstein sowie von den österreichischen Geoinformationssystemen erhobene LiDAR-Daten ins System zu integrieren. Unsere Projektion ist seither erheblich genauer und mühselige Handarbeit beim Terrain anpassen gehört der Vergangenheit an. Zudem gibt es eine Vielzahl an weiteren Modifikationen und Plugins, welche unsere Builder im kleinen und grossen Rahmen noch zusätzlich unterstützen. Beispiele dafür sind WorldEdit und das eigenentwickeltes Plot-System zum effizienten und einfachen Bauen.  Unser Developer-Team arbeitet zudem hinter den Kulissen immer eifrig an neuen Innovationen für unser Netzwerk – beispielsweise dem anlässlich des ersten Jubiläums hinzugefügten Plot-System, welches unerfahrenen Mitgliedern die Teilnahme am Projekt auch ohne Modifikationen und damit den leichteren Einstieg in unser Projekt ermöglicht. Unsere Entwickler kümmern sich selbstverständlich auch um Routinearbeiten am Server, um unseren Mitgliedern eine möglichst unterbruchs- und lagfreie Bauerfahrung zu ermöglichen und stehen im regen Kontakt mit unseren internationalen Kollegen, falls es um technisch umfassendere Fragen geht."
         },
         {
           "title": "Die Community",
@@ -47,7 +47,7 @@
           "description": "Hinter dem „Staff-Team“ von Alps BTE stehen zahlreiche engagierte Menschen, die ehrenamtlich dafür sorgen, Alps BTE weiter wachsen und blühen zu lassen. Sie stellen sicher, dass unsere Builder, als auch Besucher unseres Servers, eine reibungsfreie und unkomplizierte Umgebung vorfinden. Des weiteren betreiben sie auch PR-Arbeit und machen unser Projekt in der ganzen Welt bekannt. Im Nachfolgenden sind die verschiedenen Sub-Teams unserer Bauteam Leitung aufgeschlüsselt (alle Bezeichnungen auf Englisch):  Manager: Sie leiten das Projekt. Jede*r Manager*in trägt die Verantwortung für ein eigenes Sub-Team. Grundsatzentscheidungen, sowie Neueinstellungen von neuen Staff-Mitgliedern werden von ihnen vorgenommen. Helper: Sie unterstützen die Manager in ihrer Arbeit und haben eigene Kompetenzbereiche, für die sie verantwortlich sind (z.B. Eventplanung und Moderation) Reviewer: Sie sind die Gutachter*innen von Alps BTE. Sie bearbeiten Builder-Bewerbungen und abgegebene Plots am Server. Developer: Sie sind verantwortlich für alle technischen Aspekte unseres Projekts. Für mehr Informationen siehe Kapitel „Die Technik“. Public Relation: Sie repräsentieren Alps BTE in der Öffentlichkeit und kümmern sich um unsere Social Media Kanäle. Des weiteren übersetzen sie unsere Texte in mehrere Sprachen, führen Interviews mit den Medien und bearbeiten Presseanfragen. Architects: Sie kümmern sich um neuen Nachschub an Grundstücken und halten somit unser einsteigerfreundliches Plot-System (siehe FAQ) am laufen. Ausserdem unterstützen sie die Helper in der Eventvorbereitung."
         }
       ],
-      "contactUs": "Kontaktiere Uns"
+      "contactUs": "Kontaktiere uns"
     },
     "gallery": {
       "title": "Gallery",
@@ -64,7 +64,7 @@
         { "spacer": "Minecraft Server" },
         {
           "title": "Wie kann ich mich beteiligen?",
-          "content": "Trete unserer Plattform auf Discord bei (https://discord.com/invite/vgkspay), über welche wir das Projekt leiten und mit den Mitgliedern kommunizieren. Um bei uns zu bauen, benötigst du das Spiel Minecraft. Sobald du dich am Server befindest, kannst du mit dem „Plot-System“ in den Minecraft-Versionen 1.12-1.17.1  sofort zu bauen beginnen. Wähle dort einen „Plot“ aus - das ist eine kleine fliegende Plattform mit Gebäudegrundriss. Du erhältst Links zu den passenden Referenzen über den Chat. Sobald du zwei Plots fertiggestellt hast, darfst du dich bei uns als offizieller „Builder“ (Teilnehmer*in) auf der BTE-Webseite bewerben. Nachdem du angenommen wurdest, kannst du auf dem Open-World Server bauen und einen beliebigen Platz innerhalb von Österreich, Schweiz und Liechtenstein aussuchen."
+          "content": "Tritt unserer Plattform auf Discord bei (https://discord.com/invite/vgkspay), über welche wir das Projekt leiten und mit den Mitgliedern kommunizieren. Um bei uns zu bauen, benötigst du das Spiel Minecraft. Sobald du dich am Server befindest, kannst du mit dem „Plot-System“ in den Minecraft-Versionen 1.12-1.17.1  sofort zu bauen beginnen. Wähle dort einen „Plot“ aus - das ist eine kleine fliegende Plattform mit Gebäudegrundriss. Du erhältst Links zu den passenden Referenzen über den Chat. Sobald du zwei Plots fertiggestellt hast, darfst du dich bei uns als offizieller „Builder“ (Teilnehmer*in) auf der BTE-Webseite bewerben. Nachdem du angenommen wurdest, kannst du auf dem Open-World Server bauen und einen beliebigen Platz innerhalb von Österreich, Schweiz und Liechtenstein aussuchen."
         },
         {
           "title": "Was ist das Plot-System?",
@@ -89,7 +89,7 @@
         { "spacer": "Bewerbung" },
         {
           "title": "Was sind Builder?",
-          "content": "Builder (m/w/d) sind offizielle „Baumeister“ von Alps BTE. Sie haben den Bewerbungsprozess durchlaufen und ihre Bewerbung wurden von unseren Reviewern (Gutachter*innen) angenommen. Sie haben auf unserem Terra Server (siehe \"Was ist der Terra-Server?\") Baurechte und Zugriff auf die Builder Sprach- und Textkanäle."
+          "content": "Builder sind offizielle „Baumeister“ von Alps BTE. Sie haben den Bewerbungsprozess durchlaufen und ihre Bewerbung wurden von unseren Reviewern (Gutachter*innen) angenommen. Sie haben auf unserem Terra Server (siehe \"Was ist der Terra-Server?\") Baurechte und Zugriff auf die Builder Sprach- und Textkanäle."
         },
         {
           "title": "Warum muss ich mich bewerben?",
@@ -122,7 +122,7 @@
         },
         {
           "title": "Was sind Events & Collabs?",
-          "content": "In Events bauen viele unserer Builder innerhalb von 48 Stunden gemeinsam an einem – im Voraus vorbereiteten – Gebiet. Der Standort der Events wechselt ständig zwischen Österreich und der Schweiz, dabei wurden meist bekanntere Lokalitäten wie zum Beispiel Hallstatt oder Teile von Luzern erbaut. Diese Veranstaltungen finden normalerweise monatlich statt und sind zu einem Fixpunkt unserer Community geworden. Collabs sind prinzipiell dasselbe wie Events, nur in Zusammenarbeit mit anderen regionalen Bauteams. Daher können Collabs auch außerhalb unserer Grenzen stattfinden und länger als 48 Stunden dauern."
+          "content": "In Events bauen viele unserer Builder innerhalb von 48 Stunden gemeinsam an einem – im Voraus vorbereiteten – Gebiet. Der Standort der Events wechselt ständig zwischen Österreich und der Schweiz, dabei wurden meist bekanntere Lokalitäten wie zum Beispiel Hallstatt oder Teile von Luzern erbaut. Diese Veranstaltungen finden normalerweise monatlich statt und sind zu einem Fixpunkt unserer Community geworden. Collabs sind prinzipiell dasselbe wie Events, nur in Zusammenarbeit mit anderen regionalen Bauteams. Daher können Collabs auch ausserhalb unserer Grenzen stattfinden und länger als 48 Stunden dauern."
         },
         {
           "title": "Was sind Building Sessions?",
@@ -136,7 +136,7 @@
     },
     "contact": {
       "title": "Kontakt",
-      "description": "Alps BTE ist eine unabhängige Tochterorganisation des BuildTheEarth.net-projekts. Es wurde im März 2020 mit dem Ziel, die drei Länder Österreich, Schweiz und Liechtenstein 1:1 in Minecraft nachzubauen, gegründet.",
+      "description": "Alps BTE ist eine unabhängige Tochterorganisation des BuildTheEarth.net-Projekts. Es wurde im März 2020 mit dem Ziel, die drei Länder Österreich, Schweiz und Liechtenstein 1:1 in Minecraft nachzubauen, gegründet.",
       "contact": {
         "outreach": "Öffentlichkeitsarbeit",
         "community": "Community",
@@ -146,7 +146,7 @@
     },
     "application": {
       "title": "Bewerbung",
-      "description": "Hier findest du einen kurzen Einblick, wie du Builder*in – ein Mitglied unseres Bauteams – wirst. Weitere Informationen findest du auf unserem Discord. Für eine ausführlichere Anleitung, wie die Bewerbung funktioniert, schau dir das unten verlinkte Video an.      ",
+      "description": "Hier findest du einen kurzen Einblick, wie du Builder – ein Mitglied unseres Bauteams – wirst. Weitere Informationen findest du auf unserem Discord. Für eine ausführlichere Anleitung, wie die Bewerbung funktioniert, schau dir das unten verlinkte Video an.      ",
       "steps": {
         "discord": {
           "title": "Discord",
@@ -173,7 +173,7 @@
     }
   },
   "footer": {
-    "copyright": "Urheberrechte",
+    "copyright": "Copyright",
     "rightsReserved": "Alle Rechte vorbehalten",
     "quickLinks": {
       "team": "Team",
