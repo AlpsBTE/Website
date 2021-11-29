@@ -6,6 +6,10 @@
   display: inline-block;
   padding: 0;
 
+  button {
+    cursor: pointer;
+  }
+
   &__icon {
     font-size: variables.$font-size-s;
     margin-right: variables.$spacing-xs;
@@ -13,19 +17,6 @@
     padding-bottom: 1px;
   }
 
-  &__select {
-    cursor: pointer;
-    outline: none;
-    border: none;
-    font-weight: variables.$font-weight-semibold;
-    background-color: transparent;
-    appearance: none;
-    padding: 0;
-
-    option {
-      color: variables.$black;
-    }
-  }
 
   button {
     border: none;
