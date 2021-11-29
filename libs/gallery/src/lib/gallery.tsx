@@ -11,18 +11,9 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { recordAnnotationApplied } from 'mobx/dist/internal';
 
 export interface GalleryProps {}
-// git test
 export const Gallery: React.FC = inject(languageStore.storeKey)(
   observer(({}: GalleryProps) => {
-    const places = {
-      basel: 'Basel',
-      graz: 'Graz',
-      luzern: 'Luzern',
-      oesterreich: 'Österreich',
-      salzburg: 'Salzburg',
-      schweiz: 'Schweiz',
-      wien: 'Wien',
-    } as const;
+    const places: object = tr('pages.gallery.places') as unknown as object;
 
     const [place, setPlace] = useState('basel');
     const [dropDown, setDropDown] = useState(false);
