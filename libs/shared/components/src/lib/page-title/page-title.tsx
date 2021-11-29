@@ -1,5 +1,6 @@
 import React from 'react';
 import './page-title.scss';
+import { apiUrl } from '@alpsbte/shared/config';
 
 export interface PageTitleProps {
   title: string;
@@ -13,7 +14,7 @@ export const PageTitle: React.FC<PageTitleProps> = ({
   title,
   subtitle,
   showImage = true,
-  image = 'https://cdn.discordapp.com/splashes/696795397376442440/40095e7ba07bfa5b4b22f81c4c662ec5.jpg?size=3072',
+  image = `${apiUrl}/api/assets/header/0.png`,
   className = '',
 }: PageTitleProps) => {
   return (
