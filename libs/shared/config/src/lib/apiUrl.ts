@@ -1,2 +1,2 @@
-export const apiUrl = 'http://localhost:3333';
+export const apiUrl = 'https://alps-bte.com';
   
