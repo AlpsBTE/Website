@@ -14,7 +14,7 @@ export const PageTitle: React.FC<PageTitleProps> = ({
   title,
   subtitle,
   showImage = true,
-  image = `${apiUrl}/api/assets/header/0.png`,
+  image = `${apiUrl}/api/assets/header/0.webp`,
   className = '',
 }: PageTitleProps) => {
   return (

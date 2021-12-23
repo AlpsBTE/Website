@@ -52,8 +52,8 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
           className="heading"
           style={{
             backgroundPositionY: `${offsetY * 0.5}px`,
-            backgroundImage: `url(${apiUrl}/api/assets/home/3.png`,
-            background: `linear-gradient(90deg, rgba(0,0,0,0.5) 100%, rgba(0,0,0,0.5) 100%), url(${apiUrl}/api/assets/home/3.png)`,
+            backgroundImage: `url(${apiUrl}/api/assets/home/3.webp`,
+            background: `linear-gradient(90deg, rgba(0,0,0,0.5) 100%, rgba(0,0,0,0.5) 100%), url(${apiUrl}/api/assets/home/3.webp)`,
             backgroundSize: 'cover',
           }}
         >
@@ -95,7 +95,7 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
         <div className="home__content" id={`${scrollLinks.ourMission}`}>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.mission.title')}
-            image={`${apiUrl}/api/assets/home/1.png`}
+            image={`${apiUrl}/api/assets/home/1.webp`}
             isImageAlignedLeft={true}
             className="home__content__our-mission"
           >
@@ -103,14 +103,14 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
           </HomeContentSection>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.server.title')}
-            image={`${apiUrl}/api/assets/home/0.png`}
+            image={`${apiUrl}/api/assets/home/0.webp`}
             isImageAlignedLeft={false}
           >
             {tr('pages.home.contentBlocks.server.description')}
           </HomeContentSection>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.how.title')}
-            image={`${apiUrl}/api/assets/home/2.png`}
+            image={`${apiUrl}/api/assets/home/2.webp`}
             isImageAlignedLeft={true}
           >
             {tr('pages.home.contentBlocks.how.description')}

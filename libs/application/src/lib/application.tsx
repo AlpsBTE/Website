@@ -24,13 +24,13 @@ export const Application = inject(languageStore.storeKey)(
             stepNumber={1}
             title={tr('pages.application.steps.discord.title')}
             description={tr('pages.application.steps.discord.description')}
-            img={`${apiUrl}/api/assets/application/2.png`}
+            img={`${apiUrl}/api/assets/application/2.webp`}
           />
           <ApplicationStep
             stepNumber={2}
             title={tr('pages.application.steps.plotSystem.title')}
             description={tr('pages.application.steps.plotSystem.description')}
-            img={`${apiUrl}/api/assets/application/0.png`}
+            img={`${apiUrl}/api/assets/application/0.webp`}
           />
           <ApplicationStep
             stepNumber={3}
@@ -38,7 +38,7 @@ export const Application = inject(languageStore.storeKey)(
             description={tr(
               'pages.application.steps.applicationForm.description'
             )}
-            img={`${apiUrl}/api/assets/application/3.png`}
+            img={`${apiUrl}/api/assets/application/3.webp`}
           />
           <ApplicationStep
             stepNumber={4}
@@ -46,7 +46,7 @@ export const Application = inject(languageStore.storeKey)(
             description={tr(
               'pages.application.steps.becomingBuilder.description'
             )}
-            img={`${apiUrl}/api/assets/application/1.png`}
+            img={`${apiUrl}/api/assets/application/1.webp`}
           />
           <div className="application__video">
             <iframe
