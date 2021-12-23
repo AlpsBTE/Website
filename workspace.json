@@ -34,7 +34,8 @@
             "outputPath": "dist/apps/alpsbte-api",
             "main": "apps/alpsbte-api/src/main.ts",
             "tsConfig": "apps/alpsbte-api/tsconfig.app.json",
-            "assets": ["apps/alpsbte-api/src/assets"]
+            "assets": ["apps/alpsbte-api/src/assets"],
+            "generatePackageJson": true
           },
           "configurations": {
             "production": {
