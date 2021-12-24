@@ -19,6 +19,7 @@ export const Application = inject(languageStore.storeKey)(
             subtitle={tr('pages.application.description')}
           />
         </div>
+        <script async defer data-website-id="f93f1f05-dd86-45ad-ad19-ee57f6c5b74b" src="https://www.alps-bte.com/webstats/umami.js"></script>
         <div className="application__content">
           <ApplicationStep
             stepNumber={1}

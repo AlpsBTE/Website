@@ -57,6 +57,12 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
             backgroundSize: 'cover',
           }}
         >
+          <script
+            async
+            defer
+            data-website-id="f93f1f05-dd86-45ad-ad19-ee57f6c5b74b"
+            src="https://www.alps-bte.com/webstats/umami.js"
+          ></script>
           <div className="home__hero block">
             <div className="head_line_box">
               <h1 className="head_line">{tr('pages.home.headline')}</h1>

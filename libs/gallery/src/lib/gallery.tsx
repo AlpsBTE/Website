@@ -35,6 +35,7 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
           title={tr('pages.gallery.title')}
           subtitle={tr('pages.gallery.description')}
         />
+        <script async defer data-website-id="f93f1f05-dd86-45ad-ad19-ee57f6c5b74b" src="https://www.alps-bte.com/webstats/umami.js"></script>
         <div className="gallery__button-group">
           {Object.keys(places).map((placeKey: string) => {
             return (

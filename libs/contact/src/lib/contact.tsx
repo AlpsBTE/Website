@@ -55,6 +55,7 @@ export const Contact = inject(languageStore.storeKey)(
           title={tr('pages.contact.title')}
           subtitle={tr('pages.contact.description')}
         />
+        <script async defer data-website-id="f93f1f05-dd86-45ad-ad19-ee57f6c5b74b" src="https://www.alps-bte.com/webstats/umami.js"></script>
         <div className="contact__container">
           <div className="contact__social-media">
             <h2 className="contact__title-font">

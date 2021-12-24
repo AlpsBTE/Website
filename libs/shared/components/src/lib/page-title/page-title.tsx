@@ -18,17 +18,17 @@ export const PageTitle: React.FC<PageTitleProps> = ({
   className = '',
 }: PageTitleProps) => {
   return (
-    <div className={`page-title ${className}`}>
-      {showImage === true && (
-        <img
-          className="page-title__image"
-          src={image}
-          alt="Page Titlepicture"
-        />
-      )}
-      <h1 className="page-title__title">{title}</h1>
-      {subtitle && <p className="page-title__subtitle">{subtitle}</p>}
-    </div>
+      <div className={`page-title ${className}`}>
+        {showImage === true && (
+          <img
+            className="page-title__image"
+            src={image}
+            alt="Page Titlepicture"
+          />
+        )}
+        <h1 className="page-title__title">{title}</h1>
+        {subtitle && <p className="page-title__subtitle">{subtitle}</p>}
+      </div>
   );
 };
 

@@ -84,6 +84,14 @@ export const Header = inject(languageStore.storeKey)(
           }`}
         >
           <div className="header__image-container ">
+            <script
+              data-host="https://microanalytics.io"
+              data-dnt="false"
+              src="https://microanalytics.io/js/script.js"
+              id="ZwSg9rf6GA"
+              async
+              defer
+            ></script>
             <Link to={`/${ROUTES.home}`}>
               <Logo />
               <h1 style={{ color: transparent ? 'white' : 'black' }}>
