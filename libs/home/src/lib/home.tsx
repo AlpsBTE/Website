@@ -9,6 +9,7 @@ import { tr } from '@alpsbte/shared/language';
 import { ScrollIndicator } from '@alpsbte/shared/components';
 import { scrollLinks, server, socials, apiUrl } from '@alpsbte/shared/config';
 import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { Parallax, Background } from 'react-parallax';
 import { faCheck, faCompass } from '@fortawesome/free-solid-svg-icons';
 
 export interface HomeProps {}
@@ -48,56 +49,57 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
 
     return (
       <>
-        <div
-          className="heading"
+        <Parallax
+          bgImage={`${apiUrl}/api/assets/home/3.webp`}
+          bgImageAlt="the dog"
+          strength={300}
           style={{
-            backgroundPositionY: `${offsetY * 0.5}px`,
-            backgroundImage: `url(${apiUrl}/api/assets/home/3.webp`,
-            background: `linear-gradient(90deg, rgba(0,0,0,0.5) 100%, rgba(0,0,0,0.5) 100%), url(${apiUrl}/api/assets/home/3.webp)`,
-            backgroundSize: 'cover',
+            backgroundColor: '#000',
+          }}
+          bgImageStyle={{
+            width: '100vw',
+            height: '100vh',
+            objectFit: 'cover',
+            opacity: 0.5,
           }}
         >
-          <script
-            async
-            defer
-            data-website-id="f93f1f05-dd86-45ad-ad19-ee57f6c5b74b"
-            src="https://www.alps-bte.com/webstats/umami.js"
-          ></script>
-          <div className="home__hero block">
-            <div className="head_line_box">
-              <h1 className="head_line">{tr('pages.home.headline')}</h1>
-              <div className="buttons">
-                <Button
-                  label={tr('pages.home.joinUs')}
-                  size="lg"
-                  icon={faDiscord}
-                  style={{
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginTop: '5vh',
-                  }}
-                  link={socials.discord.link}
-                />
-                <Button
-                  label={`${
-                    !copiedClipboard
-                      ? server.address
-                      : tr('pages.home.copiedToClipboard')
-                  }`}
-                  size="lg"
-                  icon={!copiedClipboard ? faCompass : faCheck}
-                  style={{
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    marginTop: '3vh',
-                  }}
-                  onClick={() => handleCopyClipboardClick()}
-                />
+          <div className="heading">
+            <div className="home__hero block">
+              <div className="head_line_box">
+                <h1 className="head_line">{tr('pages.home.headline')}</h1>
+                <div className="buttons">
+                  <Button
+                    label={tr('pages.home.joinUs')}
+                    size="lg"
+                    icon={faDiscord}
+                    style={{
+                      marginLeft: 'auto',
+                      marginRight: 'auto',
+                      marginTop: '5vh',
+                    }}
+                    link={socials.discord.link}
+                  />
+                  <Button
+                    label={`${
+                      !copiedClipboard
+                        ? server.address
+                        : tr('pages.home.copiedToClipboard')
+                    }`}
+                    size="lg"
+                    icon={!copiedClipboard ? faCompass : faCheck}
+                    style={{
+                      marginLeft: 'auto',
+                      marginRight: 'auto',
+                      marginTop: '3vh',
+                    }}
+                    onClick={() => handleCopyClipboardClick()}
+                  />
+                </div>
               </div>
+              <ScrollIndicator />
             </div>
-            <ScrollIndicator />
           </div>
-        </div>
+        </Parallax>
         <div className="home__content" id={`${scrollLinks.ourMission}`}>
           <HomeContentSection
             title={tr('pages.home.contentBlocks.mission.title')}
