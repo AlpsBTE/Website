@@ -19,7 +19,7 @@
         },
         "server": {
           "title": "Unser Server",
-          "description": "Um unserem Server Netzwerk mit der Adresse mc.alps-bte.com und einer Minecraft Version zwischen 1.12 und 1.17 beizutreten, hast du zwei Möglichkeiten: Du kannst entweder auf unserem “Plot-System” direkt anfangen zu bauen oder du schaust dir die bereits gebauten Bereiche an, indem du auf unseren „Terra-Server“ gehst. Das „Plot-System“ ist der einfachste und schnellste Weg, dich als offizieller Builder zu bewerben. Sobald du als Builder*in angenommen wurdest, kannst du auf unserem Open-World „Terra-Server“ bauen."
+          "description": "Um unserem Server Netzwerk mit der Adresse mc.alps-bte.com und einer Minecraft Version zwischen 1.12 und 1.18.x beizutreten, hast du zwei Möglichkeiten: Du kannst entweder auf unserem “Plot-System” direkt anfangen zu bauen oder du schaust dir die bereits gebauten Bereiche an, indem du auf unseren „Terra-Server“ gehst. Das „Plot-System“ ist der einfachste und schnellste Weg, dich als offizieller Builder zu bewerben. Sobald du als Builder*in angenommen wurdest, kannst du auf unserem Open-World „Terra-Server“ bauen."
         },
         "how": {
           "title": "Wie wir Bauen",
@@ -50,7 +50,7 @@
       "contactUs": "Kontaktiere uns"
     },
     "gallery": {
-      "title": "Gallery",
+      "title": "Galerie",
       "description": "Hier findest du eine Kollektion einiger bereits von uns gebauter Bauwerke. Die Inhalte werden laufend aktualisiert. Hochauflösende Fotos für Presse etc. können hier ebenfalls heruntergeladen werden.",
       "places": {
         "basel": "Basel",
@@ -73,11 +73,11 @@
         { "spacer": "Minecraft Server" },
         {
           "title": "Wie kann ich mich beteiligen?",
-          "content": "Tritt unserer Plattform auf Discord bei (https://discord.com/invite/vgkspay), über welche wir das Projekt leiten und mit den Mitgliedern kommunizieren. Um bei uns zu bauen, benötigst du das Spiel Minecraft. Sobald du dich am Server befindest, kannst du mit dem „Plot-System“ in den Minecraft-Versionen 1.12-1.17.1  sofort zu bauen beginnen. Wähle dort einen „Plot“ aus - das ist eine kleine fliegende Plattform mit Gebäudegrundriss. Du erhältst Links zu den passenden Referenzen über den Chat. Sobald du zwei Plots fertiggestellt hast, darfst du dich bei uns als offizieller „Builder“ (Teilnehmer*in) auf der BTE-Webseite bewerben. Nachdem du angenommen wurdest, kannst du auf dem Open-World Server bauen und einen beliebigen Platz innerhalb von Österreich, Schweiz und Liechtenstein aussuchen."
+          "content": "Tritt unserer Plattform auf Discord bei (https://discord.com/invite/vgkspay), über welche wir das Projekt leiten und mit den Mitgliedern kommunizieren. Um bei uns zu bauen, benötigst du das Spiel Minecraft. Sobald du dich am Server befindest, kannst du mit dem „Plot-System“ in den Minecraft-Versionen 1.12.x-1.18.x  sofort zu bauen beginnen. Wähle dort einen „Plot“ aus - das ist eine kleine fliegende Plattform mit Gebäudegrundriss. Du erhältst Links zu den passenden Referenzen über den Chat. Sobald du zwei Plots fertiggestellt hast, darfst du dich bei uns als offizieller „Builder“ (Teilnehmer*in) auf der BTE-Webseite bewerben. Nachdem du angenommen wurdest, kannst du auf dem Open-World Server bauen und einen beliebigen Platz innerhalb von Österreich, Schweiz und Liechtenstein aussuchen."
         },
         {
           "title": "Was ist das Plot-System?",
-          "content": "Das Plot-System ist ein von uns eigens entwickeltes System, welches Neueinsteiger*innen einen leichten Einstieg in Alps BTE ermöglicht. Alles, was du brauchst, um mitzumachen, ist Minecraft Java (Version 1.12-1.17). Sobald du dein erstes Plot erstellt hast, indem du in das Portal am Spawn springst, gelangst du auf eine kleine fliegende Insel mit einem Gebäudeumriss. Über die Links im Chat erhältst du passende Referenzen zum Gebäude und kannst sofort loslegen, dieses in Minecraft nachzubauen. Falls du Hilfe benötigst, schaue jederzeit auf unserem YouTube-Kanal „Alps BTE“ vorbei. Dort erhältst du viele hilfreiche Tipps und Bauanleitungen in unseren „Builders Guide“-Videos. Sobald das Gebäude fertig ist, gibst du dieses ab und kann sofort mit dem Nächsten starten. Die fertigen Gebäude werden von unseren Reviewern bewertet und sollte etwas nicht passen, bekommst du ein Feedback und die Möglichkeit zur Überarbeitung. Sobald zwei Grundstücke angenommen wurden, kannst du dich als offizieller Builder bei uns bewerben."
+          "content": "Das Plot-System ist ein von uns eigens entwickeltes System, welches Neueinsteiger*innen einen leichten Einstieg in Alps BTE ermöglicht. Alles, was du brauchst, um mitzumachen, ist Minecraft Java (Version 1.12.x-1.18.x). Sobald du dein erstes Plot erstellt hast, indem du in das Portal am Spawn springst, gelangst du auf eine kleine fliegende Insel mit einem Gebäudeumriss. Über die Links im Chat erhältst du passende Referenzen zum Gebäude und kannst sofort loslegen, dieses in Minecraft nachzubauen. Falls du Hilfe benötigst, schaue jederzeit auf unserem YouTube-Kanal „Alps BTE“ vorbei. Dort erhältst du viele hilfreiche Tipps und Bauanleitungen in unseren „Builders Guide“-Videos. Sobald das Gebäude fertig ist, gibst du dieses ab und kann sofort mit dem Nächsten starten. Die fertigen Gebäude werden von unseren Reviewern bewertet und sollte etwas nicht passen, bekommst du ein Feedback und die Möglichkeit zur Überarbeitung. Sobald zwei Grundstücke angenommen wurden, kannst du dich als offizieller Builder bei uns bewerben."
         },
         {
           "title": "Was ist der Terraserver?",
@@ -85,7 +85,7 @@
         },
         {
           "title": "Wie kann ich mich umschauen?",
-          "content": "Wie kann ich mich umschauen? Um dir den aktuellen Baufortschritt anzuschauen, kannst du unseren Server jederzeit besuchen. Gib die untenstehende IP ein (Spieler der Bedrock-Edition müssen anschliessend /bt Alps im Chat eingeben) und springe am Server-Hub ins Terra-Portal (Schild mit grossem T schwebt darüber).Java Edition: mc.alps-bte.com (Version 1.8 - 1.17) Bedrock Edition: bedrock.buildtheearth.net (Port: 19132)"
+          "content": "Wie kann ich mich umschauen? Um dir den aktuellen Baufortschritt anzuschauen, kannst du unseren Server jederzeit besuchen. Gib die untenstehende IP ein (Spieler der Bedrock-Edition müssen anschliessend /bt Alps im Chat eingeben) und springe am Server-Hub ins Terra-Portal (Schild mit grossem T schwebt darüber).Java Edition: mc.alps-bte.com (Version 1.8 - 1.18.x) Bedrock Edition: bedrock.buildtheearth.net (Port: 19132)"
         },
         {
           "title": "Wie viel wurde bereits gebaut?",
@@ -163,7 +163,7 @@
         },
         "plotSystem": {
           "title": "Plotsystem",
-          "description": "Tritt unserem  mit einer Version zwischen 1.12 und 1.17 bei und beginne auf dem „Plot-System“ zu Bauen, indem du mit einem Rechtsklick auf den Netherstern (Companion) im Inventar klickst. Wähle anschliessend die Stadt aus, in der du gerne bauen möchtest. Sobald du zwei Plots eingereicht hast, kannst du dich als Builder*in bewerben.           "
+          "description": "Tritt unserem  mit einer Version zwischen 1.12 und 1.18.x bei und beginne auf dem „Plot-System“ zu Bauen, indem du mit einem Rechtsklick auf den Netherstern (Companion) im Inventar klickst. Wähle anschliessend die Stadt aus, in der du gerne bauen möchtest. Sobald du zwei Plots eingereicht hast, kannst du dich als Builder*in bewerben.           "
         },
         "applicationForm": {
           "title": "Bewerbungsformular",
