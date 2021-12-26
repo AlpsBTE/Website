@@ -495,25 +495,88 @@
           }
         }
       }
-    }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/react"
-  },
-  "generators": {
-    "@nrwl/react": {
-      "application": {
-        "style": "scss",
-        "linter": "eslint",
-        "babel": true
+    },
+    "spike": {
+      "root": "apps/spike",
+      "sourceRoot": "apps/spike",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": ["{options.outputPath}"],
+          "defaultConfiguration": "production",
+          "options": {
+            "root": "apps/spike",
+            "outputPath": "dist/apps/spike"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "spike:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "spike:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "spike:build:production"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/spike"],
+          "options": {
+            "jestConfig": "apps/spike/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/spike/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
       },
-      "component": {
-        "style": "scss"
+      "tags": []
+    },
+    "spike-e2e": {
+      "root": "apps/spike-e2e",
+      "sourceRoot": "apps/spike-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/spike-e2e/cypress.json",
+            "devServerTarget": "spike:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "spike:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/spike-e2e/**/*.{js,ts}"]
+          }
+        }
       },
-      "library": {
-        "style": "scss",
-        "linter": "eslint"
-      }
+      "tags": [],
+      "implicitDependencies": ["spike"]
     }
   },
   "storybook": {
@@ -546,6 +609,5 @@
         "quiet": true
       }
     }
-  },
-  "defaultProject": "alpsbte-web"
+  }
 }
