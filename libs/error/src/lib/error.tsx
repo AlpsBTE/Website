@@ -20,12 +20,7 @@ export const Error = inject(languageStore.storeKey)(
           image="https://i.imgur.com/qTC69pF.png"
           className="error-page__page-title"
         />
-        <script
-          async
-          defer
-          data-website-id="f93f1f05-dd86-45ad-ad19-ee57f6c5b74b"
-          src="https://www.alps-bte.com/webstats/umami.js"
-        ></script>
+ 
         <div className="error-page__content">
           <Link
             to={`/${languageStore.language}`}

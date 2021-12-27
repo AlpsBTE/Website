@@ -26,7 +26,6 @@ export const AboutUs = inject(languageStore.storeKey)(
           to={`/${languageStore.language}/${ROUTES.contact}`}
           className="about-us__contact-us"
         >
-          <script async defer data-website-id="f93f1f05-dd86-45ad-ad19-ee57f6c5b74b" src="https://www.alps-bte.com/webstats/umami.js"></script>
           <span>{tr('pages.aboutUs.contactUs')}</span>
           <FontAwesomeIcon icon={faArrowRight} />
         </Link>
