@@ -33,6 +33,9 @@
     "alpsbte-api": {
       "tags": ["scope:api", "type:api"]
     },
+    "alpsbte-spikeCMS": {
+      "tags": []
+    },
     "alpsbte-web": {
       "tags": ["scope:app", "type:app"]
     },

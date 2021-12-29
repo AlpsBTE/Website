@@ -73,6 +73,59 @@
         }
       }
     },
+    "alpsbte-spikeCMS": {
+      "root": "apps/alpsbte-spikeCMS",
+      "sourceRoot": "apps/alpsbte-spikeCMS",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": ["{options.outputPath}"],
+          "defaultConfiguration": "production",
+          "options": {
+            "root": "apps/alpsbte-spikeCMS",
+            "outputPath": "dist/apps/alpsbte-spikeCMS"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "alpsbte-spikeCMS:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "alpsbte-spikeCMS:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "alpsbte-spikeCMS:build:production"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/alpsbte-spikeCMS"],
+          "options": {
+            "jestConfig": "apps/alpsbte-spikeCMS/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/alpsbte-spikeCMS/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
     "alpsbte-web": {
       "root": "apps/alpsbte-web",
       "sourceRoot": "apps/alpsbte-web/src",
@@ -496,60 +549,6 @@
         }
       }
     },
-    "spike": {
-      "root": "apps/spike",
-      "sourceRoot": "apps/spike",
-      "projectType": "application",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/next:build",
-          "outputs": ["{options.outputPath}"],
-          "defaultConfiguration": "production",
-          "options": {
-            "root": "apps/spike",
-            "outputPath": "dist/apps/spike"
-          },
-          "configurations": {
-            "production": {}
-          }
-        },
-        "serve": {
-          "executor": "@nrwl/next:server",
-          "options": {
-            "buildTarget": "spike:build",
-            "dev": true
-          },
-          "configurations": {
-            "production": {
-              "buildTarget": "spike:build:production",
-              "dev": false
-            }
-          }
-        },
-        "export": {
-          "executor": "@nrwl/next:export",
-          "options": {
-            "buildTarget": "spike:build:production"
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/spike"],
-          "options": {
-            "jestConfig": "apps/spike/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
-          "options": {
-            "lintFilePatterns": ["apps/spike/**/*.{ts,tsx,js,jsx}"]
-          }
-        }
-      },
-      "tags": []
-    },
     "spike-e2e": {
       "root": "apps/spike-e2e",
       "sourceRoot": "apps/spike-e2e/src",
@@ -559,11 +558,11 @@
           "executor": "@nrwl/cypress:cypress",
           "options": {
             "cypressConfig": "apps/spike-e2e/cypress.json",
-            "devServerTarget": "spike:serve"
+            "devServerTarget": "alpsbte-spikeCMS:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "spike:serve:production"
+              "devServerTarget": "alpsbte-spikeCMS:serve:production"
             }
           }
         },
