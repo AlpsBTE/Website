@@ -1,10 +1,10 @@
 module.exports = {
-  displayName: 'alpsbte-spikeCMS',
+  displayName: 'alpsbte-spike-cms',
   preset: '../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nrwl/react/plugins/jest',
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nrwl/next/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/alpsbte-spikeCMS',
+  coverageDirectory: '../../coverage/apps/alpsbte-spike-cms',
 };

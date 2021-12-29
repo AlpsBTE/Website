@@ -73,9 +73,9 @@
         }
       }
     },
-    "alpsbte-spikeCMS": {
-      "root": "apps/alpsbte-spikeCMS",
-      "sourceRoot": "apps/alpsbte-spikeCMS",
+    "alpsbte-spike-cms": {
+      "root": "apps/alpsbte-spike-cms",
+      "sourceRoot": "apps/alpsbte-spike-cms",
       "projectType": "application",
       "targets": {
         "build": {
@@ -83,8 +83,8 @@
           "outputs": ["{options.outputPath}"],
           "defaultConfiguration": "production",
           "options": {
-            "root": "apps/alpsbte-spikeCMS",
-            "outputPath": "dist/apps/alpsbte-spikeCMS"
+            "root": "apps/alpsbte-spike-cms",
+            "outputPath": "dist/apps/alpsbte-spike-cms"
           },
           "configurations": {
             "production": {}
@@ -93,12 +93,12 @@
         "serve": {
           "executor": "@nrwl/next:server",
           "options": {
-            "buildTarget": "alpsbte-spikeCMS:build",
+            "buildTarget": "alpsbte-spike-cms:build",
             "dev": true
           },
           "configurations": {
             "production": {
-              "buildTarget": "alpsbte-spikeCMS:build:production",
+              "buildTarget": "alpsbte-spike-cms:build:production",
               "dev": false
             }
           }
@@ -106,14 +106,14 @@
         "export": {
           "executor": "@nrwl/next:export",
           "options": {
-            "buildTarget": "alpsbte-spikeCMS:build:production"
+            "buildTarget": "alpsbte-spike-cms:build:production"
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/alpsbte-spikeCMS"],
+          "outputs": ["coverage/apps/alpsbte-spike-cms"],
           "options": {
-            "jestConfig": "apps/alpsbte-spikeCMS/jest.config.js",
+            "jestConfig": "apps/alpsbte-spike-cms/jest.config.js",
             "passWithNoTests": true
           }
         },
@@ -121,10 +121,39 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/alpsbte-spikeCMS/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": ["apps/alpsbte-spike-cms/**/*.{ts,tsx,js,jsx}"]
           }
         }
-      }
+      },
+      "tags": []
+    },
+    "alpsbte-spike-cms-e2e": {
+      "root": "apps/alpsbte-spike-cms-e2e",
+      "sourceRoot": "apps/alpsbte-spike-cms-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/alpsbte-spike-cms-e2e/cypress.json",
+            "devServerTarget": "alpsbte-spike-cms:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "alpsbte-spike-cms:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/alpsbte-spike-cms-e2e/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["alpsbte-spike-cms"]
     },
     "alpsbte-web": {
       "root": "apps/alpsbte-web",
@@ -548,34 +577,6 @@
           }
         }
       }
-    },
-    "spike-e2e": {
-      "root": "apps/spike-e2e",
-      "sourceRoot": "apps/spike-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/spike-e2e/cypress.json",
-            "devServerTarget": "alpsbte-spikeCMS:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "alpsbte-spikeCMS:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
-          "options": {
-            "lintFilePatterns": ["apps/spike-e2e/**/*.{js,ts}"]
-          }
-        }
-      },
-      "tags": [],
-      "implicitDependencies": ["spike"]
     }
   },
   "storybook": {
