@@ -2,6 +2,7 @@
 @use "theme:mixins" as mixins;
 
 .gallery {
+  position: relative;
   &__button-group {
     display: flex;
     flex-wrap: wrap;
@@ -23,9 +24,9 @@
     margin: 0 variables.$horizontal-spacer-s variables.$vertical-spacer-s
       variables.$horizontal-spacer-s;
 
-      @include mixins.for-phone {
-        grid-template-columns: repeat(1, 1fr);
-      }
+    @include mixins.for-phone {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__image {
@@ -35,6 +36,10 @@
     overflow: hidden;
     aspect-ratio: 16 / 9;
     object-fit: cover;
+  }
+
+  &__hover-element:hover {
+    filter: brightness(70%);
   }
 
   &__dropdown {
@@ -72,7 +77,6 @@
       }
 
       &__content {
-   
         box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
         width: 45%;
         z-index: 1;
@@ -87,9 +91,23 @@
         p {
           margin: 5px;
           cursor: pointer;
-
         }
       }
+    }
+  }
+
+  &__lightbox {
+    position: absolute;
+    margin: auto;
+    left: 15vw;
+    width: 70vw;
+    height: auto;
+
+    &__img {
+      height: 100%;
+      width: 100%;
+
+      object-fit: contain;
     }
   }
 }

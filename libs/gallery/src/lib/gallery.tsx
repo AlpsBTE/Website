@@ -17,6 +17,8 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
 
     const [place, setPlace] = useState('basel');
     const [dropDown, setDropDown] = useState(false);
+    const [lightboxState, setlightboxState] = useState(false);
+    const [lightboxImg, setlightboxImg] = useState('');
 
     const changePlace = (newPlace: string) => {
       if (newPlace === place) {
@@ -92,15 +94,42 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
         <div className="gallery__container">
           <div className="gallery__image-container">
             {[...Array(9)].map((_, i) => (
-              <img
-                src={`${apiUrl}/api/assets/gallery/${place}/${
-                  place == 'loading' ? '0' : i
-                }.webp`}
-                className="gallery__image"
-                alt={`Image in ${place}`}
-              ></img>
+              <a
+                className="gallery__hover-element"
+                onClick={() => {
+                  setlightboxImg(
+                    `${apiUrl}/api/assets/gallery/${place}/${
+                      place == 'loading' ? '0' : i
+                    }.webp`
+                  );
+                  setlightboxState(true);
+                }}
+              >
+                <img
+                  src={`${apiUrl}/api/assets/gallery/${place}/${
+                    place == 'loading' ? '0' : i
+                  }.webp`}
+                  className="gallery__image"
+                  alt={`Image in ${place}`}
+                ></img>
+              </a>
             ))}
           </div>
+        </div>
+        <div
+          className="gallery__lightbox"
+          style={{
+            display: lightboxState ? 'inline' : 'none',
+            top: `calc(${window.scrollY}px + 10vh)`,
+          }}
+        >
+          <img
+            src={`${lightboxImg}`}
+            className="gallery__lightbox__img"
+            onClick={() => {
+              setlightboxState(false);
+            }}
+          />
         </div>
       </div>
     );
