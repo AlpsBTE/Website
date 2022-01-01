@@ -1,19 +1,12 @@
-import { useSession, signIn, signOut } from "next-auth/react"
+import styles from './index.module.scss';
 
-export default function Index() {
-  const { data: session } = useSession()
-  if (session) {
-    return (
-      <>
-        Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()}>Sign out</button>
-      </>
-    )
-  }
-  return (
-    <>
-      Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
-    </>
-  )
+export function Index() {
+  /*
+   * Replace the elements below with your own.
+   *
+   * Note: The corresponding styles are in the ./index.scss file.
+   */
+  return <div className={styles.page}></div>;
 }
+
+export default Index;

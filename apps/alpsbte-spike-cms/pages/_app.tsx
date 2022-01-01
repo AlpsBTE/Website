@@ -1,12 +1,18 @@
-import { SessionProvider } from "next-auth/react"
+import { AppProps } from 'next/app';
+import Head from 'next/head';
+import './styles.css';
 
-export default function App({
-  Component,
-  pageProps: { session, ...pageProps },
-}) {
+function CustomApp({ Component, pageProps }: AppProps) {
   return (
-    <SessionProvider session={session}>
-      <Component {...pageProps} />
-    </SessionProvider>
-  )
+    <>
+      <Head>
+        <title>Welcome to alpsbte-spike-cms!</title>
+      </Head>
+      <main className="app">
+        <Component {...pageProps} />
+      </main>
+    </>
+  );
 }
+
+export default CustomApp;

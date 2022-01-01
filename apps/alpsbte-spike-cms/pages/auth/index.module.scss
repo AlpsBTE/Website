@@ -1,0 +1,41 @@
+.page {
+  background-color: rgb(43, 43, 43);
+  width: 100vw;
+  height: 100vh;
+}
+
+.img {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.pretitle {
+  font-size: 15px;
+  text-align: center;
+  color: rgb(194, 194, 194);
+  font-weight: 600;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding-top: 5%;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
