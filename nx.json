@@ -33,6 +33,13 @@
     "alpsbte-api": {
       "tags": ["scope:api", "type:api"]
     },
+    "alpsbte-cms": {
+      "tags": []
+    },
+    "alpsbte-cms-e2e": {
+      "tags": [],
+      "implicitDependencies": ["alpsbte-cms"]
+    },
     "alpsbte-web": {
       "tags": ["scope:app", "type:app"]
     },

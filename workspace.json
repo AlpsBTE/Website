@@ -73,87 +73,107 @@
         }
       }
     },
-    "alpsbte-spike-cms": {
-      "root": "apps/alpsbte-spike-cms",
-      "sourceRoot": "apps/alpsbte-spike-cms",
+    "alpsbte-cms": {
+      "root": "apps/alpsbte-cms",
+      "sourceRoot": "apps/alpsbte-cms/src",
       "projectType": "application",
       "targets": {
         "build": {
-          "executor": "@nrwl/next:build",
+          "executor": "@nrwl/web:build",
           "outputs": ["{options.outputPath}"],
-          "defaultConfiguration": "production",
           "options": {
-            "root": "apps/alpsbte-spike-cms",
-            "outputPath": "dist/apps/alpsbte-spike-cms"
-          },
-          "configurations": {
-            "production": {}
-          }
-        },
-        "serve": {
-          "executor": "@nrwl/next:server",
-          "options": {
-            "buildTarget": "alpsbte-spike-cms:build",
-            "dev": true
+            "outputPath": "dist/apps/alpsbte-cms",
+            "index": "apps/alpsbte-cms/src/index.html",
+            "main": "apps/alpsbte-cms/src/main.tsx",
+            "polyfills": "apps/alpsbte-cms/src/polyfills.ts",
+            "tsConfig": "apps/alpsbte-cms/tsconfig.app.json",
+            "assets": [
+              "apps/alpsbte-cms/src/favicon.ico",
+              "apps/alpsbte-cms/src/assets"
+            ],
+            "styles": ["apps/alpsbte-cms/src/styles.scss"],
+            "scripts": [],
+            "webpackConfig": "@nrwl/react/plugins/webpack"
           },
           "configurations": {
             "production": {
-              "buildTarget": "alpsbte-spike-cms:build:production",
-              "dev": false
+              "fileReplacements": [
+                {
+                  "replace": "apps/alpsbte-cms/src/environments/environment.ts",
+                  "with": "apps/alpsbte-cms/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                }
+              ]
             }
           }
         },
-        "export": {
-          "executor": "@nrwl/next:export",
+        "serve": {
+          "executor": "@nrwl/web:dev-server",
           "options": {
-            "buildTarget": "alpsbte-spike-cms:build:production"
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/alpsbte-spike-cms"],
-          "options": {
-            "jestConfig": "apps/alpsbte-spike-cms/jest.config.js",
-            "passWithNoTests": true
+            "buildTarget": "alpsbte-cms:build",
+            "hmr": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "alpsbte-cms:build:production",
+              "hmr": false
+            }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/alpsbte-spike-cms/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": ["apps/alpsbte-cms/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/alpsbte-cms"],
+          "options": {
+            "jestConfig": "apps/alpsbte-cms/jest.config.js",
+            "passWithNoTests": true
           }
         }
-      },
-      "tags": []
+      }
     },
-    "alpsbte-spike-cms-e2e": {
-      "root": "apps/alpsbte-spike-cms-e2e",
-      "sourceRoot": "apps/alpsbte-spike-cms-e2e/src",
+    "alpsbte-cms-e2e": {
+      "root": "apps/alpsbte-cms-e2e",
+      "sourceRoot": "apps/alpsbte-cms-e2e/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/alpsbte-spike-cms-e2e/cypress.json",
-            "devServerTarget": "alpsbte-spike-cms:serve"
+            "cypressConfig": "apps/alpsbte-cms-e2e/cypress.json",
+            "tsConfig": "apps/alpsbte-cms-e2e/tsconfig.e2e.json",
+            "devServerTarget": "alpsbte-cms:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "alpsbte-spike-cms:serve:production"
+              "devServerTarget": "alpsbte-cms:serve:production"
             }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/alpsbte-spike-cms-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/alpsbte-cms-e2e/**/*.{js,ts}"]
           }
         }
-      },
-      "tags": [],
-      "implicitDependencies": ["alpsbte-spike-cms"]
+      }
     },
     "alpsbte-web": {
       "root": "apps/alpsbte-web",
@@ -607,6 +627,32 @@
     "configurations": {
       "ci": {
         "quiet": true
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/react"
+  },
+  "defaultProject": "alpsbte-web",
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "style": "scss",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "scss"
+      },
+      "library": {
+        "style": "scss",
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "style": "scss",
+        "linter": "eslint"
       }
     }
   }
