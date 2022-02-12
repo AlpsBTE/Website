@@ -102,11 +102,21 @@
     left: 15vw;
     width: 70vw;
     height: auto;
+    z-index: 10;
+    padding: 0;
 
+    &__container {
+      background-color: white;
+      width: 120px;
+      height: 40px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
     &__img {
+      box-shadow: -3px 4px 0px 100vw rgba(0, 0, 0, 0.7);
       height: 100%;
       width: 100%;
-
       object-fit: contain;
     }
   }

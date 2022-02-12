@@ -7,7 +7,11 @@ import { languageStore } from '@alpsbte/shared/stores';
 import { tr } from '@alpsbte/shared/language';
 import { Button } from '@alpsbte/shared/components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCaretDown,
+  faDownload,
+  faWindowClose,
+} from '@fortawesome/free-solid-svg-icons';
 import { apiUrl } from '@alpsbte/shared/config';
 
 export interface GalleryProps {}
@@ -31,6 +35,7 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
         setPlace(newPlace);
       }, 50);
     };
+
     return (
       <div>
         <PageTitle
@@ -54,6 +59,7 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
             );
           })}
         </div>
+
         <div className="gallery__dropdown">
           <button
             className="gallery__dropdown__button"
@@ -103,6 +109,7 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
                     }.webp`
                   );
                   setlightboxState(true);
+                  document.body.style.overflow = 'hidden';
                 }}
               >
                 <img
@@ -123,11 +130,25 @@ export const Gallery: React.FC = inject(languageStore.storeKey)(
             top: `calc(${window.scrollY}px + 10vh)`,
           }}
         >
+          <div className="gallery__lightbox__container">
+            <FontAwesomeIcon
+              icon={faDownload}
+              size="lg"
+              style={{
+                position: 'absolute',
+                top: '20px',
+                right: '30px',
+                color: 'black',
+              }}
+            />
+          </div>
+
           <img
             src={`${lightboxImg}`}
             className="gallery__lightbox__img"
             onClick={() => {
               setlightboxState(false);
+              document.body.style.overflow = 'auto';
             }}
           />
         </div>
