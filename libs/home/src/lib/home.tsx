@@ -51,7 +51,6 @@ export const Home: React.FC<HomeProps> = inject(languageStore.storeKey)(
       <>
         <Parallax
           bgImage={`${apiUrl}/api/assets/home/3.webp`}
-          bgImageAlt="the dog"
           strength={300}
           style={{
             backgroundColor: '#000',
