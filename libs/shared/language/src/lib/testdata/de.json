@@ -19,7 +19,7 @@
         },
         "server": {
           "title": "Unser Server",
-          "description": "Um unserem Server Netzwerk mit der Adresse mc.alps-bte.com und einer Minecraft Version zwischen 1.12 und 1.18.x beizutreten, hast du zwei Möglichkeiten: Du kannst entweder auf unserem “Plot-System” direkt anfangen zu bauen oder du schaust dir die bereits gebauten Bereiche an, indem du auf unseren „Terra-Server“ gehst. Das „Plot-System“ ist der einfachste und schnellste Weg, dich als offizieller Builder zu bewerben. Sobald du als Builder*in angenommen wurdest, kannst du auf unserem Open-World „Terra-Server“ bauen."
+          "description": "Um unserem Server Netzwerk mit der Adresse mc.alps-bte.com und der Minecraft Version 1.21 beizutreten, hast du zwei Möglichkeiten: Du kannst entweder auf unserem “Plot-System” direkt anfangen zu bauen oder du schaust dir die bereits gebauten Bereiche an, indem du auf unseren „Terra-Server“ gehst. Das „Plot-System“ ist der einfachste und schnellste Weg, dich als offizieller Builder zu bewerben. Sobald du als Builder*in angenommen wurdest, kannst du auf unserem Open-World „Terra-Server“ bauen."
         },
         "how": {
           "title": "Wie wir Bauen",
@@ -32,7 +32,7 @@
       "description": [
         {
           "title": "Das Projekt",
-          "description": "Alps BTE wurde am 06.04.2020 gegründet und ist ein offenes Bauteam und Teilprojekt von BuildTheEarth.net. Mit Mitgliedern vor allem aus Österreich, Schweiz und Liechtenstein haben wir uns der detailgetreuen Nachbildung unserer drei Länder im Massstab 1:1 im Videospiel Minecraft verschrieben. Mit mittlerweile fast 400 internationalen Buildern und 1800+ Discord Mitgliedern rekonstruieren wir ganze Städte, Dörfer und Landschaften in der Minecraft Version 1.12."
+          "description": "Alps BTE wurde am 06.04.2020 gegründet und ist ein offenes Bauteam und Teilprojekt von BuildTheEarth.net. Mit Mitgliedern vor allem aus Österreich, Schweiz und Liechtenstein haben wir uns der detailgetreuen Nachbildung unserer drei Länder im Massstab 1:1 im Videospiel Minecraft verschrieben. Mit mittlerweile über 580 internationalen Buildern und 3000+ Discord Mitgliedern rekonstruieren wir ganze Städte, Dörfer und Landschaften in der Minecraft Version 1.21."
         },
         {
           "title": "Die Technik",
@@ -163,7 +163,7 @@
         },
         "plotSystem": {
           "title": "Plotsystem",
-          "description": "Tritt unserem  mit einer Version zwischen 1.12 und 1.18.x bei und beginne auf dem „Plot-System“ zu Bauen, indem du mit einem Rechtsklick auf den Netherstern (Companion) im Inventar klickst. Wähle anschliessend die Stadt aus, in der du gerne bauen möchtest. Sobald du zwei Plots eingereicht hast, kannst du dich als Builder*in bewerben.           "
+          "description": "Tritt unserem Server mit der Version 1.21 bei und beginne auf dem „Plot-System“ zu Bauen, indem du mit einem Rechtsklick auf den Netherstern (Companion) im Inventar klickst. Wähle anschliessend die Stadt aus, in der du gerne bauen möchtest. Sobald du zwei Plots eingereicht hast, kannst du dich als Builder*in bewerben.           "
         },
         "applicationForm": {
           "title": "Bewerbungsformular",

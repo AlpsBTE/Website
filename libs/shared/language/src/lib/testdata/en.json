@@ -19,7 +19,7 @@
         },
         "server": {
           "title": "Our Server",
-          "description": "Once you join our server network with the IP mc.alps-bte.com in the Minecraft version 1.12.2-1.17, you have two options: Either start building right away using the \"Plot System\" or visit already built areas by joining the \"Terra Server\". The \"Plot System\" is the easiest and fastest way to apply as an official Builder. If you are accepted into the Build Team as a Builder, you can build whatever you want on our open world \"Terra Server\"."
+          "description": "Once you join our server network with the IP mc.alps-bte.com in the Minecraft version 1.21, you have two options: Either start building right away using the \"Plot System\" or visit already built areas by joining the \"Terra Server\". The \"Plot System\" is the easiest and fastest way to apply as an official Builder. If you are accepted into the Build Team as a Builder, you can build whatever you want on our open world \"Terra Server\"."
         },
         "how": {
           "title": "How we do it",
@@ -32,7 +32,7 @@
       "description": [
         {
           "title": "The Project",
-          "description": "Alps BTE was founded on 06.04.2020 and is an open build team and subproject of BuildTheEarth.net. With members mostly from Austria, Switzerland and Liechtenstein, we are dedicated to the detailed 1:1 scale replication of the three countries in the video game Minecraft. With almost 400 international builders and 1800+ Discord members, we reconstruct entire cities, villages and landscapes in Minecraft version 1.12."
+          "description": "Alps BTE was founded on 06.04.2020 and is an open build team and subproject of BuildTheEarth.net. With members mostly from Austria, Switzerland and Liechtenstein, we are dedicated to the detailed 1:1 scale replication of the three countries in the video game Minecraft. With over 580 international builders and 3000+ Discord members, we reconstruct entire cities, villages and landscapes in Minecraft version 1.21."
         },
         {
           "title": "The Technology",
@@ -145,7 +145,7 @@
         },
         "plotSystem": {
           "title": "Plot System",
-          "description": "Join our Minecraft server with the versions 1.12.2-1.17 and start building with the \"Plot System\" by right-clicking the nether star in your inventory. Choose the city you want to build in and get started. Once you have submitted two plots, you can apply as a Builder."
+          "description": "Join our Minecraft server with the versions 1.21 and start building with the \"Plot System\" by right-clicking the nether star in your inventory. Choose the city you want to build in and get started. Once you have submitted two plots, you can apply as a Builder."
         },
         "applicationForm": {
           "title": "Application Form",
