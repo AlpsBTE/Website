@@ -32,11 +32,11 @@
       "description": [
         {
           "title": "The Project",
-          "description": "Alps BTE was founded on 06.04.2020 and is an open build team and subproject of BuildTheEarth.net. With members mostly from Austria, Switzerland and Liechtenstein, we are dedicated to the detailed 1:1 scale replication of the three countries in the video game Minecraft. With over 580 international builders and 3000+ Discord members, we reconstruct entire cities, villages and landscapes in Minecraft version 1.21."
+          "description": "Alps BTE was founded on 6 April 2020 and is an open building team and sub-project of BuildTheEarth.net. We have dedicated ourselves to the detailed replication of Austria, Switzerland and Liechtenstein on a scale of 1:1 in the video game Minecraft. A ‘block’ in Minecraft corresponds to one cubic metre in the real world. With now over 600 international builders and 3000 members on Discord, we reconstruct entire cities, villages and landscapes in Minecraft."
         },
         {
           "title": "The Technology",
-          "description": "“Mods” - short for “Modifications” - are community-created and -maintained, i.e. unofficial additions the the source code of a video game, which open up entirely new possibilities for their users. Essential parts of our project are two such mods: Cubic Chunks splits the maps of the video game into three-dimensional loading units, which remove the technical limitations caused by the unmodified “Vanilla”-Minecraft, especially the height limit of 256 blocks, and are thus a prerequisite for the proper functioning of all processes based on it. Terra++ can - thanks to Cubic Chunks - generate an accurate map projection of the terrain within a Minecraft map using OpenStreetMap altitude data. The mod also allows us to integrate altitude data of other kinds, e.g. LiDAR data collected by the Swiss Federal Office of Topography for Switzerland and Liechtenstein, as well as LiDAR collected by the Austrian GlSes into the system. Due to this, our projection is much more precise and tedious manual work to adjust the terrain is a thing of the past. In addition, there are a variety of other modifications and plugins that provide additional support for our builders. Our Developer-Team is also always working behind the scenes on new innovations for our network - for example, the plot system added for our first anniversary, which allows even inexperienced members to participate in the project, even without any mods, thus making it easier for them to join our project. Furthermore, our developers also take care of routine work on the server in order to provide our members with an experience that is as free of disturbances and lag as possible. They are in active contact with our international colleagues if more comprehensive technical questions arise."
+          "description": "To represent reality as accurately as possible, we use a customised version of the Dymaxion/Fuller projection, which was developed by Daniel Strebe (map design expert) together with BuildTheEarth. With this projection, we can mathematically convert real coordinates, for example from Google Maps, into Minecraft coordinates and thus teleport to any location on earth with centimetre precision.\n\nTo avoid having to recreate every mountain, hill or river by hand, the world in which we build is pre-generated with real elevation data. In Switzerland, for example, we use LiDAR (Light Detection and Ranging) data from swisstopo.\nIn addition, OpenStreetMap is also used to create rough outlines of \nstreets and houses.\n\nTo ensure that all buildings have the correct dimensions, we use 3D data from the Internet, such as those from regional geodata portals (GIS). With the Google Earth Pro programme, building heights and distances between windows, etc. can also be measured very easily. The task of our builders is then to transfer the buildings as accurately as possible into Minecraft. In doing so, they become digital artists, as the selection of blocks in the game is limited and creativity and experience therefore play a major role in the realisation."
         },
         {
           "title": "The Community",
@@ -87,10 +87,6 @@
           "title": "How much has already been built?",
           "content": "Especially in big cities like Vienna, Graz, Salzburg, Bern, Basel and Luzern there is a lot of progress and several landmarks have already been built. Individual villages and landscapes have already been completely reconstructed. However, because there are countless buildings in our region, only about 0.01% of the total area is finished.        "
         },
-        {
-          "title": "Do I need mods?",
-          "content": "You don't need any mods to look around on the Terra-Server and for the plot-system. However, for a better performance on the Terra-Server we recommend to download the BTE-Modpack. You can find the download for your operating system on Discord."
-        },
         { "spacer": "Application" },
         {
           "title": "What are builders?",
@@ -128,10 +124,6 @@
         {
           "title": "What are Building Sessions?",
           "content": "Building Sessions are \"events\" organised by builders that can last anywhere from one day to two weeks. They aim to make Alps BTE more grassroots and provide variety in times of few official events. The location and timing of the Building Sessions can be chosen by the builders. In the course of these events, a large part of the old town of Basel was built, as well as the Stephansplatz in Vienna.          "
-        },
-        {
-          "title": "Fixing typical display errors",
-          "content": "It can happen that the display is changed unintentionally due to the key shortcuts of individual modifications. Some mods include \"visual aids\" that make the builder's work easier, but can also be deactivated. If you want to remove the orange coordinates, it is sufficient to use the \"K\" key once or twice. With \"F4\" you can remove the red vertical lines (mark the chunk boundaries to \"F3 + G\").          "
         }
       ]
     },
@@ -143,6 +135,10 @@
           "title": "Discord",
           "description": "We use Discord for coordinating the project and for communication between our members. Download the free messenger and join our Alps BTE Discord-Server. Read through the information channels to get used to the project and get in touch with our community."
         },
+        "tutorialSystem": {
+          "title": "Tutorial System",
+          "description": "Join our server (mc.alps-bte.com) with Minecraft Java version 1.21.4. Unfortunately, the Bedrock Edition is not supported as it is incompatible with our network. Right-click on the NPC ‘Start Building’ to start the tutorial. Follow the instructions, complete all tasks and finish the tutorial."
+        },
         "plotSystem": {
           "title": "Plot System",
           "description": "Join our Minecraft server with the versions 1.21 and start building with the \"Plot System\" by right-clicking the nether star in your inventory. Choose the city you want to build in and get started. Once you have submitted two plots, you can apply as a Builder."
@@ -150,10 +146,6 @@
         "applicationForm": {
           "title": "Application Form",
           "description": "Go to https://buildtheearth.net/bte-alps, click \"Apply\" and fill out the form. Add the IDs of your constructed plots so that we can confirm you are able to build in BTE. For starting off we highly recommend our Builders Guide series on our YouTube channel which covers every aspect of building in BTE. "
-        },
-        "becomingBuilder": {
-          "title": "Becoming a Builder",
-          "description": "Once you have sent off your form, it will be reviewed in less than 48 hours by one of our Reviewers. Meanwhile you can download the official Modpack - a modification of the game - that is crucial for building on the open-world \"Terra Server\". If you have been accepted into the team you get the \"Builder\" role and are now free to build wherever you want in Austria, Switzerland and Liechtenstein.          "
         }
       }
     },

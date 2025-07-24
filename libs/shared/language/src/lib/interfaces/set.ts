@@ -43,15 +43,15 @@ export interface ISet {
           title: string;
           description: string;
         };
+        tutorialSystem: {
+          title: string;
+          description: string;
+        };
         plotSystem: {
           title: string;
           description: string;
         };
         applicationForm: {
-          title: string;
-          description: string;
-        };
-        becomingBuilder: {
           title: string;
           description: string;
         };

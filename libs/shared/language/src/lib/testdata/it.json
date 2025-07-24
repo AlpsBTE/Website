@@ -87,10 +87,6 @@
           "title": "Quanto è già stato costruito?",
           "content": "Soprattutto nelle grandi città come Vienna, Graz, Salisburgo, Berna, Basilea e Lucerna ci sono molti progressi e diversi punti di riferimento sono già stati costruiti. Singoli villaggi e paesaggi sono già stati completamente ricostruiti. Tuttavia, poiché ci sono innumerevoli edifici nella nostra regione, solo circa lo 0,01% della superficie totale è finito."
         },
-        {
-          "title": "Ho bisogno di modifiche?",
-          "content": "Non hai bisogno di modifiche per guardare in giro sul Terra-Server e per il sistema di trama. Tuttavia, per migliorare le prestazioni sul Terra-Server si consiglia di scaricare il BTE-Modpack. Puoi trovare il download per il tuo sistema operativo su Discord."
-        },
         { "spacer": "Applicazione" },
         {
           "title": "Che cosa sono i costruttori?",
@@ -128,10 +124,6 @@
         {
           "title": "Cosa sono le sessioni di costruzione?",
           "content": "Le sessioni di costruzione sono \"eventi\" organizzati da costruttori che possono durare da un giorno a due settimane. Essi mirano a rendere Alps BTE più di base e fornire varietà in tempi di pochi eventi ufficiali. La posizione e i tempi delle sessioni di costruzione possono essere scelti dai costruttori. Nel corso di questi eventi, gran parte del centro storico di Basilea è stato costruito, così come la Stephansplatz a Vienna"
-        },
-        {
-          "title": "Correggere errori di visualizzazione tipici",
-          "content": "Può accadere che il display venga modificato involontariamente a causa delle scorciatoie chiave delle singole modifiche. Alcune modifiche includono \"aiuti visivi\" che rendono il lavoro del costruttore più facile, ma possono anche essere disattivati. Se si desidera rimuovere le coordinate arancioni, è sufficiente utilizzare il tasto \"K\" una o due volte. Con \"F4\" è possibile rimuovere le linee verticali rosse (segnare i confini chunk a \"F3 + G\")."
         }
       ]
     },
@@ -143,6 +135,10 @@
           "title": "Discord",
           "description": "Usiamo Discord per coordinare il progetto e per la comunicazione tra i nostri membri. Scarica il social gratuitamente e unisciti al nostro Alps BTE Discord-Server. Leggi attraverso i canali di informazione per abituarti al progetto e entrare in contatto con la nostra community."
         },
+        "tutorialSystem": {
+          "title": "Sistema Tutorial",
+          "description": "Unisciti al nostro server (mc.alps-bte.com) con la versione Java 1.21.4 di Minecraft. Purtroppo la Bedrock Edition non è supportata perché incompatibile con la nostra rete. Fare clic con il tasto destro del mouse sul PNG “Start Building” per avviare il tutorial. Seguire le istruzioni, completare tutti i compiti e terminare l'esercitazione."
+        },
         "plotSystem": {
           "title": "Plot System",
           "description": "Unisciti al nostro server Minecraft nelle versioni 1.12.2-1.17 e inizia a costruire con il \"Plot System\" facendo clic con il tasto destro sulla stella nell'inventario. Scegli la città in cui vuoi costruire e inizia. Una volta che hai presentato due costruzioni è possibile diventare builder."
@@ -150,10 +146,6 @@
         "applicationForm": {
           "title": "Modulo per diventare builder",
           "description": "Vai a buildtheearth.net/buildteams e cerca Alps BTE. Clicca su \"Apply\" e compila il modulo. Aggiungi gli ID delle tue due costruzioni costruite in modo che possiamo confermare che sei in grado di costruire in BTE. Per iniziare consigliamo vivamente la nostra serie Builders Guide sul nostro canale Youtube che copre ogni aspetto della costruzione su BTE."
-        },
-        "becomingBuilder": {
-          "title": "Diventare un Costruttore",
-          "description": "Una volta inviato il modulo, sarà esaminato entro 48 ore da uno dei nostri Revisori. Nel frattempo è possibile scaricare il Modpack ufficiale - una modifica del gioco - che è fondamentale per costruire sul \"Terra Server\". Se sei stato accettato nel team, ottieni il ruolo di \"Builder\" e ora sei libero di costruire dove vuoi in Austria, Svizzera e Liechtenstein."
         }
       }
     },

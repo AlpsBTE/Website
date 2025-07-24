@@ -72,10 +72,6 @@
       "questions": [
         { "spacer": "Minecraft Server" },
         {
-          "title": "Comment puis-je participer?",
-          "content": "Rejoignez notre Discord (https://discord.com/invite/vgkspay), grâce auquel nous gérons le projet et communiquons avec les membres. Pour construire avec nous, vous avez besoin du jeu Minecraft. Une fois que vous êtes sur le serveur, vous pouvez commencer à construire immédiatement en utilisant le \"Système de parcelles\" dans Minecraft versions 1.12-1.17.1. Choisissez-y une \"parcelle\" - il s'agit d'une petite plate-forme volante avec des contours de construction déjà corrigés. Vous recevrez des liens vers les références appropriées via le chat. Une fois que vous avez terminé deux parcelles, vous pouvez demander à devenir un \"Builder\" (participant) officiel sur le site Web du BTE. Après avoir été accepté, vous pouvez construire sur le serveur du monde ouvert et choisir n'importe quel endroit en Autriche, en Suisse et au Liechtenstein."
-        },
-        {
           "title": "Qu’est-ce que le Système de parcelles?",
           "content": "Le Système de parcelles est un système que nous avons développé pour faciliter les débuts des nouveaux arrivants sur Alps BTE. Tout ce dont vous avez besoin pour vous inscrire est Minecraft Java Edition (version 1.12-1.17). Une fois que vous aurez créé votre première parcelle en sautant dans le portail au spawn, vous arriverez sur une petite île flottante avec un contour de bâtiment. Les liens dans le chat vous fourniront les références appropriées au bâtiment et vous pourrez immédiatement commencer à le reconstruire dans Minecraft. Si vous avez besoin d'aide, consultez notre chaîne YouTube \"Alps BTE\". Vous y trouverez de nombreux conseils utiles dans nos vidéos \"Guide du constructeur\". Dès que le bâtiment est terminé, vous le remettez et pouvez immédiatement commencer avec le suivant. Les bâtiments terminés seront évalués par nos réviseurs et si quelque chose ne convient pas, vous recevrez un retour et aurez la possibilité de le réviser. Une fois que deux parcelles ont été acceptées, vous pouvez demander à devenir un constructeur officiel."
         },
@@ -90,10 +86,6 @@
         {
           "title": "Combien a-t-on déjà construit?          ",
           "content": "Surtout dans les grandes villes comme Vienne, Graz, Salzbourg, Berne, Bâle et Lucerne, il y a beaucoup de progrès et plusieurs points de repère ont déjà été construits. Certains villages et paysages ont déjà été entièrement reconstruits. Cependant, comme il y a d'innombrables bâtiments dans notre région, seul environ 0,01% de la surface totale est terminée."
-        },
-        {
-          "title": "Ai-je besoin de mods?",
-          "content": "Vous n'avez pas besoin de mods pour visiter sur le Terra-Server et le système de parcelles. Cependant, pour une meilleure performance sur le Terra-Server, nous vous recommandons de télécharger le BTE-Modpack. Vous pouvez trouver le téléchargement pour votre système d'exploitation sur Discord."
         },
         { "spacer": "Application" },
         {
@@ -132,10 +124,6 @@
         {
           "title": "Que sont les Building Sessions?",
           "content": "Les Building Sessions sont des \"événements\" organisés par des constructeurs, qui peuvent durer d'un jour à deux semaines. Ils ont pour but de rendre Alps BTE plus populaire et d'apporter de la variété à une époque où les événements officiels sont peu nombreux. Le lieu et le moment des Building Sessions peuvent être choisis par les constructeurs. Au cours de ces événements, une grande partie de la vieille ville de Bâle a été construite, ainsi que la Stephansplatz à Vienne.          "
-        },
-        {
-          "title": "Correction d'erreurs d'affichage typiques",
-          "content": "Il peut arriver que l'affichage soit modifié involontairement en raison des raccourcis clavier de certaines modifications. Certains mods incluent des \"aides visuelles\" qui facilitent le travail du constructeur, mais qui peuvent aussi être désactivées. Si vous souhaitez supprimer les coordonnées orange, il suffit d'utiliser la touche \"K\" une ou deux fois. Avec \"F4\", vous pouvez supprimer les lignes verticales rouges (marquez les limites du chunk avec \"F3 + G\")."
         }
       ]
     },
@@ -147,6 +135,10 @@
           "title": "Discord",
           "description": "Nous utilisons Discord pour coordonner le projet et pour la communication entre nos membres. Téléchargez le messager gratuit et rejoignez notre serveur Discord Alps BTE. Lisez les canaux d'information pour vous habituer au projet et entrer en contact avec notre communauté."
         },
+        "tutorialSystem": {
+          "title": "Système de tutorat",
+          "description": "Rejoignez notre serveur (mc.alps-bte.com) avec Minecraft Java version 1.21.4. Malheureusement, l'édition Bedrock n'est pas prise en charge car elle est incompatible avec notre réseau. Cliquez avec le bouton droit de la souris sur le PNJ « Commencer à construire » pour démarrer le tutoriel. Suivez les instructions, effectuez toutes les tâches et terminez le tutoriel."
+        },
         "plotSystem": {
           "title": "Système de parcelles",
           "description": "Rejoignez notre serveur Minecraft avec les versions 1.12.2-1.17 et commencez à construire avec le \"Système de parcelles\" en faisant un clic droit sur l'étoile du néant dans votre inventaire. Choisissez la ville dans laquelle vous voulez construire et commencez. Une fois que vous avez soumis deux parcelles, vous pouvez postuler en tant que Builder.          "
@@ -154,10 +146,6 @@
         "applicationForm": {
           "title": "Formulaire de candidature ",
           "description": "Allez sur https://buildtheearth.net/bte-alps, cliquez sur \"Postuler\" et remplissez le formulaire. Ajoutez les identifiants de vos parcelles construites afin que nous puissions confirmer que vous êtes en mesure de construire sur BTE. Pour commencer, nous vous recommandons vivement notre série de guides du constructeur sur notre chaîne YouTube, qui couvre tous les aspects de la construction dans BTE."
-        },
-        "becomingBuilder": {
-          "title": "Devenir un constructeur ",
-          "description": "Une fois que vous aurez envoyé votre formulaire, il sera examiné en moins de 48 heures par l'un de nos examinateurs. Pendant ce temps, vous pouvez télécharger le Modpack officiel - une modification du jeu - qui est essentiel pour construire sur le monde ouvert \"Terra Server\". Si vous avez été accepté dans l'équipe, vous obtenez le rôle de \"Builder\" et êtes maintenant libre de construire où vous voulez en Autriche, en Suisse et au Liechtenstein."
         }
       }
     },
