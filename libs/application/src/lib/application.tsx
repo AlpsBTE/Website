@@ -25,19 +25,19 @@ export const Application = inject(languageStore.storeKey)(
             description={tr('pages.application.steps.discord.description')}
           />
           <ApplicationStep
-            stepNumber={4}
+            stepNumber={2}
             title={tr('pages.application.steps.tutorialSystem.title')}
             description={tr(
               'pages.application.steps.tutorialSystem.description'
             )}
           />
           <ApplicationStep
-            stepNumber={2}
+            stepNumber={3}
             title={tr('pages.application.steps.plotSystem.title')}
             description={tr('pages.application.steps.plotSystem.description')}
           />
           <ApplicationStep
-            stepNumber={3}
+            stepNumber={4}
             title={tr('pages.application.steps.applicationForm.title')}
             description={tr(
               'pages.application.steps.applicationForm.description'
