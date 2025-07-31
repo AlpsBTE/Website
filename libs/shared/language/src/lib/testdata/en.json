@@ -132,6 +132,7 @@
       ]
     },
     "application": {
+      "title": "Application",
       "description": "This is an overview on how to become a \"builder\" - a member of our build team. For further information join our Discord. If you want an in-depth explanation on how to apply, watch our tutorial video down below.",
       "steps": {
         "title": "Application",
