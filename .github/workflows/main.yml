@@ -9,6 +9,9 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  NODE_OPTIONS: --openssl-legacy-provider # Temporary fix (remove later!)
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build_test:
