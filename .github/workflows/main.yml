@@ -41,7 +41,7 @@ jobs:
         with:
           name: build-output
           path: |
-            dist/alpsbte-api
-            dist/alpsbte-web
+            dist/apps/alpsbte-api
+            dist/apps/alpsbte-web
 
 
