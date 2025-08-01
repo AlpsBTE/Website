@@ -36,4 +36,12 @@ jobs:
           npm run build --if-present
           npm test
           npm run lint
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: |
+            dist/alpsbte-api
+            dist/alpsbte-web
+
 
