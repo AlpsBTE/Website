@@ -23,7 +23,7 @@
         },
         "how": {
           "title": "How we do it",
-          "description": "We use various publicly accessible geoinformation systems, LiDAR, 360 images and drone footage to recreate any structure with the highest degree of accuracy and detail as it is possible within Minecraft. Since building at off-angles is quite different from classic Minecraft building, we also have developed a large variety of tools to make it easier to get started. Furthermore, to overcome the Minecraft height limitation we use clever server side modifications like \"Cubic Chunks\"."
+          "description": "We use various publicly accessible geoinformation systems, LiDAR, 360 images and drone footage to recreate any structure with the highest degree of accuracy and detail as it is possible within Minecraft. Since building at off-angles is quite different from classic Minecraft building, we also have developed a large variety of tools to make it easier to get started."
         }
       }
     },

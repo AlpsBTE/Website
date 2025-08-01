@@ -23,7 +23,7 @@
         },
         "how": {
           "title": "Come lo facciamo ",
-          "description": "Utilizziamo vari sistemi di geoinformazione accessibili al pubblico, LiDAR,immagini a 360° e foto aeree per ricreare qualsiasi struttura più precisamente possibile nei limiti di Minecraft. Visto che costruire in diagonale è un pò diverso dal costruire nel modo tradizionale, abbiamo sviluppato diverse funzionalità per rendere più facile iniziare. Inoltre, per aggirare il limite d’altezza di minecraft usiamo delle mod che ci permettono di farlo come “Cubic Chunks”."
+          "description": "Utilizziamo vari sistemi di geoinformazione accessibili al pubblico, LiDAR,immagini a 360° e foto aeree per ricreare qualsiasi struttura più precisamente possibile nei limiti di Minecraft. Visto che costruire in diagonale è un pò diverso dal costruire nel modo tradizionale, abbiamo sviluppato diverse funzionalità per rendere più facile iniziare."
         }
       }
     },

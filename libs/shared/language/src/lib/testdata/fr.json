@@ -23,7 +23,7 @@
         },
         "how": {
           "title": "Comment construisons-nous ?",
-          "description": "Nous utilisons divers systèmes d'information géographique accessibles au public; LiDAR, des images 360-degrés et des images de drone pour recréer toute structure avec le plus haut degré de précision et de détail possible dans Minecraft. Étant donné que la construction hors angle est très différente de la construction classique dans Minecraft, nous avons également développé une grande variété d'outils pour faciliter la prise en main. En outre, pour surmonter la limite de hauteur de Minecraft, nous utilisons des modifications astucieuses côté serveur comme les \"Cubic Chunks\"."
+          "description": "Nous utilisons divers systèmes d'information géographique accessibles au public; LiDAR, des images 360-degrés et des images de drone pour recréer toute structure avec le plus haut degré de précision et de détail possible dans Minecraft. Étant donné que la construction hors angle est très différente de la construction classique dans Minecraft, nous avons également développé une grande variété d'outils pour faciliter la prise en main."
         }
       }
     },
