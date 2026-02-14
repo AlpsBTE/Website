@@ -1,5 +1,5 @@
-import * as express from 'express';
-import * as cors from 'cors';
+import express from 'express';
+import cors from 'cors';
 import { config } from './config';
 
 import { base, assets } from './app/routes';
@@ -7,7 +7,7 @@ import { base, assets } from './app/routes';
 const port = process.env.port || 3333;
 
 const app = express();
-app.use(cors('*'));
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (req: express.Request, res: express.Response) => {
