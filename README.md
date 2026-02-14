@@ -1,10 +1,7 @@
-
-
-# Alpsbte - Website
+# Alps BtE - Website
 
 ### About
-This is a rework of the AlpsBTE website. The main audience is a professional target group, so our work is also focused on that. We try to make the website as future proof as possible and use state of the art technologies. Initially the website is static. However, over time, we will create different dnamic functions and interfaces. 
-
+This is a rework of the AlpsBTE website. The main audience is a professional target group, so our work is also focused on that. We try to make the website as future proof as possible and use state of the art technologies. Initially the website is static. However, over time, we will create different dnamic functions and interfaces.
 
 ### Design: (by Cinnazeyy)
 * Mobile: [open Mobile (click)](https://xd.adobe.com/view/d6bc704e-f1c8-4187-a736-2bff2d5aef7c-83ef/)
@@ -32,3 +29,4 @@ $ ./scripts/setup.ps1
 $ ./scripts/start.ps1
 ```
 
+4. If you encounter the ERR_OSSL_EVP_UNSUPPORTED error, apply a workaround https://stackoverflow.com/questions/75959563/node-js-err-ossl-evp-unsupported-error-when-running-npm-run-start
