@@ -66,4 +66,38 @@
       margin-top: variables.$spacing-s;
     }
   }
+
+  &__association {
+    text-align: center;
+    margin-top: variables.$vertical-spacer-xs;
+    background-color: variables.$white;
+    padding: variables.$spacing-xl;
+
+    &__container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: variables.$spacing-xl;
+      margin-top: variables.$spacing-m;
+
+      @include mixins.for-phone {
+        flex-direction: column;
+        gap: variables.$spacing-m;
+      }
+    }
+
+    &__item {
+      flex: 1;
+      min-width: 250px;
+      max-width: 350px;
+
+      h3 {
+        margin-bottom: variables.$spacing-s;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
 }

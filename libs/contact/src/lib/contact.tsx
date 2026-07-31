@@ -120,6 +120,32 @@ export const Contact = inject(languageStore.storeKey)(
             </div>
           </div>
         </div>
+        <div className="contact__association">
+          <h2 className="contact__title-font">
+            {tr('pages.contact.association.title')}
+          </h2>
+          <div className="contact__association__container">
+            <div className="contact__association__item">
+              <h3>{tr('pages.contact.association.name')}</h3>
+              <p>
+                Alps BuildTheEarth - Virtueller Nachbau von Österreich,
+                Schweiz und Liechtenstein
+              </p>
+            </div>
+            <div className="contact__association__item">
+              <h3>{tr('pages.contact.association.zvrNumber')}</h3>
+              <p>1028245614</p>
+            </div>
+            <div className="contact__association__item">
+              <h3>{tr('pages.contact.association.location')}</h3>
+              <p>
+                1140 Wien
+                <br />
+                Österreich
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   })

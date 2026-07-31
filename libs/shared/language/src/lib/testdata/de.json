@@ -139,7 +139,13 @@
         "community": "Community",
         "management": "Management"
       },
-      "socialMedia": "Soziale Medien"
+      "socialMedia": "Soziale Medien",
+      "association": {
+        "title": "Vereinsinformationen",
+        "name": "Vereinsname",
+        "zvrNumber": "ZVR-Zahl",
+        "location": "Ort"
+      }
     },
     "application": {
       "title": "Bewerbung",

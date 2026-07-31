@@ -66,6 +66,12 @@ export interface ISet {
         management: string;
       };
       socialMedia: string;
+      association: {
+        title: string;
+        name: string;
+        zvrNumber: string;
+        location: string;
+      };
     };
     error: {
       title: string;

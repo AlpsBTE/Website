@@ -165,7 +165,13 @@
         "community": "Comunità",
         "management": "Gestione"
       },
-      "socialMedia": "Media Sociali"
+      "socialMedia": "Media Sociali",
+      "association": {
+        "title": "Associazione",
+        "name": "Nome",
+        "zvrNumber": "Numero ZVR",
+        "location": "Sede"
+      }
     },
     "error": {
       "title": "Pagina non trovata!",
