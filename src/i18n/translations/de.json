@@ -1,0 +1,173 @@
+{
+  "navItems": {
+    "aboutUs": "Über uns",
+    "gallery": "Galerie",
+    "downloads": "Downloads",
+    "faq": "FAQ",
+    "application": "Bewerbung",
+    "contact": "Kontakt"
+  },
+  "pages": {
+    "home": {
+      "headline": "Unsere Länder in Minecraft neu erschaffen",
+      "joinUs": "Mitmachen!",
+      "copiedToClipboard": "Kopiert",
+      "contentBlocks": {
+        "mission": {
+          "title": "Unsere Mission",
+          "description": "Unsere Mission ist es, die drei Länder Österreich, Schweiz und Liechtenstein 1:1 im Computerspiel Minecraft nachzubauen. Ein Block in Minecraft ist äquivalent zu einem Meter. Um dieses fast unmögliche Ziel zu erreichen, kann bei uns jede*r als Builder mitbauen und zum grössten und am stärksten expandierenden Minecraft Projekt beitragen."
+        },
+        "server": {
+          "title": "Unser Server",
+          "description": "Um unserem Server Netzwerk mit der Adresse mc.alps-bte.com und der Minecraft Version 1.21.4 beizutreten, hast du zwei Möglichkeiten: Du kannst entweder auf unserem “Plot-System” direkt anfangen zu bauen oder du schaust dir die bereits gebauten Bereiche an, indem du auf unseren „Terra-Server“ gehst. Das „Plot-System“ ist der einfachste und schnellste Weg, dich als offizieller Builder zu bewerben. Sobald du als Builder*in angenommen wurdest, kannst du auf unserem Open-World „Terra-Server“ bauen."
+        },
+        "how": {
+          "title": "Wie wir Bauen",
+          "description": "Wir nutzen verschiedene, öffentlich zugängliche Geoinformation wie LiDAR, 360-Grad Bilder und Drohnenaufnahmen, um jede Struktur auf einem sehr hohen Detailgrad nachbilden zu können. Da das Bauen in schrägen Winkeln ganz anders als das klassische Bauen im „normalen” Minecraft ist, haben wir einige nützliche Hilfsmittel entwickelt, um das Bauen so einfach wie möglich zu machen."
+        }
+      }
+    },
+    "aboutUs": {
+      "title": "Über uns",
+      "description": [
+        {
+          "title": "Das Projekt",
+          "description": "Alps BTE wurde am 06.04.2020 gegründet und ist ein offenes Bauteam und Teilprojekt von BuildTheEarth.net. Wir haben uns der detailgetreuen Nachbildung von Österreich, Schweiz und Liechtenstein im Massstab 1:1 im Videospiel Minecraft verschrieben. Ein «Block» in Minecraft entspricht einem Kubikmeter in der realen Welt. Mit mittlerweile über 600 internationalen Buildern und 3000 Mitgliedern auf Discord rekonstruieren wir ganze Städte, Dörfer und Landschaften in Minecraft."
+        },
+        {
+          "title": "Die Technik",
+          "description": "Für eine möglichst korrekte Darstellung der Realität verwenden wir eine angepasste Version der Dymaxion/Fuller-Projektion, welche von Daniel Strebe (Experte für Kartengestaltung) gemeinsam mit BuildTheEarth entwickelt wurde. Mit dieser Projektion können wir echte Koordinaten, etwa aus Google Maps, mathematisch in Minecraft-Koordinaten umrechnen und uns somit zentimetergenau zu beliebigen Orten auf der Erde teleportieren.\n\nDamit nicht jeder Berg, Hügel oder Fluss von Hand nachgebaut werden muss, wird die Welt, in der wir bauen, mit echten Höhendaten vorgeneriert. Dazu verwenden wir z.B. in der Schweiz LiDAR-Daten (Light Detection and Ranging) von swisstopo.\nZusätzlich werden anhand von OpenStreetMap auch grobe Umrisse von \nStrassen und Häusern erstellt.\n\nDamit alle Gebäude die richtigen Dimensionen haben, verwenden wir 3D-Daten aus dem Internet, wie solche der regionalen Geodatenportale (GIS). Mit dem Programm Google Earth Pro lassen sich zudem Gebäudehöhen und Abstände zwischen Fenstern, etc. sehr einfach abmessen. Die Aufgabe unserer Builder ist dann, die Gebäude so genau wie möglich \nin Minecraft zu übertragen. Dabei werden sie zu digitalen Künstlern, da die Auswahl \nder Blöcke im Spiel begrenzt ist und daher Kreativität und Erfahrung eine grosse \nRolle in der Umsetzung spielen."
+        },
+        {
+          "title": "Die Community",
+          "description": "Alps BTE zeichnet sich durch eine hilfsbereite und engagierte Community aus. Das mehrstufige Aufnahmeverfahren als Builder ist unattraktiv für Trolle sowie Griefer und hält das Projekt frei von Spam, Griefing und Betrug. Ausserdem garantiert es ein Mindestmass an Bauqualität. Die vermeintlichen Barrieren in unserer bunten Sprachlandschaft haben sich bisher kaum als Problem herausgestellt. Stattdessen hat eine offene, freundliche Projektkultur Einzug gehalten, welche neue Freundschaften, Nebenprojekte sowie gemeinsame Treffen etwa in Wien oder Zürich hervorgebracht hat."
+        },
+        {
+          "title": "Das Team",
+          "description": "Hinter dem „Staff-Team“ von Alps BTE stehen zahlreiche engagierte Menschen, die ehrenamtlich dafür sorgen, dass Alps BTE weiter wachsen und blühen kann. Sie stellen sicher, dass Builder und Besucher eine angenehme Umgebung vorfinden. Weiters verantworten sie die Öffentlichkeitsarbeit und machen unser Projekt einem breiten Publikum bekannt. Das Staff-Team besteht aus folgenden Aufgabenbereichen:\n- **Manager:** Sie leiten das Projekt. Jede Person trägt die Verantwortung für einen der weiter unten angeführten Aufgabenbereiche. Strategische Entscheidungen und die Einstellung von neuen Staff-Mitgliedern werden von ihnen vorgenommen.\n- **Community Relations:** Sie sind für die Eventplanung und Moderation verantwortlich. Zusätzlich kümmern sie sich um die Abwicklung des monatlichen Bauwettbewerbs und die Weiterentwicklung von Anleitungen für Builder.\n- **Reviewer:** Sie bearbeiten Builder-Bewerbungen und sind die erste Anlaufstelle für bautechnische Fragen. Die umfassende Betreuung des Plot-Systems zählt auch zu ihren Aufgaben.\n- **Developer:** Sie sind verantwortlich für alle technischen Aspekte unseres Projekts. Dazu gehören unsere Server-Infrastruktur, diverse Plugins und diese Webseite.\n- **Public Relations:** Sie repräsentieren Alps BTE in der Öffentlichkeit und kümmern sich um unsere Social Media Kanäle. Ausserdem gestalten sie Grafiken für verschiedene Anwendungen, führen Interviews und bearbeiten Presseanfragen."
+        }
+      ],
+      "contactUs": "Kontaktiere uns"
+    },
+    "gallery": {
+      "title": "Galerie",
+      "description": "Diese Gallerie zeigt einige der besten Bauwerke unseres Projekts. Die Inhalte stammen aus 2022, eine Überarbeitung der Webseite ist in Arbeit. Für hochauflösende Bilder bitten wir in der Zwischenzeit um direkte Kontaktaufnahme."
+    },
+    "downloads": {
+      "title": "Downloads",
+      "description": "Um Journalisten bei ihrer Arbeit zu unterstützen, haben wir hier offizielle Pressefotos und Informationen zu Alps BTE zum Download bereitgestellt. Sie können diese Informationen gerne für nicht-kommerzielle Veröffentlichungen verwenden, ohne uns zu kontaktieren. Die redaktionelle Nutzung ist gestattet. Bei Veröffentlichung bitten wir um Übersendung eines Korrekturabzuges an unsere Pressestelle."
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Hier findest du häufig gestellte Fragen über Alps BTE und die Hilfsmittel, die wir nutzen. Sollten deine Fragen hier nicht beantwortet werden, kannst du uns gerne kontaktieren.",
+      "questions": [
+        { "spacer": "Minecraft Server" },
+        {
+          "title": "Was ist das Plot-System?",
+          "content": "Das Plot-System ist ein von uns eigens entwickeltes System, welches den Einstieg in Alps BTE erleichtert. Sobald du das Tutorial abgeschlossen hast und eine verfügbare Stadt auswählst, gelangst du auf eine fliegende Insel mit Gebäudeumrissen („Plot“). Über die Links im Chat erhältst du passende Referenzen zum Gebäude und kannst sofort loslegen, dieses in Minecraft nachzubauen. Nach der Abgabe wird das fertige Plot von unseren Reviewern bewertet und sollte etwas nicht passen, bekommst du ein Feedback und die Möglichkeit zur Überarbeitung. Sobald ein Plot angenommen wurde, kannst du dich als offizieller Builder bei uns bewerben."
+        },
+        {
+          "title": "Was ist der Terraserver?",
+          "content": "Unser Open-World-Server ist auch als Terra-Server bekannt. Besucher finden hier sämtliche Bauwerke, die je von uns errichtet wurden. Er fungiert als Hauptserver, wo verifizierte Builder in einer beliebigen Region innerhalb Österreich, Schweiz und Liechtenstein bauen können. Auch die Plots vom Plot-System kommen dorthin, sobald sie angenommen wurden. Hier finden auch unsere zahlreichen Events statt."
+        },
+        {
+          "title": "Wie kann ich mich umschauen?",
+          "content": "Um dir den aktuellen Baufortschritt anzuschauen, kannst du unseren Server mit der Java Edition jederzeit besuchen. Die Bedrock Edition wird leider nicht unterstützt, da diese mit unserem Netzwerk inkompatibel ist. Verbinde dich mit der IP „mc.alps-bte.com“ auf der Version 1.21.4 und klicke anschliessend auf den NPC „Map & Visit“."
+        },
+        {
+          "title": "Wie viel wurde bereits gebaut?",
+          "content": "Besonders in Städten wie Wien, Graz, Linz, Innsbruck, Zürich, Basel, Luzern und Lausanne gibt es viel Baufortschritt und es stehen schon etliche Wahrzeichen. Einzelne Dörfer und Landschaften sind bereits komplett nachgebaut. Weil es in unserer Region unzählige Bauwerke gibt, sind insgesamt aber erst ca. 0,01% der Fläche fertig."
+        },
+        { "spacer": "Bewerbung" },
+        {
+          "title": "Was sind Builder?",
+          "content": "Builder sind offizielle Mitglieder des Bauteams Alps BTE. Sie haben den Bewerbungsprozess durchlaufen und ihre Bewerbung wurden von unseren Reviewern angenommen. Sie haben auf unserem Terra-Server (siehe „Was ist der Terra-Server?“) Baurechte und Zugriff auf eigene Sprach- und Textkanäle."
+        },
+        {
+          "title": "Warum muss ich mich bewerben?",
+          "content": "Um die Qualität der Gebäude sicherzustellen, müssen sich potenzielle Builder bei uns bewerben. Im Laufe der Bewerbung wird ein Bauwerk nachgebaut, welches ein Mindestmass an Genauigkeit und Detailgrad besitzen muss. Zusätzlich können wir so sicherstellen, dass Griefer keinen Schaden am Server anrichten."
+        },
+        {
+          "title": "Ist eine Bewerbung notwendig, um am Server bauen zu dürfen?",
+          "content": "Nur verifizierte Builder besitzen am Open-World-Server Baurechte. Man kann allerdings auch über das Plot-System als Besucher ohne Umstände in ausgewählten Städten bauen."
+        },
+        {
+          "title": "Wie kann ich mich bewerben?",
+          "content": "Sobald du einen Plot am Plot-System abgegeben hast, kannst du dich über diesen Link als Builder bewerben: https://buildtheearth.net/teams/alps. Eine detaillierte Anleitung findest du hier: https://youtu.be/MdFMsJ9pNls"
+        },
+        {
+          "title": "Wie lange dauert die Bearbeitung meiner Bewerbung?",
+          "content": "Nachdem du dich beworben hast, solltest du innerhalb von 48 Stunden eine Rückmeldung via Discord erhalten. Da nur wenige Personen die Bewerbungen bearbeiten, kann diese Zeit in einzelnen Fällen abweichen. Bei Fragen wende dich gerne an unsere Reviewer.\n"
+        },
+        {
+          "title": "Muss ich immer aktiv sein?",
+          "content": "Anders als in vielen anderen Bauteams können Builder bei BuildTheEarth völlig frei an ihren eigenen Projekten arbeiten und daher auch für einen längeren Zeitraum eine Pause einlegen. Wir entfernen generell keine Baurechte aufgrund von Inaktivität."
+        },
+        { "spacer": "Bauen" },
+        {
+          "title": "Was sind unsere Baureferenzen?",
+          "content": "Als Referenzmaterial dienen uns hauptsächlich Google Maps, Google Earth und regionale GIS-Daten (Geoinformationssysteme). Manchmal wird unsere Arbeit auch durch selbständig aufgenommene Fotos und Videos erleichtert."
+        },
+        {
+          "title": "Was ist WorldEdit?",
+          "content": "WorldEdit (WE) Ist ein Plugin, welches Bautätigkeiten deutlich vereinfacht. Durch einige Befehle können unter anderem schräge Wände, Dächer oder ganze Landschaften ohne Probleme bearbeitet werden. Wir erklären die wichtigsten Funktionen in mehreren Tutorials auf YouTube."
+        },
+        {
+          "title": "Was sind Events & Collabs?",
+          "content": "In Events bauen viele unserer Builder innerhalb von wenigen Tagen gemeinsam an einem – im Voraus vorbereiteten – Gebiet. Der Standort der Events wechselt ständig zwischen Österreich und der Schweiz, dabei wurden meist bekanntere Lokalitäten wie zum Beispiel die Zürcher Altstadt oder Schloss Schönbrunn erbaut. Diese Veranstaltungen finden normalerweise einmal im Quartal statt und sind zu einem Fixpunkt unserer Community geworden. Collabs sind prinzipiell dasselbe wie Events, nur in Zusammenarbeit mit anderen regionalen Bauteams. Daher können Collabs auch ausserhalb unserer Grenzen stattfinden."
+        },
+        {
+          "title": "Was sind Building Sessions?",
+          "content": "Building Sessions sind von Buildern ausgerufene „Events“, die über eine Zeitspanne von einem Tag bis zu einer Wochen dauern können. Sie verfolgen das Ziel, Alps BTE basisorientierter zu gestalten und in Zeiten von wenigen offiziellen Events Abwechslung zu bieten. Standort und Zeitpunkt der Building Sessions sind von den Buildern frei wählbar. Im Zuge dieser Initiativen entstand ein grosser Teil der Basler Altstadt, sowie der Stephansplatz in Wien.\n"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Alps BTE ist ein offenes Bauteam und Teilprojekt von BuildTheEarth.net. Es wurde im April 2020 gegründet und hat sich der detailgetreuen Nachbildung von Österreich, Schweiz und Liechtenstein im Videospiel Minecraft verschrieben.",
+      "contact": {
+        "outreach": "Öffentlichkeitsarbeit",
+        "community": "Community",
+        "management": "Management"
+      },
+      "socialMedia": "Soziale Medien"
+    },
+    "application": {
+      "title": "Bewerbung",
+      "description": "Hier findest du einen kurzen Einblick, wie du Builder – ein Mitglied unseres Bauteams – wirst. Weitere Informationen findest du auf unserem Discord. Für eine ausführlichere Anleitung, wie die Bewerbung funktioniert, schau dir das unten verlinkte Video an.",
+      "steps": {
+        "discord": {
+          "title": "Discord",
+          "description": "Wir nutzen den Messenger Discord um das Projekt zu koordinieren und für die Kommunikation zwischen unseren Mitgliedern. Lade den kostenfreien Messenger herunter und tritt dem Alps BTE Discord-Server bei, indem du [hier](https://discord.gg/vgkspay) klickst. Lies die Informationskanäle, um dich mit dem Projekt vertraut zu machen und mit der Community in Kontakt zu treten."
+        },
+        "tutorialSystem": {
+          "title": "Tutorial-System",
+          "description": "Tritt unserem Server (mc.alps-bte.com) mit Minecraft Java auf der Version 1.21.4 bei. Die Bedrock Edition wird leider nicht unterstützt, da diese mit unserem Netzwerk inkompatibel ist. Mit einem Rechtsklick auf den NPC „Start Building“ kann das Tutorial gestartet werden. Befolge die Anleitung, erledige alle Aufgaben und schliesse das Tutorial ab."
+        },
+        "plotSystem": {
+          "title": "Plot-System",
+          "description": "Jetzt kannst du am Plot-System bauen. Klicke auf den Netherstar (Companion) in der Hotbar und wähle eine verfügbare Stadt aus. Sobald du mindestens einen Plot abgegeben hast, kannst du dich als Builder bewerben."
+        },
+        "applicationForm": {
+          "title": "Bewerbung",
+          "description": "Gehe auf https://buildtheearth.net/teams/alps, klicke auf „Apply“ und fülle das Formular aus. Sobald du das Formular abgesendet hast, wird es in weniger als 48 Stunden von unseren Reviewern geprüft. Wenn du angenommen wirst, erhältst du die Builder-Rolle und kannst nun in Österreich, der Schweiz und Liechtenstein bauen, wo du willst. Für den Anfang empfehlen wir unsere Builders Guide Serie auf YouTube, in welcher viele Bautipps gezeigt werden."
+        }
+      }
+    },
+    "error": {
+      "title": "Seite nicht gefunden!",
+      "description": "",
+      "backHome": "Zurück zur Startseite"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "rightsReserved": "Alle Rechte vorbehalten",
+    "quickLinks": {
+      "team": "Team",
+      "showcase": "Showcase",
+      "help": "Hilfe",
+      "socials": "Soziale Medien"
+    }
+  }
+}

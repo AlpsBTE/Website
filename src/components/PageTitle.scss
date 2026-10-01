@@ -1,0 +1,33 @@
+.page-title {
+  background-color: var(--mantine-color-default);
+
+  &__image-wrapper {
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+  }
+
+  &__content {
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

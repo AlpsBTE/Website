@@ -1,0 +1,54 @@
+.footer {
+  border-top: 1px solid var(--mantine-color-default-border);
+  background-color: var(--mantine-color-default);
+  padding: 2rem 2rem 1.5rem;
+
+  &__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+
+    @media (max-width: 62em) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    @media (max-width: 62em) {
+      align-items: center;
+    }
+  }
+
+  &__about-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: var(--mantine-color-text);
+    margin-bottom: 0.5rem;
+  }
+
+  &__links {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+
+    @media (max-width: 62em) {
+      display: none;
+    }
+  }
+
+  &__links-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

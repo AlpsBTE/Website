@@ -1,0 +1,27 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--mantine-color-body);
+  color: var(--mantine-color-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.link {
+  color: var(--mantine-color-blue-6);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

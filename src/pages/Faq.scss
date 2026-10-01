@@ -1,0 +1,15 @@
+.faq {
+  &__content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+  }
+
+  &__accordion {
+    margin-bottom: 1rem;
+  }
+
+  &__spacer {
+    margin-top: 2rem;
+  }
+}

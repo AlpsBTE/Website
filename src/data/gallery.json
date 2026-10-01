@@ -1,0 +1,135 @@
+{
+  "basel": {
+    "label": {
+      "en": "Basel",
+      "de": "Basel",
+      "fr": "Bâle",
+      "it": "Basilea"
+    },
+    "images": [
+      "0.webp",
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "7.webp",
+      "8.webp"
+    ]
+  },
+  "graz": {
+    "label": {
+      "en": "Graz",
+      "de": "Graz",
+      "fr": "Graz",
+      "it": "Graz"
+    },
+    "images": [
+      "0.webp",
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "7.webp",
+      "8.webp"
+    ]
+  },
+  "luzern": {
+    "label": {
+      "en": "Lucerne",
+      "de": "Luzern",
+      "fr": "Lucerne",
+      "it": "Lucerna"
+    },
+    "images": [
+      "0.webp",
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "7.webp",
+      "8.webp"
+    ]
+  },
+  "oesterreich": {
+    "label": {
+      "en": "Austria",
+      "de": "Österreich",
+      "fr": "Autriche",
+      "it": "Austria"
+    },
+    "images": [
+      "0.webp",
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "7.webp",
+      "8.webp"
+    ]
+  },
+  "salzburg": {
+    "label": {
+      "en": "Salzburg",
+      "de": "Salzburg",
+      "fr": "Salzbourg",
+      "it": "Salzburgo"
+    },
+    "images": [
+      "0.webp",
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "7.webp",
+      "8.webp"
+    ]
+  },
+  "schweiz": {
+    "label": {
+      "en": "Switzerland",
+      "de": "Schweiz",
+      "fr": "Suisse",
+      "it": "Svizzera"
+    },
+    "images": [
+      "0.webp",
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "7.webp",
+      "8.webp"
+    ]
+  },
+  "wien": {
+    "label": {
+      "en": "Vienna",
+      "de": "Wien",
+      "fr": "Vienne",
+      "it": "Vienna"
+    },
+    "images": [
+      "0.webp",
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "7.webp",
+      "8.webp"
+    ]
+  }
+}

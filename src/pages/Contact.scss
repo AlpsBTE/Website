@@ -1,0 +1,69 @@
+.contact {
+  &__container {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: var(--mantine-color-body);
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media (max-width: 48em) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &__social-media {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media (max-width: 48em) {
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  &__icon {
+    color: var(--mantine-color-text);
+
+    &:hover {
+      color: var(--mantine-color-blue-6);
+    }
+  }
+
+  &__people {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @media (max-width: 48em) {
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  &__people-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+}
